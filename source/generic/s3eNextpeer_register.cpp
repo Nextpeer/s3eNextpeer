@@ -10,6 +10,7 @@
  * to nothing if this extension is not enabled in the loader
  * at build time.
  */
+#include "IwDebug.h"
 #include "s3eNextpeer_autodefs.h"
 #include "s3eEdk.h"
 #include "s3eNextpeer.h"
@@ -17,6 +18,21 @@
 extern s3eResult s3eNextpeerInit();
 extern void s3eNextpeerTerminate();
 
+
+// On platforms that use a seperate UI/OS thread we can autowrap functions
+// here.   Note that we can't use the S3E_USE_OS_THREAD define since this
+// code is oftern build standalone, outside the main loader build.
+#if defined I3D_OS_IPHONE || defined I3D_OS_OSX || defined I3D_OS_LINUX || defined I3D_OS_WINDOWS
+
+static void s3eNextpeerLaunchDashboard_wrap()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerLaunchDashboard"));
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerLaunchDashboard, 0);
+}
+
+#define s3eNextpeerLaunchDashboard s3eNextpeerLaunchDashboard_wrap
+
+#endif
 
 void s3eNextpeerRegisterExt()
 {

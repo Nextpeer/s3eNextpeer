@@ -40,7 +40,7 @@ typedef void (*s3eNextpeerCBDidTournamentEnd)(); // -(void)nextpeerDidTournament
 
 typedef struct s3eNextpeerDelegate {
 	// Callback function for tournament start
-	s3eNextpeerCBDidTournamentStartWithDetails m_DidTournamentStartCallback;
+	s3eNextpeerCBDidTournamentStartWithDetails m_didTournamentStartCallback;
 	
 	// Callback function for tournament end
 	s3eNextpeerCBDidTournamentEnd m_didTournamentEndCallback;
@@ -57,6 +57,6 @@ typedef struct s3eNextpeerDelegatesContainer {
 functions:
 
 void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer) void
-void s3eNextpeerLaunchDashboard() void
+void s3eNextpeerLaunchDashboard() void run_on_os_thread
 void s3eNextpeerShutDown() void
 

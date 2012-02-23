@@ -37,7 +37,7 @@ typedef void (*s3eNextpeerCBDidTournamentEnd)(); // -(void)nextpeerDidTournament
 
 typedef struct s3eNextpeerDelegate {
 	// Callback function for tournament start
-	s3eNextpeerCBDidTournamentStartWithDetails m_DidTournamentStartCallback;
+	s3eNextpeerCBDidTournamentStartWithDetails m_didTournamentStartCallback;
 	
 	// Callback function for tournament end
 	s3eNextpeerCBDidTournamentEnd m_didTournamentEndCallback;
