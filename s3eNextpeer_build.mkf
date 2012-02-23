@@ -28,8 +28,14 @@ subproject "$MARMALADE_ROOT/s3e/edk"
 
 if {{defined I3D_OS_IPHONE}}
 {
+    includepath Nextpeer.framework.v0.0.11/Nextpeer.framework/Headers
+
     files
     {
+        ["Nextpeer Lib"]
+        (Nextpeer.framework.v0.0.11/Nextpeer.framework)
+        "*.o"
+    
         ["source"]
         (use_first_found, source/iphone, source/generic)
         s3eNextpeer_platform.mm

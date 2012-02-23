@@ -11,18 +11,40 @@
 /**
  * Definitions for functions types passed to/from s3eExt interface
  */
+typedef       void(*s3eNextpeerInitWithProductKeyAndDelegatesContainer_t)(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer);
+typedef       void(*s3eNextpeerLaunchDashboard_t)();
+typedef       void(*s3eNextpeerShutDown_t)();
 
 /**
  * struct that gets filled in by s3eNextpeerRegister
  */
 typedef struct s3eNextpeerFuncs
 {
+    s3eNextpeerInitWithProductKeyAndDelegatesContainer_t m_s3eNextpeerInitWithProductKeyAndDelegatesContainer;
+    s3eNextpeerLaunchDashboard_t m_s3eNextpeerLaunchDashboard;
+    s3eNextpeerShutDown_t m_s3eNextpeerShutDown;
 } s3eNextpeerFuncs;
 
 static s3eNextpeerFuncs g_Ext;
 static bool g_GotExt = false;
 static bool g_TriedExt = false;
 static bool g_TriedNoMsgExt = false;
+
+static bool _extLoad()
+{
+    if (!g_GotExt && !g_TriedExt)
+    {
+        s3eResult res = s3eExtGetHash(0x9aa36f5b, &g_Ext, sizeof(g_Ext));
+        if (res == S3E_RESULT_SUCCESS)
+            g_GotExt = true;
+        else
+            s3eDebugAssertShow(S3E_MESSAGE_CONTINUE_STOP_IGNORE, "error loading extension: s3eNextpeer");
+        g_TriedExt = true;
+        g_TriedNoMsgExt = true;
+    }
+
+    return g_GotExt;
+}
 
 static bool _extLoadNoMsg()
 {
@@ -43,4 +65,34 @@ s3eBool s3eNextpeerAvailable()
 {
     _extLoadNoMsg();
     return g_GotExt ? S3E_TRUE : S3E_FALSE;
+}
+
+void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer)
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[0] func: s3eNextpeerInitWithProductKeyAndDelegatesContainer"));
+
+    if (!_extLoad())
+        return;
+
+    g_Ext.m_s3eNextpeerInitWithProductKeyAndDelegatesContainer(productKey, delegatesContainer);
+}
+
+void s3eNextpeerLaunchDashboard()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[1] func: s3eNextpeerLaunchDashboard"));
+
+    if (!_extLoad())
+        return;
+
+    g_Ext.m_s3eNextpeerLaunchDashboard();
+}
+
+void s3eNextpeerShutDown()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[2] func: s3eNextpeerShutDown"));
+
+    if (!_extLoad())
+        return;
+
+    g_Ext.m_s3eNextpeerShutDown();
 }

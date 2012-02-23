@@ -21,12 +21,15 @@ extern void s3eNextpeerTerminate();
 void s3eNextpeerRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[0];
+    void* funcPtrs[3];
+    funcPtrs[0] = (void*)s3eNextpeerInitWithProductKeyAndDelegatesContainer;
+    funcPtrs[1] = (void*)s3eNextpeerLaunchDashboard;
+    funcPtrs[2] = (void*)s3eNextpeerShutDown;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[0] = { 0 };
+    int flags[3] = { 0 };
 
     /*
      * Register the extension
