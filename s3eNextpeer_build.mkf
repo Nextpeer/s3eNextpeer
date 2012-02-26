@@ -69,6 +69,10 @@ if {{defined I3D_OS_OSX}}
 {
     files
     {
+        ["Nextoeer Lib"]
+        (Nextpeer.framework.v0.0.11_sim/Nextpeer.framework)
+        "*.o"
+    
         ["source"]
         (use_first_found, source/osx, source/generic)
         s3eNextpeer_platform.mm

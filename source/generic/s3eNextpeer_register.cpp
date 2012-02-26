@@ -24,13 +24,27 @@ extern void s3eNextpeerTerminate();
 // code is oftern build standalone, outside the main loader build.
 #if defined I3D_OS_IPHONE || defined I3D_OS_OSX || defined I3D_OS_LINUX || defined I3D_OS_WINDOWS
 
+static void s3eNextpeerInitWithProductKeyAndDelegatesContainer_wrap(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer)
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerInitWithProductKeyAndDelegatesContainer"));
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerInitWithProductKeyAndDelegatesContainer, 2, productKey, delegatesContainer);
+}
+
 static void s3eNextpeerLaunchDashboard_wrap()
 {
     IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerLaunchDashboard"));
     s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerLaunchDashboard, 0);
 }
 
+static void s3eNextpeerShutDown_wrap()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerShutDown"));
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerShutDown, 0);
+}
+
+#define s3eNextpeerInitWithProductKeyAndDelegatesContainer s3eNextpeerInitWithProductKeyAndDelegatesContainer_wrap
 #define s3eNextpeerLaunchDashboard s3eNextpeerLaunchDashboard_wrap
+#define s3eNextpeerShutDown s3eNextpeerShutDown_wrap
 
 #endif
 

@@ -56,7 +56,7 @@ typedef struct s3eNextpeerDelegatesContainer {
 
 functions:
 
-void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer) void
+void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer) void run_on_os_thread
 void s3eNextpeerLaunchDashboard() void run_on_os_thread
-void s3eNextpeerShutDown() void
+void s3eNextpeerShutDown() void run_on_os_thread
 
