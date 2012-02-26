@@ -11,9 +11,13 @@
 /**
  * Definitions for functions types passed to/from s3eExt interface
  */
-typedef       void(*s3eNextpeerInitWithProductKeyAndDelegatesContainer_t)(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer);
+typedef       void(*s3eNextpeerInitWithProductKeyAndDelegatesContainer_t)(const char* productKey);
 typedef       void(*s3eNextpeerLaunchDashboard_t)();
+typedef       void(*s3eNextpeerDismissDashboard_t)();
 typedef       void(*s3eNextpeerShutDown_t)();
+typedef       void(*s3eNextpeerReportScoreForCurrentTournament_t)(uint32 score);
+typedef    s3eBool(*s3eNextpeerIsCurrentlyInTournament_t)();
+typedef     uint32(*s3eNextpeerTimeLeftInTournament_t)();
 typedef  s3eResult(*s3eNextpeerRegisterCallback_t)(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 typedef  s3eResult(*s3eNextpeerUnRegisterCallback_t)(s3eNextperCallback cbid, s3eCallback fn);
 
@@ -24,7 +28,11 @@ typedef struct s3eNextpeerFuncs
 {
     s3eNextpeerInitWithProductKeyAndDelegatesContainer_t m_s3eNextpeerInitWithProductKeyAndDelegatesContainer;
     s3eNextpeerLaunchDashboard_t m_s3eNextpeerLaunchDashboard;
+    s3eNextpeerDismissDashboard_t m_s3eNextpeerDismissDashboard;
     s3eNextpeerShutDown_t m_s3eNextpeerShutDown;
+    s3eNextpeerReportScoreForCurrentTournament_t m_s3eNextpeerReportScoreForCurrentTournament;
+    s3eNextpeerIsCurrentlyInTournament_t m_s3eNextpeerIsCurrentlyInTournament;
+    s3eNextpeerTimeLeftInTournament_t m_s3eNextpeerTimeLeftInTournament;
     s3eNextpeerRegisterCallback_t m_s3eNextpeerRegisterCallback;
     s3eNextpeerUnRegisterCallback_t m_s3eNextpeerUnRegisterCallback;
 } s3eNextpeerFuncs;
@@ -71,14 +79,14 @@ s3eBool s3eNextpeerAvailable()
     return g_GotExt ? S3E_TRUE : S3E_FALSE;
 }
 
-void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer)
+void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey)
 {
     IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[0] func: s3eNextpeerInitWithProductKeyAndDelegatesContainer"));
 
     if (!_extLoad())
         return;
 
-    g_Ext.m_s3eNextpeerInitWithProductKeyAndDelegatesContainer(productKey, delegatesContainer);
+    g_Ext.m_s3eNextpeerInitWithProductKeyAndDelegatesContainer(productKey);
 }
 
 void s3eNextpeerLaunchDashboard()
@@ -91,9 +99,19 @@ void s3eNextpeerLaunchDashboard()
     g_Ext.m_s3eNextpeerLaunchDashboard();
 }
 
+void s3eNextpeerDismissDashboard()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[2] func: s3eNextpeerDismissDashboard"));
+
+    if (!_extLoad())
+        return;
+
+    g_Ext.m_s3eNextpeerDismissDashboard();
+}
+
 void s3eNextpeerShutDown()
 {
-    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[2] func: s3eNextpeerShutDown"));
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[3] func: s3eNextpeerShutDown"));
 
     if (!_extLoad())
         return;
@@ -101,22 +119,52 @@ void s3eNextpeerShutDown()
     g_Ext.m_s3eNextpeerShutDown();
 }
 
-s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData)
+void s3eNextpeerReportScoreForCurrentTournament(uint32 score)
 {
-    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[3] func: s3eNextpeerRegisterCallback"));
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[4] func: s3eNextpeerReportScoreForCurrentTournament"));
 
     if (!_extLoad())
-        return ;;
+        return;
+
+    g_Ext.m_s3eNextpeerReportScoreForCurrentTournament(score);
+}
+
+s3eBool s3eNextpeerIsCurrentlyInTournament()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[5] func: s3eNextpeerIsCurrentlyInTournament"));
+
+    if (!_extLoad())
+        return 0;
+
+    return g_Ext.m_s3eNextpeerIsCurrentlyInTournament();
+}
+
+uint32 s3eNextpeerTimeLeftInTournament()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[6] func: s3eNextpeerTimeLeftInTournament"));
+
+    if (!_extLoad())
+        return 0;
+
+    return g_Ext.m_s3eNextpeerTimeLeftInTournament();
+}
+
+s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData)
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[7] func: s3eNextpeerRegisterCallback"));
+
+    if (!_extLoad())
+        return S3E_RESULT_SUCCESS;
 
     return g_Ext.m_s3eNextpeerRegisterCallback(cbid, fn, pData);
 }
 
 s3eResult s3eNextpeerUnRegisterCallback(s3eNextperCallback cbid, s3eCallback fn)
 {
-    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[4] func: s3eNextpeerUnRegisterCallback"));
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[8] func: s3eNextpeerUnRegisterCallback"));
 
     if (!_extLoad())
-        return ;;
+        return S3E_RESULT_SUCCESS;
 
     return g_Ext.m_s3eNextpeerUnRegisterCallback(cbid, fn);
 }

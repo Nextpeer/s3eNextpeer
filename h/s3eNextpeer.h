@@ -27,6 +27,10 @@ typedef enum s3eNextperCallback
 {
     S3E_NEXTPEER_CALLBACK_DID_TOURNAMENT_START,
     S3E_NEXTPEER_CALLBACK_DID_TOURNAMENT_END,
+    S3E_NEXTPEER_CALLBACK_DASHBOARD_WILL_APPEAR,
+    S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_APPEAR,
+    S3E_NEXTPEER_CALLBACK_DASHBOARD_WILL_DISAPPEAR,
+    S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_DISAPPEAR,
     S3E_NEXTPEER_CALLBACK_MAX
 } s3eNextperCallback;
 
@@ -37,29 +41,9 @@ typedef enum s3eNextperCallback
  * @see s3eNextpeerTournamentStartCallback
  */
 typedef struct s3eNextpeerTournamentStartData {
-	char m_tournamentUuid[S3E_NEXTPEER_STRING_MAX_1]; // Tournament UUID
+	char* m_tournamentUuid; // Tournament UUID
 	int m_tournamentSeconds; // Tournament time in seconds
 } s3eNextpeerTournamentStartData;
-
-
-// Function pointers
-typedef void (*s3eNextpeerCBDidTournamentStartWithDetails)(s3eNextpeerTournamentStartData* ); // -(void)nextpeerDidTournamentStartWithDetails:(NPTournamentStartDataContainer *)tournamentContainer
-typedef void (*s3eNextpeerCBDidTournamentEnd)(); // -(void)nextpeerDidTournamentEnd
-
-typedef struct s3eNextpeerDelegate {
-	// Callback function for tournament start
-	s3eNextpeerCBDidTournamentStartWithDetails m_didTournamentStartCallback;
-	
-	// Callback function for tournament end
-	s3eNextpeerCBDidTournamentEnd m_didTournamentEndCallback;
-	
-} s3eNextpeerDelegate;
-
-typedef struct s3eNextpeerDelegatesContainer {
-	// Nextpeer delegate
-	s3eNextpeerDelegate m_NextpeerDelegate;
-	
-} s3eNextpeerDelegatesContainer;
 // \cond HIDDEN_DEFINES
 S3E_BEGIN_C_DECL
 // \endcond
@@ -69,11 +53,19 @@ S3E_BEGIN_C_DECL
  */
 s3eBool s3eNextpeerAvailable();
 
-void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer);
+void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey);
 
 void s3eNextpeerLaunchDashboard();
 
+void s3eNextpeerDismissDashboard();
+
 void s3eNextpeerShutDown();
+
+void s3eNextpeerReportScoreForCurrentTournament(uint32 score);
+
+s3eBool s3eNextpeerIsCurrentlyInTournament();
+
+uint32 s3eNextpeerTimeLeftInTournament();
 
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 

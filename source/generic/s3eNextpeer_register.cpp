@@ -24,16 +24,22 @@ extern void s3eNextpeerTerminate();
 // code is oftern build standalone, outside the main loader build.
 #if defined I3D_OS_IPHONE || defined I3D_OS_OSX || defined I3D_OS_LINUX || defined I3D_OS_WINDOWS
 
-static void s3eNextpeerInitWithProductKeyAndDelegatesContainer_wrap(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer)
+static void s3eNextpeerInitWithProductKeyAndDelegatesContainer_wrap(const char* productKey)
 {
     IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerInitWithProductKeyAndDelegatesContainer"));
-    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerInitWithProductKeyAndDelegatesContainer, 2, productKey, delegatesContainer);
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerInitWithProductKeyAndDelegatesContainer, 1, productKey);
 }
 
 static void s3eNextpeerLaunchDashboard_wrap()
 {
     IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerLaunchDashboard"));
     s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerLaunchDashboard, 0);
+}
+
+static void s3eNextpeerDismissDashboard_wrap()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerDismissDashboard"));
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerDismissDashboard, 0);
 }
 
 static void s3eNextpeerShutDown_wrap()
@@ -44,6 +50,7 @@ static void s3eNextpeerShutDown_wrap()
 
 #define s3eNextpeerInitWithProductKeyAndDelegatesContainer s3eNextpeerInitWithProductKeyAndDelegatesContainer_wrap
 #define s3eNextpeerLaunchDashboard s3eNextpeerLaunchDashboard_wrap
+#define s3eNextpeerDismissDashboard s3eNextpeerDismissDashboard_wrap
 #define s3eNextpeerShutDown s3eNextpeerShutDown_wrap
 
 #endif
@@ -51,17 +58,21 @@ static void s3eNextpeerShutDown_wrap()
 void s3eNextpeerRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[5];
+    void* funcPtrs[9];
     funcPtrs[0] = (void*)s3eNextpeerInitWithProductKeyAndDelegatesContainer;
     funcPtrs[1] = (void*)s3eNextpeerLaunchDashboard;
-    funcPtrs[2] = (void*)s3eNextpeerShutDown;
-    funcPtrs[3] = (void*)s3eNextpeerRegisterCallback;
-    funcPtrs[4] = (void*)s3eNextpeerUnRegisterCallback;
+    funcPtrs[2] = (void*)s3eNextpeerDismissDashboard;
+    funcPtrs[3] = (void*)s3eNextpeerShutDown;
+    funcPtrs[4] = (void*)s3eNextpeerReportScoreForCurrentTournament;
+    funcPtrs[5] = (void*)s3eNextpeerIsCurrentlyInTournament;
+    funcPtrs[6] = (void*)s3eNextpeerTimeLeftInTournament;
+    funcPtrs[7] = (void*)s3eNextpeerRegisterCallback;
+    funcPtrs[8] = (void*)s3eNextpeerUnRegisterCallback;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[5] = { 0 };
+    int flags[9] = { 0 };
 
     /*
      * Register the extension

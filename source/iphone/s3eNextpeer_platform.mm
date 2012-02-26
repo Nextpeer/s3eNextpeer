@@ -37,8 +37,8 @@ s3eResult s3eNextpeerUnRegisterCallback(s3eNextperCallback cbid, s3eCallback fn)
 static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification, void* systemData, void* instance, int32 returnCode, void* data)
 {
     s3eNextpeerTournamentStartData* tournamentStartData = (s3eNextpeerTournamentStartData*)systemData;
-    if (tournamentStartData) {
-        s3eEdkFreeOS(tournamentStartData);
+    if (tournamentStartData && tournamentStartData->m_tournamentUuid) {
+        s3eEdkFreeOS(tournamentStartData->m_tournamentUuid);
     }
 }
 
@@ -49,27 +49,10 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
 
 @interface S3ENextpeerDelegate : NSObject<NextpeerDelegate> 
 {
-    s3eNextpeerCBDidTournamentStartWithDetails m_didTournamentStartCallback;
-    s3eNextpeerCBDidTournamentEnd m_didTournamentEndCallback;
 }
--(id)initWithS3EDelegatesContainer:(const s3eNextpeerDelegatesContainer*)delegatesContainer;
-
 @end
 
 @implementation S3ENextpeerDelegate
-
--(id)initWithS3EDelegatesContainer:(const s3eNextpeerDelegatesContainer*)delegatesContainer
-{
-    if ((self = [super init])) {
-        m_didTournamentStartCallback = delegatesContainer->m_NextpeerDelegate.m_didTournamentStartCallback;
-        m_didTournamentEndCallback = delegatesContainer->m_NextpeerDelegate.m_didTournamentEndCallback;
-        
-        NSLog(@"[s3eNextpeer] delegates container init: m_didTournamentStartCallback at 0x%x", m_didTournamentStartCallback);
-        NSLog(@"[s3eNextpeer] delegates container init: m_didTournamentEndCallback at 0x%x", m_didTournamentEndCallback);
-    }
-    
-    return self;
-}
 
 -(void)nextpeerDidTournamentStartWithDetails:(NPTournamentStartDataContainer *)tournamentContainer
 {
@@ -82,17 +65,18 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
     }
     
     // Convert the container we got into a struct and then send it along to the callback function
-    s3eNextpeerTournamentStartData* dataStruct = (s3eNextpeerTournamentStartData*)s3eEdkMallocOS(sizeof(s3eNextpeerTournamentStartData), TRUE);
+    s3eNextpeerTournamentStartData dataStruct;
+    int dlen = strlen([tournamentContainer.tournamentUuid UTF8String]) + 1;
+    dataStruct.m_tournamentUuid = (char*)s3eEdkMallocOS(sizeof(char) * dlen);
     
     NSLog(@"[s3eNextpeer] dataStruct address is 0x%x", dataStruct);
     
-    strcpy(dataStruct->m_tournamentUuid, [tournamentContainer.tournamentUuid UTF8String]);
-    dataStruct->m_tournamentSeconds = tournamentContainer.tournamentTimeSeconds;
+    strlcpy(dataStruct.m_tournamentUuid, [tournamentContainer.tournamentUuid UTF8String], S3E_NEXTPEER_STRING_MAX_1);
+    dataStruct.m_tournamentSeconds = tournamentContainer.tournamentTimeSeconds;
     
-    NSLog(@"[s3eNextpeer] dataStruct contains id %s and time %d", dataStruct->m_tournamentUuid, dataStruct->m_tournamentSeconds);
-    NSLog(@"[s3eNextpeer] about to call callback at 0x%x", m_didTournamentStartCallback);
+    NSLog(@"[s3eNextpeer] dataStruct contains id %s and time %d", dataStruct.m_tournamentUuid, dataStruct.m_tournamentSeconds);
 
-    s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DID_TOURNAMENT_START, dataStruct, 
+    s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DID_TOURNAMENT_START, &dataStruct, 
                            sizeof(s3eNextpeerTournamentStartData), NULL, S3E_FALSE, &s3eGCReleaseTournamentStartData, NULL);
 }
 
@@ -107,6 +91,38 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
     else {
         NSLog(@"[s3eNextpeer] - nextpeerDidTournamentEnd has no callback registered! This should not happen!");
         IwError(("[Nextpeer] nextpeerDidTournamentEnd called but m_didTournamentEndCallback is null"));
+    }
+}
+
+-(void)nextpeerDashboardWillAppear
+{
+    NSLog(@"[s3eNextpeer] - called nextpeerDashboardWillAppear");
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_WILL_APPEAR)) {
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_WILL_APPEAR);
+    }
+}
+
+-(void)nextpeerDashboardDidAppear
+{
+    NSLog(@"[s3eNextpeer] - called nextpeerDashboardDidAppear");
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_APPEAR)) {
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_APPEAR);
+    }
+}
+
+-(void)nextpeerDashboardWillDisappear
+{
+    NSLog(@"[s3eNextpeer] - called nextpeerDashboardWillDisappear");
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_WILL_DISAPPEAR)) {
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_WILL_DISAPPEAR);
+    }
+}
+
+-(void)nextpeerDashboardDidDisappear
+{
+    NSLog(@"[s3eNextpeer] - called nextpeerDashboardDidDisappear");
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_DISAPPEAR)) {
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_DISAPPEAR);
     }
 }
 
@@ -138,7 +154,7 @@ void s3eNextpeerTerminate_platform()
     // Add any platform-specific termination code here
 }
 
-void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer)
+void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey)
 {
     NSString* aProductKey = [NSString stringWithUTF8String:productKey];
     
@@ -146,7 +162,7 @@ void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, 
         [g_NextpeerDelegate release];
     }
     
-    g_NextpeerDelegate = [[S3ENextpeerDelegate alloc] initWithS3EDelegatesContainer:delegatesContainer];
+    g_NextpeerDelegate = [[S3ENextpeerDelegate alloc] init];
     
     // Initialize Nextpeer with the product key and our global delegates container
     [Nextpeer initializeWithProductKey:aProductKey andDelegates:[NPDelegatesContainer containerWithNextpeerDelegate:g_NextpeerDelegate]];
@@ -159,6 +175,11 @@ void s3eNextpeerLaunchDashboard()
     [Nextpeer launchDashboard];
 }
 
+void s3eNextpeerDismissDashboard()
+{
+    // Call the dismissal function
+    [Nextpeer dismissDashboard];
+}
 
 void s3eNextpeerShutDown()
 {
@@ -170,4 +191,21 @@ void s3eNextpeerShutDown()
         [g_NextpeerDelegate release];
         g_NextpeerDelegate = nil;
     }
+}
+
+void s3eNextpeerReportScoreForCurrentTournament(uint32 score)
+{
+    uint32_t aScore = score;
+    [Nextpeer reportScoreForCurrentTournament:aScore];
+}
+
+s3eBool s3eNextpeerIsCurrentlyInTournament()
+{
+    BOOL isInTourney = [Nextpeer isCurrentlyInTournament];
+    return isInTourney;
+}
+
+uint32 s3eNextpeerTimeLeftInTournament()
+{
+    return [Nextpeer timeLeftInTourament];
 }
