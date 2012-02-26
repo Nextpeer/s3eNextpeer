@@ -51,15 +51,17 @@ static void s3eNextpeerShutDown_wrap()
 void s3eNextpeerRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[3];
+    void* funcPtrs[5];
     funcPtrs[0] = (void*)s3eNextpeerInitWithProductKeyAndDelegatesContainer;
     funcPtrs[1] = (void*)s3eNextpeerLaunchDashboard;
     funcPtrs[2] = (void*)s3eNextpeerShutDown;
+    funcPtrs[3] = (void*)s3eNextpeerRegisterCallback;
+    funcPtrs[4] = (void*)s3eNextpeerUnRegisterCallback;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[3] = { 0 };
+    int flags[5] = { 0 };
 
     /*
      * Register the extension

@@ -14,6 +14,8 @@
 typedef       void(*s3eNextpeerInitWithProductKeyAndDelegatesContainer_t)(const char* productKey, const s3eNextpeerDelegatesContainer* delegatesContainer);
 typedef       void(*s3eNextpeerLaunchDashboard_t)();
 typedef       void(*s3eNextpeerShutDown_t)();
+typedef  s3eResult(*s3eNextpeerRegisterCallback_t)(s3eNextperCallback cbid, s3eCallback fn, void* pData);
+typedef  s3eResult(*s3eNextpeerUnRegisterCallback_t)(s3eNextperCallback cbid, s3eCallback fn);
 
 /**
  * struct that gets filled in by s3eNextpeerRegister
@@ -23,6 +25,8 @@ typedef struct s3eNextpeerFuncs
     s3eNextpeerInitWithProductKeyAndDelegatesContainer_t m_s3eNextpeerInitWithProductKeyAndDelegatesContainer;
     s3eNextpeerLaunchDashboard_t m_s3eNextpeerLaunchDashboard;
     s3eNextpeerShutDown_t m_s3eNextpeerShutDown;
+    s3eNextpeerRegisterCallback_t m_s3eNextpeerRegisterCallback;
+    s3eNextpeerUnRegisterCallback_t m_s3eNextpeerUnRegisterCallback;
 } s3eNextpeerFuncs;
 
 static s3eNextpeerFuncs g_Ext;
@@ -95,4 +99,24 @@ void s3eNextpeerShutDown()
         return;
 
     g_Ext.m_s3eNextpeerShutDown();
+}
+
+s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData)
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[3] func: s3eNextpeerRegisterCallback"));
+
+    if (!_extLoad())
+        return ;;
+
+    return g_Ext.m_s3eNextpeerRegisterCallback(cbid, fn, pData);
+}
+
+s3eResult s3eNextpeerUnRegisterCallback(s3eNextperCallback cbid, s3eCallback fn)
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[4] func: s3eNextpeerUnRegisterCallback"));
+
+    if (!_extLoad())
+        return ;;
+
+    return g_Ext.m_s3eNextpeerUnRegisterCallback(cbid, fn);
 }

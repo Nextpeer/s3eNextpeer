@@ -21,6 +21,17 @@
 #define S3E_NEXTPEER_STRING_MAX_1 50
 
 /**
+ * Enumeration for various callbacks in the s3eNextpeer extension
+ */
+typedef enum s3eNextperCallback
+{
+    S3E_NEXTPEER_CALLBACK_DID_TOURNAMENT_START,
+    S3E_NEXTPEER_CALLBACK_DID_TOURNAMENT_END,
+    S3E_NEXTPEER_CALLBACK_MAX
+} s3eNextperCallback;
+
+
+/**
  * Structure to hold tournament info for callbacks. For now holds only the UUID and the time.
  * 
  * @see s3eNextpeerTournamentStartCallback
@@ -63,6 +74,10 @@ void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey, 
 void s3eNextpeerLaunchDashboard();
 
 void s3eNextpeerShutDown();
+
+s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData);
+
+s3eResult s3eNextpeerUnRegisterCallback(s3eNextperCallback cbid, s3eCallback fn);
 
 S3E_END_C_DECL
 
