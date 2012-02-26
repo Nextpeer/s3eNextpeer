@@ -1,0 +1,31 @@
+#!/usr/bin/env mkb
+
+subprojects
+{
+	s3eNextpeer
+}
+
+files
+{
+	["Source"]
+	test1.cpp
+}
+
+if {{defined I3D_OS_IPHONE}}
+{
+	assets
+	{
+		(data)
+		NPResources_iPhone_Portrait.bundle
+	}
+}
+
+#### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
+deployments
+{
+	["Default"]
+	iphone-link-opts='-weak_framework UIKit -weak_framework Security -lsqlite3.0'
+	iphone-no-splash=1
+	iphone-nosign=0
+	iphone-signing-identity='iPhone Developer'
+}

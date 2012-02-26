@@ -1,0 +1,1101 @@
+# This is the global system configuration file for Marmalade applications.
+# This file is automatically included in all application deployments and
+# used when debugging an x86 build.
+#
+# Most of the settings in this are per-device configuration setting for the
+# S3E loader.  These settings are almost all in the [S3E] section, with
+# a few under [GL].
+
+[S3E]
+#SysFastLockDisable=1
+
+#Always have heap 6 waiting as a "direct to OS" heap
+MemSize6=0
+MemFlags6=OS_DIRECT
+
+{OS=WINDOWS}
+#SysStackSwitch=1
+
+{OS=QNX}
+[GL]
+EGL_RED_SIZE=8
+EGL_BLUE_SIZE=8
+EGL_GREEN_SIZE=8
+EGL_ALPHA_SIZE=8
+AlphaInFrameBuffer=1
+[S3E]
+
+{OS=BREW}
+SoundVolScale=50
+AudioVolScale=50
+VideoVolScale=50
+
+{OS=SYMBIAN}
+SoundVolDefault=77
+AudioVolDefault=77
+VideoVolDefault=77
+
+#these are quieter devices...
+{ID=BREW 1000-1999}
+SoundVolScale=100
+AudioVolScale=100
+VideoVolScale=100
+
+{OS=BREW}
+[GL]
+EGL_BUFFER_SIZE=16
+[S3E]
+
+
+# following block makes windows use gerbera drivers
+#{OS=WINDOWS}
+#[GL]
+#EGL_DEPTH_SIZE=16
+#[S3E]
+#SimulGles1Lib1=libEGL.dll
+#SimulGles1Lib2=libGLES_CM_NoE.dll
+
+# following block changes the winmobile default dll name
+#{OS=WINMOBILE}
+#SimulGles1Lib1=LIBGLES_CL.DLL
+
+# BenQ O2 X4
+{ID=BREW 600}
+DoNotBackgroundOnStop=1
+VideoStopDelay=200
+TimerResolution=5
+
+# Zeebo
+{ID=BREW 160000}
+KeyAbsGameA=Button2
+KeyAbsGameB=Button1
+KeyAbsGameC=Button4
+KeyAbsGameD=Button3
+KeyAbsASK=Button5
+KeyAbsBSK=Button6
+
+#Audiovox CDM8940 (16049), CDM8945 (16052)
+{ID=BREW 16049, 16052}
+ForceSpeaker=1
+NoMPEG4=1
+DoubleBuffer=1
+DoNotBackgroundOnStop=1
+
+# Audiovox CDM8945
+{ID=BREW 16052}
+CamCustomWidth=80
+CamCustomHeight=60
+ResumeDelay=2000
+
+#Motorola
+{ID=BREW 8000-8999}
+ForceSpeaker=1
+
+#Motorola E815
+{ID=BREW 8045}
+DisableCamera=1
+DevVolZeroThreshold=0
+ResumeDelay=2000
+
+#Motorola Ve
+{ID=BREW 8081}
+DisableSound=1
+DisableCamera=1
+
+#Motorola RAZR V3c
+{ID=BREW 8063, 8065, 8074, 8083, 8086, 8092}
+DoubleBuffer=1
+CamSetupDelay=0
+ResumeDelay=2000
+
+#Motorola RAZR V3c Ampd
+{ID=BREW 8099}
+ForceSpeaker=1
+DoubleBuffer=1
+pfy=10
+
+#Motorola K1m (8075) V3m (8084) L7c (8087)
+{ID=BREW 8075, 8084, 8087}
+CamSetupDelay=0
+ResumeDelay=2000
+
+#Motorola V3m
+{ID=BREW 8084}
+CamCustomWidth=160
+CamCustomHeight=120
+
+#Motorola L7c
+{ID=BREW 8087}
+CamCustomWidth=80
+CamCustomHeight=60
+
+#Motorola Z6TV (8103) V9M (8106)
+{ID=BREW 8103, 8106}
+BREWSoundUseWav=1
+SoundVolDefault=128
+
+#Motorola A455
+{ID=BREW 8211}
+BREWUseSCRRotation=1
+BREWLandscapeRotation=1
+BREWPortraitRotation=0
+BREWKeyAvailObeysKeyguard=1
+BREWKeyForceAlpha=1
+BREWDontSuspendOnKeyguard=1
+BREWRecreateBitmapOnRotate=1
+BREWSoundStartDelay=100
+mpi=1
+MediaShutdownTime=10000000
+MediaInitTime=1000
+ResumeDelay=2000
+
+#LG VX5300
+{ID=BREW 1169}
+DoNotBackgroundOnStop=1
+mpi=1
+
+#LG VX5400
+{ID=BREW 1175}
+BREWDoNotTurnOnBacklight=1
+DoNotBackgroundOnStop=1
+mpi=1
+pfy=30
+
+# LG VX8000 (1031, 1076), VX8100 (1104)
+{ID=BREW 1031, 1076, 1104}
+DisableGL=1
+CamCustomWidth=80
+CamCustomHeight=60
+
+#LG VX9800 (1072, 1111), VX9900 (1145), VX10000 (1208) , VX10000 (1261)
+{ID=BREW 1072, 1111, 1145, 1208, 1261}
+SoundYield=1
+SoundYieldTime=75
+SoundShutdownDelay=100
+KeyHasAlphaKeys=1
+DisableCamera=1
+pfy=2
+
+#LG  VX9900
+{ID=BREW 1145}
+BREWDoNotShutDownMediaOnPause=1
+
+#Motorola W755
+{ID=BREW 8172}
+BREWDoNotShutDownMediaOnPause=1
+
+#LG VX9100(1222), LG VX9100(1275), LG VX9200(1292),LG VX5600(1322), LG VX10000(1208), LG VX10000(12610)
+{ID=BREW 1222, 1275, 1292, 1322, 1208, 1261}
+BREWSoundStartDelay=50
+
+#LG VX5600(1322), VX5500 (1248), Motorola VU204 (6191), Motorola W766 (8216)
+{ID=BREW 1322, 1248, 6191}
+BREWDoNotShutDownMediaOnPause=1
+BREWSoundStartDelay=2000
+MediaInitTime=2000
+ResumeDelay=2000
+BREWExitOnClamshell=1
+
+#Motorola V750 (8169)
+BREWSoundStartDelay=2000
+MediaInitTime=2000
+ResumeDelay=2000
+BREWExitOnClamshell=1
+BREWDoNotShutDownMediaOnPause=1
+
+#LG VX9800
+{ID=BREW 1072}
+NoMPEG4=1
+NoAlphaKeyUp=1
+{ID=BREW 1111}
+
+# The following devices have screens that can rotate
+# +90 and keyboard that then need to be rotated -90.
+# ??, Premier3, H001
+{ID=BREW 14019, 12022, 14027}
+KeyNumpadRotWithSurf=2
+KeyDpadRotWithSur=1
+
+#LG VX9900
+{ID=BREW 1145}
+VideoOffsetY=12
+BREWSoundStartDelay=2000
+MediaInitTime=2000
+ResumeDelay=2000
+BREWExitOnClamshell=1
+mpi=1
+SoundYield=0
+SoundShutdownDelay=0
+
+# LG VX8300
+{ID=BREW 1118}
+CamCustomWidth=160
+CamCustomHeight=120
+BREWDoNotShutDownMediaOnPause=1
+
+#LG VX8500
+{ID=BREW 1136}
+VideoOffsetY=12
+FrameCallback=0
+DisableCamera=1
+
+#LG VX8550
+{ID=BREW 1198}
+SoundYield=1
+MediaInitTime=10
+DisableCamera=1
+
+#LG VX8600
+{ID=BREW 1143}
+CamCustomWidth=160
+CamCustomHeight=120
+
+#LG VX8700
+{ID=BREW 1174}
+DisableCamera=1
+DoNotBackgroundOnStop=1
+
+#LG VX8800
+{ID=BREW 1206}
+DoNotBackgroundOnStop=1
+SoundYield=1
+SoundYieldTime=75
+SoundShutdownDelay=100
+BREWDoNotShutDownMediaOnPause=1
+
+#LG VX9400
+{ID=BREW 1146}
+SoundYield=1
+DisableCamera=1
+WinMobAudioSupportAAC=0
+WinMobAudioSupportQCP=0
+
+#LG VX11000
+{ID=BREW 1291}
+BREWRotateScreenOnKeyguard=1
+BREWKeyAvailObeysKeyguard=1
+BREWDoNotShutDownMediaOnPause=1
+
+#LG VX9600
+{ID=BREW 600,1274}
+BREWKeyAvailObeysQwertyState=1
+#Map ascii chars back to their original key
+BREWAsciiKeyMap96=1
+BREWAsciiKeyMap47=3
+BREWAsciiKeyMap36=4
+BREWAsciiKeyMap37=5
+BREWAsciiKeyMap94=6
+BREWAsciiKeyMap38=7
+BREWAsciiKeyMap43=8
+BREWAsciiKeyMap40=9
+BREWAsciiKeyMap41=0
+BREWAsciiKeyMap95=Minus
+BREWAsciiKeyMap123=R
+BREWAsciiKeyMap125=T
+BREWAsciiKeyMap91=Y
+BREWAsciiKeyMap93=U
+BREWAsciiKeyMap61=I
+BREWAsciiKeyMap42=O
+BREWAsciiKeyMap35=P
+BREWAsciiKeyMap34=Comma
+BREWAsciiKeyMap92=D
+BREWAsciiKeyMap124=F
+BREWAsciiKeyMap126=G
+BREWAsciiKeyMap60=H
+BREWAsciiKeyMap62=J
+BREWAsciiKeyMap58=K
+BREWAsciiKeyMap59=L
+BREWAsciiKeyMap39=Period
+BREWAsciiKeyMap33=N
+BREWAsciiKeyMap63=M
+BREWUseSCRRotation=1 #Setting this will make it auto-rotate according to accelerometer
+BREWLandscapeRotation=3
+BREWPortraitRotation=0
+BREWKeyForceAlpha=1
+
+#Nokia 6305i
+{ID=BREW 34004}
+# This device will stall for a
+# long period if resync is attempted.
+ResyncSoundOnIODelay=0
+
+#Samsung U450
+{ID=BREW 2367}
+BREWDontSuspendOnKeyguard=1
+BREWRecreateBitmapOnRotate=1
+BREWUseSCRRotation=1
+BREWLandscapeRotation=0
+BREWPortraitRotation=0
+BREWKeyAvailObeysKeyguard=1
+BREWKeyForceAlpha=1
+
+#Samsung U700
+{ID=BREW 2229}
+DoNotBackgroundOnStop=1
+mpi=1
+MediaShutdownTime=10000
+MediaInitTime=1000
+
+#Samsung U750
+{ID=BREW 2347}
+mpi=1
+BREWSoundStartDelay=2000
+MediaInitTime=2000
+ResumeDelay=2000
+BREWDoNotShutDownMediaOnPause=1
+BREWExitOnClamshell=1
+BREWRecreateBitmapOnRotate=1
+SuspendOnSMS=1
+
+#Samsung A930
+{ID=BREW 2143}
+DoNotBackgroundOnStop=1
+ResumeDelay=2000
+
+#Samsung A950 (2107), U620 (2170)
+{ID=BREW 2107, 2170}
+DisableCamera=1
+
+#Samsung SCH-U740
+{ID=BREW 2186}
+ResumeDelay=2000
+
+#Samsung A990
+{ID=BREW 2154}
+ForceSpeaker=1
+DisableCamera=1
+
+#Samsung Z630
+{ID=BREW 2191}
+FrameCallback=0
+DisableSound=1
+
+#Samsung U960/rogue
+{ID=BREW 2352}
+BREWDontSuspendOnKeyguard=1
+BREWKeyAvailObeysKeyguard=1
+BREWUseSCRRotation=1
+KeyAbsOk2=Enter
+pfy=1	#required for gl
+
+#Samsung U940
+{ID=BREW 2270}
+BREWKeyMap1=P #0
+BREWKeyMap2=Q #1
+BREWKeyMap3=W #2
+BREWKeyMap4=E #3
+BREWKeyMap5=R #4
+BREWKeyMap6=T #5
+BREWKeyMap7=Y #6
+BREWKeyMap8=U #7
+BREWKeyMap9=I #8
+BREWKeyMap10=O #9
+BREWAsciiKeyMap64=A #@
+BREWAsciiKeyMap63=S #?
+BREWAsciiKeyMap33=D #!
+BREWAsciiKeyMap45=F #-
+BREWAsciiKeyMap95=G #_
+BREWAsciiKeyMap38=H #&
+BREWAsciiKeyMap44=J #'
+BREWAsciiKeyMap39=K #'
+
+BREWAsciiKeyMap43=Z #+
+BREWAsciiKeyMap42=X #*
+BREWAsciiKeyMap35=C ##
+BREWAsciiKeyMap47=V #/
+BREWAsciiKeyMap58=B #:
+
+BREWKeyMap17=L #Up
+BREWKeyMap18=M #Down
+BREWKeyMap19=N #Left
+BREWKeyMap20=Period #Right
+
+KeyAbsLeft=N
+KeyAbsUp=L
+KeyAbsRight=Period
+KeyAbsDown=M
+
+BREWKeyAvailObeysKeyguard=1
+BREWKeyForceAlpha=1
+BREWDoNotCallVolumeChangeOnVolKeys=1
+
+#Samsung
+{ID=BREW 2000-2999}
+pfy=2
+
+#Kyocera
+# KX18
+{ID=BREW 5077}
+SliderCloseIsPgDn=1
+
+#U540
+{ID=BREW 2197}
+maxkeypress=2
+
+#G'zOne Type-S
+{ID=BREW 14010}
+CamCustomWidth=160
+CamCustomHeight=120
+DisableSound=1
+
+#G'zOne Type-V
+{ID=BREW 14006}
+DisableCamera=1
+DoNotBackgroundOnStop=1
+
+#Amoi 8512
+{ID=BREW 131004}
+ResumeDelay=2000
+MediaShutdownTime=1000
+MediaInitTime=10
+SuspendOnSMS=1
+
+#Sharp W41SH
+{ID=BREW 4004}
+DisableCamera=1
+
+#Sharp W51SH
+{ID=BREW 4005}
+DisableCamera=1
+
+#Toshiba DRAPE (13022), W47T (13023), A5523T (13025)
+{ID=BREW 13022, 13023, 13025}
+DisableCamera=1
+
+#Toshiba W56T
+{ID=BREW 13033}
+
+#Hitachi W43H
+{ID=BREW 10005}
+CamSetupDelay=0
+
+#Sony W62S
+{ID=BREW 12018}
+AudioVolZeroOffset=10
+DisableGL=1
+
+#Zeebo ram check is unreliable
+{ID=BREW 160000}
+MemTooSmallSkipCheck=1
+
+{ID=LINUX "Samsung TV"}
+DisablePointer=1
+
+
+{ID=LINUX "Zii Labs S5"}
+KeyHasAlphaKeys=0
+KeyHasDirnKeys=0
+KeyHasKeypad=0
+
+{OS=LINUX}
+[GL]
+EGL_DEPTH_SIZE=24
+[S3E]
+
+{OS=WEBOS}
+[GX]
+GlesFrameBuffNoAlpha=0
+GlesFinishOnFboBind=1
+[S3E]
+#DispBright=10
+
+{ID=ANDROID "Emulator"}
+DisableSound=1
+
+{ID=ANDROID "HTC Dream", "T-Mobile G1", "HTC Magic", "T-Mobile myTouch 3G", "HTC Hero", "T-Mobile G2 Touch" }
+AndroidPointEventWaitTime=16
+
+{ID=ANDROID "SHW-M290K"}
+KeyHasDirnKeys=0
+
+{ID=ANDROID "HTC Hero", "T-Mobile G2 Touch" }
+AndroidPointMultiEnable=1
+
+{ID=ANDROID "Eris" }
+AndroidPointMultiEnable=1
+
+{ID=ANDROID "Nexus One"}
+WinMobAudioSupportAAC=0
+WinMobAudioSupportAACPLUS=0
+WinMobAudioSupportMP4=1
+AndroidKeyHasBackLeft=1
+PointCapTouchArea=1
+
+{ID=ANDROID "Nexus S"}
+AndroidKeyHasBackLeft=1
+
+{ID=ANDROID "SKY IM-A630K"}
+KeyHasDirnKeys=0
+
+{ID=ANDROID "Galaxy I7500"}
+KeyHasDirnKeys=1
+
+{ID=ANDROID "Droid", "Milestone"}
+[GX]
+GlesDepthBuffFixedPoint=1
+[S3E]
+AndroidIgnoreResizeWhilePaused=1
+AndroidKeyHasBackLeft=1
+
+{ID=ANDROID "DROID2"}
+[GX]
+GlesDepthBuffFixedPoint=1
+[S3E]
+
+{OS=ANDROID}
+[GL]
+EGL_DEPTH_SIZE=16
+EGLTerminateOnSuspend=1
+[S3E]
+SysGlesSuspendWithApp=1
+
+#MotoQ Verizon
+{ID=WINMOBILE "MotoQ"}
+AudioVolDefault=25
+SoundVolDefault=25
+VideoVolDefault=25
+WinMobKeyType=OverlapAlphaNumeric
+WinMobAudioSupportMIDI=0
+
+#MotoQ 9h
+{ID=WINMOBILE "MotoQ Norman"}
+WinMobKeyType=OverlapAlphaNumeric
+WinMobAudioSupportMIDI=0
+WinMobSoundSupportPlayPos=0
+
+#MotoQ 9m/c - Different number positions to Q9h & odd OEM key id behaviour
+{ID=WINMOBILE "MotoQ9c"}
+WinMobKeyType=OverlapAlphaNumeric
+WinMobKeyBrokenNumberScanCodes=1
+WinMobAudioSupportMIDI=0
+
+{ID=WINMOBILE "MotoQ9m"}
+WinMobKeyType=OverlapAlphaNumeric
+WinMobKeyBrokenNumberScanCodes=1
+WinMobUseGDI=1
+
+{ID=WINMOBILE "SPH-i325"}
+WinMobKeyType=OverlapAlphaNumeric
+
+#SPV_C600 Orange
+{ID=WINMOBILE "SPV_C600"}
+WinMobKeyType=PhoneNumpad
+WinMobVideoSupportWindow=0
+
+#Qtek WIZA200
+{ID=WINMOBILE "WIZA200"}
+WinMobKeyType=Slider
+WinMobVideoSupportWindow=0
+KeyAbsGameB=Button1
+KeyAbsGameC=Button2
+
+#PANTECH C810
+{ID=WINMOBILE "PANTECH C810"}
+WinMobKeyType=Slider
+
+#PANTECH C820 (NB "PANTECH", not "PANTECH 820")
+{ID=WINMOBILE "PANTECH"}
+DisableGL=1 #Crashes opening GL lib
+
+#HTC SMT5800
+{ID=WINMOBILE "LIBR100"}
+WinMobKeyType=Slider
+
+#HTC S620
+{ID=WINMOBILE "T-Mobile Dash", "HTC-S620"}
+WinMobKeyType=OverlapAlphaNumeric
+WinMobKeyET9=1
+
+#HTC Dash 3G
+{ID=WINMOBILE "T-Mobile_Dash3G"}
+WinMobKeyType=OverlapAlphaNumeric
+WinMobKeyBrokenNumberScanCodes=4
+
+#HTC Hermes
+{ID=WINMOBILE "HERM200"}
+WinMobKeyType=Slider
+#KeyAbsGameB=Button1
+#KeyAbsGameC=Button2
+
+KeyAbsGameA=Button2
+KeyAbsGameB=Button1
+KeyAbsGameC=Button3
+KeyAbsGameD=Button6
+
+#HTC Touch Pro T7272 (aka P4600)
+{ID=WINMOBILE "HTC Touch Pro T7272", "HTC-P4600"}
+WinMobKeyType=Slider
+WinMobVolKeyIgnoreForUpDown=200
+WinMobSurfRestoreRegistryRot=1
+
+#LG GW820
+{ID=WINMOBILE "LGE-GW820"}
+WinMobKeyType=Slider
+WinMobVolKeyIgnoreForUpDown=220
+
+#HTC Titan
+{ID=WINMOBILE "TITA100"}
+WinMobKeyType=Slider
+#KeyAbsGameB=Button1
+#KeyAbsGameC=Button2
+
+KeyAbsGameA=Button2
+KeyAbsGameB=Button1
+KeyAbsGameC=Button3
+KeyAbsGameD=Button6
+
+#O2 XDA Flame
+{ID=WINMOBILE "CotullaCode XDA Flame"}
+GlesForceDllVersion=0x0101
+
+#Dell Axim X51v
+{ID=WINMOBILE "Dell Axim X51v"}
+WinMobKeyMapLskToApp=1
+WinMobKeyMapRskToApp=4
+WinMobKeyType=ButtonsOnly
+KeyAbsGameB=Button2
+KeyAbsGameC=Button3
+WinMobAudioSupportMIDI=0
+WinMobHotkeyDisable=1
+
+# NVidia APX_2500
+{ID=WINMOBILE "APX_2500"}
+#disablesound=1
+SimulGles1Lib1="libEGL.dll"
+SimulGles1Lib2="libGLESv1_CM.dll"
+#SimulGles1Lib3="libGLESv2_CM.dll"
+SimulGles2Lib1="libEGL.dll"
+SimulGles2Lib2="libGLESv2.dll"
+#SimulGles2Lib3="libGLESv1_CM.dll"
+WinMobEglNoError=1
+
+#Mio P350
+{ID=WINMOBILE "Mio P350"}
+WinMobKeyType=ButtonsOnly
+WinMobAudioSupportMIDI=0
+
+# Palm Treo 800
+{ID=WINMOBILE "Palm Treo 800"}
+WinMobAudioSupportMIDI=0
+
+#Samsung SCH-i760
+{ID=WINMOBILE "SAMSUNG SCH-i760"}
+WinMobKeyType=Slider
+WinMobSpellDisable=1
+
+{ID=WINMOBILE "SAMSUNG SCH-i770"}
+WinMobKeyType=OverlapAlphaNumeric
+WinMobKeyBrokenNumberScanCodes=2
+
+#Samsung SGH-i780
+{ID=WINMOBILE "SGH-i780"}
+WinMobAudioSupportMIDI=0
+
+#Samsung SGH-i907
+{ID=WINMOBILE "SAMSUNG SGH-i907"}
+WinMobSoundSupportPlayPos=0
+DisableVibra=1 #Vibrate controls keypad LED instead of vibra motor
+
+#HTC Touch Duo
+{ID=WINMOBILE "NIKI100"}
+WinMobKeyType=PhoneNumpad
+WinMobSpellDisable=2
+
+#HTC 8925
+{ID=WINMOBILE "Kaiser"}
+WinMobKeyType=Slider
+
+#HTC P3470 (Pharos)
+{ID=WINMOBILE "PHAR10000"}
+WinMobUseGDI=1
+
+#HTC Touch Diamond P3700
+{ID=WINMOBILE "HTC Touch Diamond P3700"}
+WinMobSockNetworkSkipSearch=1
+
+#HTC Touch Diamond 2 T5353
+{ID=WINMOBILE "Touch Diamond2 T5353"}
+KeyHasDirnKeys=0
+WinMobVolKeyIgnoreForUpDown=1
+WinMobSurfRestoreRegistryRot=1
+
+#HTC Touch T8282 (HD)
+{ID=WINMOBILE "HTC Touch HD T8282", "HTC HD2 T8585"}
+KeyHasDirnKeys=0
+WinMobVolKeyIgnoreForUpDown=1
+
+#HTC HD mini T5555
+{ID=WINMOBILE "HTC HD mini T5555"}
+WinMobVideoFindDSFilterByCodec=1
+WinMobSurfRestoreRegistryRot=1
+
+#Sony X1 Xperia
+{ID=WINMOBILE "KOVS100", "X1i"}
+WinMobKeyType=Slider
+WinMobKeyMapLskToApp=2
+WinMobKeyMapRskToApp=3
+WinMobHotkeyDisable=1
+WinMobSockBindOK=1
+WinMobUseGDI=1
+
+#Toshiba TG01
+{ID=WINMOBILE "Toshiba TG01", "Toshiba TG01CV", 0xf25dcd12}
+WinMobUseGDI=2
+WinMobSurfToshibaAutoRotDisable=1
+WinMobVibraMotorID=3
+WinMobUseWindowModeInBackground=1
+WinMobDelaySuspendAfterResume=0
+WinMobForceHideTaskBar=1
+[GX]
+GlesSurfRecreateOnResize=1
+GlesSurfRecreateOnResume=1
+[S3E]
+
+#LG KS-20
+{ID=WINMOBILE "LGE"}
+DisableGL=1
+WinMobSleepInterval=200
+WinMobSleepAmount=3
+
+#LG KS-CT810
+{ID=WINMOBILE "LGE CT810"}
+WinMobSleepInterval=200
+WinMobSleepAmount=3
+WinMobSoundSupportPlayPos=0
+WinMobAudioSupportMIDI=0
+KeyHasDirnKeys=0
+
+{ID=WINMOBILE "SGH-i617"}
+WinMobKeyType=OverlapAlphaNumeric
+
+{ID=WINMOBILE "SGH-i607"}
+WinMobKeyType=OverlapAlphaNumeric
+WinMobAudioSupportMIDI=0
+
+{ID=WINMOBILE "SGH-i600"}
+WinMobKeyType=OverlapAlphaNumeric
+
+{ID=WINMOBILE "SGH-i640"}
+WinMobKeyType=OverlapAlphaNumeric
+WinMobAudioSupportMIDI=0
+
+# Samsung Omnia
+{ID=WINMOBILE "SGH-i900"}
+WinmobUseGDI=1
+WinMobUseSamsungAPI=1
+WinMobAccelSelfRot=1
+
+# Samsung Omnia i910
+{ID=WINMOBILE "SAMSUNG SCH-i910"}
+WinmobUseGDI=1
+WinMobUseSamsungAPI=1
+WinMobSurfBlankOnRot=1
+WinMobAccelSelfRot=1
+WinMobAudioSupportMIDI=0
+
+# Samsung GT-i8000L Omnia II
+{ID=WINMOBILE "GT-I8000"}
+WinmobUseGDI=1
+WinMobRedrawWindowsOnSuspend=0
+WinMobSockNetworkSkipSearch=1
+WinMobEglUseDC=1
+WinMobSockBindOK=1
+
+#GL1 doesn't work, GL2 kinda works, but requires special consideration, so default to doubled SW
+DisableGL=1
+SurfPixelDouble=1
+
+# HTC XV6800 - Framerate drops dramatically during vibrate (reported by external QA)
+{ID=WINMOBILE "TITA100"}
+DisableVibra=1
+WinmobUseGDI=1 # Prevent screen corruption on rotate in OS
+
+# HTC XV6900 - Framerate drops dramatically during vibrate (reported by external QA)
+{ID=WINMOBILE "VOGU100"}
+DisableVibra=1
+WinmobUseGDI=1 # Prevent screen corruption on rotate in OS
+
+# Palm Treo 800 - Vibra reported available, but does not work (reported by external QA)
+{ID=WINMOBILE "Palm Treo 800"}
+DisableVibra=1
+
+#Nokia 6680
+{ID=SYMBIAN 0x10200F99}
+SoundVolDefault=128
+
+# Nokia E63
+{ID=SYMBIAN 0x200025c3}
+KeyHasAlphaKeys=1
+KeyHasKeypad=1
+KeyHasDirnKeys=1
+
+#Nokia N81
+{ID=SYMBIAN 0x20002d83}
+DisableAccelerometer=1
+
+#Nokia N91
+{ID=SYMBIAN 0x200005FC}
+KeyGuardInvalids=1
+
+#Nokia N93
+{ID=SYMBIAN 0x20000600}
+SymbianSoundLatency=100
+
+#Nokia N95
+{ID=SYMBIAN 0x20002d84}
+SysOverrideArch=5 # ARM6
+
+#Samsung i560
+{ID=SYMBIAN 0x2000C51C}
+SymbianSoundLatency=100
+WinMobAudioSupportAAC=0
+WinMobAudioSupportAACPLUS=0
+
+#Samsung i450
+{ID=SYMBIAN 0x2000A677}
+SymbianSoundLatency=100
+
+#Samsung i550
+{ID=SYMBIAN 0x2000a678}
+SymbianSoundLatency=100
+
+#Samsung i520
+{ID=SYMBIAN 0X20003abd}
+SymbianSoundLatency=100
+
+#Nokia N96
+{ID=SYMBIAN 0x20002D82}
+SymbianSoundLatency=100
+
+#Nokia N97
+{ID=SYMBIAN 0x20014ddd}
+SymbianKeyAddCharGeneric=1
+SymbianSurfDirectScreenRot=1
+
+#Nokia N70
+{ID=SYMBIAN 0x10200f9a}
+SymbianSurfBpp24=1
+
+#Nokia 3250
+{ID=SYMBIAN 0x200005f8}
+# just testing ## SymbianSurfBpp24=1
+
+{OS=UIQ}
+DisableGL=1	#Disable GL due to hang on screensaver
+SymbianVideoDisable=1	#Disable video dued to the media player API not implemented on device
+
+#Motorola Z8
+{ID=UIQ 0x1027400D}
+
+#Motorola Z10
+{ID=UIQ 0x1027400C}
+
+#Sony Ericsson M600
+{ID=UIQ 0x10274BF9}
+KeyUseKeypadMapping=0 #Stop simulation of numeric keys with alpha keys.
+KeyHasAlphaKeys=1
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+
+#Sony Ericsson P990
+{ID=UIQ 0x1020E285}
+KeyUseKeypadMapping=0 #Stop simulation of numeric keys with alpha keys.
+KeyHasAlphaKeys=1
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+
+#Sony Ericsson W950
+{ID=UIQ 0x10274BFA}
+KeyHasDirnKeys=0
+
+#Sony Ericsson P1i
+{ID=UIQ 0x20002E69}
+KeyUseKeypadMapping=0 #Stop simulation of numeric keys with alpha keys.
+KeyHasAlphaKeys=1
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+
+#Sony Ericsson Satio U1
+{ID=SYMBIAN 0x2001f0a1}
+KeyHasAlphaKeys=0
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+AudioSoundMixDisable=1
+
+#Sony Ericsson Vivaz U5
+{ID=SYMBIAN 0x20024eec}
+KeyHasAlphaKeys=0
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+AudioSoundMixDisable=1
+
+#Nokia N8 (Vasco) and family
+{OS=SYMBIAN >= 9.5}
+KeyHasAlphaKeys=0
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+SymbianGlesRecreateWindow=1
+SymbianSoundResetThreadOnAudioPlay=1
+[GL]
+EGLTerminateOnSuspend=1
+[S3E]
+SysGlesSuspendWithApp=1
+
+{OS=SYMBIAN}
+DoubleBuffer=1
+
+#Nokia 5800
+{ID=SYMBIAN 0x2000da56}
+KeyHasAlphaKeys=0
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+SymbianAfterInterval=150
+SymbianSurfDirectScreenRot=1
+
+#Samsung i8910
+{ID=SYMBIAN 0x2000c520}
+KeyHasAlphaKeys=0
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+DispFixRot=1
+AccelScaleFactor=120
+SymbianSurfGlesBlankOnSuspend=1
+SymbianSoundResetThreadOnAudioPlay=1
+[gx]
+GlesFinishOnFboBind=1
+[S3E]
+
+#SE New S60
+{ID=SYMBIAN 0x101f408b}
+KeyHasAlphaKeys=0
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+
+#SE Satio
+{ID=SYMBIAN 0x2001f0a1}
+KeyHasAlphaKeys=0
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+SymbianSurfGlesBlankOnTerminate=1
+SymbianSurfGlesBlankOnSuspend=1
+SymbianOverideDeviceRot=1
+
+#SE Kurara
+{ID=SYMBIAN 0x20024eec}
+KeyHasAlphaKeys=0
+KeyHasKeypad=0
+KeyHasDirnKeys=0
+SymbianSurfGlesBlankOnTerminate=1
+SymbianSurfGlesBlankOnSuspend=1
+SymbianOverideDeviceRot=1
+
+[GL]
+EGL_BUFFER_SIZE=16
+EGL_DEPTH_SIZE=16
+[S3E]
+
+#HP TouchPad
+{ID=WEBOS 0x259}
+AccelRot=1
+
+# Uncomment if you want to specify PIXMAP for your surface
+# (default is WINDOW)
+# EGL_SURFACE_TYPE=2
+
+{OS=WIPI}
+[GL]
+EGL_RED_SIZE=5
+EGL_GREEN_SIZE=5
+EGL_BLUE_SIZE=5
+EGL_ALPHA_SIZE=-1
+EGL_DEPTH_SIZE=16
+EGL_STENCIL_SIZE=1
+EGL_SURFACE_TYPE=2
+[S3E]
+
+{OS=BADA}
+[S3E]
+BadaSilentModePromptEnable=1
+BadaSilentModePrompt="Enable sound in Silent mode?"
+BadaSilentModePrompt_fra="Activer le son en mode silencieux?"
+BadaVolKeysRotWithSurf=1
+SoundOutputFreq=11025
+#bada devices are loud
+AudioVolScale=70
+VideoVolScale=70
+SoundVolScale=70
+#This seems to be needed for GL init in Bada
+[GL]
+EGL_ALPHA_SIZE=8
+{}
+
+{OS=BADA == 1.1}
+[S3E]
+BadaDevYieldDefaultTime=5
+{}
+
+# Samsung Wave
+{ID=BADA 0x2d016484}
+[S3E]
+AudioVolDefault=50
+SoundVolDefault=50
+AccelShiftX=50
+AccelShiftY=-100
+AccelShiftZ=0
+
+# Samsung Wave 2
+{ID=BADA 0x2d0164e1}
+[S3E]
+AudioVolDefault=50
+SoundVolDefault=50
+AccelShiftX=75
+AccelShiftY=-85
+AccelShiftZ=0
+
+# LGTV
+{ID=LINUX "LG TV"}
+[GX]
+DrawCursor=1
+Rasterisation=HW
+Transform=HW
+Lighting=HW
+
+# Asus eee Transformer TF101
+# has problems with FBO surfaces
+{ID=ANDROID "Transformer TF101"}
+[GX]
+DisableFBOSurface=1
+
+# seem to have problems with fast stack switch on multicore machines,
+# so disabling for now.
+{ID=ANDROID "MZ604"}
+[S3E]
+SysStackSwitchFastDisable=1
+
+{ID=ANDROID "GT-I9100"}
+[S3E]
+SysStackSwitchFastDisable=1
+
+{ID=ANDROID "LG-P990"}
+[S3E]
+SysStackSwitchFastDisable=1
+
+{ID=IPHONE "iPad2,1"}
+[s3e]
+SysStackSwitchFastDisable=1
+
+{ID=ANDROID "GT-P7510"}
+[s3e]
+SysStackSwitchFastDisable=1
+
+{OS=ANDROID >= 14.0}
+[S3E]
+SysFastLockDisable=1
+
+# Must reset before end of file
+{ID=ANY}
+{CLASS=ANY}
+
+[TRACE]
+IWCRT_VERBOSE=0
+# -- END S3E.ICF --
