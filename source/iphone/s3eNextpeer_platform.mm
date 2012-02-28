@@ -126,6 +126,14 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
     }
 }
 
+-(void)nextpeerDashboardDidReturnToGame
+{
+    NSLog(@"[s3eNextpeer] - called nextpeerDashboardDidReturnToGame");
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_RETURN_TO_GAME)) {
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_RETURN_TO_GAME);
+    }
+}
+
 @end
 
 
@@ -154,7 +162,7 @@ void s3eNextpeerTerminate_platform()
     // Add any platform-specific termination code here
 }
 
-void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey)
+void s3eNextpeerInitWithProductKey(const char* productKey)
 {
     NSString* aProductKey = [NSString stringWithUTF8String:productKey];
     

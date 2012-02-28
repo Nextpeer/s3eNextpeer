@@ -24,10 +24,10 @@ extern void s3eNextpeerTerminate();
 // code is oftern build standalone, outside the main loader build.
 #if defined I3D_OS_IPHONE || defined I3D_OS_OSX || defined I3D_OS_LINUX || defined I3D_OS_WINDOWS
 
-static void s3eNextpeerInitWithProductKeyAndDelegatesContainer_wrap(const char* productKey)
+static void s3eNextpeerInitWithProductKey_wrap(const char* productKey)
 {
-    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerInitWithProductKeyAndDelegatesContainer"));
-    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerInitWithProductKeyAndDelegatesContainer, 1, productKey);
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerInitWithProductKey"));
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerInitWithProductKey, 1, productKey);
 }
 
 static void s3eNextpeerLaunchDashboard_wrap()
@@ -48,7 +48,7 @@ static void s3eNextpeerShutDown_wrap()
     s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerShutDown, 0);
 }
 
-#define s3eNextpeerInitWithProductKeyAndDelegatesContainer s3eNextpeerInitWithProductKeyAndDelegatesContainer_wrap
+#define s3eNextpeerInitWithProductKey s3eNextpeerInitWithProductKey_wrap
 #define s3eNextpeerLaunchDashboard s3eNextpeerLaunchDashboard_wrap
 #define s3eNextpeerDismissDashboard s3eNextpeerDismissDashboard_wrap
 #define s3eNextpeerShutDown s3eNextpeerShutDown_wrap
@@ -59,7 +59,7 @@ void s3eNextpeerRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
     void* funcPtrs[9];
-    funcPtrs[0] = (void*)s3eNextpeerInitWithProductKeyAndDelegatesContainer;
+    funcPtrs[0] = (void*)s3eNextpeerInitWithProductKey;
     funcPtrs[1] = (void*)s3eNextpeerLaunchDashboard;
     funcPtrs[2] = (void*)s3eNextpeerDismissDashboard;
     funcPtrs[3] = (void*)s3eNextpeerShutDown;

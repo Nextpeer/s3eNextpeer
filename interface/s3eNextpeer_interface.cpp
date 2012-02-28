@@ -11,7 +11,7 @@
 /**
  * Definitions for functions types passed to/from s3eExt interface
  */
-typedef       void(*s3eNextpeerInitWithProductKeyAndDelegatesContainer_t)(const char* productKey);
+typedef       void(*s3eNextpeerInitWithProductKey_t)(const char* productKey);
 typedef       void(*s3eNextpeerLaunchDashboard_t)();
 typedef       void(*s3eNextpeerDismissDashboard_t)();
 typedef       void(*s3eNextpeerShutDown_t)();
@@ -26,7 +26,7 @@ typedef  s3eResult(*s3eNextpeerUnRegisterCallback_t)(s3eNextperCallback cbid, s3
  */
 typedef struct s3eNextpeerFuncs
 {
-    s3eNextpeerInitWithProductKeyAndDelegatesContainer_t m_s3eNextpeerInitWithProductKeyAndDelegatesContainer;
+    s3eNextpeerInitWithProductKey_t m_s3eNextpeerInitWithProductKey;
     s3eNextpeerLaunchDashboard_t m_s3eNextpeerLaunchDashboard;
     s3eNextpeerDismissDashboard_t m_s3eNextpeerDismissDashboard;
     s3eNextpeerShutDown_t m_s3eNextpeerShutDown;
@@ -79,14 +79,14 @@ s3eBool s3eNextpeerAvailable()
     return g_GotExt ? S3E_TRUE : S3E_FALSE;
 }
 
-void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey)
+void s3eNextpeerInitWithProductKey(const char* productKey)
 {
-    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[0] func: s3eNextpeerInitWithProductKeyAndDelegatesContainer"));
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[0] func: s3eNextpeerInitWithProductKey"));
 
     if (!_extLoad())
         return;
 
-    g_Ext.m_s3eNextpeerInitWithProductKeyAndDelegatesContainer(productKey);
+    g_Ext.m_s3eNextpeerInitWithProductKey(productKey);
 }
 
 void s3eNextpeerLaunchDashboard()

@@ -31,6 +31,7 @@ typedef enum s3eNextperCallback
     S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_APPEAR,
     S3E_NEXTPEER_CALLBACK_DASHBOARD_WILL_DISAPPEAR,
     S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_DISAPPEAR,
+    S3E_NEXTPEER_CALLBACK_DASHBOARD_RETURN_TO_GAME,
     S3E_NEXTPEER_CALLBACK_MAX
 } s3eNextperCallback;
 
@@ -53,7 +54,7 @@ S3E_BEGIN_C_DECL
  */
 s3eBool s3eNextpeerAvailable();
 
-void s3eNextpeerInitWithProductKeyAndDelegatesContainer(const char* productKey);
+void s3eNextpeerInitWithProductKey(const char* productKey);
 
 void s3eNextpeerLaunchDashboard();
 
