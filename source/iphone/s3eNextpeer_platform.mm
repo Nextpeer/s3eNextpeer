@@ -54,6 +54,15 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
 
 @implementation S3ENextpeerDelegate
 
+-(void)_convertTournamentContainer:(NPTournamentStartDataContainer *)tournamentContainer toDataStruct:(s3eNextpeerTournamentStartData*)dataStruct
+{
+    int dlen = strlen([tournamentContainer.tournamentUuid UTF8String]) + 1;
+    dataStruct->m_tournamentUuid = (char*)s3eEdkMallocOS(sizeof(char) * dlen);
+    
+    strlcpy(dataStruct->m_tournamentUuid, [tournamentContainer.tournamentUuid UTF8String], S3E_NEXTPEER_STRING_MAX_1);
+    dataStruct->m_tournamentSeconds = tournamentContainer.tournamentTimeSeconds;
+}
+
 -(void)nextpeerDidTournamentStartWithDetails:(NPTournamentStartDataContainer *)tournamentContainer
 {
     NSLog(@"[s3eNextpeer] - called nextpeerDidTournamentStartWithDetails with id %@ and time %d", tournamentContainer.tournamentUuid, tournamentContainer.tournamentTimeSeconds);
@@ -66,13 +75,7 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
     
     // Convert the container we got into a struct and then send it along to the callback function
     s3eNextpeerTournamentStartData dataStruct;
-    int dlen = strlen([tournamentContainer.tournamentUuid UTF8String]) + 1;
-    dataStruct.m_tournamentUuid = (char*)s3eEdkMallocOS(sizeof(char) * dlen);
-    
-    NSLog(@"[s3eNextpeer] dataStruct address is 0x%x", dataStruct);
-    
-    strlcpy(dataStruct.m_tournamentUuid, [tournamentContainer.tournamentUuid UTF8String], S3E_NEXTPEER_STRING_MAX_1);
-    dataStruct.m_tournamentSeconds = tournamentContainer.tournamentTimeSeconds;
+    [self _convertTournamentContainer:tournamentContainer toDataStruct:&dataStruct];
     
     NSLog(@"[s3eNextpeer] dataStruct contains id %s and time %d", dataStruct.m_tournamentUuid, dataStruct.m_tournamentSeconds);
 
@@ -131,6 +134,18 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
     NSLog(@"[s3eNextpeer] - called nextpeerDashboardDidReturnToGame");
     if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_RETURN_TO_GAME)) {
         s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DASHBOARD_RETURN_TO_GAME);
+    }
+}
+
+-(void)nextpeerWillTournamentStartWithDetails:(NPTournamentStartDataContainer *)tournamentContainer
+{
+    NSLog(@"[s3eNextpeer] - called nextpeerWillTournamentStartWithDetails");
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_WILL_TOURNAMENT_START)) {   
+        s3eNextpeerTournamentStartData startData;
+        [self _convertTournamentContainer:tournamentContainer toDataStruct:&startData];
+        
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_WILL_TOURNAMENT_START, &startData, 
+                               sizeof(s3eNextpeerTournamentStartData), NULL, S3E_FALSE, &s3eGCReleaseTournamentStartData, NULL);
     }
 }
 
@@ -216,4 +231,9 @@ s3eBool s3eNextpeerIsCurrentlyInTournament()
 uint32 s3eNextpeerTimeLeftInTournament()
 {
     return [Nextpeer timeLeftInTourament];
+}
+
+void s3eNextpeerReportForfeitForCurrentTournament()
+{
+    [Nextpeer reportForfeitForCurrentTournament];
 }

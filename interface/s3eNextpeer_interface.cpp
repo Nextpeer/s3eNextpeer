@@ -18,6 +18,7 @@ typedef       void(*s3eNextpeerShutDown_t)();
 typedef       void(*s3eNextpeerReportScoreForCurrentTournament_t)(uint32 score);
 typedef    s3eBool(*s3eNextpeerIsCurrentlyInTournament_t)();
 typedef     uint32(*s3eNextpeerTimeLeftInTournament_t)();
+typedef       void(*s3eNextpeerReportForfeitForCurrentTournament_t)();
 typedef  s3eResult(*s3eNextpeerRegisterCallback_t)(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 typedef  s3eResult(*s3eNextpeerUnRegisterCallback_t)(s3eNextperCallback cbid, s3eCallback fn);
 
@@ -33,6 +34,7 @@ typedef struct s3eNextpeerFuncs
     s3eNextpeerReportScoreForCurrentTournament_t m_s3eNextpeerReportScoreForCurrentTournament;
     s3eNextpeerIsCurrentlyInTournament_t m_s3eNextpeerIsCurrentlyInTournament;
     s3eNextpeerTimeLeftInTournament_t m_s3eNextpeerTimeLeftInTournament;
+    s3eNextpeerReportForfeitForCurrentTournament_t m_s3eNextpeerReportForfeitForCurrentTournament;
     s3eNextpeerRegisterCallback_t m_s3eNextpeerRegisterCallback;
     s3eNextpeerUnRegisterCallback_t m_s3eNextpeerUnRegisterCallback;
 } s3eNextpeerFuncs;
@@ -149,9 +151,19 @@ uint32 s3eNextpeerTimeLeftInTournament()
     return g_Ext.m_s3eNextpeerTimeLeftInTournament();
 }
 
+void s3eNextpeerReportForfeitForCurrentTournament()
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[7] func: s3eNextpeerReportForfeitForCurrentTournament"));
+
+    if (!_extLoad())
+        return;
+
+    g_Ext.m_s3eNextpeerReportForfeitForCurrentTournament();
+}
+
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData)
 {
-    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[7] func: s3eNextpeerRegisterCallback"));
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[8] func: s3eNextpeerRegisterCallback"));
 
     if (!_extLoad())
         return S3E_RESULT_SUCCESS;
@@ -161,7 +173,7 @@ s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, v
 
 s3eResult s3eNextpeerUnRegisterCallback(s3eNextperCallback cbid, s3eCallback fn)
 {
-    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[8] func: s3eNextpeerUnRegisterCallback"));
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer[9] func: s3eNextpeerUnRegisterCallback"));
 
     if (!_extLoad())
         return S3E_RESULT_SUCCESS;

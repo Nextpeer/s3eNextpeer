@@ -58,7 +58,7 @@ static void s3eNextpeerShutDown_wrap()
 void s3eNextpeerRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[9];
+    void* funcPtrs[10];
     funcPtrs[0] = (void*)s3eNextpeerInitWithProductKey;
     funcPtrs[1] = (void*)s3eNextpeerLaunchDashboard;
     funcPtrs[2] = (void*)s3eNextpeerDismissDashboard;
@@ -66,13 +66,14 @@ void s3eNextpeerRegisterExt()
     funcPtrs[4] = (void*)s3eNextpeerReportScoreForCurrentTournament;
     funcPtrs[5] = (void*)s3eNextpeerIsCurrentlyInTournament;
     funcPtrs[6] = (void*)s3eNextpeerTimeLeftInTournament;
-    funcPtrs[7] = (void*)s3eNextpeerRegisterCallback;
-    funcPtrs[8] = (void*)s3eNextpeerUnRegisterCallback;
+    funcPtrs[7] = (void*)s3eNextpeerReportForfeitForCurrentTournament;
+    funcPtrs[8] = (void*)s3eNextpeerRegisterCallback;
+    funcPtrs[9] = (void*)s3eNextpeerUnRegisterCallback;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[9] = { 0 };
+    int flags[10] = { 0 };
 
     /*
      * Register the extension

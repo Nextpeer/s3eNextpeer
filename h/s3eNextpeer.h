@@ -32,6 +32,7 @@ typedef enum s3eNextperCallback
     S3E_NEXTPEER_CALLBACK_DASHBOARD_WILL_DISAPPEAR,
     S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_DISAPPEAR,
     S3E_NEXTPEER_CALLBACK_DASHBOARD_RETURN_TO_GAME,
+    S3E_NEXTPEER_CALLBACK_WILL_TOURNAMENT_START,
     S3E_NEXTPEER_CALLBACK_MAX
 } s3eNextperCallback;
 
@@ -67,6 +68,8 @@ void s3eNextpeerReportScoreForCurrentTournament(uint32 score);
 s3eBool s3eNextpeerIsCurrentlyInTournament();
 
 uint32 s3eNextpeerTimeLeftInTournament();
+
+void s3eNextpeerReportForfeitForCurrentTournament();
 
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 
