@@ -33,6 +33,7 @@ typedef enum s3eNextperCallback
     S3E_NEXTPEER_CALLBACK_DASHBOARD_DID_DISAPPEAR,
     S3E_NEXTPEER_CALLBACK_DASHBOARD_RETURN_TO_GAME,
     S3E_NEXTPEER_CALLBACK_WILL_TOURNAMENT_START,
+    S3E_NEXTPEER_CALLBACK_DID_RECEIVE_CUSTOM_MESSAGE,
     S3E_NEXTPEER_CALLBACK_MAX
 } s3eNextperCallback;
 
@@ -46,6 +47,16 @@ typedef struct s3eNextpeerTournamentStartData {
 	char* m_tournamentUuid; // Tournament UUID
 	int m_tournamentSeconds; // Tournament time in seconds
 } s3eNextpeerTournamentStartData;
+
+/**
+ * Structure to hold custom message data for callbacks
+ * 
+ */
+typedef struct s3eNextpeerCustomMessageData {
+	char* m_playerName; // Sender's name
+	void* m_dataReceived; // Data being sent
+    uint32 m_dataReceivedLen; // Data length
+} s3eNextpeerCustomMessageData;
 // \cond HIDDEN_DEFINES
 S3E_BEGIN_C_DECL
 // \endcond
@@ -70,6 +81,8 @@ s3eBool s3eNextpeerIsCurrentlyInTournament();
 uint32 s3eNextpeerTimeLeftInTournament();
 
 void s3eNextpeerReportForfeitForCurrentTournament();
+
+void s3eNextpeerPushDataToOtherPlayers(const void* data, uint32 length);
 
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 

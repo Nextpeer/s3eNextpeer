@@ -42,6 +42,19 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
     }
 }
 
+static void s3eGCReleaseCustomMessageData(uint32 deviceId, int32 notification, void* systemData, void* instance, int32 returnCode, void* data)
+{
+    s3eNextpeerCustomMessageData* customMessageData = (s3eNextpeerCustomMessageData*)systemData;
+    if (customMessageData) {
+        if (customMessageData->m_playerName) {
+            s3eEdkFreeOS(customMessageData->m_playerName);
+        }
+        if (customMessageData->m_dataReceived) {
+            s3eEdkFreeOS(customMessageData->m_dataReceived);
+        }
+    }
+}
+
 
 /////////////////
 //// Delegates Implementation
@@ -149,6 +162,28 @@ static void s3eGCReleaseTournamentStartData(uint32 deviceId, int32 notification,
     }
 }
 
+-(void)nextpeerDidReceiveCustomMessage:(NPTournamentCustomMessageContainer *)message
+{
+    NSLog(@"[s3eNextpeer] - called nextpeerDidReceiveCustomMessage");
+    
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DID_RECEIVE_CUSTOM_MESSAGE)) {   
+        s3eNextpeerCustomMessageData messageData;
+        
+        // Copy the data over
+        int nameLen = strlen([message.playerName UTF8String]) + 1;
+        messageData.m_playerName = (char*)s3eEdkMallocOS(sizeof(char)*nameLen);
+        strlcpy(messageData.m_playerName, [message.playerName UTF8String], S3E_NEXTPEER_STRING_MAX_1);
+        
+        messageData.m_dataReceivedLen = [message.message length];
+        messageData.m_dataReceived = s3eEdkMallocOS(messageData.m_dataReceivedLen);
+        [message.message getBytes:messageData.m_dataReceived length:messageData.m_dataReceivedLen];
+        
+        // Call the callback
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DID_RECEIVE_CUSTOM_MESSAGE, &messageData, 
+                               sizeof(s3eNextpeerCustomMessageData), NULL, S3E_FALSE, &s3eGCReleaseCustomMessageData, NULL);
+    }
+}
+
 @end
 
 
@@ -236,4 +271,11 @@ uint32 s3eNextpeerTimeLeftInTournament()
 void s3eNextpeerReportForfeitForCurrentTournament()
 {
     [Nextpeer reportForfeitForCurrentTournament];
+}
+
+void s3eNextpeerPushDataToOtherPlayers(const void* data, uint32 length)
+{
+    NSData* aData = [NSData dataWithBytes:data length:length];
+    
+    [Nextpeer pushDataToOtherPlayers:aData];
 }
