@@ -52,6 +52,9 @@ static void s3eGCReleaseCustomMessageData(uint32 deviceId, int32 notification, v
         if (customMessageData->m_dataReceived) {
             s3eEdkFreeOS(customMessageData->m_dataReceived);
         }
+        if (customMessageData->m_playerImageData) {
+            s3eEdkFreeOS(customMessageData->m_playerImageData);
+        }
     }
 }
 
@@ -177,6 +180,22 @@ static void s3eGCReleaseCustomMessageData(uint32 deviceId, int32 notification, v
         messageData.m_dataReceivedLen = [message.message length];
         messageData.m_dataReceived = s3eEdkMallocOS(messageData.m_dataReceivedLen);
         [message.message getBytes:messageData.m_dataReceived length:messageData.m_dataReceivedLen];
+        
+        UIImage* senderImage = message.playerImage;
+        void* imageData = 0;
+        uint32 imageDataLen = 0;
+        
+        if (senderImage) {
+            NSData* senderImageData = UIImagePNGRepresentation(senderImage);
+            if (senderImageData) {
+                imageDataLen = [senderImageData length];
+                imageData = s3eEdkMallocOS(imageDataLen);
+                [senderImageData getBytes:imageData length:imageDataLen];
+            }
+        }
+
+        messageData.m_playerImageData = imageData;
+        messageData.m_playerImageDataLen = imageDataLen;
         
         // Call the callback
         s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DID_RECEIVE_CUSTOM_MESSAGE, &messageData, 

@@ -54,6 +54,8 @@ typedef struct s3eNextpeerTournamentStartData {
  */
 typedef struct s3eNextpeerCustomMessageData {
 	char* m_playerName; // Sender's name
+    void* m_playerImageData; // Sender's image data
+    uint32 m_playerImageDataLen; // Sender's image data length
 	void* m_dataReceived; // Data being sent
     uint32 m_dataReceivedLen; // Data length
 } s3eNextpeerCustomMessageData;
