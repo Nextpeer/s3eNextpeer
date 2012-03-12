@@ -298,3 +298,10 @@ void s3eNextpeerPushDataToOtherPlayers(const void* data, uint32 length)
     
     [Nextpeer pushDataToOtherPlayers:aData];
 }
+
+void s3eNextpeerPushNotificationToOtherPlayers(const char * notice)
+{
+    NSString* aNotice = [NSString stringWithUTF8String:notice];
+    [Nextpeer pushMessageToOtherPlayers:aNotice];
+}
+

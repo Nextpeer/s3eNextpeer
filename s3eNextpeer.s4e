@@ -76,6 +76,7 @@ s3eBool s3eNextpeerIsCurrentlyInTournament() 0
 uint32 s3eNextpeerTimeLeftInTournament() 0
 void s3eNextpeerReportForfeitForCurrentTournament() void
 void s3eNextpeerPushDataToOtherPlayers(const void* data, uint32 length) void
+void s3eNextpeerPushNotificationToOtherPlayers(const char * notice) void
 
 // Generic functions for meta usage
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData) S3E_RESULT_SUCCESS

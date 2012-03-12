@@ -86,6 +86,8 @@ void s3eNextpeerReportForfeitForCurrentTournament();
 
 void s3eNextpeerPushDataToOtherPlayers(const void* data, uint32 length);
 
+void s3eNextpeerPushNotificationToOtherPlayers(const char * notice);
+
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 
 s3eResult s3eNextpeerUnRegisterCallback(s3eNextperCallback cbid, s3eCallback fn);
