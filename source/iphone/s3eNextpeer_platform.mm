@@ -17,6 +17,9 @@
 #include "Nextpeer.h"
 #include "NextpeerDelegate.h"
 
+// Forward declarations
+static void s3eGCReleaseOpenURLData(uint32 deviceId, int32 notification, void* systemData, void* instance, int32 returnCode, void* data);
+
 /////////////////
 //// Generic Callback Methods
 /////////////////
@@ -29,6 +32,30 @@ s3eResult s3eNextpeerUnRegisterCallback(s3eNextperCallback cbid, s3eCallback fn)
     return s3eEdkCallbacksUnRegister(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_MAX, cbid, fn);
 }
 
+/////////////////
+//// openURL callback (from UIApplication)
+/////////////////
+
+static int32 s3eNextpeerOpenURLCallback(void* systemData, void* userData)
+{
+    NSLog(@"[s3eNextpeer] - handleOpenURL callback invoked with URL: %@", (NSURL*)systemData);
+    
+    // Invoke an app callback
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_OPEN_URL_CALLED)) {
+
+        NSLog(@"[s3eNextpeer] - handleOpenURL app callback found will invoke it");
+        
+        NSURL* url = (NSURL*)systemData;
+        NSString* urlStr = [url description];
+        int len = strlen([urlStr UTF8String]) + 1;
+        char* buf = (char*)s3eEdkMallocOS(sizeof(char) * len);
+        strlcpy(buf, [urlStr UTF8String], S3E_NEXTPEER_STRING_MAX_2);
+        
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_OPEN_URL_CALLED, buf, len, NULL, S3E_FALSE, &s3eGCReleaseOpenURLData, NULL);
+    }
+    
+    return 0;
+}
 
 /////////////////
 //// Deallocation callbacks
@@ -58,6 +85,13 @@ static void s3eGCReleaseCustomMessageData(uint32 deviceId, int32 notification, v
     }
 }
 
+static void s3eGCReleaseOpenURLData(uint32 deviceId, int32 notification, void* systemData, void* instance, int32 returnCode, void* data)
+{
+    char* url = (char*)systemData;
+    if (url) {
+        s3eEdkFreeOS(url);
+    }
+}
 
 /////////////////
 //// Delegates Implementation
@@ -305,3 +339,19 @@ void s3eNextpeerPushNotificationToOtherPlayers(const char * notice)
     [Nextpeer pushMessageToOtherPlayers:aNotice];
 }
 
+void s3eNextpeerHandleOpenURL(void* url)
+{
+    if (!url) {
+        return;
+    }
+    
+    NSURL* aURL = (NSURL*)url;
+    [Nextpeer handleOpenURL:aURL];
+}
+
+void s3eNextpeerRegisterOpenURLCallback()
+{
+    // Init a callback for handleOpenURL
+    NSLog(@"[s3eNextpeer] - registering openURL callback function");
+    s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_HANDLEOPENURL, s3eNextpeerOpenURLCallback, NULL, S3E_FALSE);   
+}

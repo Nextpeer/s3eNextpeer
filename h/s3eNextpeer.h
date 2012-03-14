@@ -19,6 +19,7 @@
 #include <s3eTypes.h>
 
 #define S3E_NEXTPEER_STRING_MAX_1 50
+#define S3E_NEXTPEER_STRING_MAX_2 150
 
 /**
  * Enumeration for various callbacks in the s3eNextpeer extension
@@ -34,6 +35,7 @@ typedef enum s3eNextperCallback
     S3E_NEXTPEER_CALLBACK_DASHBOARD_RETURN_TO_GAME,
     S3E_NEXTPEER_CALLBACK_WILL_TOURNAMENT_START,
     S3E_NEXTPEER_CALLBACK_DID_RECEIVE_CUSTOM_MESSAGE,
+    S3E_NEXTPEER_CALLBACK_OPEN_URL_CALLED,
     S3E_NEXTPEER_CALLBACK_MAX
 } s3eNextperCallback;
 
@@ -87,6 +89,10 @@ void s3eNextpeerReportForfeitForCurrentTournament();
 void s3eNextpeerPushDataToOtherPlayers(const void* data, uint32 length);
 
 void s3eNextpeerPushNotificationToOtherPlayers(const char * notice);
+
+void s3eNextpeerHandleOpenURL(void* url);
+
+void s3eNextpeerRegisterOpenURLCallback();
 
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 
