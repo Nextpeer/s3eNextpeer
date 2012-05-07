@@ -39,6 +39,7 @@ typedef enum s3eNextperCallback
     S3E_NEXTPEER_CALLBACK_WILL_TOURNAMENT_START,
     S3E_NEXTPEER_CALLBACK_DID_RECEIVE_CUSTOM_MESSAGE,
     S3E_NEXTPEER_CALLBACK_OPEN_URL_CALLED,
+    S3E_NEXTPEER_CALLBACK_VCURRENCY_ADD_CURRENCY_AMOUNT,
     S3E_NEXTPEER_CALLBACK_MAX
 } s3eNextperCallback;
 
@@ -71,6 +72,7 @@ functions:
 // Nextpeer related functions
 void s3eNextpeerInitWithProductKey(const char* productKey) void run_on_os_thread
 void s3eNextpeerLaunchDashboard() void run_on_os_thread
+void s3eNextpeerLaunchDashboardWithCurrencyAmount(uint32 unifiedVirtualCurrencyAmount) void run_on_os_thread
 void s3eNextpeerDismissDashboard() void run_on_os_thread
 void s3eNextpeerShutDown() void run_on_os_thread
 void s3eNextpeerReportScoreForCurrentTournament(uint32 score) void
@@ -81,6 +83,7 @@ void s3eNextpeerPushDataToOtherPlayers(const void* data, uint32 length) void
 void s3eNextpeerPushNotificationToOtherPlayers(const char * notice) void
 void s3eNextpeerHandleOpenURL(void* url) void
 void s3eNextpeerRegisterOpenURLCallback() void
+void s3eNextpeerSetUnifiedVirtualCurrencySupport(s3eBool unifiedVirtualCurrencySupported) void
 
 // Generic functions for meta usage
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData) S3E_RESULT_SUCCESS

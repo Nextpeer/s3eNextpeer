@@ -36,6 +36,7 @@ typedef enum s3eNextperCallback
     S3E_NEXTPEER_CALLBACK_WILL_TOURNAMENT_START,
     S3E_NEXTPEER_CALLBACK_DID_RECEIVE_CUSTOM_MESSAGE,
     S3E_NEXTPEER_CALLBACK_OPEN_URL_CALLED,
+    S3E_NEXTPEER_CALLBACK_VCURRENCY_ADD_CURRENCY_AMOUNT,
     S3E_NEXTPEER_CALLBACK_MAX
 } s3eNextperCallback;
 
@@ -74,6 +75,8 @@ void s3eNextpeerInitWithProductKey(const char* productKey);
 
 void s3eNextpeerLaunchDashboard();
 
+void s3eNextpeerLaunchDashboardWithCurrencyAmount(uint32 unifiedVirtualCurrencyAmount);
+
 void s3eNextpeerDismissDashboard();
 
 void s3eNextpeerShutDown();
@@ -93,6 +96,8 @@ void s3eNextpeerPushNotificationToOtherPlayers(const char * notice);
 void s3eNextpeerHandleOpenURL(void* url);
 
 void s3eNextpeerRegisterOpenURLCallback();
+
+void s3eNextpeerSetUnifiedVirtualCurrencySupport(s3eBool unifiedVirtualCurrencySupported);
 
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 

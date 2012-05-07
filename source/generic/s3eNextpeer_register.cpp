@@ -36,6 +36,12 @@ static void s3eNextpeerLaunchDashboard_wrap()
     s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerLaunchDashboard, 0);
 }
 
+static void s3eNextpeerLaunchDashboardWithCurrencyAmount_wrap(uint32 unifiedVirtualCurrencyAmount)
+{
+    IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerLaunchDashboardWithCurrencyAmount"));
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)s3eNextpeerLaunchDashboardWithCurrencyAmount, 1, unifiedVirtualCurrencyAmount);
+}
+
 static void s3eNextpeerDismissDashboard_wrap()
 {
     IwTrace(NEXTPEER_VERBOSE, ("calling s3eNextpeer func on main thread: s3eNextpeerDismissDashboard"));
@@ -50,6 +56,7 @@ static void s3eNextpeerShutDown_wrap()
 
 #define s3eNextpeerInitWithProductKey s3eNextpeerInitWithProductKey_wrap
 #define s3eNextpeerLaunchDashboard s3eNextpeerLaunchDashboard_wrap
+#define s3eNextpeerLaunchDashboardWithCurrencyAmount s3eNextpeerLaunchDashboardWithCurrencyAmount_wrap
 #define s3eNextpeerDismissDashboard s3eNextpeerDismissDashboard_wrap
 #define s3eNextpeerShutDown s3eNextpeerShutDown_wrap
 
@@ -58,26 +65,28 @@ static void s3eNextpeerShutDown_wrap()
 void s3eNextpeerRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[14];
+    void* funcPtrs[16];
     funcPtrs[0] = (void*)s3eNextpeerInitWithProductKey;
     funcPtrs[1] = (void*)s3eNextpeerLaunchDashboard;
-    funcPtrs[2] = (void*)s3eNextpeerDismissDashboard;
-    funcPtrs[3] = (void*)s3eNextpeerShutDown;
-    funcPtrs[4] = (void*)s3eNextpeerReportScoreForCurrentTournament;
-    funcPtrs[5] = (void*)s3eNextpeerIsCurrentlyInTournament;
-    funcPtrs[6] = (void*)s3eNextpeerTimeLeftInTournament;
-    funcPtrs[7] = (void*)s3eNextpeerReportForfeitForCurrentTournament;
-    funcPtrs[8] = (void*)s3eNextpeerPushDataToOtherPlayers;
-    funcPtrs[9] = (void*)s3eNextpeerPushNotificationToOtherPlayers;
-    funcPtrs[10] = (void*)s3eNextpeerHandleOpenURL;
-    funcPtrs[11] = (void*)s3eNextpeerRegisterOpenURLCallback;
-    funcPtrs[12] = (void*)s3eNextpeerRegisterCallback;
-    funcPtrs[13] = (void*)s3eNextpeerUnRegisterCallback;
+    funcPtrs[2] = (void*)s3eNextpeerLaunchDashboardWithCurrencyAmount;
+    funcPtrs[3] = (void*)s3eNextpeerDismissDashboard;
+    funcPtrs[4] = (void*)s3eNextpeerShutDown;
+    funcPtrs[5] = (void*)s3eNextpeerReportScoreForCurrentTournament;
+    funcPtrs[6] = (void*)s3eNextpeerIsCurrentlyInTournament;
+    funcPtrs[7] = (void*)s3eNextpeerTimeLeftInTournament;
+    funcPtrs[8] = (void*)s3eNextpeerReportForfeitForCurrentTournament;
+    funcPtrs[9] = (void*)s3eNextpeerPushDataToOtherPlayers;
+    funcPtrs[10] = (void*)s3eNextpeerPushNotificationToOtherPlayers;
+    funcPtrs[11] = (void*)s3eNextpeerHandleOpenURL;
+    funcPtrs[12] = (void*)s3eNextpeerRegisterOpenURLCallback;
+    funcPtrs[13] = (void*)s3eNextpeerSetUnifiedVirtualCurrencySupport;
+    funcPtrs[14] = (void*)s3eNextpeerRegisterCallback;
+    funcPtrs[15] = (void*)s3eNextpeerUnRegisterCallback;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[14] = { 0 };
+    int flags[16] = { 0 };
 
     /*
      * Register the extension

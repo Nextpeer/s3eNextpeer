@@ -94,10 +94,21 @@ static void s3eGCReleaseOpenURLData(uint32 deviceId, int32 notification, void* s
 }
 
 /////////////////
+//// Obj-C Globals
+/////////////////
+
+// Global flag for unified virtual currency support
+static BOOL g_UnifiedVirtualCurrencySupport = FALSE;
+
+// Global unified currency amount which is set when the dashboard is launched
+static NSUInteger g_UnifiedVirtualCurrencyAmount = 0;
+
+
+/////////////////
 //// Delegates Implementation
 /////////////////
 
-@interface S3ENextpeerDelegate : NSObject<NextpeerDelegate> 
+@interface S3ENextpeerDelegate : NSObject<NextpeerDelegate, NPCurrencyDelegate> 
 {
 }
 @end
@@ -237,6 +248,29 @@ static void s3eGCReleaseOpenURLData(uint32 deviceId, int32 notification, void* s
     }
 }
 
+// Methods for VCurrency
+- (BOOL)nextpeerSupportsUnifiedCurrency
+{
+    return g_UnifiedVirtualCurrencySupport;
+}
+
+- (NSUInteger)nextpeerGetCurrency
+{
+    return g_UnifiedVirtualCurrencyAmount;
+}
+
+-(void)nextpeerAddAmountToCurrency:(NSInteger)amount
+{
+    g_UnifiedVirtualCurrencyAmount += amount;
+    
+    // Also notify the game it needs to update the current amount of currency
+    if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_VCURRENCY_ADD_CURRENCY_AMOUNT)) {   
+        int32 currencyAmount = amount;
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_VCURRENCY_ADD_CURRENCY_AMOUNT, &currencyAmount, sizeof(currencyAmount));
+    }
+}
+
+
 @end
 
 
@@ -246,7 +280,6 @@ static void s3eGCReleaseOpenURLData(uint32 deviceId, int32 notification, void* s
 
 // Global Nextpeer delegate
 static S3ENextpeerDelegate* g_NextpeerDelegate;
-
 
 
 
@@ -276,14 +309,22 @@ void s3eNextpeerInitWithProductKey(const char* productKey)
     g_NextpeerDelegate = [[S3ENextpeerDelegate alloc] init];
     
     // Initialize Nextpeer with the product key and our global delegates container
-    [Nextpeer initializeWithProductKey:aProductKey andDelegates:[NPDelegatesContainer containerWithNextpeerDelegate:g_NextpeerDelegate]];
+    NPDelegatesContainer* delegatesContainer = [NPDelegatesContainer containerWithNextpeerDelegate:g_NextpeerDelegate];
+    delegatesContainer.currencyDelegate = g_NextpeerDelegate; // add vcurrency delegate
+    
+    [Nextpeer initializeWithProductKey:aProductKey andDelegates:delegatesContainer];
 }
-
 
 void s3eNextpeerLaunchDashboard()
 {
     // Call the launch dashboard function
     [Nextpeer launchDashboard];
+}
+
+void s3eNextpeerLaunchDashboardWithCurrencyAmount(uint32 unifiedVirtualCurrencyAmount)
+{
+    g_UnifiedVirtualCurrencyAmount = unifiedVirtualCurrencyAmount;
+    s3eNextpeerLaunchDashboard();
 }
 
 void s3eNextpeerDismissDashboard()
@@ -355,3 +396,14 @@ void s3eNextpeerRegisterOpenURLCallback()
     NSLog(@"[s3eNextpeer] - registering openURL callback function");
     s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_HANDLEOPENURL, s3eNextpeerOpenURLCallback, NULL, S3E_FALSE);   
 }
+
+/////////////////
+//// Public Functions (Virtual Currency)
+/////////////////
+
+void s3eNextpeerSetUnifiedVirtualCurrencySupport(s3eBool unifiedVirtualCurrencySupported)
+{
+    g_UnifiedVirtualCurrencySupport = unifiedVirtualCurrencySupported;
+}
+
+
