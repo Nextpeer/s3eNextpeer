@@ -95,10 +95,7 @@ static void s3eGCReleaseOpenURLData(uint32 deviceId, int32 notification, void* s
 
 static void s3eGCReleaseCurrencyAmount(uint32 deviceId, int32 notification, void* systemData, void* instance, int32 returnCode, void* data)
 {
-    int32* currencyAmount = (int32*)systemData;
-    if (currencyAmount) {
-        s3eEdkFreeOS(currencyAmount);
-    }
+    // Leave blank for now
 }
 
 
@@ -274,10 +271,9 @@ static NSUInteger g_UnifiedVirtualCurrencyAmount = 0;
     
     // Also notify the game it needs to update the current amount of currency
     if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_VCURRENCY_ADD_CURRENCY_AMOUNT)) {   
-        int32* currencyAmount = (int32*)s3eEdkMallocOS(sizeof(int32));
-        *currencyAmount = amount;
+        int32 currencyAmount = amount;
         
-        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_VCURRENCY_ADD_CURRENCY_AMOUNT, currencyAmount, sizeof(int32), 
+        s3eEdkCallbacksEnqueue(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_VCURRENCY_ADD_CURRENCY_AMOUNT, &currencyAmount, sizeof(currencyAmount), 
                                NULL, S3E_FALSE, &s3eGCReleaseCurrencyAmount, NULL);
     }
 }
