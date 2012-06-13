@@ -57,6 +57,82 @@ static int32 s3eNextpeerOpenURLCallback(void* systemData, void* userData)
     return 0;
 }
 
+void s3eNextpeerRegisterOpenURLCallback()
+{
+    // Init a callback for handleOpenURL
+    NSLog(@"[s3eNextpeer] - registering openURL callback function");
+    s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_HANDLEOPENURL, s3eNextpeerOpenURLCallback, NULL, S3E_FALSE);   
+}
+
+/////////////////
+//// Local and Push related functions
+/////////////////
+static void s3eNextpeerRegiserDeviceToken()
+{
+    // Ask for a device token from the user
+    const char* token = s3eEdkAppGetRemoteNotificationToken();
+        
+    // TODO: Convert token from string form to raw binary form
+    
+    NSData* tokenData = [NSData dataWithBytes:token length:strlen(token)];
+    
+    [Nextpeer registerDeviceToken:tokenData];
+}
+
+static void s3eNextpeerHandleInitialNotifications()
+{
+    // Check for push notification that may have started the app
+    NSDictionary* pushNotice = (NSDictionary*)s3eEdkAppGetInitialRemoteNotification();
+    if (pushNotice) {
+        [Nextpeer handleRemoteNotification:pushNotice];
+        s3eEdkAppReleaseInitialRemoteNotification();
+        return;
+    }
+    
+    // Check if we have an initial local notification instead
+    UILocalNotification* localNotice = (UILocalNotification*)s3eEdkAppGetInitialLocalNotification();
+    if (localNotice) {
+        [Nextpeer handleLocalNotification:localNotice];
+        s3eEdkAppReleaseInitialLocalNotification();
+        return;
+    }
+}
+
+static int32 s3eNextpeerRemoteNotificationCallback(void* systemData, void* userData)
+{
+    NSLog(@"[s3eNextpeer] Received remote notification whilst running");    
+    UILocalNotification* notification = (UILocalNotification*)systemData;
+    
+    if (notification) {
+        [Nextpeer handleLocalNotification:notification];
+    }
+    
+    return 0;
+}
+
+static int32 s3eNextpeerLocalNotificationCallback(void* systemData, void* userData)
+{
+    NSLog(@"[s3eNextpeer] Received local notification whilst running");    
+    NSDictionary* notification = (NSDictionary*)systemData;
+    
+    if (notification) {
+        [Nextpeer handleRemoteNotification:notification];
+    }
+    
+    return 0;
+}
+
+
+static void s3eNextpeerRegisterNotificationCallbacks()
+{
+    NSLog(@"[s3eNextpeer] registering notification callbacks");
+    s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_DID_RECEIVE_REMOTE_NOTIFICATION, s3eNextpeerRemoteNotificationCallback, NULL, S3E_FALSE);
+    
+    s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_DID_RECEIVE_LOCAL_NOTIFICATION, s3eNextpeerRemoteNotificationCallback, NULL, S3E_FALSE);
+}
+
+
+
 /////////////////
 //// Deallocation callbacks
 /////////////////
@@ -321,6 +397,12 @@ void s3eNextpeerInitWithProductKey(const char* productKey)
     delegatesContainer.currencyDelegate = g_NextpeerDelegate; // add vcurrency delegate
     
     [Nextpeer initializeWithProductKey:aProductKey andDelegates:delegatesContainer];
+    
+    // Register any device tokens
+    s3eNextpeerRegiserDeviceToken();
+    
+    // Setup callbacks for notifications
+    s3eNextpeerRegisterNotificationCallbacks();
 }
 
 void s3eNextpeerLaunchDashboard()
@@ -396,13 +478,6 @@ void s3eNextpeerHandleOpenURL(void* url)
     
     NSURL* aURL = (NSURL*)url;
     [Nextpeer handleOpenURL:aURL];
-}
-
-void s3eNextpeerRegisterOpenURLCallback()
-{
-    // Init a callback for handleOpenURL
-    NSLog(@"[s3eNextpeer] - registering openURL callback function");
-    s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_HANDLEOPENURL, s3eNextpeerOpenURLCallback, NULL, S3E_FALSE);   
 }
 
 /////////////////
