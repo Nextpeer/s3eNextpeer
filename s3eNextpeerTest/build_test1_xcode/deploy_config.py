@@ -4,8 +4,8 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['/Developer/Marmalade/5.2/s3e/makefile_builder/mkb.py', '--buildenv=xcode', '/Users/danielshir/Work/InnoBell/s3eNextpeerTest/test1.mkb', '--deploy-only']
-mkb = '/Users/danielshir/Work/InnoBell/s3eNextpeerTest/test1.mkb'
+cmdline = ['/Developer/Marmalade/5.2/s3e/makefile_builder/mkb.py', '--buildenv=xcode', '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/test1.mkb', '--deploy-only']
+mkb = '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/test1.mkb'
 mkf = ['/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer.mkf', '/Developer/Marmalade/5.2/modules/iwutil/iwutil.mkf']
 
 class DeployConfig(object):
@@ -16,7 +16,7 @@ class DeployConfig(object):
 assets = {}
 
 assets['Default'] = [
-    ('/Users/danielshir/Work/InnoBell/s3eNextpeerTest/data', '.', 0),
+    ('/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/data', '.', 0),
 ]
 
 ######### DEFAULT CONFIG #############
@@ -29,8 +29,8 @@ class DefaultConfig(DeployConfig):
     caption = 'test1'
     long_caption = 'test1'
     version = [0, 0, 1]
-    config = ['/Users/danielshir/Work/InnoBell/s3eNextpeerTest/data/app.icf']
-    data_dir = '/Users/danielshir/Work/InnoBell/s3eNextpeerTest/data'
+    config = ['/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/data/app.icf']
+    data_dir = '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/data'
     linux_ext_lib = []
     iphone_link_opts = ['-weak_framework UIKit -weak_framework Security -lsqlite3.0']
     osx_ext_dll = ['/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/osx/libs3eNextpeer.dylib']
@@ -48,12 +48,12 @@ class DefaultConfig(DeployConfig):
     iphone_link_libs = ['s3eNextpeer']
     target = {
          'arm_gcc' : {
-                   'debug'   : '/Users/danielshir/Work/InnoBell/s3eNextpeerTest/build_test1_xcode/build/Debug ARM/test1.s3e',
-                   'release' : '/Users/danielshir/Work/InnoBell/s3eNextpeerTest/build_test1_xcode/build/Release ARM/test1.s3e',
+                   'debug'   : '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/build_test1_xcode/build/Debug ARM/test1.s3e',
+                   'release' : '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/build_test1_xcode/build/Release ARM/test1.s3e',
                  },
          'x86' : {
-                   'debug'   : '/Users/danielshir/Work/InnoBell/s3eNextpeerTest/build_test1_xcode/build/Debug/test1.s86',
-                   'release' : '/Users/danielshir/Work/InnoBell/s3eNextpeerTest/build_test1_xcode/build/Release/test1.s86',
+                   'debug'   : '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/build_test1_xcode/build/Debug/test1.s86',
+                   'release' : '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/build_test1_xcode/build/Release/test1.s86',
                  },
         }
     assets = assets['Default']

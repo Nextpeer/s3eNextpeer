@@ -9,7 +9,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "open /Developer/Marmalade/5.2/s3e/../Applications/DeployTool.app --args --dir /Users/danielshir/Work/InnoBell/s3eNextpeerTest/build_test1_xcode">
+               scriptText = "open /Developer/Marmalade/5.2/s3e/../Applications/DeployTool.app --args --dir /Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/build_test1_xcode">
             </ActionContent>
          </ExecutionAction>
       </PostActions>

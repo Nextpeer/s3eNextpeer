@@ -44,7 +44,7 @@
       </PathRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-via:&apos;/Users/danielshir/Work/InnoBell/s3eNextpeerTest/build_test1_xcode/build/Debug ARM.via&apos;"
+            argument = "-via:&apos;/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/build_test1_xcode/build/Debug ARM.via&apos;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

@@ -71,8 +71,22 @@ static void s3eNextpeerRegiserDeviceToken()
 {
     // Ask for a device token from the user
     const char* token = s3eEdkAppGetRemoteNotificationToken();
-        
+    
+    if (!token) {
+        NSLog(@"[s3eNextpeer] Device provided NULL device token, push will not be possible for this device");
+        return;
+    }
+    
+    // Make sure the token we've received isn't an empty string (happens sometimes on error)
+    if (!strlen(token)) {
+        NSLog(@"[s3eNextpeer] Device provided empty device token, push will not be possible for this device");
+        return;
+    }
+    
+    NSLog(@"[s3eNextpeer] Device token for device is %s", token);
+    
     // TODO: Convert token from string form to raw binary form
+    
     
     NSData* tokenData = [NSData dataWithBytes:token length:strlen(token)];
     
