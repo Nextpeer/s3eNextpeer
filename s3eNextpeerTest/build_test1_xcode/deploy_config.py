@@ -32,8 +32,10 @@ class DefaultConfig(DeployConfig):
     config = ['/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/data/app.icf']
     data_dir = '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/data'
     linux_ext_lib = []
+    iphone_provisioning_profile = '/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/ABC_Dev.mobileprovision'
     iphone_link_opts = ['-weak_framework UIKit -weak_framework Security -lsqlite3.0']
     osx_ext_dll = ['/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/osx/libs3eNextpeer.dylib']
+    iphone_appid = 'com.nextpeer.samples.abc123'
     android_external_jars = []
     android_external_res = []
     android_supports_gl_texture = []

@@ -28,4 +28,6 @@ deployments
 	iphone-no-splash=1
 	iphone-nosign=0
 	iphone-signing-identity='iPhone Developer'
+	iphone-appid='com.nextpeer.samples.abc123'
+	iphone-provisioning-profile='ABC_Dev.mobileprovision'
 }

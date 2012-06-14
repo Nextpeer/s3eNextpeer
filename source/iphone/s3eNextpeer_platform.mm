@@ -83,14 +83,36 @@ static void s3eNextpeerRegiserDeviceToken()
         return;
     }
     
-    NSLog(@"[s3eNextpeer] Device token for device is %s", token);
+    NSLog(@"[s3eNextpeer] Device token for device is (from Marmalade) %s", token);
     
-    // TODO: Convert token from string form to raw binary form
+    // Convert token from string form to raw binary form
+    // For example - "378b98a9 d7e21860 a4b6697e 51b4a3c2 561c78ec d0438f9b b2c97d14 2eb750e0"
+    NSMutableData* tokenData = [[NSMutableData alloc] init];
+    unsigned char singleByte = 0;
+    char charPair[3] = { 0, 0, 0 };
+    unsigned int len = strlen(token);
+    unsigned int i = 0;
     
-    
-    NSData* tokenData = [NSData dataWithBytes:token length:strlen(token)];
+    while (i < len-1) {
+        // Skip any spaces in the device token
+        if (token[i] == ' ') {
+            i++;
+            continue;
+        }
+        
+        // Create pair of hex chars for conversion (i.e. 'ab' or '1f')
+        charPair[0] = token[i];
+        charPair[1] = token[i+1];
+        
+        // Convert and append single byte
+        singleByte = strtol(charPair, NULL, 16);
+        [tokenData appendBytes:&singleByte length:sizeof(singleByte)];
+        
+        i += 2;
+    }
     
     [Nextpeer registerDeviceToken:tokenData];
+    [tokenData release];
 }
 
 static void s3eNextpeerHandleInitialNotifications()

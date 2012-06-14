@@ -1,1112 +1,1330 @@
-# Path: /Users/danielshir/Library/Developer/Xcode/DerivedData/test1-gpxcwtgorregpnapvzjsczpdriwc/Build/Products/Release/test1.dylib
+# Path: /Users/danielshir/Library/Developer/Xcode/DerivedData/test1-gpxcwtgorregpnapvzjsczpdriwc/Build/Products/Debug/test1.dylib
 # Arch: i386
 # Object files:
 [  0] linker synthesized
-[  1] /Users/danielshir/Library/Developer/Xcode/DerivedData/test1-gpxcwtgorregpnapvzjsczpdriwc/Build/Intermediates/test1.build/Release/test1.build/Objects-normal/i386/s3eNextpeer_interface.o
-[  2] /Users/danielshir/Library/Developer/Xcode/DerivedData/test1-gpxcwtgorregpnapvzjsczpdriwc/Build/Intermediates/test1.build/Release/test1.build/Objects-normal/i386/test1.o
-[  3] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(iwcrt_common.o)
-[  4] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(iwmain.o)
-[  5] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(malloc.o)
-[  6] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(pthread_mutex.o)
-[  7] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(pthread_tls.o)
-[  8] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(pthreads.o)
-[  9] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(stdlib.o)
-[ 10] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(stdout.o)
-[ 11] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(string.o)
-[ 12] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(s3eDebug_eapi.o)
-[ 13] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(s3eMemory_eapi.o)
-[ 14] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(IwDebug.o)
-[ 15] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(s3eThread_interface.o)
-[ 16] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(newlib_impl.o)
-[ 17] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(iwcrt_api_bind.o)
-[ 18] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(iwcrt_linux_x86.o)
-[ 19] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e.a(iwcrt_osx.o)
-[ 20] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(__s3eFreeBase.o)
-[ 21] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(__s3eMallocBase.o)
-[ 22] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(__s3eMemorySetUserMemMgr.o)
-[ 23] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(__s3eReallocBase.o)
-[ 24] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eConfigGetString.o)
-[ 25] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugAssertShow.o)
-[ 26] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugErrorShow.o)
-[ 27] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugIsDebuggerPresent.o)
-[ 28] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugPrint.o)
-[ 29] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceCheckQuitRequest.o)
-[ 30] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceGetString.o)
-[ 31] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceSetInt.o)
-[ 32] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceYield.o)
-[ 33] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eExtGetHash.o)
-[ 34] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eFreeBase.o)
-[ 35] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eMallocBase.o)
-[ 36] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eMemoryGetInt.o)
-[ 37] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eMemorySetInt.o)
-[ 38] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3ePointerUpdate.o)
-[ 39] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eReallocBase.o)
-[ 40] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eSurfaceShow.o)
-[ 41] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eTimerGetLocaltimeOffset.o)
-[ 42] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libm.a(lib_a-s_fpclassify.o)
-[ 43] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libm.a(lib_a-s_frexp.o)
-[ 44] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libm.a(lib_a-sf_nan.o)
-[ 45] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-ctype_.o)
-[ 46] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-envlock.o)
-[ 47] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-findfp.o)
-[ 48] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gdtoa-gethex.o)
-[ 49] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gdtoa-hexnan.o)
-[ 50] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-getenv_r.o)
-[ 51] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gettzinfo.o)
-[ 52] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-impure.o)
-[ 53] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-isalpha.o)
-[ 54] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-iswspace.o)
-[ 55] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-jp2uc.o)
-[ 56] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-ldtoa.o)
-[ 57] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-locale.o)
-[ 58] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-mbrtowc.o)
-[ 59] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-mbtowc_r.o)
-[ 60] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-memchr.o)
-[ 61] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-memcpy.o)
-[ 62] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-memmove.o)
-[ 63] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-memset.o)
-[ 64] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-mktm_r.o)
-[ 65] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-mprec.o)
-[ 66] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-rand.o)
-[ 67] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-sccl.o)
-[ 68] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-snprintf.o)
-[ 69] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-sprintf.o)
-[ 70] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-sscanf.o)
-[ 71] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-stdio.o)
-[ 72] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strchr.o)
-[ 73] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strcmp.o)
-[ 74] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strcpy.o)
-[ 75] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strlen.o)
-[ 76] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strncat.o)
-[ 77] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strncmp.o)
-[ 78] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strncpy.o)
-[ 79] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtod.o)
-[ 80] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtol.o)
-[ 81] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtoll_r.o)
-[ 82] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtoul.o)
-[ 83] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtoull_r.o)
-[ 84] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-svfiprintf.o)
-[ 85] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-svfiscanf.o)
-[ 86] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-svfprintf.o)
-[ 87] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-svfscanf.o)
-[ 88] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-tzlock.o)
-[ 89] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-tzset.o)
-[ 90] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-tzset_r.o)
-[ 91] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-tzvars.o)
-[ 92] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-ungetc.o)
-[ 93] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-vsnprintf.o)
-[ 94] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-wcrtomb.o)
-[ 95] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-wcsnrtombs.o)
-[ 96] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-wcsrtombs.o)
-[ 97] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-wctomb_r.o)
-[ 98] /XCode4_2/SDKs/MacOSX10.6.sdk/usr/lib/libSystem.dylib
+[  1] /Users/danielshir/Library/Developer/Xcode/DerivedData/test1-gpxcwtgorregpnapvzjsczpdriwc/Build/Intermediates/test1.build/Debug/test1.build/Objects-normal/i386/s3eNextpeer_interface.o
+[  2] /Users/danielshir/Library/Developer/Xcode/DerivedData/test1-gpxcwtgorregpnapvzjsczpdriwc/Build/Intermediates/test1.build/Debug/test1.build/Objects-normal/i386/test1.o
+[  3] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(iwcrt_common.o)
+[  4] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(iwmain.o)
+[  5] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(malloc.o)
+[  6] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(pthread_mutex.o)
+[  7] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(pthread_tls.o)
+[  8] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(pthreads.o)
+[  9] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(stdlib.o)
+[ 10] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(strerror.o)
+[ 11] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(string.o)
+[ 12] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(time.o)
+[ 13] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(s3eDebug_eapi.o)
+[ 14] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(s3eMemory_eapi.o)
+[ 15] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(IwDebug.o)
+[ 16] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(s3eThread_interface.o)
+[ 17] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(newlib_impl.o)
+[ 18] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(iwcrt_api_bind.o)
+[ 19] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(iwcrt_linux_x86.o)
+[ 20] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_d.a(iwcrt_osx.o)
+[ 21] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(__s3eFreeBase.o)
+[ 22] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(__s3eMallocBase.o)
+[ 23] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(__s3eMemorySetUserMemMgr.o)
+[ 24] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(__s3eReallocBase.o)
+[ 25] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eConfigGetInt.o)
+[ 26] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eConfigGetString.o)
+[ 27] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugAssertShow.o)
+[ 28] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugErrorShow.o)
+[ 29] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugIsDebuggerPresent.o)
+[ 30] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugPrint.o)
+[ 31] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDebugTraceLine.o)
+[ 32] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceCheckQuitRequest.o)
+[ 33] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceExit.o)
+[ 34] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceGetString.o)
+[ 35] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceSetInt.o)
+[ 36] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eDeviceYield.o)
+[ 37] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eExtGetHash.o)
+[ 38] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eFreeBase.o)
+[ 39] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eMallocBase.o)
+[ 40] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eMemoryGetInt.o)
+[ 41] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eMemorySetInt.o)
+[ 42] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3ePointerUpdate.o)
+[ 43] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eReallocBase.o)
+[ 44] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eSurfaceShow.o)
+[ 45] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eTimerGetLocaltimeOffset.o)
+[ 46] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libs3e_api.a(s3eTimerGetUTC.o)
+[ 47] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libm.a(lib_a-s_fpclassify.o)
+[ 48] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libm.a(lib_a-s_frexp.o)
+[ 49] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libm.a(lib_a-sf_nan.o)
+[ 50] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-abs.o)
+[ 51] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-ctype_.o)
+[ 52] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-envlock.o)
+[ 53] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-findfp.o)
+[ 54] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gdtoa-gethex.o)
+[ 55] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gdtoa-hexnan.o)
+[ 56] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-getenv_r.o)
+[ 57] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gettimeofdayr.o)
+[ 58] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gettzinfo.o)
+[ 59] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gmtime.o)
+[ 60] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-gmtime_r.o)
+[ 61] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-impure.o)
+[ 62] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-isalpha.o)
+[ 63] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-iswspace.o)
+[ 64] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-jp2uc.o)
+[ 65] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-labs.o)
+[ 66] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-ldtoa.o)
+[ 67] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-locale.o)
+[ 68] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-mbrtowc.o)
+[ 69] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-mbtowc_r.o)
+[ 70] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-memchr.o)
+[ 71] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-memcpy.o)
+[ 72] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-memmove.o)
+[ 73] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-memset.o)
+[ 74] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-mktm_r.o)
+[ 75] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-mprec.o)
+[ 76] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-openr.o)
+[ 77] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-rand.o)
+[ 78] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-sccl.o)
+[ 79] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-snprintf.o)
+[ 80] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-sprintf.o)
+[ 81] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-sscanf.o)
+[ 82] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-stdio.o)
+[ 83] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strchr.o)
+[ 84] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strcmp.o)
+[ 85] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strcpy.o)
+[ 86] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strftime.o)
+[ 87] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strlen.o)
+[ 88] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strncat.o)
+[ 89] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strncmp.o)
+[ 90] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strncpy.o)
+[ 91] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtod.o)
+[ 92] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtol.o)
+[ 93] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtoll_r.o)
+[ 94] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtoul.o)
+[ 95] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-strtoull_r.o)
+[ 96] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-svfiprintf.o)
+[ 97] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-svfiscanf.o)
+[ 98] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-svfprintf.o)
+[ 99] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-svfscanf.o)
+[100] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-time.o)
+[101] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-timelocal.o)
+[102] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-tzlock.o)
+[103] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-tzset.o)
+[104] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-tzset_r.o)
+[105] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-tzvars.o)
+[106] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-ungetc.o)
+[107] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-vsnprintf.o)
+[108] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-wcrtomb.o)
+[109] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-wcsnrtombs.o)
+[110] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-wcsrtombs.o)
+[111] /Developer/Marmalade/5.2/s3e/lib/x86/darwin/libc.a(lib_a-wctomb_r.o)
+[112] /XCode4_2/SDKs/MacOSX10.6.sdk/usr/lib/libSystem.dylib
 # Sections:
 # Address	Size    	Segment	Section
-0x00000C80	0x00012354	__TEXT	__text
-0x00012FD4	0x0000002A	__TEXT	__symbol_stub
-0x00013000	0x00000054	__TEXT	__stub_helper
-0x00013054	0x000024AA	__TEXT	__cstring
-0x00015500	0x00003B82	__TEXT	__const
-0x00019082	0x00000118	__TEXT	__unwind_info
-0x000191A0	0x00000E60	__TEXT	__eh_frame
-0x0001A000	0x0000006C	__DATA	__nl_symbol_ptr
-0x0001A06C	0x0000001C	__DATA	__la_symbol_ptr
-0x0001A088	0x00000004	__DATA	__mod_init_func
-0x0001A0A0	0x00002860	__DATA	__data
-0x0001C900	0x000028AE	__DATA	__bss
-0x0001F1C0	0x00000D40	__DATA	__common
+0x00000760	0x00014C39	__TEXT	__text
+0x0001539A	0x00000030	__TEXT	__symbol_stub
+0x000153CC	0x0000005C	__TEXT	__stub_helper
+0x00015428	0x00002C2A	__TEXT	__cstring
+0x00018060	0x00003BA2	__TEXT	__const
+0x0001BC02	0x00000150	__TEXT	__unwind_info
+0x0001BD58	0x00001290	__TEXT	__eh_frame
+0x0001D000	0x00000070	__DATA	__nl_symbol_ptr
+0x0001D070	0x00000020	__DATA	__la_symbol_ptr
+0x0001D090	0x00000004	__DATA	__mod_init_func
+0x0001D0A0	0x00002860	__DATA	__data
+0x0001F900	0x0000015C	__DATA	__const
+0x0001FA60	0x00002A9A	__DATA	__bss
+0x00022500	0x00002A60	__DATA	__common
 # Symbols:
 # Address	Size    	File  Name
-0x00000C80	0x00000070	[  1] _s3eNextpeerAvailable
-0x00000CF0	0x000000A0	[  1] _s3eNextpeerRegisterCallback
-0x00000D90	0x000000A0	[  1] _s3eNextpeerIsCurrentlyInTournament
-0x00000E30	0x000000A0	[  1] _s3eNextpeerReportScoreForCurrentTournament
-0x00000ED0	0x000000A0	[  1] _s3eNextpeerLaunchDashboard
-0x00000F70	0x0000009A	[  1] _s3eNextpeerInitWithProductKey
-0x00001010	0x00000120	[  2] _main
-0x00001130	0x00000040	[  2] __ZL29didTournamentStartWithDetailsPvS_
-0x00001170	0x00000035	[  2] __ZL16didTournamentEndPvS_
-0x000011B0	0x00000080	[  3] __IwCrtRealloc
-0x00001230	0x00000080	[  3] __IwCrtMalloc
-0x000012B0	0x000000A0	[  3] __IwCrtCalloc
-0x00001350	0x00000010	[  3] __IwCrtFree
-0x00001360	0x00000030	[  3] _iwcrt_fini
-0x00001390	0x000001A0	[  3] _iwcrt_init2
-0x00001530	0x00000036	[  3] _iwcrt_init
-0x00001570	0x0000012D	[  4] _IwMain
-0x000016A0	0x00000010	[  5] __IwMalloc
-0x000016B0	0x00000030	[  5] _calloc
-0x000016E0	0x00000070	[  5] __IwFree
-0x00001750	0x00000064	[  5] _free
-0x000017C0	0x000000E0	[  6] _pthread_mutex_lock
-0x000018A0	0x000000A0	[  6] _pthread_mutex_init
-0x00001940	0x000000D0	[  6] _pthread_mutex_unlock
-0x00001A10	0x00000050	[  7] _pthread_getspecific
-0x00001A60	0x000000B0	[  7] _pthread_setspecific
-0x00001B10	0x000000E1	[  7] _pthread_key_create
-0x00001C00	0x0000004D	[  8] _pthread_self
-0x00001C50	0x00000100	[  9] _setenv
-0x00001D50	0x00000050	[ 11] _strlcpy
-0x00001DA0	0x00000070	[ 12] _s3eDebugPrintf
-0x00001E10	0x000000B0	[ 13] __ZL6getTLSv
-0x00001EC0	0x000000B0	[ 13] _s3eMalloc
-0x00001F70	0x000000C0	[ 13] _s3eRealloc
-0x00002030	0x000000B0	[ 13] _s3eFree
-0x000020E0	0x000000C0	[ 13] _iw_malloc_init
-0x000021A0	0x00000005	[ 13] __ZL7tlsFreePv
-0x000021B0	0x000000B2	[ 14] _IwDebugErrorShow
-0x00002270	0x00000023	[ 14] __GLOBAL__I_g_DebugGlobals
-0x000022A0	0x00000070	[ 15] _s3eThreadAvailable
-0x00002310	0x000000A0	[ 15] _s3eThreadLockRelease
-0x000023B0	0x000000A0	[ 15] _s3eThreadLockAcquire
-0x00002450	0x000000A0	[ 15] _s3eThreadLockDestroy
-0x000024F0	0x000000A0	[ 15] _s3eThreadLockCreate
-0x00002590	0x000000A0	[ 15] _s3eThreadGetCurrent
-0x00002630	0x00000020	[ 16] __malloc_r
-0x00002650	0x00000020	[ 16] __realloc_r
-0x00002670	0x00000020	[ 16] __calloc_r
-0x00002690	0x00000020	[ 16] __free_r
-0x000026B0	0x000001B1	[ 17] __IwBindAPI
-0x00002870	0x00000010	[ 18] _iwcrt_x86_init
-0x00002880	0x00000090	[ 18] __IwMain
-0x00002910	0x00000100	[ 19] __init
-0x00002A10	0x00000001	[ 19] __fini
-0x00002A20	0x00000014	[ 20] ___s3eFreeBase
-0x00002A40	0x00000014	[ 21] ___s3eMallocBase
-0x00002A60	0x00000014	[ 22] ___s3eMemorySetUserMemMgr
-0x00002A80	0x00000014	[ 23] ___s3eReallocBase
-0x00002AA0	0x00000014	[ 24] _s3eConfigGetString
-0x00002AC0	0x00000014	[ 25] _s3eDebugAssertShow
-0x00002AE0	0x00000014	[ 26] _s3eDebugErrorShow
-0x00002B00	0x0000001C	[ 27] _s3eDebugIsDebuggerPresent
-0x00002B20	0x00000014	[ 28] _s3eDebugPrint
-0x00002B40	0x0000001C	[ 29] _s3eDeviceCheckQuitRequest
-0x00002B60	0x00000014	[ 30] _s3eDeviceGetString
-0x00002B80	0x00000014	[ 31] _s3eDeviceSetInt
-0x00002BA0	0x00000014	[ 32] _s3eDeviceYield
-0x00002BC0	0x00000014	[ 33] _s3eExtGetHash
-0x00002BE0	0x00000014	[ 34] _s3eFreeBase
-0x00002C00	0x00000014	[ 35] _s3eMallocBase
-0x00002C20	0x00000014	[ 36] _s3eMemoryGetInt
-0x00002C40	0x00000014	[ 37] _s3eMemorySetInt
-0x00002C60	0x00000014	[ 38] _s3ePointerUpdate
-0x00002C80	0x00000014	[ 39] _s3eReallocBase
-0x00002CA0	0x00000014	[ 40] _s3eSurfaceShow
-0x00002CC0	0x00000014	[ 41] _s3eTimerGetLocaltimeOffset
-0x00002CD4	0x00000088	[ 42] ___fpclassifyd
-0x00002D5C	0x0000009C	[ 43] _frexp
-0x00002DF8	0x00000013	[ 44] _nanf
-0x00002E0B	0x00000005	[ 46] ___env_lock
-0x00002E10	0x00000005	[ 46] ___env_unlock
-0x00002E15	0x00000005	[ 47] ___sfp_lock_acquire
-0x00002E1A	0x00000005	[ 47] ___sfp_lock_release
-0x00002E1F	0x00000077	[ 48] ___hexdig_init
-0x00002E96	0x000000A5	[ 48] _rshift
-0x00002F3B	0x00000672	[ 48] ___gethex
-0x000035AD	0x00000204	[ 49] ___hexnan
-0x000037B1	0x000000AE	[ 50] __findenv_r
-0x0000385F	0x00000021	[ 50] __getenv_r
-0x00003880	0x00000011	[ 51] ___gettzinfo
-0x00003891	0x0000001E	[ 53] _isalpha
-0x000038AF	0x00000072	[ 54] _iswspace
-0x00003924	0x000001C2	[ 55] ___jp2uc
-0x00003AE6	0x000000A9	[ 55] __jp2uc
-0x00003B90	0x000000E1	[ 56] _emovi
-0x00003C71	0x00000098	[ 56] _m16m
-0x00003D09	0x0000029A	[ 56] _edivm
-0x00003FA3	0x00000120	[ 56] _emulm
-0x000040C3	0x000000EE	[ 56] _ecmp
-0x000041B1	0x000001CF	[ 56] _eshift
-0x00004380	0x00000195	[ 56] _enormlz
-0x00004515	0x000003D7	[ 56] _emdnorm
-0x000048EC	0x000001AB	[ 56] _eiremain
-0x00004A97	0x000000D2	[ 56] _emovo
-0x00004B69	0x000001C6	[ 56] _e64toe
-0x00004D2F	0x00000075	[ 56] __ldcheck
-0x00004DA4	0x000003A1	[ 56] _emul
-0x00005145	0x00000DC1	[ 56] __strtold
-0x00005F06	0x000003FD	[ 56] _ediv
-0x00006303	0x00001843	[ 56] __ldtoa_r
-0x00007B48	0x00000011	[ 57] ___locale_charset
-0x00007B59	0x00000011	[ 57] ___locale_mb_cur_max
-0x00007B6C	0x00000011	[ 57] __localeconv_r
-0x00007B7D	0x000000B3	[ 58] __mbrtowc_r
-0x00007C30	0x00000035	[ 59] ___ascii_mbtowc
-0x00007C65	0x00000070	[ 60] _memchr
-0x00007CD5	0x0000006C	[ 61] _memcpy
-0x00007D41	0x00000097	[ 62] _memmove
-0x00007DD8	0x0000007D	[ 63] _memset
-0x00007E55	0x000001FA	[ 64] ___tzcalc_limits
-0x0000804F	0x00000022	[ 65] __Bfree
-0x00008071	0x00000058	[ 65] ___hi0bits
-0x000080C9	0x0000006E	[ 65] ___lo0bits
-0x00008137	0x0000004A	[ 65] ___mcmp
-0x00008181	0x00000061	[ 65] ___ulp
-0x000081E2	0x00000043	[ 65] ___copybits
-0x00008225	0x00000059	[ 65] ___any_on
-0x0000827E	0x000000A7	[ 65] __Balloc
-0x00008325	0x0000019E	[ 65] ___multiply
-0x000084C3	0x00000028	[ 65] ___i2b
-0x000084EB	0x000000DA	[ 65] ___multadd
-0x000085C5	0x000000D6	[ 65] ___s2b
-0x0000869B	0x000000F3	[ 65] ___lshift
-0x0000878E	0x0000016B	[ 65] ___mdiff
-0x000088F9	0x000000F7	[ 65] ___pow5mult
-0x000089F0	0x00000150	[ 65] ___d2b
-0x00008B40	0x00000123	[ 65] ___b2d
-0x00008C63	0x0000007A	[ 65] ___ratio
-0x00008CDD	0x000000B2	[ 67] ___sccl
-0x00008D8F	0x000000A7	[ 68] _snprintf
-0x00008E36	0x0000006A	[ 69] _sprintf
-0x00008EA0	0x0000007B	[ 70] _sscanf
-0x00008F1B	0x00000007	[ 71] ___seofread
-0x00008F22	0x000000B4	[ 72] _strchr
-0x00008FD6	0x0000005B	[ 73] _strcmp
-0x00009031	0x00000052	[ 74] _strcpy
-0x00009083	0x0000003F	[ 75] _strlen
-0x000090C2	0x00000062	[ 76] _strncat
-0x00009124	0x00000078	[ 77] _strncmp
-0x0000919C	0x00000078	[ 78] _strncpy
-0x00009214	0x00001446	[ 79] __strtod_r
-0x0000A65A	0x00000168	[ 80] __strtol_r
-0x0000A7C2	0x00000239	[ 81] __strtoll_r
-0x0000A9FB	0x0000015A	[ 82] __strtoul_r
-0x0000AB55	0x00000038	[ 82] _strtoul
-0x0000AB8D	0x000001F4	[ 83] __strtoull_r
-0x0000AD83	0x00000191	[ 84] ___ssprint_r
-0x0000AF14	0x0000005D	[ 85] ___ssrefill_r
-0x0000AF71	0x000000B4	[ 85] __sungetc_r
-0x0000B025	0x000000DA	[ 85] __sfread_r
-0x0000B100	0x00000643	[ 86] _get_arg
-0x0000B743	0x000045F6	[ 86] __svfprintf_r
-0x0000FD3C	0x00002971	[ 87] ___ssvfscanf_r
-0x000126AD	0x00000005	[ 88] ___tz_lock
-0x000126B2	0x00000005	[ 88] ___tz_unlock
-0x000126B7	0x00000023	[ 89] _tzset
-0x000126DA	0x000004B6	[ 90] __tzset_r
-0x00012B90	0x000000BE	[ 92] ___submore
-0x00012C4E	0x00000082	[ 93] __vsnprintf_r
-0x00012CD0	0x0000003F	[ 93] _vsnprintf
-0x00012D0F	0x000000D6	[ 94] __wcrtomb_r
-0x00012DE5	0x00000185	[ 95] __wcsnrtombs_r
-0x00012F6A	0x00000037	[ 96] __wcsrtombs_r
-0x00012FA1	0x00000033	[ 97] ___ascii_wctomb
-0x00012FD4	0x00000006	[ 98] ___bzero
-0x00012FDA	0x00000006	[ 98] ___divdi3
-0x00012FE0	0x00000006	[ 98] ___error
-0x00012FE6	0x00000006	[ 98] ___stack_chk_fail
-0x00012FEC	0x00000006	[ 98] ___udivdi3
-0x00012FF2	0x00000006	[ 98] ___umoddi3
-0x00012FF8	0x00000006	[ 98] _dladdr
-0x00013000	0x0000000A	[ 98] ___bzero
-0x0001300A	0x0000000A	[ 98] ___divdi3
-0x00013014	0x0000000A	[ 98] ___error
-0x0001301E	0x0000000A	[ 98] ___stack_chk_fail
-0x00013028	0x0000000A	[ 98] ___udivdi3
-0x00013032	0x0000000A	[ 98] ___umoddi3
-0x0001303C	0x0000000A	[ 98] _dladdr
-0x00013048	0x0000000C	[  0] helper helper
-0x00013054	0x00000025	[  1] literal string: error loading extension: s3eNextpeer
-0x0001307C	0x00000013	[  2] literal string: Tournament started
-0x0001308F	0x00000018	[  2] literal string: Nextpeer will be loaded
-0x000130A8	0x00000029	[  2] literal string: e59d317f2e26de5dc78ad83539adfe8af2ba319b
-0x000130D1	0x00000018	[  2] literal string: Nextpeer is unavailable
-0x000130EA	0x00000001	[  2] literal string: 
-0x000130EC	0x0000001F	[  2] literal string: Tournament end callback called
-0x0001310D	0x00000017	[  3] literal string: CRT out of memory (%d)
-0x00013124	0x00000021	[  3] literal string: %.3s%c%02d:00:00%.3s%c%02d:00:00
-0x00013145	0x00000003	[  3] literal string: TZ
-0x00013148	0x00000006	[ 14] literal string: Error
-0x0001314E	0x00000004	[ 10] literal string: s3e
-0x00013154	0x00000023	[ 15] literal string: error loading extension: s3eThread
-0x00013177	0x00000007	[  9] literal string: HOME=/
-0x0001317E	0x00000006	[  9] literal string: %s=%s
-0x00013184	0x0000000E	[ 19] literal string: dladdr failed
-0x00013192	0x00000009	[  4] literal string: argv[%d]
-0x0001319B	0x0000000C	[  4] literal string: commandline
-0x000131A7	0x0000000E	[  4] literal string: SysAppCaption
-0x000131B8	0x0000000B	[ 17] literal string: eglBindAPI
-0x000131C3	0x00000010	[ 17] literal string: eglBindTexImage
-0x000131D3	0x00000010	[ 17] literal string: eglChooseConfig
-0x000131E3	0x0000000F	[ 17] literal string: eglCopyBuffers
-0x000131F2	0x00000011	[ 17] literal string: eglCreateContext
-0x00013204	0x00000021	[ 17] literal string: eglCreatePbufferFromClientBuffer
-0x00013225	0x00000018	[ 17] literal string: eglCreatePbufferSurface
-0x0001323D	0x00000017	[ 17] literal string: eglCreatePixmapSurface
-0x00013254	0x00000017	[ 17] literal string: eglCreateWindowSurface
-0x0001326B	0x00000012	[ 17] literal string: eglDestroyContext
-0x0001327D	0x00000012	[ 17] literal string: eglDestroySurface
-0x0001328F	0x00000013	[ 17] literal string: eglGetConfigAttrib
-0x000132A2	0x0000000E	[ 17] literal string: eglGetConfigs
-0x000132B0	0x00000015	[ 17] literal string: eglGetCurrentContext
-0x000132C5	0x00000015	[ 17] literal string: eglGetCurrentDisplay
-0x000132DA	0x00000015	[ 17] literal string: eglGetCurrentSurface
-0x000132EF	0x0000000E	[ 17] literal string: eglGetDisplay
-0x000132FD	0x0000000C	[ 17] literal string: eglGetError
-0x00013309	0x00000012	[ 17] literal string: eglGetProcAddress
-0x0001331B	0x0000000E	[ 17] literal string: eglInitialize
-0x00013329	0x0000000F	[ 17] literal string: eglMakeCurrent
-0x00013338	0x0000000C	[ 17] literal string: eglQueryAPI
-0x00013344	0x00000010	[ 17] literal string: eglQueryContext
-0x00013354	0x0000000F	[ 17] literal string: eglQueryString
-0x00013363	0x00000010	[ 17] literal string: eglQuerySurface
-0x00013373	0x00000013	[ 17] literal string: eglReleaseTexImage
-0x00013386	0x00000011	[ 17] literal string: eglReleaseThread
-0x00013397	0x00000011	[ 17] literal string: eglSurfaceAttrib
-0x000133A8	0x0000000F	[ 17] literal string: eglSwapBuffers
-0x000133B7	0x00000010	[ 17] literal string: eglSwapInterval
-0x000133C7	0x0000000D	[ 17] literal string: eglTerminate
-0x000133D4	0x0000000E	[ 17] literal string: eglWaitClient
-0x000133E2	0x0000000A	[ 17] literal string: eglWaitGL
-0x000133EC	0x0000000E	[ 17] literal string: eglWaitNative
-0x000133FA	0x00000010	[ 17] literal string: glActiveTexture
-0x0001340A	0x0000000C	[ 17] literal string: glAlphaFunc
-0x00013416	0x0000000D	[ 17] literal string: glAlphaFuncx
-0x00013423	0x0000000F	[ 17] literal string: glAttachShader
-0x00013432	0x00000015	[ 17] literal string: glBindAttribLocation
-0x00013447	0x0000000D	[ 17] literal string: glBindBuffer
-0x00013454	0x00000012	[ 17] literal string: glBindFramebuffer
-0x00013466	0x00000013	[ 17] literal string: glBindRenderbuffer
-0x00013479	0x0000000E	[ 17] literal string: glBindTexture
-0x00013487	0x0000000D	[ 17] literal string: glBlendColor
-0x00013494	0x00000010	[ 17] literal string: glBlendEquation
-0x000134A4	0x00000018	[ 17] literal string: glBlendEquationSeparate
-0x000134BC	0x0000000C	[ 17] literal string: glBlendFunc
-0x000134C8	0x00000014	[ 17] literal string: glBlendFuncSeparate
-0x000134DC	0x0000000D	[ 17] literal string: glBufferData
-0x000134E9	0x00000010	[ 17] literal string: glBufferSubData
-0x000134F9	0x00000019	[ 17] literal string: glCheckFramebufferStatus
-0x00013512	0x00000008	[ 17] literal string: glClear
-0x0001351A	0x0000000D	[ 17] literal string: glClearColor
-0x00013527	0x0000000E	[ 17] literal string: glClearColorx
-0x00013535	0x0000000E	[ 17] literal string: glClearDepthf
-0x00013543	0x0000000E	[ 17] literal string: glClearDepthx
-0x00013551	0x0000000F	[ 17] literal string: glClearStencil
-0x00013560	0x00000016	[ 17] literal string: glClientActiveTexture
-0x00013576	0x0000000D	[ 17] literal string: glClipPlanef
-0x00013583	0x0000000D	[ 17] literal string: glClipPlanex
-0x00013590	0x0000000A	[ 17] literal string: glColor4f
-0x0001359A	0x0000000B	[ 17] literal string: glColor4ub
-0x000135A5	0x0000000A	[ 17] literal string: glColor4x
-0x000135AF	0x0000000C	[ 17] literal string: glColorMask
-0x000135BB	0x0000000F	[ 17] literal string: glColorPointer
-0x000135CA	0x00000010	[ 17] literal string: glCompileShader
-0x000135DA	0x00000017	[ 17] literal string: glCompressedTexImage2D
-0x000135F1	0x0000001A	[ 17] literal string: glCompressedTexSubImage2D
-0x0001360B	0x00000011	[ 17] literal string: glCopyTexImage2D
-0x0001361C	0x00000014	[ 17] literal string: glCopyTexSubImage2D
-0x00013630	0x00000010	[ 17] literal string: glCreateProgram
-0x00013640	0x0000000F	[ 17] literal string: glCreateShader
-0x0001364F	0x0000000B	[ 17] literal string: glCullFace
-0x0001365A	0x0000001A	[ 17] literal string: glCurrentPaletteMatrixOES
-0x00013674	0x00000010	[ 17] literal string: glDeleteBuffers
-0x00013684	0x00000015	[ 17] literal string: glDeleteFramebuffers
-0x00013699	0x00000010	[ 17] literal string: glDeleteProgram
-0x000136A9	0x00000016	[ 17] literal string: glDeleteRenderbuffers
-0x000136BF	0x0000000F	[ 17] literal string: glDeleteShader
-0x000136CE	0x00000011	[ 17] literal string: glDeleteTextures
-0x000136DF	0x0000000C	[ 17] literal string: glDepthFunc
-0x000136EB	0x0000000C	[ 17] literal string: glDepthMask
-0x000136F7	0x0000000E	[ 17] literal string: glDepthRangef
-0x00013705	0x0000000E	[ 17] literal string: glDepthRangex
-0x00013713	0x0000000F	[ 17] literal string: glDetachShader
-0x00013722	0x0000000A	[ 17] literal string: glDisable
-0x0001372C	0x00000015	[ 17] literal string: glDisableClientState
-0x00013741	0x0000001B	[ 17] literal string: glDisableVertexAttribArray
-0x0001375C	0x0000000D	[ 17] literal string: glDrawArrays
-0x00013769	0x0000000F	[ 17] literal string: glDrawElements
-0x00013778	0x00000009	[ 17] literal string: glEnable
-0x00013781	0x00000014	[ 17] literal string: glEnableClientState
-0x00013795	0x0000001A	[ 17] literal string: glEnableVertexAttribArray
-0x000137AF	0x00000009	[ 17] literal string: glFinish
-0x000137B8	0x00000008	[ 17] literal string: glFlush
-0x000137C0	0x00000007	[ 17] literal string: glFogf
-0x000137C7	0x00000008	[ 17] literal string: glFogfv
-0x000137CF	0x00000007	[ 17] literal string: glFogx
-0x000137D6	0x00000008	[ 17] literal string: glFogxv
-0x000137DE	0x0000001A	[ 17] literal string: glFramebufferRenderbuffer
-0x000137F8	0x00000017	[ 17] literal string: glFramebufferTexture2D
-0x0001380F	0x0000000C	[ 17] literal string: glFrontFace
-0x0001381B	0x0000000B	[ 17] literal string: glFrustumf
-0x00013826	0x0000000B	[ 17] literal string: glFrustumx
-0x00013831	0x0000000D	[ 17] literal string: glGenBuffers
-0x0001383E	0x00000012	[ 17] literal string: glGenFramebuffers
-0x00013850	0x00000013	[ 17] literal string: glGenRenderbuffers
-0x00013863	0x0000000E	[ 17] literal string: glGenTextures
-0x00013871	0x00000011	[ 17] literal string: glGenerateMipmap
-0x00013882	0x00000012	[ 17] literal string: glGetActiveAttrib
-0x00013894	0x00000013	[ 17] literal string: glGetActiveUniform
-0x000138A7	0x00000015	[ 17] literal string: glGetAttachedShaders
-0x000138BC	0x00000014	[ 17] literal string: glGetAttribLocation
-0x000138D0	0x0000000E	[ 17] literal string: glGetBooleanv
-0x000138DE	0x00000017	[ 17] literal string: glGetBufferParameteriv
-0x000138F5	0x00000010	[ 17] literal string: glGetClipPlanef
-0x00013905	0x00000010	[ 17] literal string: glGetClipPlanex
-0x00013915	0x0000000B	[ 17] literal string: glGetError
-0x00013920	0x0000000C	[ 17] literal string: glGetFixedv
-0x0001392C	0x0000000C	[ 17] literal string: glGetFloatv
-0x00013938	0x00000026	[ 17] literal string: glGetFramebufferAttachmentParameteriv
-0x0001395E	0x0000000E	[ 17] literal string: glGetIntegerv
-0x0001396C	0x0000000D	[ 17] literal string: glGetLightfv
-0x00013979	0x0000000D	[ 17] literal string: glGetLightxv
-0x00013986	0x00000010	[ 17] literal string: glGetMaterialfv
-0x00013996	0x00000010	[ 17] literal string: glGetMaterialxv
-0x000139A6	0x0000000E	[ 17] literal string: glGetPointerv
-0x000139B4	0x00000014	[ 17] literal string: glGetProgramInfoLog
-0x000139C8	0x0000000F	[ 17] literal string: glGetProgramiv
-0x000139D7	0x0000001D	[ 17] literal string: glGetRenderbufferParameteriv
-0x000139F4	0x00000013	[ 17] literal string: glGetShaderInfoLog
-0x00013A07	0x0000001B	[ 17] literal string: glGetShaderPrecisionFormat
-0x00013A22	0x00000012	[ 17] literal string: glGetShaderSource
-0x00013A34	0x0000000E	[ 17] literal string: glGetShaderiv
-0x00013A42	0x0000000C	[ 17] literal string: glGetString
-0x00013A4E	0x0000000E	[ 17] literal string: glGetTexEnvfv
-0x00013A5C	0x0000000E	[ 17] literal string: glGetTexEnviv
-0x00013A6A	0x0000000E	[ 17] literal string: glGetTexEnvxv
-0x00013A78	0x00000014	[ 17] literal string: glGetTexParameterfv
-0x00013A8C	0x00000014	[ 17] literal string: glGetTexParameteriv
-0x00013AA0	0x00000014	[ 17] literal string: glGetTexParameterxv
-0x00013AB4	0x00000015	[ 17] literal string: glGetUniformLocation
-0x00013AC9	0x0000000F	[ 17] literal string: glGetUniformfv
-0x00013AD8	0x0000000F	[ 17] literal string: glGetUniformiv
-0x00013AE7	0x0000001A	[ 17] literal string: glGetVertexAttribPointerv
-0x00013B01	0x00000014	[ 17] literal string: glGetVertexAttribfv
-0x00013B15	0x00000014	[ 17] literal string: glGetVertexAttribiv
-0x00013B29	0x00000007	[ 17] literal string: glHint
-0x00013B30	0x0000000B	[ 17] literal string: glIsBuffer
-0x00013B3B	0x0000000C	[ 17] literal string: glIsEnabled
-0x00013B47	0x00000010	[ 17] literal string: glIsFramebuffer
-0x00013B57	0x0000000C	[ 17] literal string: glIsProgram
-0x00013B63	0x00000011	[ 17] literal string: glIsRenderbuffer
-0x00013B74	0x0000000B	[ 17] literal string: glIsShader
-0x00013B7F	0x0000000C	[ 17] literal string: glIsTexture
-0x00013B8B	0x0000000E	[ 17] literal string: glLightModelf
-0x00013B99	0x0000000F	[ 17] literal string: glLightModelfv
-0x00013BA8	0x0000000E	[ 17] literal string: glLightModelx
-0x00013BB6	0x0000000F	[ 17] literal string: glLightModelxv
-0x00013BC5	0x00000009	[ 17] literal string: glLightf
-0x00013BCE	0x0000000A	[ 17] literal string: glLightfv
-0x00013BD8	0x00000009	[ 17] literal string: glLightx
-0x00013BE1	0x0000000A	[ 17] literal string: glLightxv
-0x00013BEB	0x0000000C	[ 17] literal string: glLineWidth
-0x00013BF7	0x0000000D	[ 17] literal string: glLineWidthx
-0x00013C04	0x0000000E	[ 17] literal string: glLinkProgram
-0x00013C12	0x0000000F	[ 17] literal string: glLoadIdentity
-0x00013C21	0x0000000E	[ 17] literal string: glLoadMatrixf
-0x00013C2F	0x0000000E	[ 17] literal string: glLoadMatrixx
-0x00013C3D	0x0000000A	[ 17] literal string: glLogicOp
-0x00013C47	0x0000000C	[ 17] literal string: glMaterialf
-0x00013C53	0x0000000D	[ 17] literal string: glMaterialfv
-0x00013C60	0x0000000C	[ 17] literal string: glMaterialx
-0x00013C6C	0x0000000D	[ 17] literal string: glMaterialxv
-0x00013C79	0x00000018	[ 17] literal string: glMatrixIndexPointerOES
-0x00013C91	0x0000000D	[ 17] literal string: glMatrixMode
-0x00013C9E	0x0000000E	[ 17] literal string: glMultMatrixf
-0x00013CAC	0x0000000E	[ 17] literal string: glMultMatrixx
-0x00013CBA	0x00000012	[ 17] literal string: glMultiTexCoord4f
-0x00013CCC	0x00000012	[ 17] literal string: glMultiTexCoord4x
-0x00013CDE	0x0000000B	[ 17] literal string: glNormal3f
-0x00013CE9	0x0000000B	[ 17] literal string: glNormal3x
-0x00013CF4	0x00000010	[ 17] literal string: glNormalPointer
-0x00013D04	0x00000009	[ 17] literal string: glOrthof
-0x00013D0D	0x00000009	[ 17] literal string: glOrthox
-0x00013D16	0x0000000E	[ 17] literal string: glPixelStorei
-0x00013D24	0x00000012	[ 17] literal string: glPointParameterf
-0x00013D36	0x00000013	[ 17] literal string: glPointParameterfv
-0x00013D49	0x00000012	[ 17] literal string: glPointParameterx
-0x00013D5B	0x00000013	[ 17] literal string: glPointParameterxv
-0x00013D6E	0x0000000C	[ 17] literal string: glPointSize
-0x00013D7A	0x00000016	[ 17] literal string: glPointSizePointerOES
-0x00013D90	0x0000000D	[ 17] literal string: glPointSizex
-0x00013D9D	0x00000010	[ 17] literal string: glPolygonOffset
-0x00013DAD	0x00000011	[ 17] literal string: glPolygonOffsetx
-0x00013DBE	0x0000000C	[ 17] literal string: glPopMatrix
-0x00013DCA	0x0000000D	[ 17] literal string: glPushMatrix
-0x00013DD7	0x0000000D	[ 17] literal string: glReadPixels
-0x00013DE4	0x00000018	[ 17] literal string: glReleaseShaderCompiler
-0x00013DFC	0x00000016	[ 17] literal string: glRenderbufferStorage
-0x00013E12	0x0000000A	[ 17] literal string: glRotatef
-0x00013E1C	0x0000000A	[ 17] literal string: glRotatex
-0x00013E26	0x00000011	[ 17] literal string: glSampleCoverage
-0x00013E37	0x00000012	[ 17] literal string: glSampleCoveragex
-0x00013E49	0x00000009	[ 17] literal string: glScalef
-0x00013E52	0x00000009	[ 17] literal string: glScalex
-0x00013E5B	0x0000000A	[ 17] literal string: glScissor
-0x00013E65	0x0000000D	[ 17] literal string: glShadeModel
-0x00013E72	0x0000000F	[ 17] literal string: glShaderBinary
-0x00013E81	0x0000000F	[ 17] literal string: glShaderSource
-0x00013E90	0x0000000E	[ 17] literal string: glStencilFunc
-0x00013E9E	0x00000016	[ 17] literal string: glStencilFuncSeparate
-0x00013EB4	0x0000000E	[ 17] literal string: glStencilMask
-0x00013EC2	0x00000016	[ 17] literal string: glStencilMaskSeparate
-0x00013ED8	0x0000000C	[ 17] literal string: glStencilOp
-0x00013EE4	0x00000014	[ 17] literal string: glStencilOpSeparate
-0x00013EF8	0x00000012	[ 17] literal string: glTexCoordPointer
-0x00013F0A	0x0000000A	[ 17] literal string: glTexEnvf
-0x00013F14	0x0000000B	[ 17] literal string: glTexEnvfv
-0x00013F1F	0x0000000A	[ 17] literal string: glTexEnvi
-0x00013F29	0x0000000B	[ 17] literal string: glTexEnviv
-0x00013F34	0x0000000A	[ 17] literal string: glTexEnvx
-0x00013F3E	0x0000000B	[ 17] literal string: glTexEnvxv
-0x00013F49	0x0000000D	[ 17] literal string: glTexImage2D
-0x00013F56	0x00000010	[ 17] literal string: glTexParameterf
-0x00013F66	0x00000011	[ 17] literal string: glTexParameterfv
-0x00013F77	0x00000010	[ 17] literal string: glTexParameteri
-0x00013F87	0x00000011	[ 17] literal string: glTexParameteriv
-0x00013F98	0x00000010	[ 17] literal string: glTexParameterx
-0x00013FA8	0x00000011	[ 17] literal string: glTexParameterxv
-0x00013FB9	0x00000010	[ 17] literal string: glTexSubImage2D
-0x00013FC9	0x0000000D	[ 17] literal string: glTranslatef
-0x00013FD6	0x0000000D	[ 17] literal string: glTranslatex
-0x00013FE3	0x0000000C	[ 17] literal string: glUniform1f
-0x00013FEF	0x0000000D	[ 17] literal string: glUniform1fv
-0x00013FFC	0x0000000C	[ 17] literal string: glUniform1i
-0x00014008	0x0000000D	[ 17] literal string: glUniform1iv
-0x00014015	0x0000000C	[ 17] literal string: glUniform2f
-0x00014021	0x0000000D	[ 17] literal string: glUniform2fv
-0x0001402E	0x0000000C	[ 17] literal string: glUniform2i
-0x0001403A	0x0000000D	[ 17] literal string: glUniform2iv
-0x00014047	0x0000000C	[ 17] literal string: glUniform3f
-0x00014053	0x0000000D	[ 17] literal string: glUniform3fv
-0x00014060	0x0000000C	[ 17] literal string: glUniform3i
-0x0001406C	0x0000000D	[ 17] literal string: glUniform3iv
-0x00014079	0x0000000C	[ 17] literal string: glUniform4f
-0x00014085	0x0000000D	[ 17] literal string: glUniform4fv
-0x00014092	0x0000000C	[ 17] literal string: glUniform4i
-0x0001409E	0x0000000D	[ 17] literal string: glUniform4iv
-0x000140AB	0x00000013	[ 17] literal string: glUniformMatrix2fv
-0x000140BE	0x00000013	[ 17] literal string: glUniformMatrix3fv
-0x000140D1	0x00000013	[ 17] literal string: glUniformMatrix4fv
-0x000140E4	0x0000000D	[ 17] literal string: glUseProgram
-0x000140F1	0x00000012	[ 17] literal string: glValidateProgram
-0x00014103	0x00000011	[ 17] literal string: glVertexAttrib1f
-0x00014114	0x00000012	[ 17] literal string: glVertexAttrib1fv
-0x00014126	0x00000011	[ 17] literal string: glVertexAttrib2f
-0x00014137	0x00000012	[ 17] literal string: glVertexAttrib2fv
-0x00014149	0x00000011	[ 17] literal string: glVertexAttrib3f
-0x0001415A	0x00000012	[ 17] literal string: glVertexAttrib3fv
-0x0001416C	0x00000011	[ 17] literal string: glVertexAttrib4f
-0x0001417D	0x00000012	[ 17] literal string: glVertexAttrib4fv
-0x0001418F	0x00000016	[ 17] literal string: glVertexAttribPointer
-0x000141A5	0x00000010	[ 17] literal string: glVertexPointer
-0x000141B5	0x0000000B	[ 17] literal string: glViewport
-0x000141C0	0x00000013	[ 17] literal string: glWeightPointerOES
-0x000141D3	0x00000019	[ 17] literal string: s3eAccelerometerGetError
-0x000141EC	0x0000001F	[ 17] literal string: s3eAccelerometerGetErrorString
-0x0001420B	0x00000017	[ 17] literal string: s3eAccelerometerGetInt
-0x00014222	0x00000015	[ 17] literal string: s3eAccelerometerGetX
-0x00014237	0x00000015	[ 17] literal string: s3eAccelerometerGetY
-0x0001424C	0x00000015	[ 17] literal string: s3eAccelerometerGetZ
-0x00014261	0x00000016	[ 17] literal string: s3eAccelerometerStart
-0x00014277	0x00000015	[ 17] literal string: s3eAccelerometerStop
-0x0001428C	0x00000011	[ 17] literal string: s3eAudioGetError
-0x0001429D	0x00000017	[ 17] literal string: s3eAudioGetErrorString
-0x000142B4	0x0000000F	[ 17] literal string: s3eAudioGetInt
-0x000142C3	0x00000019	[ 17] literal string: s3eAudioIsCodecSupported
-0x000142DC	0x00000012	[ 17] literal string: s3eAudioIsPlaying
-0x000142EE	0x0000000E	[ 17] literal string: s3eAudioPause
-0x000142FC	0x0000000D	[ 17] literal string: s3eAudioPlay
-0x00014309	0x00000017	[ 17] literal string: s3eAudioPlayFromBuffer
-0x00014320	0x00000011	[ 17] literal string: s3eAudioRegister
-0x00014331	0x0000000F	[ 17] literal string: s3eAudioResume
-0x00014340	0x0000000F	[ 17] literal string: s3eAudioSetInt
-0x0001434F	0x0000000D	[ 17] literal string: s3eAudioStop
-0x0001435C	0x00000013	[ 17] literal string: s3eAudioUnRegister
-0x0001436F	0x00000015	[ 17] literal string: s3eCompressionDecomp
-0x00014384	0x0000001A	[ 17] literal string: s3eCompressionDecompFinal
-0x0001439E	0x00000019	[ 17] literal string: s3eCompressionDecompInit
-0x000143B7	0x00000019	[ 17] literal string: s3eCompressionDecompRead
-0x000143D0	0x00000017	[ 17] literal string: s3eCompressionGetError
-0x000143E7	0x0000001D	[ 17] literal string: s3eCompressionGetErrorString
-0x00014404	0x00000012	[ 17] literal string: s3eConfigGetError
-0x00014416	0x00000018	[ 17] literal string: s3eConfigGetErrorString
-0x0001442E	0x00000010	[ 17] literal string: s3eConfigGetInt
-0x0001443E	0x00000014	[ 17] literal string: s3eConfigGetIntHash
-0x00014452	0x00000013	[ 17] literal string: s3eConfigGetString
-0x00014465	0x00000017	[ 17] literal string: s3eConfigGetStringHash
-0x0001447C	0x00000012	[ 17] literal string: s3eCryptoGetError
-0x0001448E	0x00000018	[ 17] literal string: s3eCryptoGetErrorString
-0x000144A6	0x0000000E	[ 17] literal string: s3eCryptoRand
-0x000144B4	0x0000000E	[ 17] literal string: s3eCryptoSha1
-0x000144C2	0x00000013	[ 17] literal string: s3eCryptoSha1Final
-0x000144D5	0x00000012	[ 17] literal string: s3eCryptoSha1Init
-0x000144E7	0x00000014	[ 17] literal string: s3eCryptoSha1Update
-0x000144FB	0x00000013	[ 17] literal string: s3eCryptoVerifyRsa
-0x0001450E	0x00000013	[ 17] literal string: s3eDebugAssertShow
-0x00014521	0x00000012	[ 17] literal string: s3eDebugErrorShow
-0x00014533	0x00000011	[ 17] literal string: s3eDebugGetError
-0x00014544	0x00000017	[ 17] literal string: s3eDebugGetErrorString
-0x0001455B	0x0000000F	[ 17] literal string: s3eDebugGetInt
-0x0001456A	0x0000001A	[ 17] literal string: s3eDebugIsDebuggerPresent
-0x00014584	0x00000015	[ 17] literal string: s3eDebugOutputString
-0x00014599	0x0000000E	[ 17] literal string: s3eDebugPrint
-0x000145A7	0x00000011	[ 17] literal string: s3eDebugRegister
-0x000145B8	0x0000000F	[ 17] literal string: s3eDebugSetInt
-0x000145C7	0x0000001B	[ 17] literal string: s3eDebugTraceChannelSwitch
-0x000145E2	0x00000017	[ 17] literal string: s3eDebugTraceClearFile
-0x000145F9	0x00000013	[ 17] literal string: s3eDebugTraceFlush
-0x0001460C	0x00000012	[ 17] literal string: s3eDebugTraceLine
-0x0001461E	0x00000013	[ 17] literal string: s3eDebugUnRegister
-0x00014631	0x00000015	[ 17] literal string: s3eDeviceBacklightOn
-0x00014646	0x0000001B	[ 17] literal string: s3eDeviceCheckPauseRequest
-0x00014661	0x0000001A	[ 17] literal string: s3eDeviceCheckQuitRequest
-0x0001467B	0x00000016	[ 17] literal string: s3eDeviceExecPushNext
-0x00014691	0x0000000E	[ 17] literal string: s3eDeviceExit
-0x0001469F	0x00000012	[ 17] literal string: s3eDeviceGetError
-0x000146B1	0x00000018	[ 17] literal string: s3eDeviceGetErrorString
-0x000146C9	0x00000010	[ 17] literal string: s3eDeviceGetInt
-0x000146D9	0x00000013	[ 17] literal string: s3eDeviceGetString
-0x000146EC	0x00000012	[ 17] literal string: s3eDeviceRegister
-0x000146FE	0x00000015	[ 17] literal string: s3eDeviceRequestQuit
-0x00014713	0x00000010	[ 17] literal string: s3eDeviceSetInt
-0x00014723	0x00000014	[ 17] literal string: s3eDeviceUnRegister
-0x00014737	0x00000011	[ 17] literal string: s3eDeviceUnYield
-0x00014748	0x0000000F	[ 17] literal string: s3eDeviceYield
-0x00014757	0x00000019	[ 17] literal string: s3eDeviceYieldUntilEvent
-0x00014770	0x0000000A	[ 17] literal string: s3eExtGet
-0x0001477A	0x0000000F	[ 17] literal string: s3eExtGetError
-0x00014789	0x00000015	[ 17] literal string: s3eExtGetErrorString
-0x0001479E	0x0000000E	[ 17] literal string: s3eExtGetHash
-0x000147AC	0x00000016	[ 17] literal string: s3eFileAddUserFileSys
-0x000147C2	0x00000013	[ 17] literal string: s3eFileCheckExists
-0x000147D5	0x0000000D	[ 17] literal string: s3eFileClose
-0x000147E2	0x0000000E	[ 17] literal string: s3eFileDelete
-0x000147F0	0x00000017	[ 17] literal string: s3eFileDeleteDirectory
-0x00014807	0x0000000B	[ 17] literal string: s3eFileEOF
-0x00014812	0x0000000D	[ 17] literal string: s3eFileFlush
-0x0001481F	0x0000000F	[ 17] literal string: s3eFileGetChar
-0x0001482E	0x00000010	[ 17] literal string: s3eFileGetError
-0x0001483E	0x00000016	[ 17] literal string: s3eFileGetErrorString
-0x00014854	0x00000012	[ 17] literal string: s3eFileGetFileInt
-0x00014866	0x00000015	[ 17] literal string: s3eFileGetFileString
-0x0001487B	0x0000000F	[ 17] literal string: s3eFileGetFree
-0x0001488A	0x0000000E	[ 17] literal string: s3eFileGetInt
-0x00014898	0x00000018	[ 17] literal string: s3eFileGetLastWriteTime
-0x000148B0	0x0000000F	[ 17] literal string: s3eFileGetSize
-0x000148BF	0x00000011	[ 17] literal string: s3eFileListClose
-0x000148D0	0x00000015	[ 17] literal string: s3eFileListDirectory
-0x000148E5	0x00000010	[ 17] literal string: s3eFileListNext
-0x000148F5	0x00000015	[ 17] literal string: s3eFileMakeDirectory
-0x0001490A	0x0000000C	[ 17] literal string: s3eFileOpen
-0x00014916	0x00000016	[ 17] literal string: s3eFileOpenFromMemory
-0x0001492C	0x0000000F	[ 17] literal string: s3eFilePutChar
-0x0001493B	0x0000000C	[ 17] literal string: s3eFileRead
-0x00014947	0x00000012	[ 17] literal string: s3eFileReadString
-0x00014959	0x00000019	[ 17] literal string: s3eFileRemoveUserFileSys
-0x00014972	0x0000000E	[ 17] literal string: s3eFileRename
-0x00014980	0x0000000C	[ 17] literal string: s3eFileSeek
-0x0001498C	0x0000000E	[ 17] literal string: s3eFileSetInt
-0x0001499A	0x0000000C	[ 17] literal string: s3eFileTell
-0x000149A6	0x00000010	[ 17] literal string: s3eFileTruncate
-0x000149B6	0x0000000D	[ 17] literal string: s3eFileWrite
-0x000149C3	0x00000008	[ 17] literal string: s3eFree
-0x000149CB	0x0000000C	[ 17] literal string: s3eFreeBase
-0x000149D7	0x0000000E	[ 17] literal string: s3eGLGetError
-0x000149E5	0x00000014	[ 17] literal string: s3eGLGetErrorString
-0x000149F9	0x0000000C	[ 17] literal string: s3eGLGetInt
-0x00014A05	0x00000015	[ 17] literal string: s3eGLGetNativeWindow
-0x00014A1A	0x0000000E	[ 17] literal string: s3eGLRegister
-0x00014A28	0x00000010	[ 17] literal string: s3eGLUnRegister
-0x00014A38	0x00000011	[ 17] literal string: s3eGLUnavailable
-0x00014A49	0x0000000C	[ 17] literal string: s3eInetAton
-0x00014A55	0x0000000D	[ 17] literal string: s3eInetHtonl
-0x00014A62	0x0000000D	[ 17] literal string: s3eInetHtons
-0x00014A6F	0x0000000E	[ 17] literal string: s3eInetLookup
-0x00014A7D	0x00000014	[ 17] literal string: s3eInetLookupCancel
-0x00014A91	0x0000000C	[ 17] literal string: s3eInetNtoa
-0x00014A9D	0x0000000D	[ 17] literal string: s3eInetNtohl
-0x00014AAA	0x0000000D	[ 17] literal string: s3eInetNtohs
-0x00014AB7	0x00000010	[ 17] literal string: s3eInetToString
-0x00014AC7	0x00000012	[ 17] literal string: s3eKeyboardAnyKey
-0x00014AD9	0x00000016	[ 17] literal string: s3eKeyboardClearState
-0x00014AEF	0x00000013	[ 17] literal string: s3eKeyboardGetChar
-0x00014B02	0x0000001A	[ 17] literal string: s3eKeyboardGetDisplayName
-0x00014B1C	0x00000014	[ 17] literal string: s3eKeyboardGetError
-0x00014B30	0x0000001A	[ 17] literal string: s3eKeyboardGetErrorString
-0x00014B4A	0x00000012	[ 17] literal string: s3eKeyboardGetInt
-0x00014B5C	0x00000014	[ 17] literal string: s3eKeyboardGetState
-0x00014B70	0x00000014	[ 17] literal string: s3eKeyboardRegister
-0x00014B84	0x00000012	[ 17] literal string: s3eKeyboardSetInt
-0x00014B96	0x00000016	[ 17] literal string: s3eKeyboardUnRegister
-0x00014BAC	0x00000012	[ 17] literal string: s3eKeyboardUpdate
-0x00014BBE	0x0000000E	[ 17] literal string: s3eLicenseBuy
-0x00014BCC	0x00000013	[ 17] literal string: s3eLicenseGetError
-0x00014BDF	0x00000019	[ 17] literal string: s3eLicenseGetErrorString
-0x00014BF8	0x00000011	[ 17] literal string: s3eLicenseGetInt
-0x00014C09	0x0000000A	[ 17] literal string: s3eMalloc
-0x00014C13	0x0000000E	[ 17] literal string: s3eMallocBase
-0x00014C21	0x00000012	[ 17] literal string: s3eMemoryGetError
-0x00014C33	0x00000018	[ 17] literal string: s3eMemoryGetErrorString
-0x00014C4B	0x00000010	[ 17] literal string: s3eMemoryGetInt
-0x00014C5B	0x00000017	[ 17] literal string: s3eMemoryGetUserMemMgr
-0x00014C72	0x00000015	[ 17] literal string: s3eMemoryHeapAddress
-0x00014C87	0x00000014	[ 17] literal string: s3eMemoryHeapCreate
-0x00014C9B	0x00000015	[ 17] literal string: s3eMemoryHeapDestroy
-0x00014CB0	0x00000010	[ 17] literal string: s3eMemorySetInt
-0x00014CC0	0x00000017	[ 17] literal string: s3eMemorySetUserMemMgr
-0x00014CD7	0x00000013	[ 17] literal string: s3ePointerGetError
-0x00014CEA	0x00000019	[ 17] literal string: s3ePointerGetErrorString
-0x00014D03	0x00000011	[ 17] literal string: s3ePointerGetInt
-0x00014D14	0x00000013	[ 17] literal string: s3ePointerGetState
-0x00014D27	0x00000018	[ 17] literal string: s3ePointerGetTouchState
-0x00014D3F	0x00000014	[ 17] literal string: s3ePointerGetTouchX
-0x00014D53	0x00000014	[ 17] literal string: s3ePointerGetTouchY
-0x00014D67	0x0000000F	[ 17] literal string: s3ePointerGetX
-0x00014D76	0x0000000F	[ 17] literal string: s3ePointerGetY
-0x00014D85	0x00000013	[ 17] literal string: s3ePointerRegister
-0x00014D98	0x00000011	[ 17] literal string: s3ePointerSetInt
-0x00014DA9	0x00000015	[ 17] literal string: s3ePointerUnRegister
-0x00014DBE	0x00000011	[ 17] literal string: s3ePointerUpdate
-0x00014DCF	0x0000000B	[ 17] literal string: s3eRealloc
-0x00014DDA	0x0000000F	[ 17] literal string: s3eReallocBase
-0x00014DE9	0x00000014	[ 17] literal string: s3eSecureStorageGet
-0x00014DFD	0x00000019	[ 17] literal string: s3eSecureStorageGetError
-0x00014E18	0x0000001F	[ 17] literal string: s3eSecureStorageGetErrorString
-0x00014E37	0x00000014	[ 17] literal string: s3eSecureStoragePut
-0x00014E4B	0x00000010	[ 17] literal string: s3eSocketAccept
-0x00014E5B	0x0000000E	[ 17] literal string: s3eSocketBind
-0x00014E69	0x0000000F	[ 17] literal string: s3eSocketClose
-0x00014E78	0x00000011	[ 17] literal string: s3eSocketConnect
-0x00014E89	0x00000010	[ 17] literal string: s3eSocketCreate
-0x00014E99	0x00000012	[ 17] literal string: s3eSocketGetError
-0x00014EAB	0x00000018	[ 17] literal string: s3eSocketGetErrorString
-0x00014EC3	0x00000010	[ 17] literal string: s3eSocketGetInt
-0x00014ED3	0x00000016	[ 17] literal string: s3eSocketGetLocalName
-0x00014EE9	0x00000015	[ 17] literal string: s3eSocketGetPeerName
-0x00014EFE	0x00000013	[ 17] literal string: s3eSocketGetString
-0x00014F11	0x00000010	[ 17] literal string: s3eSocketListen
-0x00014F21	0x00000012	[ 17] literal string: s3eSocketReadable
-0x00014F33	0x0000000E	[ 17] literal string: s3eSocketRecv
-0x00014F41	0x00000012	[ 17] literal string: s3eSocketRecvFrom
-0x00014F53	0x0000000E	[ 17] literal string: s3eSocketSend
-0x00014F61	0x00000010	[ 17] literal string: s3eSocketSendTo
-0x00014F71	0x00000012	[ 17] literal string: s3eSocketWritable
-0x00014F83	0x00000016	[ 17] literal string: s3eSoundChannelGetInt
-0x00014F99	0x00000015	[ 17] literal string: s3eSoundChannelPause
-0x00014FAE	0x00000014	[ 17] literal string: s3eSoundChannelPlay
-0x00014FC2	0x00000018	[ 17] literal string: s3eSoundChannelRegister
-0x00014FDA	0x00000016	[ 17] literal string: s3eSoundChannelResume
-0x00014FF0	0x00000016	[ 17] literal string: s3eSoundChannelSetInt
-0x00015006	0x00000014	[ 17] literal string: s3eSoundChannelStop
-0x0001501A	0x0000001A	[ 17] literal string: s3eSoundChannelUnRegister
-0x00015034	0x00000011	[ 17] literal string: s3eSoundGetError
-0x00015045	0x00000017	[ 17] literal string: s3eSoundGetErrorString
-0x0001505C	0x00000017	[ 17] literal string: s3eSoundGetFreeChannel
-0x00015073	0x0000000F	[ 17] literal string: s3eSoundGetInt
-0x00015082	0x00000019	[ 17] literal string: s3eSoundPauseAllChannels
-0x0001509B	0x0000001A	[ 17] literal string: s3eSoundResumeAllChannels
-0x000150B5	0x0000000F	[ 17] literal string: s3eSoundSetInt
-0x000150C4	0x00000018	[ 17] literal string: s3eSoundStopAllChannels
-0x000150DC	0x00000015	[ 17] literal string: s3eSurfaceConvertRGB
-0x000150F1	0x00000013	[ 17] literal string: s3eSurfaceGetError
-0x00015104	0x00000019	[ 17] literal string: s3eSurfaceGetErrorString
-0x0001511D	0x00000011	[ 17] literal string: s3eSurfaceGetInt
-0x0001512E	0x00000015	[ 17] literal string: s3eSurfaceInvalidate
-0x00015143	0x0000000E	[ 17] literal string: s3eSurfacePtr
-0x00015151	0x00000013	[ 17] literal string: s3eSurfaceRegister
-0x00015164	0x00000017	[ 17] literal string: s3eSurfaceSetDisplayID
-0x0001517B	0x00000010	[ 17] literal string: s3eSurfaceSetup
-0x0001518B	0x0000000F	[ 17] literal string: s3eSurfaceShow
-0x0001519A	0x00000015	[ 17] literal string: s3eSurfaceUnRegister
-0x000151AF	0x00000014	[ 17] literal string: s3eTimerCancelTimer
-0x000151C3	0x00000011	[ 17] literal string: s3eTimerGetError
-0x000151D4	0x00000017	[ 17] literal string: s3eTimerGetErrorString
-0x000151EB	0x0000000F	[ 17] literal string: s3eTimerGetInt
-0x000151FA	0x0000001B	[ 17] literal string: s3eTimerGetLocaltimeOffset
-0x00015215	0x0000000E	[ 17] literal string: s3eTimerGetMs
-0x00015223	0x0000000F	[ 17] literal string: s3eTimerGetUST
-0x00015232	0x0000000F	[ 17] literal string: s3eTimerGetUTC
-0x00015241	0x00000011	[ 17] literal string: s3eTimerSetTimer
-0x00015252	0x00000011	[ 17] literal string: s3eVibraGetError
-0x00015263	0x00000017	[ 17] literal string: s3eVibraGetErrorString
-0x0001527A	0x0000000F	[ 17] literal string: s3eVibraGetInt
-0x00015289	0x0000000F	[ 17] literal string: s3eVibraSetInt
-0x00015298	0x0000000D	[ 17] literal string: s3eVibraStop
-0x000152A5	0x00000010	[ 17] literal string: s3eVibraVibrate
-0x000152B5	0x00000011	[ 17] literal string: s3eVideoGetError
-0x000152C6	0x00000017	[ 17] literal string: s3eVideoGetErrorString
-0x000152DD	0x0000000F	[ 17] literal string: s3eVideoGetInt
-0x000152EC	0x00000019	[ 17] literal string: s3eVideoIsCodecSupported
-0x00015305	0x00000012	[ 17] literal string: s3eVideoIsPlaying
-0x00015317	0x0000000E	[ 17] literal string: s3eVideoPause
-0x00015325	0x0000000D	[ 17] literal string: s3eVideoPlay
-0x00015332	0x00000017	[ 17] literal string: s3eVideoPlayFromBuffer
-0x00015349	0x00000011	[ 17] literal string: s3eVideoRegister
-0x0001535A	0x0000000F	[ 17] literal string: s3eVideoResume
-0x00015369	0x0000000F	[ 17] literal string: s3eVideoSetInt
-0x00015378	0x0000000D	[ 17] literal string: s3eVideoStop
-0x00015385	0x00000013	[ 17] literal string: s3eVideoUnRegister
-0x00015398	0x00000002	[ 17] literal string: 
+0x00000760	0x00000050	[  1] _s3eNextpeerAvailable
+0x000007B0	0x000000C0	[  1] __ZL13_extLoadNoMsgv
+0x00000870	0x000000D0	[  1] __ZL8_extLoadv
+0x00000940	0x000000D0	[  1] _s3eNextpeerRegisterCallback
+0x00000A10	0x000000B0	[  1] _s3eNextpeerIsCurrentlyInTournament
+0x00000AC0	0x000000A0	[  1] _s3eNextpeerReportScoreForCurrentTournament
+0x00000B60	0x00000090	[  1] _s3eNextpeerLaunchDashboard
+0x00000BF0	0x00000098	[  1] _s3eNextpeerInitWithProductKey
+0x00000C90	0x00000190	[  2] _main
+0x00000E20	0x00000060	[  2] __ZL29didTournamentStartWithDetailsPvS_
+0x00000E80	0x00000051	[  2] __ZL16didTournamentEndPvS_
+0x00000EE0	0x00000080	[  3] _gettimeofday
+0x00000F60	0x000000E0	[  3] _abort
+0x00001040	0x000000C0	[  3] __IwCrtRealloc
+0x00001100	0x000000B0	[  3] __IwCrtMalloc
+0x000011B0	0x000000D0	[  3] __IwCrtCalloc
+0x00001280	0x00000050	[  3] __IwCrtFree
+0x000012D0	0x00000050	[  3] __IwExit
+0x00001320	0x00000030	[  3] _iwcrt_fini
+0x00001350	0x000001A0	[  3] _iwcrt_init2
+0x000014F0	0x00000036	[  3] _iwcrt_init
+0x00001530	0x0000012D	[  4] _IwMain
+0x00001660	0x00000010	[  5] __IwMalloc
+0x00001670	0x00000030	[  5] _calloc
+0x000016A0	0x000000E0	[  5] __IwFree
+0x00001780	0x00000005	[  5] _free
+0x00001790	0x00000110	[  6] _pthread_mutex_lock
+0x000018A0	0x00000140	[  6] _pthread_mutex_init
+0x000019E0	0x00000191	[  6] _pthread_mutex_unlock
+0x00001B80	0x000000F0	[  7] __ZL11getTLSBlockl
+0x00001C70	0x00000030	[  7] _pthread_getspecific
+0x00001CA0	0x00000090	[  7] _pthread_setspecific
+0x00001D30	0x0000011C	[  7] _pthread_key_create
+0x00001E50	0x0000004D	[  8] _pthread_self
+0x00001EA0	0x00000200	[  9] _setenv
+0x000020A0	0x00000056	[ 10] _strerror
+0x00002100	0x00000050	[ 11] _strlcpy
+0x00002150	0x00000065	[ 12] _localtime
+0x000021C0	0x00000070	[ 13] _s3eDebugPrintf
+0x00002230	0x000000B0	[ 14] __ZL6getTLSv
+0x000022E0	0x000000B0	[ 14] _s3eMalloc
+0x00002390	0x000000C0	[ 14] _s3eRealloc
+0x00002450	0x000000B0	[ 14] _s3eFree
+0x00002500	0x000000C0	[ 14] _iw_malloc_init
+0x000025C0	0x00000005	[ 14] __ZL7tlsFreePv
+0x000025D0	0x00000020	[ 15] _IwDebugTraceSetTraceChannel
+0x000025F0	0x00000020	[ 15] _IwDebugAssertSetUID
+0x00002610	0x000000C0	[ 15] _IwDebugErrorShow
+0x000026D0	0x00000180	[ 15] _IwDebugTraceLineVPrintf
+0x00002850	0x00000020	[ 15] _IwDebugTraceLinePrintf
+0x00002870	0x000001B0	[ 15] _IwDebugTraceIsChannelOn
+0x00002A20	0x00000160	[ 15] _IwDebugAssertIsChannelOn
+0x00002B80	0x000000E0	[ 15] _IwDebugAssertSetMessage
+0x00002C60	0x000000A0	[ 15] _IwDebugAssertSetSolution
+0x00002D00	0x000001FF	[ 15] _IwDebugAssertShow
+0x00002F00	0x00000098	[ 15] __GLOBAL__I_g_DebugGlobals
+0x00002FA0	0x00000070	[ 16] _s3eThreadAvailable
+0x00003010	0x000000A0	[ 16] _s3eThreadLockRelease
+0x000030B0	0x000000A0	[ 16] _s3eThreadLockAcquire
+0x00003150	0x000000A0	[ 16] _s3eThreadLockDestroy
+0x000031F0	0x000000A0	[ 16] _s3eThreadLockCreate
+0x00003290	0x000000A0	[ 16] _s3eThreadGetCurrent
+0x00003330	0x00000010	[ 17] __exit
+0x00003340	0x00000010	[ 17] __gettimeofday
+0x00003350	0x00000020	[ 17] __malloc_r
+0x00003370	0x00000020	[ 17] __realloc_r
+0x00003390	0x00000020	[ 17] __calloc_r
+0x000033B0	0x00000020	[ 17] __free_r
+0x000033D0	0x000001B1	[ 18] __IwBindAPI
+0x00003590	0x00000010	[ 19] _iwcrt_x86_init
+0x000035A0	0x00000090	[ 19] __IwMain
+0x00003630	0x00000100	[ 20] __init
+0x00003730	0x00000001	[ 20] __fini
+0x00003740	0x00000014	[ 21] ___s3eFreeBase
+0x00003760	0x00000014	[ 22] ___s3eMallocBase
+0x00003780	0x00000014	[ 23] ___s3eMemorySetUserMemMgr
+0x000037A0	0x00000014	[ 24] ___s3eReallocBase
+0x000037C0	0x00000014	[ 25] _s3eConfigGetInt
+0x000037E0	0x00000014	[ 26] _s3eConfigGetString
+0x00003800	0x00000014	[ 27] _s3eDebugAssertShow
+0x00003820	0x00000014	[ 28] _s3eDebugErrorShow
+0x00003840	0x0000001C	[ 29] _s3eDebugIsDebuggerPresent
+0x00003860	0x00000014	[ 30] _s3eDebugPrint
+0x00003880	0x00000014	[ 31] _s3eDebugTraceLine
+0x000038A0	0x0000001C	[ 32] _s3eDeviceCheckQuitRequest
+0x000038C0	0x00000014	[ 33] _s3eDeviceExit
+0x000038E0	0x00000014	[ 34] _s3eDeviceGetString
+0x00003900	0x00000014	[ 35] _s3eDeviceSetInt
+0x00003920	0x00000014	[ 36] _s3eDeviceYield
+0x00003940	0x00000014	[ 37] _s3eExtGetHash
+0x00003960	0x00000014	[ 38] _s3eFreeBase
+0x00003980	0x00000014	[ 39] _s3eMallocBase
+0x000039A0	0x00000014	[ 40] _s3eMemoryGetInt
+0x000039C0	0x00000014	[ 41] _s3eMemorySetInt
+0x000039E0	0x00000014	[ 42] _s3ePointerUpdate
+0x00003A00	0x00000014	[ 43] _s3eReallocBase
+0x00003A20	0x00000014	[ 44] _s3eSurfaceShow
+0x00003A40	0x00000014	[ 45] _s3eTimerGetLocaltimeOffset
+0x00003A60	0x00000014	[ 46] _s3eTimerGetUTC
+0x00003A74	0x00000088	[ 47] ___fpclassifyd
+0x00003AFC	0x0000009C	[ 48] _frexp
+0x00003B98	0x00000013	[ 49] _nanf
+0x00003BAB	0x00000011	[ 50] _abs
+0x00003BBC	0x00000005	[ 52] ___env_lock
+0x00003BC1	0x00000005	[ 52] ___env_unlock
+0x00003BC6	0x00000005	[ 53] ___sfp_lock_acquire
+0x00003BCB	0x00000005	[ 53] ___sfp_lock_release
+0x00003BD0	0x00000077	[ 54] ___hexdig_init
+0x00003C47	0x000000A5	[ 54] _rshift
+0x00003CEC	0x00000672	[ 54] ___gethex
+0x0000435E	0x00000204	[ 55] ___hexnan
+0x00004562	0x000000AE	[ 56] __findenv_r
+0x00004610	0x00000021	[ 56] __getenv_r
+0x00004631	0x00000048	[ 57] __gettimeofday_r
+0x00004679	0x00000011	[ 58] ___gettzinfo
+0x0000468A	0x0000002D	[ 59] _gmtime
+0x000046B7	0x00000022	[ 60] _gmtime_r
+0x000046D9	0x0000001E	[ 62] _isalpha
+0x000046F7	0x00000072	[ 63] _iswspace
+0x0000476C	0x000001C2	[ 64] ___jp2uc
+0x0000492E	0x000000A9	[ 64] __jp2uc
+0x000049D7	0x00000011	[ 65] _labs
+0x000049E8	0x000000E1	[ 66] _emovi
+0x00004AC9	0x00000098	[ 66] _m16m
+0x00004B61	0x0000029A	[ 66] _edivm
+0x00004DFB	0x00000120	[ 66] _emulm
+0x00004F1B	0x000000EE	[ 66] _ecmp
+0x00005009	0x000001CF	[ 66] _eshift
+0x000051D8	0x00000195	[ 66] _enormlz
+0x0000536D	0x000003D7	[ 66] _emdnorm
+0x00005744	0x000001AB	[ 66] _eiremain
+0x000058EF	0x000000D2	[ 66] _emovo
+0x000059C1	0x000001C6	[ 66] _e64toe
+0x00005B87	0x00000075	[ 66] __ldcheck
+0x00005BFC	0x000003A1	[ 66] _emul
+0x00005F9D	0x00000DC1	[ 66] __strtold
+0x00006D5E	0x000003FD	[ 66] _ediv
+0x0000715B	0x00001843	[ 66] __ldtoa_r
+0x000089A0	0x00000011	[ 67] ___locale_charset
+0x000089B1	0x00000011	[ 67] ___locale_mb_cur_max
+0x000089C4	0x00000011	[ 67] __localeconv_r
+0x000089D5	0x000000B3	[ 68] __mbrtowc_r
+0x00008A88	0x00000035	[ 69] ___ascii_mbtowc
+0x00008ABD	0x00000070	[ 70] _memchr
+0x00008B2D	0x0000006C	[ 71] _memcpy
+0x00008B99	0x00000097	[ 72] _memmove
+0x00008C30	0x0000007D	[ 73] _memset
+0x00008CAD	0x000001FA	[ 74] ___tzcalc_limits
+0x00008EA7	0x00000436	[ 74] __mktm_r
+0x000092DD	0x00000022	[ 75] __Bfree
+0x000092FF	0x00000058	[ 75] ___hi0bits
+0x00009357	0x0000006E	[ 75] ___lo0bits
+0x000093C5	0x0000004A	[ 75] ___mcmp
+0x0000940F	0x00000061	[ 75] ___ulp
+0x00009470	0x00000043	[ 75] ___copybits
+0x000094B3	0x00000059	[ 75] ___any_on
+0x0000950C	0x000000A7	[ 75] __Balloc
+0x000095B3	0x0000019E	[ 75] ___multiply
+0x00009751	0x00000028	[ 75] ___i2b
+0x00009779	0x000000DA	[ 75] ___multadd
+0x00009853	0x000000D6	[ 75] ___s2b
+0x00009929	0x000000F3	[ 75] ___lshift
+0x00009A1C	0x0000016B	[ 75] ___mdiff
+0x00009B87	0x000000F7	[ 75] ___pow5mult
+0x00009C7E	0x00000150	[ 75] ___d2b
+0x00009DCE	0x00000123	[ 75] ___b2d
+0x00009EF1	0x0000007A	[ 75] ___ratio
+0x00009F6B	0x000000B2	[ 78] ___sccl
+0x0000A01D	0x000000A7	[ 79] _snprintf
+0x0000A0C4	0x0000006A	[ 80] _sprintf
+0x0000A12E	0x0000007B	[ 81] _sscanf
+0x0000A1A9	0x00000007	[ 82] ___seofread
+0x0000A1B0	0x000000B4	[ 83] _strchr
+0x0000A264	0x0000005B	[ 84] _strcmp
+0x0000A2BF	0x00000052	[ 85] _strcpy
+0x0000A314	0x00000104	[ 86] _iso_year_adjust
+0x0000A418	0x00000FB5	[ 86] _strftime
+0x0000B3CD	0x0000003F	[ 87] _strlen
+0x0000B40C	0x00000062	[ 88] _strncat
+0x0000B46E	0x00000078	[ 89] _strncmp
+0x0000B4E6	0x00000078	[ 90] _strncpy
+0x0000B560	0x00001446	[ 91] __strtod_r
+0x0000C9A6	0x00000168	[ 92] __strtol_r
+0x0000CB0E	0x00000239	[ 93] __strtoll_r
+0x0000CD47	0x0000015A	[ 94] __strtoul_r
+0x0000CEA1	0x00000038	[ 94] _strtoul
+0x0000CED9	0x000001F4	[ 95] __strtoull_r
+0x0000D0CF	0x00000191	[ 96] ___ssprint_r
+0x0000D260	0x0000005D	[ 97] ___ssrefill_r
+0x0000D2BD	0x000000B4	[ 97] __sungetc_r
+0x0000D371	0x000000DA	[ 97] __sfread_r
+0x0000D44C	0x00000643	[ 98] _get_arg
+0x0000DA8F	0x000045F6	[ 98] __svfprintf_r
+0x00012088	0x00002971	[ 99] ___ssvfscanf_r
+0x000149F9	0x00000057	[100] _time
+0x00014A50	0x00000022	[101] ___get_current_time_locale
+0x00014A72	0x00000005	[102] ___tz_lock
+0x00014A77	0x00000005	[102] ___tz_unlock
+0x00014A7C	0x00000023	[103] _tzset
+0x00014A9F	0x000004B6	[104] __tzset_r
+0x00014F55	0x000000BE	[106] ___submore
+0x00015013	0x00000082	[107] __vsnprintf_r
+0x00015095	0x0000003F	[107] _vsnprintf
+0x000150D4	0x000000D6	[108] __wcrtomb_r
+0x000151AA	0x00000185	[109] __wcsnrtombs_r
+0x0001532F	0x00000037	[110] __wcsrtombs_r
+0x00015366	0x00000033	[111] ___ascii_wctomb
+0x0001539A	0x00000006	[112] ___bzero
+0x000153A0	0x00000006	[112] ___divdi3
+0x000153A6	0x00000006	[112] ___error
+0x000153AC	0x00000006	[112] ___moddi3
+0x000153B2	0x00000006	[112] ___stack_chk_fail
+0x000153B8	0x00000006	[112] ___udivdi3
+0x000153BE	0x00000006	[112] ___umoddi3
+0x000153C4	0x00000006	[112] _dladdr
+0x000153CC	0x0000000A	[112] ___bzero
+0x000153D6	0x0000000A	[112] ___divdi3
+0x000153E0	0x0000000A	[112] ___error
+0x000153EA	0x0000000A	[112] ___moddi3
+0x000153F4	0x0000000A	[112] ___stack_chk_fail
+0x000153FE	0x0000000A	[112] ___udivdi3
+0x00015408	0x0000000A	[112] ___umoddi3
+0x00015412	0x0000000A	[112] _dladdr
+0x0001541C	0x0000000C	[  0] helper helper
+0x00015428	0x00000025	[  1] literal string: error loading extension: s3eNextpeer
+0x0001544D	0x00000011	[  1] literal string: NEXTPEER_VERBOSE
+0x0001545E	0x00000001	[  1] literal string: 
+0x00015460	0x0000003A	[  1] literal string: calling s3eNextpeer[14] func: s3eNextpeerRegisterCallback
+0x0001549C	0x00000040	[  1] literal string: calling s3eNextpeer[6] func: s3eNextpeerIsCurrentlyInTournament
+0x000154DC	0x00000048	[  1] literal string: calling s3eNextpeer[5] func: s3eNextpeerReportScoreForCurrentTournament
+0x00015524	0x00000038	[  1] literal string: calling s3eNextpeer[1] func: s3eNextpeerLaunchDashboard
+0x0001555C	0x0000003B	[  1] literal string: calling s3eNextpeer[0] func: s3eNextpeerInitWithProductKey
+0x00015598	0x00000013	[  2] literal string: Tournament started
+0x000155AB	0x00000018	[  2] literal string: Nextpeer will be loaded
+0x000155C4	0x00000029	[  2] literal string: e59d317f2e26de5dc78ad83539adfe8af2ba319b
+0x000155ED	0x00000018	[  2] literal string: Nextpeer is unavailable
+0x00015608	0x0000001F	[  2] literal string: Tournament end callback called
+0x00015628	0x00000006	[ 15] literal string: Error
+0x0001562E	0x00000012	[ 15] literal string: %d/%m/%y %H:%M:%S
+0x00015640	0x00000007	[ 15] literal string: .%03d 
+0x00015647	0x00000009	[ 15] literal string: : [%#x] 
+0x00015650	0x00000005	[ 15] literal string: %s: 
+0x00015655	0x00000006	[ 15] literal string: trace
+0x0001565B	0x00000004	[ 15] literal string: all
+0x0001565F	0x00000007	[ 15] literal string: Assert
+0x00015666	0x0000000A	[ 15] literal string: Message: 
+0x00015670	0x00000002	[ 15] literal string: 
 
-0x0001539C	0x00000060	[ 17] literal string: Warning: Couldn't bind the following functions (not exported by the loader). Crash is likely.:
+0x00015672	0x0000000C	[ 15] literal string: 
+Solution: 
+0x0001567F	0x0000001C	[ 15] literal string: IwAssert failure (%s, %u).
 
-0x000153FC	0x00000002	[ 52] literal string: C
-0x000153FE	0x00000011	[ 86] literal string: 0123456789abcdef
-0x0001540F	0x00000004	[ 86] literal string: INF
-0x00015413	0x00000004	[ 86] literal string: inf
-0x00015417	0x00000004	[ 86] literal string: NAN
-0x0001541B	0x00000004	[ 86] literal string: nan
-0x0001541F	0x00000011	[ 86] literal string: 0123456789ABCDEF
-0x00015430	0x00000007	[ 86] literal string: (null)
-0x00015437	0x0000001A	[ 86] literal string: bug in vfprintf: bad base
-0x00015451	0x00000002	[ 86] literal string: 0
-0x00015453	0x00000004	[ 90] literal string: GMT
-0x00015457	0x0000000F	[ 90] literal string: %10[^0-9,+-]%n
-0x00015466	0x00000012	[ 90] literal string: %hu%n:%hu%n:%hu%n
-0x00015478	0x00000013	[ 90] literal string: M%hu%n.%hu%n.%hu%n
-0x0001548B	0x00000013	[ 90] literal string: /%hu%n:%hu%n:%hu%n
-0x0001549E	0x00000004	[ 57] literal string: JIS
-0x000154A2	0x00000006	[ 57] literal string: EUCJP
-0x000154A8	0x00000005	[ 57] literal string: SJIS
-0x000154AD	0x00000002	[ 57] literal string: .
-0x000154AF	0x0000000C	[ 56] literal string:  -Infinity 
-0x000154BB	0x0000000B	[ 56] literal string:  Infinity 
-0x000154C6	0x00000004	[ 56] literal string: NaN
-0x000154CA	0x00000004	[ 56] literal string: E%d
-0x000154CE	0x00000006	[ 56] literal string:  NaN 
-0x000154D4	0x00000005	[ 87] literal string: e%ld
-0x000154D9	0x00000003	[ 79] literal string: nf
-0x000154DC	0x00000006	[ 79] literal string: inity
-0x000154E2	0x00000003	[ 79] literal string: an
-0x000154E5	0x00000007	[ 48] literal string: ABCDEF
-0x000154EC	0x00000007	[ 48] literal string: abcdef
-0x000154F3	0x0000000B	[ 48] literal string: 0123456789
-0x00015500	0x00000008	[ 43] 8-byte-literal
-0x00015520	0x00000180	[ 45] __ctype_b
-0x000156A0	0x00001740	[ 55] _b02cf
-0x00016DE0	0x00001A80	[ 55] _d02f4
-0x00018860	0x000000C0	[ 55] _a1
-0x00018920	0x000000C0	[ 55] _a2
-0x000189E0	0x00000060	[ 55] _a3
-0x00018A40	0x00000080	[ 55] _a6
-0x00018AC0	0x000000C0	[ 55] _a7
-0x00018B80	0x00000040	[ 55] _a8
-0x00018BC0	0x00000022	[ 56] _bmask
-0x00018C00	0x00000060	[ 64] _mon_lengths
-0x00018C60	0x000000E0	[ 65] ___mprec_tens
-0x00018D40	0x00000040	[ 65] ___mprec_bigtens
-0x00018D88	0x0000000C	[ 65] _p05.3067
-0x00018D98	0x00000008	[ 65] 8-byte-literal
-0x00018DA0	0x00000060	[ 79] _tinytens
-0x00018E00	0x00000008	[ 79] 8-byte-literal
-0x00018E08	0x00000008	[ 79] 8-byte-literal
-0x00018E10	0x00000008	[ 79] 8-byte-literal
-0x00018E18	0x00000008	[ 79] 8-byte-literal
-0x00018E20	0x00000008	[ 79] 8-byte-literal
-0x00018E28	0x00000008	[ 79] 8-byte-literal
-0x00018E30	0x00000008	[ 79] 8-byte-literal
-0x00018E38	0x00000008	[ 79] 8-byte-literal
-0x00018E40	0x00000100	[ 84] ___chclass
-0x00018F40	0x00000080	[ 84] ___state_table
-0x00018FC0	0x0000006C	[ 84] ___action_table
-0x0001902C	0x00000010	[ 86] _zeroes.4564
-0x0001903C	0x00000010	[ 86] _blanks.4563
-0x0001904C	0x00000004	[ 86] 4-byte-literal
-0x00019050	0x00000004	[ 86] 4-byte-literal
-0x00019054	0x00000004	[ 86] 4-byte-literal
-0x00019060	0x00000022	[ 87] _basefix.4449
-0x00019082	0x00000118	[  0] compact unwind info
-0x000191A0	0x00000018	[  1] CIE
-0x000191B8	0x00000024	[  1] FDE for: _s3eNextpeerAvailable
-0x000191DC	0x00000024	[  1] FDE for: _s3eNextpeerRegisterCallback
-0x00019200	0x00000024	[  1] FDE for: _s3eNextpeerIsCurrentlyInTournament
-0x00019224	0x00000024	[  1] FDE for: _s3eNextpeerReportScoreForCurrentTournament
-0x00019248	0x00000024	[  1] FDE for: _s3eNextpeerLaunchDashboard
-0x0001926C	0x00000024	[  1] FDE for: _s3eNextpeerInitWithProductKey
-0x00019290	0x00000018	[  2] CIE
-0x000192A8	0x00000034	[  2] FDE for: _main
-0x000192DC	0x00000018	[  2] FDE for: __ZL29didTournamentStartWithDetailsPvS_
-0x000192F4	0x00000018	[  2] FDE for: __ZL16didTournamentEndPvS_
-0x0001930C	0x00000018	[ 33] CIE
-0x00019324	0x00000014	[ 33] FDE for: _s3eExtGetHash
-0x00019338	0x00000018	[ 25] CIE
-0x00019350	0x00000014	[ 25] FDE for: _s3eDebugAssertShow
-0x00019364	0x00000018	[ 28] CIE
-0x0001937C	0x00000014	[ 28] FDE for: _s3eDebugPrint
-0x00019390	0x00000018	[ 29] CIE
-0x000193A8	0x00000018	[ 29] FDE for: _s3eDeviceCheckQuitRequest
-0x000193C0	0x00000018	[ 32] CIE
-0x000193D8	0x00000014	[ 32] FDE for: _s3eDeviceYield
-0x000193EC	0x00000018	[ 38] CIE
-0x00019404	0x00000014	[ 38] FDE for: _s3ePointerUpdate
-0x00019418	0x00000018	[ 40] CIE
-0x00019430	0x00000014	[ 40] FDE for: _s3eSurfaceShow
-0x00019444	0x00000018	[ 12] CIE
-0x0001945C	0x00000024	[ 12] FDE for: _s3eDebugPrintf
-0x00019480	0x00000018	[ 18] CIE
-0x00019498	0x00000014	[ 18] FDE for: _iwcrt_x86_init
-0x000194AC	0x00000034	[ 18] FDE for: __IwMain
-0x000194E0	0x00000018	[  3] CIE
-0x000194F8	0x0000003C	[  3] FDE for: __IwCrtRealloc
-0x00019534	0x0000003C	[  3] FDE for: __IwCrtMalloc
-0x00019570	0x0000003C	[  3] FDE for: __IwCrtCalloc
-0x000195AC	0x00000014	[  3] FDE for: __IwCrtFree
-0x000195C0	0x00000024	[  3] FDE for: _iwcrt_fini
-0x000195E4	0x00000040	[  3] FDE for: _iwcrt_init2
-0x00019624	0x00000024	[  3] FDE for: _iwcrt_init
-0x00019648	0x00000018	[  5] CIE
-0x00019660	0x00000014	[  5] FDE for: __IwMalloc
-0x00019674	0x0000002C	[  5] FDE for: _calloc
-0x000196A0	0x0000002C	[  5] FDE for: __IwFree
-0x000196CC	0x0000002C	[  5] FDE for: _free
-0x000196F8	0x00000018	[ 11] CIE
-0x00019710	0x0000003C	[ 11] FDE for: _strlcpy
-0x0001974C	0x00000018	[ 16] CIE
-0x00019764	0x00000018	[ 16] FDE for: __malloc_r
-0x0001977C	0x00000018	[ 16] FDE for: __realloc_r
-0x00019794	0x00000018	[ 16] FDE for: __calloc_r
-0x000197AC	0x00000018	[ 16] FDE for: __free_r
-0x000197C4	0x00000018	[ 36] CIE
-0x000197DC	0x00000014	[ 36] FDE for: _s3eMemoryGetInt
-0x000197F0	0x00000018	[ 37] CIE
-0x00019808	0x00000014	[ 37] FDE for: _s3eMemorySetInt
-0x0001981C	0x00000018	[ 39] CIE
-0x00019834	0x00000014	[ 39] FDE for: _s3eReallocBase
-0x00019848	0x00000018	[ 14] CIE
-0x00019860	0x00000018	[ 14] FDE for: __GLOBAL__I_g_DebugGlobals
-0x00019878	0x0000002C	[ 14] FDE for: _IwDebugErrorShow
-0x000198A4	0x00000018	[ 27] CIE
-0x000198BC	0x00000018	[ 27] FDE for: _s3eDebugIsDebuggerPresent
-0x000198D4	0x00000018	[ 35] CIE
-0x000198EC	0x00000014	[ 35] FDE for: _s3eMallocBase
-0x00019900	0x00000018	[ 34] CIE
-0x00019918	0x00000014	[ 34] FDE for: _s3eFreeBase
-0x0001992C	0x00000018	[ 15] CIE
-0x00019944	0x00000024	[ 15] FDE for: _s3eThreadAvailable
-0x00019968	0x00000024	[ 15] FDE for: _s3eThreadLockRelease
-0x0001998C	0x00000024	[ 15] FDE for: _s3eThreadLockAcquire
-0x000199B0	0x00000024	[ 15] FDE for: _s3eThreadLockDestroy
-0x000199D4	0x00000024	[ 15] FDE for: _s3eThreadLockCreate
-0x000199F8	0x00000024	[ 15] FDE for: _s3eThreadGetCurrent
-0x00019A1C	0x00000018	[ 30] CIE
-0x00019A34	0x00000014	[ 30] FDE for: _s3eDeviceGetString
-0x00019A48	0x00000018	[ 41] CIE
-0x00019A60	0x00000014	[ 41] FDE for: _s3eTimerGetLocaltimeOffset
-0x00019A74	0x00000018	[  9] CIE
-0x00019A8C	0x0000003C	[  9] FDE for: _setenv
-0x00019AC8	0x00000018	[ 13] CIE
-0x00019AE0	0x0000003C	[ 13] FDE for: __ZL6getTLSv
-0x00019B1C	0x0000003C	[ 13] FDE for: _s3eMalloc
-0x00019B58	0x0000003C	[ 13] FDE for: _s3eRealloc
-0x00019B94	0x0000003C	[ 13] FDE for: _s3eFree
-0x00019BD0	0x0000003C	[ 13] FDE for: _iw_malloc_init
-0x00019C0C	0x00000014	[ 13] FDE for: __ZL7tlsFreePv
-0x00019C20	0x00000018	[ 26] CIE
-0x00019C38	0x00000014	[ 26] FDE for: _s3eDebugErrorShow
-0x00019C4C	0x00000018	[ 19] CIE
-0x00019C64	0x0000003C	[ 19] FDE for: __init
-0x00019CA0	0x00000014	[ 19] FDE for: __fini
-0x00019CB4	0x00000018	[  4] CIE
-0x00019CCC	0x00000040	[  4] FDE for: _IwMain
-0x00019D0C	0x00000018	[ 31] CIE
-0x00019D24	0x00000014	[ 31] FDE for: _s3eDeviceSetInt
-0x00019D38	0x00000018	[ 17] CIE
-0x00019D50	0x00000040	[ 17] FDE for: __IwBindAPI
-0x00019D90	0x00000018	[ 24] CIE
-0x00019DA8	0x00000014	[ 24] FDE for: _s3eConfigGetString
-0x00019DBC	0x00000018	[  6] CIE
-0x00019DD4	0x0000002C	[  6] FDE for: _pthread_mutex_lock
-0x00019E00	0x00000034	[  6] FDE for: _pthread_mutex_init
-0x00019E34	0x0000002C	[  6] FDE for: _pthread_mutex_unlock
-0x00019E60	0x00000018	[  7] CIE
-0x00019E78	0x00000024	[  7] FDE for: _pthread_getspecific
-0x00019E9C	0x0000003C	[  7] FDE for: _pthread_setspecific
-0x00019ED8	0x0000003C	[  7] FDE for: _pthread_key_create
-0x00019F14	0x00000018	[ 22] CIE
-0x00019F2C	0x00000014	[ 22] FDE for: ___s3eMemorySetUserMemMgr
-0x00019F40	0x00000018	[ 20] CIE
-0x00019F58	0x00000014	[ 20] FDE for: ___s3eFreeBase
-0x00019F6C	0x00000018	[ 21] CIE
-0x00019F84	0x00000014	[ 21] FDE for: ___s3eMallocBase
-0x00019F98	0x00000018	[ 23] CIE
-0x00019FB0	0x00000014	[ 23] FDE for: ___s3eReallocBase
-0x00019FC4	0x00000018	[  8] CIE
-0x00019FDC	0x00000024	[  8] FDE for: _pthread_self
-0x0001A000	0x00000004	[  0] non-lazy-pointer-to-local: dyld_stub_binder
-0x0001A004	0x00000004	[  0] non-lazy-pointer
-0x0001A008	0x00000004	[ 49] non-lazy-pointer-to: ___hexdig
-0x0001A00C	0x00000004	[ 79] non-lazy-pointer-to: ___mprec_tens
-0x0001A010	0x00000004	[ 79] non-lazy-pointer-to: ___mprec_bigtens
-0x0001A014	0x00000004	[ 87] non-lazy-pointer-to: __strtoul_r
-0x0001A018	0x00000004	[ 87] non-lazy-pointer-to: __strtol_r
-0x0001A01C	0x00000004	[ 70] non-lazy-pointer-to: ___seofread
-0x0001A020	0x00000004	[ 50] non-lazy-pointer-to: _environ
-0x0001A024	0x00000004	[ 57] non-lazy-pointer-to: ___wctomb
-0x0001A028	0x00000004	[ 90] non-lazy-pointer-to: __daylight
-0x0001A02C	0x00000004	[ 90] non-lazy-pointer-to: __timezone
-0x0001A030	0x00000004	[ 90] non-lazy-pointer-to: __tzname
-0x0001A034	0x00000004	[ 86] non-lazy-pointer-to: ___action_table
-0x0001A038	0x00000004	[ 86] non-lazy-pointer-to: ___chclass
-0x0001A03C	0x00000004	[ 86] non-lazy-pointer-to: ___state_table
-0x0001A040	0x00000004	[ 86] non-lazy-pointer-to: ___stack_chk_guard
-0x0001A044	0x00000004	[ 86] non-lazy-pointer-to: ___mbtowc
-0x0001A048	0x00000004	[  6] non-lazy-pointer-to: _g_PThreadPresent
-0x0001A04C	0x00000004	[  6] non-lazy-pointer-to: _g_PThreadChecked
-0x0001A050	0x00000004	[  6] non-lazy-pointer-to: _g_DelayedCreationLock
-0x0001A054	0x00000004	[ 13] non-lazy-pointer-to: ___s3eReallocBase
-0x0001A058	0x00000004	[ 13] non-lazy-pointer-to: ___s3eMallocBase
-0x0001A05C	0x00000004	[ 13] non-lazy-pointer-to: ___s3eFreeBase
-0x0001A060	0x00000004	[ 53] non-lazy-pointer-to: ___ctype_ptr__
-0x0001A064	0x00000004	[ 66] non-lazy-pointer-to: __impure_ptr
-0x0001A068	0x00000004	[ 33] non-lazy-pointer-to: _g_S3E_API
-0x0001A06C	0x00000004	[ 98] ___bzero
-0x0001A070	0x00000004	[ 98] ___divdi3
-0x0001A074	0x00000004	[ 98] ___error
-0x0001A078	0x00000004	[ 98] ___stack_chk_fail
-0x0001A07C	0x00000004	[ 98] ___udivdi3
-0x0001A080	0x00000004	[ 98] ___umoddi3
-0x0001A084	0x00000004	[ 98] _dladdr
-0x0001A088	0x00000004	[ 14] anon
-0x0001A0A0	0x00000020	[  3] _g_GameVersionMajor
-0x0001A0C0	0x00000001	[  3] _g_GameVersionMinor
-0x0001A0C4	0x00000004	[  5] __ZL18g_MaxAlignedAllocs
-0x0001A0E0	0x00000040	[  9] __ZL9g_environ
-0x0001A120	0x00000004	[  9] _environ
-0x0001A140	0x00001FF0	[ 17] _g_S3E_API
-0x0001C130	0x00000004	[ 45] ___ctype_ptr__
-0x0001C134	0x00000004	[ 48] anon
-0x0001C140	0x00000040	[ 51] _tzinfo
-0x0001C180	0x00000020	[ 52] __impure_ptr
-0x0001C1A0	0x00000424	[ 52] _impure_data
-0x0001C5E0	0x00000104	[ 56] _etens
-0x0001C6E4	0x00000014	[ 56] _eone
-0x0001C6F8	0x00000028	[ 56] _nan64
-0x0001C720	0x00000104	[ 56] _emtens
-0x0001C840	0x00000004	[ 57] ___mb_cur_max
-0x0001C860	0x00000038	[ 57] _lconv
-0x0001C898	0x00000028	[ 57] _lc_ctype_charset
-0x0001C8C0	0x00000004	[ 59] ___mbtowc
-0x0001C8C4	0x00000014	[ 79] _fpinan.2974
-0x0001C8D8	0x00000014	[ 79] _fpi.2938
-0x0001C8EC	0x00000008	[ 91] __tzname
-0x0001C8F4	0x00000004	[ 91] __daylight
-0x0001C8F8	0x00000004	[ 91] __timezone
-0x0001C8FC	0x00000004	[ 97] ___wctomb
-0x0001C900	0x00000001	[  1] __ZL8g_GotExt.b
-0x0001C901	0x0000001F	[  1] __ZL15g_TriedNoMsgExt.b
-0x0001C920	0x00000040	[  1] __ZL5g_Ext
-0x0001C960	0x00000001	[  1] __ZL10g_TriedExt.b
-0x0001C980	0x00000100	[  4] __ZL9g_AppName
-0x0001CA80	0x00000004	[  5] __ZL15g_AlignedAllocs
-0x0001CAA0	0x00000400	[  7] __ZL11g_TLSBlocks
-0x0001CEA0	0x00000014	[  7] __ZL13g_TLSKeysLock
-0x0001CEB4	0x00000004	[  7] __ZL6g_Keys
-0x0001CEB8	0x00000004	[  7] __ZL9g_NumKeys
-0x0001CEC0	0x00000001	[ 15] __ZL8g_GotExt.b
-0x0001CEC1	0x0000001F	[ 15] __ZL15g_TriedNoMsgExt.b
-0x0001CEE0	0x0000004C	[ 15] __ZL5g_Ext
-0x0001CF2C	0x00000001	[ 15] __ZL10g_TriedExt.b
-0x0001CF40	0x00000300	[ 17] __ZL9g_Message
-0x0001D240	0x00000FA0	[ 18] __ZL10exit_funcs
-0x0001E1E0	0x00000FA0	[ 18] __ZL9exit_args
-0x0001F180	0x00000014	[ 56] _ezero
-0x0001F194	0x00000004	[ 90] _prev_tzenv
-0x0001F198	0x0000000B	[ 90] ___tzname_std
-0x0001F1A3	0x0000000B	[ 90] ___tzname_dst
-0x0001F1C0	0x00000004	[  3] _g_DelayedCreationLock
-0x0001F1C4	0x00000004	[  3] ___s3eStackBase
-0x0001F1C8	0x00000004	[  8] _g_PThreadChecked
-0x0001F1CC	0x00000004	[  8] _g_PThreadPresent
-0x0001F1D0	0x00000004	[ 13] _g_TLS
-0x0001F1E0	0x00000C08	[ 14] _g_DebugGlobals
-0x0001FE00	0x00000100	[ 48] ___hexdig
+0x0001569C	0x00000040	[ 15] literal string: IwAssert failure:
+Channel: %s
+File: %s
+Line: %d
+Expression: %s
+
+0x000156DC	0x00000021	[ 15] literal string: Stop requested, debugger present
+0x00015700	0x00000024	[ 15] literal string: Stop requested, no debugger present
+0x00015724	0x0000000E	[ 15] literal string: Continuing...
+0x00015732	0x0000000C	[ 15] literal string: Ignoring...
+0x00015740	0x00000006	[  3] literal string: IWCRT
+0x00015748	0x0000001F	[  3] literal string: setting errno in %s -> %d (%s)
+0x00015768	0x00000004	[  3] literal string: S3E
+0x0001576D	0x00000014	[  3] literal string: application aborted
+0x00015784	0x00000033	[  3] literal string: /p4/sdkbuild/sdk/5.2/iwcrt/source/iwcrt_common.cpp
+0x000157B8	0x00000002	[  3] literal string: 0
+0x000157BB	0x0000001E	[  3] literal string: CRT is reallocting memory: %u
+0x000157D9	0x00000017	[  3] literal string: CRT out of memory (%d)
+0x000157F0	0x0000001C	[  3] literal string: CRT is allocting memory: %u
+0x0001580C	0x0000001F	[  3] literal string: CRT is (c)allocting memory: %d
+0x0001582B	0x0000001A	[  3] literal string: CRT is freeing memory: %p
+0x00015847	0x00000008	[  3] literal string: DEFAULT
+0x0001584F	0x0000000C	[  3] literal string: _IwExit: %d
+0x0001585C	0x00000021	[  3] literal string: %.3s%c%02d:00:00%.3s%c%02d:00:00
+0x0001587D	0x00000003	[  3] literal string: TZ
+0x00015880	0x00000018	[ 10] literal string: Operation not permitted
+0x00015898	0x0000001A	[ 10] literal string: No such file or directory
+0x000158B2	0x00000010	[ 10] literal string: No such process
+0x000158C2	0x00000018	[ 10] literal string: Interrupted system call
+0x000158DA	0x00000010	[ 10] literal string: Bad file number
+0x000158EA	0x00000014	[ 10] literal string: Insufficient memory
+0x000158FE	0x0000000A	[ 10] literal string: Try again
+0x00015908	0x00000012	[ 10] literal string: Permission denied
+0x0001591A	0x00000019	[ 10] literal string: Connection reset by peer
+0x00015933	0x00000013	[ 10] literal string: Connection refused
+0x00015946	0x00000012	[ 10] literal string: Unknown error: %d
+0x00015958	0x0000000E	[  5] literal string: IWCRT_VERBOSE
+0x00015969	0x0000000B	[  5] literal string: IwFree: %p
+0x00015974	0x0000002A	[  5] literal string: freeing aligned pointer: offset=%d ptr=%p
+0x000159A0	0x00000023	[ 16] literal string: error loading extension: s3eThread
+0x000159C4	0x00000007	[  9] literal string: HOME=/
+0x000159CB	0x0000000E	[  9] literal string: setenv: %s %s
+0x000159D9	0x00000007	[  9] literal string: setenv
+0x000159E0	0x00000006	[  9] literal string: %s=%s
+0x000159E6	0x00000007	[ 86] literal string: %s%.*d
+0x000159ED	0x00000008	[ 86] literal string: %s%0.*d
+0x000159F5	0x00000002	[ 86] literal string: +
+0x000159F7	0x00000002	[ 86] literal string: -
+0x000159F9	0x00000005	[ 86] literal string: %.2d
+0x000159FE	0x00000004	[ 86] literal string: %2d
+0x00015A02	0x0000000F	[ 86] literal string: %.2d/%.2d/%.2d
+0x00015A11	0x00000004	[ 86] literal string: %lu
+0x00015A15	0x00000008	[ 86] literal string: Y-%m-%d
+0x00015A1D	0x00000004	[ 86] literal string: .*u
+0x00015A21	0x00000005	[ 86] literal string: %.3d
+0x00015A26	0x0000000A	[ 86] literal string: %.2d:%.2d
+0x00015A30	0x0000000F	[ 86] literal string: %.2d:%.2d:%.2d
+0x00015A3F	0x0000000C	[ 86] literal string: %+03ld%.2ld
+0x00015A4B	0x0000000E	[ 20] literal string: dladdr failed
+0x00015A59	0x00000009	[  4] literal string: argv[%d]
+0x00015A62	0x0000000C	[  4] literal string: commandline
+0x00015A6E	0x0000000E	[  4] literal string: SysAppCaption
+0x00015A7C	0x0000000B	[ 18] literal string: eglBindAPI
+0x00015A87	0x00000010	[ 18] literal string: eglBindTexImage
+0x00015A97	0x00000010	[ 18] literal string: eglChooseConfig
+0x00015AA7	0x0000000F	[ 18] literal string: eglCopyBuffers
+0x00015AB6	0x00000011	[ 18] literal string: eglCreateContext
+0x00015AC8	0x00000021	[ 18] literal string: eglCreatePbufferFromClientBuffer
+0x00015AE9	0x00000018	[ 18] literal string: eglCreatePbufferSurface
+0x00015B01	0x00000017	[ 18] literal string: eglCreatePixmapSurface
+0x00015B18	0x00000017	[ 18] literal string: eglCreateWindowSurface
+0x00015B2F	0x00000012	[ 18] literal string: eglDestroyContext
+0x00015B41	0x00000012	[ 18] literal string: eglDestroySurface
+0x00015B53	0x00000013	[ 18] literal string: eglGetConfigAttrib
+0x00015B66	0x0000000E	[ 18] literal string: eglGetConfigs
+0x00015B74	0x00000015	[ 18] literal string: eglGetCurrentContext
+0x00015B89	0x00000015	[ 18] literal string: eglGetCurrentDisplay
+0x00015B9E	0x00000015	[ 18] literal string: eglGetCurrentSurface
+0x00015BB3	0x0000000E	[ 18] literal string: eglGetDisplay
+0x00015BC1	0x0000000C	[ 18] literal string: eglGetError
+0x00015BCD	0x00000012	[ 18] literal string: eglGetProcAddress
+0x00015BDF	0x0000000E	[ 18] literal string: eglInitialize
+0x00015BED	0x0000000F	[ 18] literal string: eglMakeCurrent
+0x00015BFC	0x0000000C	[ 18] literal string: eglQueryAPI
+0x00015C08	0x00000010	[ 18] literal string: eglQueryContext
+0x00015C18	0x0000000F	[ 18] literal string: eglQueryString
+0x00015C27	0x00000010	[ 18] literal string: eglQuerySurface
+0x00015C37	0x00000013	[ 18] literal string: eglReleaseTexImage
+0x00015C4A	0x00000011	[ 18] literal string: eglReleaseThread
+0x00015C5B	0x00000011	[ 18] literal string: eglSurfaceAttrib
+0x00015C6C	0x0000000F	[ 18] literal string: eglSwapBuffers
+0x00015C7B	0x00000010	[ 18] literal string: eglSwapInterval
+0x00015C8B	0x0000000D	[ 18] literal string: eglTerminate
+0x00015C98	0x0000000E	[ 18] literal string: eglWaitClient
+0x00015CA6	0x0000000A	[ 18] literal string: eglWaitGL
+0x00015CB0	0x0000000E	[ 18] literal string: eglWaitNative
+0x00015CBE	0x00000010	[ 18] literal string: glActiveTexture
+0x00015CCE	0x0000000C	[ 18] literal string: glAlphaFunc
+0x00015CDA	0x0000000D	[ 18] literal string: glAlphaFuncx
+0x00015CE7	0x0000000F	[ 18] literal string: glAttachShader
+0x00015CF6	0x00000015	[ 18] literal string: glBindAttribLocation
+0x00015D0B	0x0000000D	[ 18] literal string: glBindBuffer
+0x00015D18	0x00000012	[ 18] literal string: glBindFramebuffer
+0x00015D2A	0x00000013	[ 18] literal string: glBindRenderbuffer
+0x00015D3D	0x0000000E	[ 18] literal string: glBindTexture
+0x00015D4B	0x0000000D	[ 18] literal string: glBlendColor
+0x00015D58	0x00000010	[ 18] literal string: glBlendEquation
+0x00015D68	0x00000018	[ 18] literal string: glBlendEquationSeparate
+0x00015D80	0x0000000C	[ 18] literal string: glBlendFunc
+0x00015D8C	0x00000014	[ 18] literal string: glBlendFuncSeparate
+0x00015DA0	0x0000000D	[ 18] literal string: glBufferData
+0x00015DAD	0x00000010	[ 18] literal string: glBufferSubData
+0x00015DBD	0x00000019	[ 18] literal string: glCheckFramebufferStatus
+0x00015DD6	0x00000008	[ 18] literal string: glClear
+0x00015DDE	0x0000000D	[ 18] literal string: glClearColor
+0x00015DEB	0x0000000E	[ 18] literal string: glClearColorx
+0x00015DF9	0x0000000E	[ 18] literal string: glClearDepthf
+0x00015E07	0x0000000E	[ 18] literal string: glClearDepthx
+0x00015E15	0x0000000F	[ 18] literal string: glClearStencil
+0x00015E24	0x00000016	[ 18] literal string: glClientActiveTexture
+0x00015E3A	0x0000000D	[ 18] literal string: glClipPlanef
+0x00015E47	0x0000000D	[ 18] literal string: glClipPlanex
+0x00015E54	0x0000000A	[ 18] literal string: glColor4f
+0x00015E5E	0x0000000B	[ 18] literal string: glColor4ub
+0x00015E69	0x0000000A	[ 18] literal string: glColor4x
+0x00015E73	0x0000000C	[ 18] literal string: glColorMask
+0x00015E7F	0x0000000F	[ 18] literal string: glColorPointer
+0x00015E8E	0x00000010	[ 18] literal string: glCompileShader
+0x00015E9E	0x00000017	[ 18] literal string: glCompressedTexImage2D
+0x00015EB5	0x0000001A	[ 18] literal string: glCompressedTexSubImage2D
+0x00015ECF	0x00000011	[ 18] literal string: glCopyTexImage2D
+0x00015EE0	0x00000014	[ 18] literal string: glCopyTexSubImage2D
+0x00015EF4	0x00000010	[ 18] literal string: glCreateProgram
+0x00015F04	0x0000000F	[ 18] literal string: glCreateShader
+0x00015F13	0x0000000B	[ 18] literal string: glCullFace
+0x00015F1E	0x0000001A	[ 18] literal string: glCurrentPaletteMatrixOES
+0x00015F38	0x00000010	[ 18] literal string: glDeleteBuffers
+0x00015F48	0x00000015	[ 18] literal string: glDeleteFramebuffers
+0x00015F5D	0x00000010	[ 18] literal string: glDeleteProgram
+0x00015F6D	0x00000016	[ 18] literal string: glDeleteRenderbuffers
+0x00015F83	0x0000000F	[ 18] literal string: glDeleteShader
+0x00015F92	0x00000011	[ 18] literal string: glDeleteTextures
+0x00015FA3	0x0000000C	[ 18] literal string: glDepthFunc
+0x00015FAF	0x0000000C	[ 18] literal string: glDepthMask
+0x00015FBB	0x0000000E	[ 18] literal string: glDepthRangef
+0x00015FC9	0x0000000E	[ 18] literal string: glDepthRangex
+0x00015FD7	0x0000000F	[ 18] literal string: glDetachShader
+0x00015FE6	0x0000000A	[ 18] literal string: glDisable
+0x00015FF0	0x00000015	[ 18] literal string: glDisableClientState
+0x00016005	0x0000001B	[ 18] literal string: glDisableVertexAttribArray
+0x00016020	0x0000000D	[ 18] literal string: glDrawArrays
+0x0001602D	0x0000000F	[ 18] literal string: glDrawElements
+0x0001603C	0x00000009	[ 18] literal string: glEnable
+0x00016045	0x00000014	[ 18] literal string: glEnableClientState
+0x00016059	0x0000001A	[ 18] literal string: glEnableVertexAttribArray
+0x00016073	0x00000009	[ 18] literal string: glFinish
+0x0001607C	0x00000008	[ 18] literal string: glFlush
+0x00016084	0x00000007	[ 18] literal string: glFogf
+0x0001608B	0x00000008	[ 18] literal string: glFogfv
+0x00016093	0x00000007	[ 18] literal string: glFogx
+0x0001609A	0x00000008	[ 18] literal string: glFogxv
+0x000160A2	0x0000001A	[ 18] literal string: glFramebufferRenderbuffer
+0x000160BC	0x00000017	[ 18] literal string: glFramebufferTexture2D
+0x000160D3	0x0000000C	[ 18] literal string: glFrontFace
+0x000160DF	0x0000000B	[ 18] literal string: glFrustumf
+0x000160EA	0x0000000B	[ 18] literal string: glFrustumx
+0x000160F5	0x0000000D	[ 18] literal string: glGenBuffers
+0x00016102	0x00000012	[ 18] literal string: glGenFramebuffers
+0x00016114	0x00000013	[ 18] literal string: glGenRenderbuffers
+0x00016127	0x0000000E	[ 18] literal string: glGenTextures
+0x00016135	0x00000011	[ 18] literal string: glGenerateMipmap
+0x00016146	0x00000012	[ 18] literal string: glGetActiveAttrib
+0x00016158	0x00000013	[ 18] literal string: glGetActiveUniform
+0x0001616B	0x00000015	[ 18] literal string: glGetAttachedShaders
+0x00016180	0x00000014	[ 18] literal string: glGetAttribLocation
+0x00016194	0x0000000E	[ 18] literal string: glGetBooleanv
+0x000161A2	0x00000017	[ 18] literal string: glGetBufferParameteriv
+0x000161B9	0x00000010	[ 18] literal string: glGetClipPlanef
+0x000161C9	0x00000010	[ 18] literal string: glGetClipPlanex
+0x000161D9	0x0000000B	[ 18] literal string: glGetError
+0x000161E4	0x0000000C	[ 18] literal string: glGetFixedv
+0x000161F0	0x0000000C	[ 18] literal string: glGetFloatv
+0x000161FC	0x00000026	[ 18] literal string: glGetFramebufferAttachmentParameteriv
+0x00016222	0x0000000E	[ 18] literal string: glGetIntegerv
+0x00016230	0x0000000D	[ 18] literal string: glGetLightfv
+0x0001623D	0x0000000D	[ 18] literal string: glGetLightxv
+0x0001624A	0x00000010	[ 18] literal string: glGetMaterialfv
+0x0001625A	0x00000010	[ 18] literal string: glGetMaterialxv
+0x0001626A	0x0000000E	[ 18] literal string: glGetPointerv
+0x00016278	0x00000014	[ 18] literal string: glGetProgramInfoLog
+0x0001628C	0x0000000F	[ 18] literal string: glGetProgramiv
+0x0001629B	0x0000001D	[ 18] literal string: glGetRenderbufferParameteriv
+0x000162B8	0x00000013	[ 18] literal string: glGetShaderInfoLog
+0x000162CB	0x0000001B	[ 18] literal string: glGetShaderPrecisionFormat
+0x000162E6	0x00000012	[ 18] literal string: glGetShaderSource
+0x000162F8	0x0000000E	[ 18] literal string: glGetShaderiv
+0x00016306	0x0000000C	[ 18] literal string: glGetString
+0x00016312	0x0000000E	[ 18] literal string: glGetTexEnvfv
+0x00016320	0x0000000E	[ 18] literal string: glGetTexEnviv
+0x0001632E	0x0000000E	[ 18] literal string: glGetTexEnvxv
+0x0001633C	0x00000014	[ 18] literal string: glGetTexParameterfv
+0x00016350	0x00000014	[ 18] literal string: glGetTexParameteriv
+0x00016364	0x00000014	[ 18] literal string: glGetTexParameterxv
+0x00016378	0x00000015	[ 18] literal string: glGetUniformLocation
+0x0001638D	0x0000000F	[ 18] literal string: glGetUniformfv
+0x0001639C	0x0000000F	[ 18] literal string: glGetUniformiv
+0x000163AB	0x0000001A	[ 18] literal string: glGetVertexAttribPointerv
+0x000163C5	0x00000014	[ 18] literal string: glGetVertexAttribfv
+0x000163D9	0x00000014	[ 18] literal string: glGetVertexAttribiv
+0x000163ED	0x00000007	[ 18] literal string: glHint
+0x000163F4	0x0000000B	[ 18] literal string: glIsBuffer
+0x000163FF	0x0000000C	[ 18] literal string: glIsEnabled
+0x0001640B	0x00000010	[ 18] literal string: glIsFramebuffer
+0x0001641B	0x0000000C	[ 18] literal string: glIsProgram
+0x00016427	0x00000011	[ 18] literal string: glIsRenderbuffer
+0x00016438	0x0000000B	[ 18] literal string: glIsShader
+0x00016443	0x0000000C	[ 18] literal string: glIsTexture
+0x0001644F	0x0000000E	[ 18] literal string: glLightModelf
+0x0001645D	0x0000000F	[ 18] literal string: glLightModelfv
+0x0001646C	0x0000000E	[ 18] literal string: glLightModelx
+0x0001647A	0x0000000F	[ 18] literal string: glLightModelxv
+0x00016489	0x00000009	[ 18] literal string: glLightf
+0x00016492	0x0000000A	[ 18] literal string: glLightfv
+0x0001649C	0x00000009	[ 18] literal string: glLightx
+0x000164A5	0x0000000A	[ 18] literal string: glLightxv
+0x000164AF	0x0000000C	[ 18] literal string: glLineWidth
+0x000164BB	0x0000000D	[ 18] literal string: glLineWidthx
+0x000164C8	0x0000000E	[ 18] literal string: glLinkProgram
+0x000164D6	0x0000000F	[ 18] literal string: glLoadIdentity
+0x000164E5	0x0000000E	[ 18] literal string: glLoadMatrixf
+0x000164F3	0x0000000E	[ 18] literal string: glLoadMatrixx
+0x00016501	0x0000000A	[ 18] literal string: glLogicOp
+0x0001650B	0x0000000C	[ 18] literal string: glMaterialf
+0x00016517	0x0000000D	[ 18] literal string: glMaterialfv
+0x00016524	0x0000000C	[ 18] literal string: glMaterialx
+0x00016530	0x0000000D	[ 18] literal string: glMaterialxv
+0x0001653D	0x00000018	[ 18] literal string: glMatrixIndexPointerOES
+0x00016555	0x0000000D	[ 18] literal string: glMatrixMode
+0x00016562	0x0000000E	[ 18] literal string: glMultMatrixf
+0x00016570	0x0000000E	[ 18] literal string: glMultMatrixx
+0x0001657E	0x00000012	[ 18] literal string: glMultiTexCoord4f
+0x00016590	0x00000012	[ 18] literal string: glMultiTexCoord4x
+0x000165A2	0x0000000B	[ 18] literal string: glNormal3f
+0x000165AD	0x0000000B	[ 18] literal string: glNormal3x
+0x000165B8	0x00000010	[ 18] literal string: glNormalPointer
+0x000165C8	0x00000009	[ 18] literal string: glOrthof
+0x000165D1	0x00000009	[ 18] literal string: glOrthox
+0x000165DA	0x0000000E	[ 18] literal string: glPixelStorei
+0x000165E8	0x00000012	[ 18] literal string: glPointParameterf
+0x000165FA	0x00000013	[ 18] literal string: glPointParameterfv
+0x0001660D	0x00000012	[ 18] literal string: glPointParameterx
+0x0001661F	0x00000013	[ 18] literal string: glPointParameterxv
+0x00016632	0x0000000C	[ 18] literal string: glPointSize
+0x0001663E	0x00000016	[ 18] literal string: glPointSizePointerOES
+0x00016654	0x0000000D	[ 18] literal string: glPointSizex
+0x00016661	0x00000010	[ 18] literal string: glPolygonOffset
+0x00016671	0x00000011	[ 18] literal string: glPolygonOffsetx
+0x00016682	0x0000000C	[ 18] literal string: glPopMatrix
+0x0001668E	0x0000000D	[ 18] literal string: glPushMatrix
+0x0001669B	0x0000000D	[ 18] literal string: glReadPixels
+0x000166A8	0x00000018	[ 18] literal string: glReleaseShaderCompiler
+0x000166C0	0x00000016	[ 18] literal string: glRenderbufferStorage
+0x000166D6	0x0000000A	[ 18] literal string: glRotatef
+0x000166E0	0x0000000A	[ 18] literal string: glRotatex
+0x000166EA	0x00000011	[ 18] literal string: glSampleCoverage
+0x000166FB	0x00000012	[ 18] literal string: glSampleCoveragex
+0x0001670D	0x00000009	[ 18] literal string: glScalef
+0x00016716	0x00000009	[ 18] literal string: glScalex
+0x0001671F	0x0000000A	[ 18] literal string: glScissor
+0x00016729	0x0000000D	[ 18] literal string: glShadeModel
+0x00016736	0x0000000F	[ 18] literal string: glShaderBinary
+0x00016745	0x0000000F	[ 18] literal string: glShaderSource
+0x00016754	0x0000000E	[ 18] literal string: glStencilFunc
+0x00016762	0x00000016	[ 18] literal string: glStencilFuncSeparate
+0x00016778	0x0000000E	[ 18] literal string: glStencilMask
+0x00016786	0x00000016	[ 18] literal string: glStencilMaskSeparate
+0x0001679C	0x0000000C	[ 18] literal string: glStencilOp
+0x000167A8	0x00000014	[ 18] literal string: glStencilOpSeparate
+0x000167BC	0x00000012	[ 18] literal string: glTexCoordPointer
+0x000167CE	0x0000000A	[ 18] literal string: glTexEnvf
+0x000167D8	0x0000000B	[ 18] literal string: glTexEnvfv
+0x000167E3	0x0000000A	[ 18] literal string: glTexEnvi
+0x000167ED	0x0000000B	[ 18] literal string: glTexEnviv
+0x000167F8	0x0000000A	[ 18] literal string: glTexEnvx
+0x00016802	0x0000000B	[ 18] literal string: glTexEnvxv
+0x0001680D	0x0000000D	[ 18] literal string: glTexImage2D
+0x0001681A	0x00000010	[ 18] literal string: glTexParameterf
+0x0001682A	0x00000011	[ 18] literal string: glTexParameterfv
+0x0001683B	0x00000010	[ 18] literal string: glTexParameteri
+0x0001684B	0x00000011	[ 18] literal string: glTexParameteriv
+0x0001685C	0x00000010	[ 18] literal string: glTexParameterx
+0x0001686C	0x00000011	[ 18] literal string: glTexParameterxv
+0x0001687D	0x00000010	[ 18] literal string: glTexSubImage2D
+0x0001688D	0x0000000D	[ 18] literal string: glTranslatef
+0x0001689A	0x0000000D	[ 18] literal string: glTranslatex
+0x000168A7	0x0000000C	[ 18] literal string: glUniform1f
+0x000168B3	0x0000000D	[ 18] literal string: glUniform1fv
+0x000168C0	0x0000000C	[ 18] literal string: glUniform1i
+0x000168CC	0x0000000D	[ 18] literal string: glUniform1iv
+0x000168D9	0x0000000C	[ 18] literal string: glUniform2f
+0x000168E5	0x0000000D	[ 18] literal string: glUniform2fv
+0x000168F2	0x0000000C	[ 18] literal string: glUniform2i
+0x000168FE	0x0000000D	[ 18] literal string: glUniform2iv
+0x0001690B	0x0000000C	[ 18] literal string: glUniform3f
+0x00016917	0x0000000D	[ 18] literal string: glUniform3fv
+0x00016924	0x0000000C	[ 18] literal string: glUniform3i
+0x00016930	0x0000000D	[ 18] literal string: glUniform3iv
+0x0001693D	0x0000000C	[ 18] literal string: glUniform4f
+0x00016949	0x0000000D	[ 18] literal string: glUniform4fv
+0x00016956	0x0000000C	[ 18] literal string: glUniform4i
+0x00016962	0x0000000D	[ 18] literal string: glUniform4iv
+0x0001696F	0x00000013	[ 18] literal string: glUniformMatrix2fv
+0x00016982	0x00000013	[ 18] literal string: glUniformMatrix3fv
+0x00016995	0x00000013	[ 18] literal string: glUniformMatrix4fv
+0x000169A8	0x0000000D	[ 18] literal string: glUseProgram
+0x000169B5	0x00000012	[ 18] literal string: glValidateProgram
+0x000169C7	0x00000011	[ 18] literal string: glVertexAttrib1f
+0x000169D8	0x00000012	[ 18] literal string: glVertexAttrib1fv
+0x000169EA	0x00000011	[ 18] literal string: glVertexAttrib2f
+0x000169FB	0x00000012	[ 18] literal string: glVertexAttrib2fv
+0x00016A0D	0x00000011	[ 18] literal string: glVertexAttrib3f
+0x00016A1E	0x00000012	[ 18] literal string: glVertexAttrib3fv
+0x00016A30	0x00000011	[ 18] literal string: glVertexAttrib4f
+0x00016A41	0x00000012	[ 18] literal string: glVertexAttrib4fv
+0x00016A53	0x00000016	[ 18] literal string: glVertexAttribPointer
+0x00016A69	0x00000010	[ 18] literal string: glVertexPointer
+0x00016A79	0x0000000B	[ 18] literal string: glViewport
+0x00016A84	0x00000013	[ 18] literal string: glWeightPointerOES
+0x00016A97	0x00000019	[ 18] literal string: s3eAccelerometerGetError
+0x00016AB0	0x0000001F	[ 18] literal string: s3eAccelerometerGetErrorString
+0x00016ACF	0x00000017	[ 18] literal string: s3eAccelerometerGetInt
+0x00016AE6	0x00000015	[ 18] literal string: s3eAccelerometerGetX
+0x00016AFB	0x00000015	[ 18] literal string: s3eAccelerometerGetY
+0x00016B10	0x00000015	[ 18] literal string: s3eAccelerometerGetZ
+0x00016B25	0x00000016	[ 18] literal string: s3eAccelerometerStart
+0x00016B3B	0x00000015	[ 18] literal string: s3eAccelerometerStop
+0x00016B50	0x00000011	[ 18] literal string: s3eAudioGetError
+0x00016B61	0x00000017	[ 18] literal string: s3eAudioGetErrorString
+0x00016B78	0x0000000F	[ 18] literal string: s3eAudioGetInt
+0x00016B87	0x00000019	[ 18] literal string: s3eAudioIsCodecSupported
+0x00016BA0	0x00000012	[ 18] literal string: s3eAudioIsPlaying
+0x00016BB2	0x0000000E	[ 18] literal string: s3eAudioPause
+0x00016BC0	0x0000000D	[ 18] literal string: s3eAudioPlay
+0x00016BCD	0x00000017	[ 18] literal string: s3eAudioPlayFromBuffer
+0x00016BE4	0x00000011	[ 18] literal string: s3eAudioRegister
+0x00016BF5	0x0000000F	[ 18] literal string: s3eAudioResume
+0x00016C04	0x0000000F	[ 18] literal string: s3eAudioSetInt
+0x00016C13	0x0000000D	[ 18] literal string: s3eAudioStop
+0x00016C20	0x00000013	[ 18] literal string: s3eAudioUnRegister
+0x00016C33	0x00000015	[ 18] literal string: s3eCompressionDecomp
+0x00016C48	0x0000001A	[ 18] literal string: s3eCompressionDecompFinal
+0x00016C62	0x00000019	[ 18] literal string: s3eCompressionDecompInit
+0x00016C7B	0x00000019	[ 18] literal string: s3eCompressionDecompRead
+0x00016C94	0x00000017	[ 18] literal string: s3eCompressionGetError
+0x00016CAB	0x0000001D	[ 18] literal string: s3eCompressionGetErrorString
+0x00016CC8	0x00000012	[ 18] literal string: s3eConfigGetError
+0x00016CDA	0x00000018	[ 18] literal string: s3eConfigGetErrorString
+0x00016CF2	0x00000010	[ 18] literal string: s3eConfigGetInt
+0x00016D02	0x00000014	[ 18] literal string: s3eConfigGetIntHash
+0x00016D16	0x00000013	[ 18] literal string: s3eConfigGetString
+0x00016D29	0x00000017	[ 18] literal string: s3eConfigGetStringHash
+0x00016D40	0x00000012	[ 18] literal string: s3eCryptoGetError
+0x00016D52	0x00000018	[ 18] literal string: s3eCryptoGetErrorString
+0x00016D6A	0x0000000E	[ 18] literal string: s3eCryptoRand
+0x00016D78	0x0000000E	[ 18] literal string: s3eCryptoSha1
+0x00016D86	0x00000013	[ 18] literal string: s3eCryptoSha1Final
+0x00016D99	0x00000012	[ 18] literal string: s3eCryptoSha1Init
+0x00016DAB	0x00000014	[ 18] literal string: s3eCryptoSha1Update
+0x00016DBF	0x00000013	[ 18] literal string: s3eCryptoVerifyRsa
+0x00016DD2	0x00000013	[ 18] literal string: s3eDebugAssertShow
+0x00016DE5	0x00000012	[ 18] literal string: s3eDebugErrorShow
+0x00016DF7	0x00000011	[ 18] literal string: s3eDebugGetError
+0x00016E08	0x00000017	[ 18] literal string: s3eDebugGetErrorString
+0x00016E1F	0x0000000F	[ 18] literal string: s3eDebugGetInt
+0x00016E2E	0x0000001A	[ 18] literal string: s3eDebugIsDebuggerPresent
+0x00016E48	0x00000015	[ 18] literal string: s3eDebugOutputString
+0x00016E5D	0x0000000E	[ 18] literal string: s3eDebugPrint
+0x00016E6B	0x00000011	[ 18] literal string: s3eDebugRegister
+0x00016E7C	0x0000000F	[ 18] literal string: s3eDebugSetInt
+0x00016E8B	0x0000001B	[ 18] literal string: s3eDebugTraceChannelSwitch
+0x00016EA6	0x00000017	[ 18] literal string: s3eDebugTraceClearFile
+0x00016EBD	0x00000013	[ 18] literal string: s3eDebugTraceFlush
+0x00016ED0	0x00000012	[ 18] literal string: s3eDebugTraceLine
+0x00016EE2	0x00000013	[ 18] literal string: s3eDebugUnRegister
+0x00016EF5	0x00000015	[ 18] literal string: s3eDeviceBacklightOn
+0x00016F0A	0x0000001B	[ 18] literal string: s3eDeviceCheckPauseRequest
+0x00016F25	0x0000001A	[ 18] literal string: s3eDeviceCheckQuitRequest
+0x00016F3F	0x00000016	[ 18] literal string: s3eDeviceExecPushNext
+0x00016F55	0x0000000E	[ 18] literal string: s3eDeviceExit
+0x00016F63	0x00000012	[ 18] literal string: s3eDeviceGetError
+0x00016F75	0x00000018	[ 18] literal string: s3eDeviceGetErrorString
+0x00016F8D	0x00000010	[ 18] literal string: s3eDeviceGetInt
+0x00016F9D	0x00000013	[ 18] literal string: s3eDeviceGetString
+0x00016FB0	0x00000012	[ 18] literal string: s3eDeviceRegister
+0x00016FC2	0x00000015	[ 18] literal string: s3eDeviceRequestQuit
+0x00016FD7	0x00000010	[ 18] literal string: s3eDeviceSetInt
+0x00016FE7	0x00000014	[ 18] literal string: s3eDeviceUnRegister
+0x00016FFB	0x00000011	[ 18] literal string: s3eDeviceUnYield
+0x0001700C	0x0000000F	[ 18] literal string: s3eDeviceYield
+0x0001701B	0x00000019	[ 18] literal string: s3eDeviceYieldUntilEvent
+0x00017034	0x0000000A	[ 18] literal string: s3eExtGet
+0x0001703E	0x0000000F	[ 18] literal string: s3eExtGetError
+0x0001704D	0x00000015	[ 18] literal string: s3eExtGetErrorString
+0x00017062	0x0000000E	[ 18] literal string: s3eExtGetHash
+0x00017070	0x00000016	[ 18] literal string: s3eFileAddUserFileSys
+0x00017086	0x00000013	[ 18] literal string: s3eFileCheckExists
+0x00017099	0x0000000D	[ 18] literal string: s3eFileClose
+0x000170A6	0x0000000E	[ 18] literal string: s3eFileDelete
+0x000170B4	0x00000017	[ 18] literal string: s3eFileDeleteDirectory
+0x000170CB	0x0000000B	[ 18] literal string: s3eFileEOF
+0x000170D6	0x0000000D	[ 18] literal string: s3eFileFlush
+0x000170E3	0x0000000F	[ 18] literal string: s3eFileGetChar
+0x000170F2	0x00000010	[ 18] literal string: s3eFileGetError
+0x00017102	0x00000016	[ 18] literal string: s3eFileGetErrorString
+0x00017118	0x00000012	[ 18] literal string: s3eFileGetFileInt
+0x0001712A	0x00000015	[ 18] literal string: s3eFileGetFileString
+0x0001713F	0x0000000F	[ 18] literal string: s3eFileGetFree
+0x0001714E	0x0000000E	[ 18] literal string: s3eFileGetInt
+0x0001715C	0x00000018	[ 18] literal string: s3eFileGetLastWriteTime
+0x00017174	0x0000000F	[ 18] literal string: s3eFileGetSize
+0x00017183	0x00000011	[ 18] literal string: s3eFileListClose
+0x00017194	0x00000015	[ 18] literal string: s3eFileListDirectory
+0x000171A9	0x00000010	[ 18] literal string: s3eFileListNext
+0x000171B9	0x00000015	[ 18] literal string: s3eFileMakeDirectory
+0x000171CE	0x0000000C	[ 18] literal string: s3eFileOpen
+0x000171DA	0x00000016	[ 18] literal string: s3eFileOpenFromMemory
+0x000171F0	0x0000000F	[ 18] literal string: s3eFilePutChar
+0x000171FF	0x0000000C	[ 18] literal string: s3eFileRead
+0x0001720B	0x00000012	[ 18] literal string: s3eFileReadString
+0x0001721D	0x00000019	[ 18] literal string: s3eFileRemoveUserFileSys
+0x00017236	0x0000000E	[ 18] literal string: s3eFileRename
+0x00017244	0x0000000C	[ 18] literal string: s3eFileSeek
+0x00017250	0x0000000E	[ 18] literal string: s3eFileSetInt
+0x0001725E	0x0000000C	[ 18] literal string: s3eFileTell
+0x0001726A	0x00000010	[ 18] literal string: s3eFileTruncate
+0x0001727A	0x0000000D	[ 18] literal string: s3eFileWrite
+0x00017287	0x00000008	[ 18] literal string: s3eFree
+0x0001728F	0x0000000C	[ 18] literal string: s3eFreeBase
+0x0001729B	0x0000000E	[ 18] literal string: s3eGLGetError
+0x000172A9	0x00000014	[ 18] literal string: s3eGLGetErrorString
+0x000172BD	0x0000000C	[ 18] literal string: s3eGLGetInt
+0x000172C9	0x00000015	[ 18] literal string: s3eGLGetNativeWindow
+0x000172DE	0x0000000E	[ 18] literal string: s3eGLRegister
+0x000172EC	0x00000010	[ 18] literal string: s3eGLUnRegister
+0x000172FC	0x00000011	[ 18] literal string: s3eGLUnavailable
+0x0001730D	0x0000000C	[ 18] literal string: s3eInetAton
+0x00017319	0x0000000D	[ 18] literal string: s3eInetHtonl
+0x00017326	0x0000000D	[ 18] literal string: s3eInetHtons
+0x00017333	0x0000000E	[ 18] literal string: s3eInetLookup
+0x00017341	0x00000014	[ 18] literal string: s3eInetLookupCancel
+0x00017355	0x0000000C	[ 18] literal string: s3eInetNtoa
+0x00017361	0x0000000D	[ 18] literal string: s3eInetNtohl
+0x0001736E	0x0000000D	[ 18] literal string: s3eInetNtohs
+0x0001737B	0x00000010	[ 18] literal string: s3eInetToString
+0x0001738B	0x00000012	[ 18] literal string: s3eKeyboardAnyKey
+0x0001739D	0x00000016	[ 18] literal string: s3eKeyboardClearState
+0x000173B3	0x00000013	[ 18] literal string: s3eKeyboardGetChar
+0x000173C6	0x0000001A	[ 18] literal string: s3eKeyboardGetDisplayName
+0x000173E0	0x00000014	[ 18] literal string: s3eKeyboardGetError
+0x000173F4	0x0000001A	[ 18] literal string: s3eKeyboardGetErrorString
+0x0001740E	0x00000012	[ 18] literal string: s3eKeyboardGetInt
+0x00017420	0x00000014	[ 18] literal string: s3eKeyboardGetState
+0x00017434	0x00000014	[ 18] literal string: s3eKeyboardRegister
+0x00017448	0x00000012	[ 18] literal string: s3eKeyboardSetInt
+0x0001745A	0x00000016	[ 18] literal string: s3eKeyboardUnRegister
+0x00017470	0x00000012	[ 18] literal string: s3eKeyboardUpdate
+0x00017482	0x0000000E	[ 18] literal string: s3eLicenseBuy
+0x00017490	0x00000013	[ 18] literal string: s3eLicenseGetError
+0x000174A3	0x00000019	[ 18] literal string: s3eLicenseGetErrorString
+0x000174BC	0x00000011	[ 18] literal string: s3eLicenseGetInt
+0x000174CD	0x0000000A	[ 18] literal string: s3eMalloc
+0x000174D7	0x0000000E	[ 18] literal string: s3eMallocBase
+0x000174E5	0x00000012	[ 18] literal string: s3eMemoryGetError
+0x000174F7	0x00000018	[ 18] literal string: s3eMemoryGetErrorString
+0x0001750F	0x00000010	[ 18] literal string: s3eMemoryGetInt
+0x0001751F	0x00000017	[ 18] literal string: s3eMemoryGetUserMemMgr
+0x00017536	0x00000015	[ 18] literal string: s3eMemoryHeapAddress
+0x0001754B	0x00000014	[ 18] literal string: s3eMemoryHeapCreate
+0x0001755F	0x00000015	[ 18] literal string: s3eMemoryHeapDestroy
+0x00017574	0x00000010	[ 18] literal string: s3eMemorySetInt
+0x00017584	0x00000017	[ 18] literal string: s3eMemorySetUserMemMgr
+0x0001759B	0x00000013	[ 18] literal string: s3ePointerGetError
+0x000175AE	0x00000019	[ 18] literal string: s3ePointerGetErrorString
+0x000175C7	0x00000011	[ 18] literal string: s3ePointerGetInt
+0x000175D8	0x00000013	[ 18] literal string: s3ePointerGetState
+0x000175EB	0x00000018	[ 18] literal string: s3ePointerGetTouchState
+0x00017603	0x00000014	[ 18] literal string: s3ePointerGetTouchX
+0x00017617	0x00000014	[ 18] literal string: s3ePointerGetTouchY
+0x0001762B	0x0000000F	[ 18] literal string: s3ePointerGetX
+0x0001763A	0x0000000F	[ 18] literal string: s3ePointerGetY
+0x00017649	0x00000013	[ 18] literal string: s3ePointerRegister
+0x0001765C	0x00000011	[ 18] literal string: s3ePointerSetInt
+0x0001766D	0x00000015	[ 18] literal string: s3ePointerUnRegister
+0x00017682	0x00000011	[ 18] literal string: s3ePointerUpdate
+0x00017693	0x0000000B	[ 18] literal string: s3eRealloc
+0x0001769E	0x0000000F	[ 18] literal string: s3eReallocBase
+0x000176AD	0x00000014	[ 18] literal string: s3eSecureStorageGet
+0x000176C1	0x00000019	[ 18] literal string: s3eSecureStorageGetError
+0x000176DC	0x0000001F	[ 18] literal string: s3eSecureStorageGetErrorString
+0x000176FB	0x00000014	[ 18] literal string: s3eSecureStoragePut
+0x0001770F	0x00000010	[ 18] literal string: s3eSocketAccept
+0x0001771F	0x0000000E	[ 18] literal string: s3eSocketBind
+0x0001772D	0x0000000F	[ 18] literal string: s3eSocketClose
+0x0001773C	0x00000011	[ 18] literal string: s3eSocketConnect
+0x0001774D	0x00000010	[ 18] literal string: s3eSocketCreate
+0x0001775D	0x00000012	[ 18] literal string: s3eSocketGetError
+0x0001776F	0x00000018	[ 18] literal string: s3eSocketGetErrorString
+0x00017787	0x00000010	[ 18] literal string: s3eSocketGetInt
+0x00017797	0x00000016	[ 18] literal string: s3eSocketGetLocalName
+0x000177AD	0x00000015	[ 18] literal string: s3eSocketGetPeerName
+0x000177C2	0x00000013	[ 18] literal string: s3eSocketGetString
+0x000177D5	0x00000010	[ 18] literal string: s3eSocketListen
+0x000177E5	0x00000012	[ 18] literal string: s3eSocketReadable
+0x000177F7	0x0000000E	[ 18] literal string: s3eSocketRecv
+0x00017805	0x00000012	[ 18] literal string: s3eSocketRecvFrom
+0x00017817	0x0000000E	[ 18] literal string: s3eSocketSend
+0x00017825	0x00000010	[ 18] literal string: s3eSocketSendTo
+0x00017835	0x00000012	[ 18] literal string: s3eSocketWritable
+0x00017847	0x00000016	[ 18] literal string: s3eSoundChannelGetInt
+0x0001785D	0x00000015	[ 18] literal string: s3eSoundChannelPause
+0x00017872	0x00000014	[ 18] literal string: s3eSoundChannelPlay
+0x00017886	0x00000018	[ 18] literal string: s3eSoundChannelRegister
+0x0001789E	0x00000016	[ 18] literal string: s3eSoundChannelResume
+0x000178B4	0x00000016	[ 18] literal string: s3eSoundChannelSetInt
+0x000178CA	0x00000014	[ 18] literal string: s3eSoundChannelStop
+0x000178DE	0x0000001A	[ 18] literal string: s3eSoundChannelUnRegister
+0x000178F8	0x00000011	[ 18] literal string: s3eSoundGetError
+0x00017909	0x00000017	[ 18] literal string: s3eSoundGetErrorString
+0x00017920	0x00000017	[ 18] literal string: s3eSoundGetFreeChannel
+0x00017937	0x0000000F	[ 18] literal string: s3eSoundGetInt
+0x00017946	0x00000019	[ 18] literal string: s3eSoundPauseAllChannels
+0x0001795F	0x0000001A	[ 18] literal string: s3eSoundResumeAllChannels
+0x00017979	0x0000000F	[ 18] literal string: s3eSoundSetInt
+0x00017988	0x00000018	[ 18] literal string: s3eSoundStopAllChannels
+0x000179A0	0x00000015	[ 18] literal string: s3eSurfaceConvertRGB
+0x000179B5	0x00000013	[ 18] literal string: s3eSurfaceGetError
+0x000179C8	0x00000019	[ 18] literal string: s3eSurfaceGetErrorString
+0x000179E1	0x00000011	[ 18] literal string: s3eSurfaceGetInt
+0x000179F2	0x00000015	[ 18] literal string: s3eSurfaceInvalidate
+0x00017A07	0x0000000E	[ 18] literal string: s3eSurfacePtr
+0x00017A15	0x00000013	[ 18] literal string: s3eSurfaceRegister
+0x00017A28	0x00000017	[ 18] literal string: s3eSurfaceSetDisplayID
+0x00017A3F	0x00000010	[ 18] literal string: s3eSurfaceSetup
+0x00017A4F	0x0000000F	[ 18] literal string: s3eSurfaceShow
+0x00017A5E	0x00000015	[ 18] literal string: s3eSurfaceUnRegister
+0x00017A73	0x00000014	[ 18] literal string: s3eTimerCancelTimer
+0x00017A87	0x00000011	[ 18] literal string: s3eTimerGetError
+0x00017A98	0x00000017	[ 18] literal string: s3eTimerGetErrorString
+0x00017AAF	0x0000000F	[ 18] literal string: s3eTimerGetInt
+0x00017ABE	0x0000001B	[ 18] literal string: s3eTimerGetLocaltimeOffset
+0x00017AD9	0x0000000E	[ 18] literal string: s3eTimerGetMs
+0x00017AE7	0x0000000F	[ 18] literal string: s3eTimerGetUST
+0x00017AF6	0x0000000F	[ 18] literal string: s3eTimerGetUTC
+0x00017B05	0x00000011	[ 18] literal string: s3eTimerSetTimer
+0x00017B16	0x00000011	[ 18] literal string: s3eVibraGetError
+0x00017B27	0x00000017	[ 18] literal string: s3eVibraGetErrorString
+0x00017B3E	0x0000000F	[ 18] literal string: s3eVibraGetInt
+0x00017B4D	0x0000000F	[ 18] literal string: s3eVibraSetInt
+0x00017B5C	0x0000000D	[ 18] literal string: s3eVibraStop
+0x00017B69	0x00000010	[ 18] literal string: s3eVibraVibrate
+0x00017B79	0x00000011	[ 18] literal string: s3eVideoGetError
+0x00017B8A	0x00000017	[ 18] literal string: s3eVideoGetErrorString
+0x00017BA1	0x0000000F	[ 18] literal string: s3eVideoGetInt
+0x00017BB0	0x00000019	[ 18] literal string: s3eVideoIsCodecSupported
+0x00017BC9	0x00000012	[ 18] literal string: s3eVideoIsPlaying
+0x00017BDB	0x0000000E	[ 18] literal string: s3eVideoPause
+0x00017BE9	0x0000000D	[ 18] literal string: s3eVideoPlay
+0x00017BF6	0x00000017	[ 18] literal string: s3eVideoPlayFromBuffer
+0x00017C0D	0x00000011	[ 18] literal string: s3eVideoRegister
+0x00017C1E	0x0000000F	[ 18] literal string: s3eVideoResume
+0x00017C2D	0x0000000F	[ 18] literal string: s3eVideoSetInt
+0x00017C3C	0x0000000D	[ 18] literal string: s3eVideoStop
+0x00017C49	0x00000013	[ 18] literal string: s3eVideoUnRegister
+0x00017C5C	0x00000060	[ 18] literal string: Warning: Couldn't bind the following functions (not exported by the loader). Crash is likely.:
+
+0x00017CBC	0x00000007	[  6] literal string: NORMAL
+0x00017CC3	0x0000000A	[  6] literal string: RECURSIVE
+0x00017CCD	0x0000000B	[  6] literal string: ERRORCHECK
+0x00017CD8	0x00000025	[  6] literal string: pthread_mutex_init: invalid type: %d
+0x00017CFD	0x0000001C	[  6] literal string: pthread_mutex_init: type=%s
+0x00017D1C	0x00000027	[  6] literal string: attempt to relock an already held lock
+0x00017D43	0x00000013	[  6] literal string: lock->m_Count >= 0
+0x00017D58	0x00000039	[  6] literal string: /p4/sdkbuild/sdk/5.2/iwcrt/source/libc/pthread_mutex.cpp
+0x00017D94	0x00000031	[  7] literal string: current thread id %d is too great for TLS system
+0x00017DC8	0x00000037	[  7] literal string: /p4/sdkbuild/sdk/5.2/iwcrt/source/libc/pthread_tls.cpp
+0x00017DFF	0x0000001D	[  7] literal string: ran out of TLS keys (max=%d)
+0x00017E1C	0x00000002	[ 61] literal string: C
+0x00017E1E	0x00000004	[101] literal string: Jan
+0x00017E22	0x00000004	[101] literal string: Feb
+0x00017E26	0x00000004	[101] literal string: Mar
+0x00017E2A	0x00000004	[101] literal string: Apr
+0x00017E2E	0x00000004	[101] literal string: May
+0x00017E32	0x00000004	[101] literal string: Jun
+0x00017E36	0x00000004	[101] literal string: Jul
+0x00017E3A	0x00000004	[101] literal string: Aug
+0x00017E3E	0x00000004	[101] literal string: Sep
+0x00017E42	0x00000004	[101] literal string: Oct
+0x00017E46	0x00000004	[101] literal string: Nov
+0x00017E4A	0x00000004	[101] literal string: Dec
+0x00017E4E	0x00000008	[101] literal string: January
+0x00017E56	0x00000009	[101] literal string: February
+0x00017E5F	0x00000006	[101] literal string: March
+0x00017E65	0x00000006	[101] literal string: April
+0x00017E6B	0x00000005	[101] literal string: June
+0x00017E70	0x00000005	[101] literal string: July
+0x00017E75	0x00000007	[101] literal string: August
+0x00017E7C	0x0000000A	[101] literal string: September
+0x00017E86	0x00000008	[101] literal string: October
+0x00017E8E	0x00000009	[101] literal string: November
+0x00017E97	0x00000009	[101] literal string: December
+0x00017EA0	0x00000004	[101] literal string: Sun
+0x00017EA4	0x00000004	[101] literal string: Mon
+0x00017EA8	0x00000004	[101] literal string: Tue
+0x00017EAC	0x00000004	[101] literal string: Wed
+0x00017EB0	0x00000004	[101] literal string: Thu
+0x00017EB4	0x00000004	[101] literal string: Fri
+0x00017EB8	0x00000004	[101] literal string: Sat
+0x00017EBC	0x00000007	[101] literal string: Sunday
+0x00017EC3	0x00000007	[101] literal string: Monday
+0x00017ECA	0x00000008	[101] literal string: Tuesday
+0x00017ED2	0x0000000A	[101] literal string: Wednesday
+0x00017EDC	0x00000009	[101] literal string: Thursday
+0x00017EE5	0x00000007	[101] literal string: Friday
+0x00017EEC	0x00000009	[101] literal string: Saturday
+0x00017EF5	0x00000009	[101] literal string: %H:%M:%S
+0x00017EFE	0x00000009	[101] literal string: %m/%d/%y
+0x00017F07	0x00000015	[101] literal string: %a %b %e %H:%M:%S %Y
+0x00017F1C	0x00000003	[101] literal string: AM
+0x00017F1F	0x00000003	[101] literal string: PM
+0x00017F22	0x00000018	[101] literal string: %a %b %e %H:%M:%S %Z %Y
+0x00017F3A	0x00000003	[101] literal string: md
+0x00017F3D	0x0000000C	[101] literal string: %I:%M:%S %p
+0x00017F49	0x00000004	[105] literal string: GMT
+0x00017F4D	0x0000000F	[104] literal string: %10[^0-9,+-]%n
+0x00017F5C	0x00000012	[104] literal string: %hu%n:%hu%n:%hu%n
+0x00017F6E	0x00000013	[104] literal string: M%hu%n.%hu%n.%hu%n
+0x00017F81	0x00000013	[104] literal string: /%hu%n:%hu%n:%hu%n
+0x00017F94	0x00000011	[ 98] literal string: 0123456789abcdef
+0x00017FA5	0x00000004	[ 98] literal string: INF
+0x00017FA9	0x00000004	[ 98] literal string: inf
+0x00017FAD	0x00000004	[ 98] literal string: NAN
+0x00017FB1	0x00000004	[ 98] literal string: nan
+0x00017FB5	0x00000011	[ 98] literal string: 0123456789ABCDEF
+0x00017FC6	0x00000007	[ 98] literal string: (null)
+0x00017FCD	0x0000001A	[ 98] literal string: bug in vfprintf: bad base
+0x00017FE8	0x00000006	[  8] literal string: false
+0x00017FEE	0x00000004	[  8] literal string: s3e
+0x00017FF2	0x00000004	[ 67] literal string: JIS
+0x00017FF6	0x00000006	[ 67] literal string: EUCJP
+0x00017FFC	0x00000005	[ 67] literal string: SJIS
+0x00018001	0x00000002	[ 67] literal string: .
+0x00018003	0x0000000C	[ 66] literal string:  -Infinity 
+0x0001800F	0x0000000B	[ 66] literal string:  Infinity 
+0x0001801A	0x00000004	[ 66] literal string: NaN
+0x0001801E	0x00000004	[ 66] literal string: E%d
+0x00018022	0x00000006	[ 66] literal string:  NaN 
+0x00018028	0x00000005	[ 99] literal string: e%ld
+0x0001802D	0x00000003	[ 91] literal string: nf
+0x00018030	0x00000006	[ 91] literal string: inity
+0x00018036	0x00000003	[ 91] literal string: an
+0x00018039	0x00000007	[ 54] literal string: ABCDEF
+0x00018040	0x00000007	[ 54] literal string: abcdef
+0x00018047	0x0000000B	[ 54] literal string: 0123456789
+0x00018060	0x00000008	[ 48] 8-byte-literal
+0x00018080	0x00000180	[ 51] __ctype_b
+0x00018200	0x00001740	[ 64] _b02cf
+0x00019940	0x00001A80	[ 64] _d02f4
+0x0001B3C0	0x000000C0	[ 64] _a1
+0x0001B480	0x000000C0	[ 64] _a2
+0x0001B540	0x00000060	[ 64] _a3
+0x0001B5A0	0x00000080	[ 64] _a6
+0x0001B620	0x000000C0	[ 64] _a7
+0x0001B6E0	0x00000040	[ 64] _a8
+0x0001B720	0x00000022	[ 66] _bmask
+0x0001B760	0x00000060	[ 74] _mon_lengths
+0x0001B7C0	0x00000008	[ 74] _year_lengths
+0x0001B7E0	0x000000E0	[ 75] ___mprec_tens
+0x0001B8C0	0x00000040	[ 75] ___mprec_bigtens
+0x0001B908	0x0000000C	[ 75] _p05.3067
+0x0001B918	0x00000008	[ 75] 8-byte-literal
+0x0001B920	0x00000060	[ 91] _tinytens
+0x0001B980	0x00000008	[ 91] 8-byte-literal
+0x0001B988	0x00000008	[ 91] 8-byte-literal
+0x0001B990	0x00000008	[ 91] 8-byte-literal
+0x0001B998	0x00000008	[ 91] 8-byte-literal
+0x0001B9A0	0x00000008	[ 91] 8-byte-literal
+0x0001B9A8	0x00000008	[ 91] 8-byte-literal
+0x0001B9B0	0x00000008	[ 91] 8-byte-literal
+0x0001B9B8	0x00000008	[ 91] 8-byte-literal
+0x0001B9C0	0x00000100	[ 96] ___chclass
+0x0001BAC0	0x00000080	[ 96] ___state_table
+0x0001BB40	0x0000006C	[ 96] ___action_table
+0x0001BBAC	0x00000010	[ 98] _zeroes.4564
+0x0001BBBC	0x00000010	[ 98] _blanks.4563
+0x0001BBCC	0x00000004	[ 98] 4-byte-literal
+0x0001BBD0	0x00000004	[ 98] 4-byte-literal
+0x0001BBD4	0x00000004	[ 98] 4-byte-literal
+0x0001BBE0	0x00000022	[ 99] _basefix.4449
+0x0001BC02	0x00000150	[  0] compact unwind info
+0x0001BD58	0x00000018	[  1] CIE
+0x0001BD70	0x00000024	[  1] FDE for: _s3eNextpeerAvailable
+0x0001BD94	0x00000024	[  1] FDE for: __ZL13_extLoadNoMsgv
+0x0001BDB8	0x00000024	[  1] FDE for: __ZL8_extLoadv
+0x0001BDDC	0x0000002C	[  1] FDE for: _s3eNextpeerRegisterCallback
+0x0001BE08	0x00000024	[  1] FDE for: _s3eNextpeerIsCurrentlyInTournament
+0x0001BE2C	0x00000024	[  1] FDE for: _s3eNextpeerReportScoreForCurrentTournament
+0x0001BE50	0x00000024	[  1] FDE for: _s3eNextpeerLaunchDashboard
+0x0001BE74	0x00000024	[  1] FDE for: _s3eNextpeerInitWithProductKey
+0x0001BE98	0x00000018	[  2] CIE
+0x0001BEB0	0x00000024	[  2] FDE for: _main
+0x0001BED4	0x00000024	[  2] FDE for: __ZL29didTournamentStartWithDetailsPvS_
+0x0001BEF8	0x00000024	[  2] FDE for: __ZL16didTournamentEndPvS_
+0x0001BF1C	0x00000018	[ 37] CIE
+0x0001BF34	0x00000014	[ 37] FDE for: _s3eExtGetHash
+0x0001BF48	0x00000018	[ 27] CIE
+0x0001BF60	0x00000014	[ 27] FDE for: _s3eDebugAssertShow
+0x0001BF74	0x00000018	[ 15] CIE
+0x0001BF8C	0x00000024	[ 15] FDE for: __GLOBAL__I_g_DebugGlobals
+0x0001BFB0	0x00000014	[ 15] FDE for: _IwDebugTraceSetTraceChannel
+0x0001BFC4	0x00000014	[ 15] FDE for: _IwDebugAssertSetUID
+0x0001BFD8	0x0000002C	[ 15] FDE for: _IwDebugErrorShow
+0x0001C004	0x00000040	[ 15] FDE for: _IwDebugTraceLineVPrintf
+0x0001C044	0x00000018	[ 15] FDE for: _IwDebugTraceLinePrintf
+0x0001C05C	0x0000003C	[ 15] FDE for: _IwDebugTraceIsChannelOn
+0x0001C098	0x0000003C	[ 15] FDE for: _IwDebugAssertIsChannelOn
+0x0001C0D4	0x00000034	[ 15] FDE for: _IwDebugAssertSetMessage
+0x0001C108	0x00000034	[ 15] FDE for: _IwDebugAssertSetSolution
+0x0001C13C	0x0000003C	[ 15] FDE for: _IwDebugAssertShow
+0x0001C178	0x00000018	[ 30] CIE
+0x0001C190	0x00000014	[ 30] FDE for: _s3eDebugPrint
+0x0001C1A4	0x00000018	[ 36] CIE
+0x0001C1BC	0x00000014	[ 36] FDE for: _s3eDeviceYield
+0x0001C1D0	0x00000018	[ 42] CIE
+0x0001C1E8	0x00000014	[ 42] FDE for: _s3ePointerUpdate
+0x0001C1FC	0x00000018	[ 44] CIE
+0x0001C214	0x00000014	[ 44] FDE for: _s3eSurfaceShow
+0x0001C228	0x00000018	[ 32] CIE
+0x0001C240	0x00000018	[ 32] FDE for: _s3eDeviceCheckQuitRequest
+0x0001C258	0x00000018	[ 13] CIE
+0x0001C270	0x00000024	[ 13] FDE for: _s3eDebugPrintf
+0x0001C294	0x00000018	[ 19] CIE
+0x0001C2AC	0x00000014	[ 19] FDE for: _iwcrt_x86_init
+0x0001C2C0	0x00000034	[ 19] FDE for: __IwMain
+0x0001C2F4	0x00000018	[  3] CIE
+0x0001C30C	0x00000034	[  3] FDE for: _gettimeofday
+0x0001C340	0x00000024	[  3] FDE for: _abort
+0x0001C364	0x0000003C	[  3] FDE for: __IwCrtRealloc
+0x0001C3A0	0x0000003C	[  3] FDE for: __IwCrtMalloc
+0x0001C3DC	0x0000003C	[  3] FDE for: __IwCrtCalloc
+0x0001C418	0x00000034	[  3] FDE for: __IwCrtFree
+0x0001C44C	0x00000034	[  3] FDE for: __IwExit
+0x0001C480	0x00000024	[  3] FDE for: _iwcrt_fini
+0x0001C4A4	0x00000040	[  3] FDE for: _iwcrt_init2
+0x0001C4E4	0x00000024	[  3] FDE for: _iwcrt_init
+0x0001C508	0x00000018	[ 10] CIE
+0x0001C520	0x00000024	[ 10] FDE for: _strerror
+0x0001C544	0x00000018	[  5] CIE
+0x0001C55C	0x00000014	[  5] FDE for: __IwMalloc
+0x0001C570	0x0000002C	[  5] FDE for: _calloc
+0x0001C59C	0x0000003C	[  5] FDE for: __IwFree
+0x0001C5D8	0x00000014	[  5] FDE for: _free
+0x0001C5EC	0x00000018	[ 11] CIE
+0x0001C604	0x0000003C	[ 11] FDE for: _strlcpy
+0x0001C640	0x00000018	[ 17] CIE
+0x0001C658	0x00000018	[ 17] FDE for: __exit
+0x0001C670	0x00000014	[ 17] FDE for: __gettimeofday
+0x0001C684	0x00000018	[ 17] FDE for: __malloc_r
+0x0001C69C	0x00000018	[ 17] FDE for: __realloc_r
+0x0001C6B4	0x00000018	[ 17] FDE for: __calloc_r
+0x0001C6CC	0x00000018	[ 17] FDE for: __free_r
+0x0001C6E4	0x00000018	[ 40] CIE
+0x0001C6FC	0x00000014	[ 40] FDE for: _s3eMemoryGetInt
+0x0001C710	0x00000018	[ 41] CIE
+0x0001C728	0x00000014	[ 41] FDE for: _s3eMemorySetInt
+0x0001C73C	0x00000018	[ 43] CIE
+0x0001C754	0x00000014	[ 43] FDE for: _s3eReallocBase
+0x0001C768	0x00000018	[ 39] CIE
+0x0001C780	0x00000014	[ 39] FDE for: _s3eMallocBase
+0x0001C794	0x00000018	[ 38] CIE
+0x0001C7AC	0x00000014	[ 38] FDE for: _s3eFreeBase
+0x0001C7C0	0x00000018	[ 33] CIE
+0x0001C7D8	0x00000014	[ 33] FDE for: _s3eDeviceExit
+0x0001C7EC	0x00000018	[ 16] CIE
+0x0001C804	0x00000024	[ 16] FDE for: _s3eThreadAvailable
+0x0001C828	0x00000024	[ 16] FDE for: _s3eThreadLockRelease
+0x0001C84C	0x00000024	[ 16] FDE for: _s3eThreadLockAcquire
+0x0001C870	0x00000024	[ 16] FDE for: _s3eThreadLockDestroy
+0x0001C894	0x00000024	[ 16] FDE for: _s3eThreadLockCreate
+0x0001C8B8	0x00000024	[ 16] FDE for: _s3eThreadGetCurrent
+0x0001C8DC	0x00000018	[ 34] CIE
+0x0001C8F4	0x00000014	[ 34] FDE for: _s3eDeviceGetString
+0x0001C908	0x00000018	[ 45] CIE
+0x0001C920	0x00000014	[ 45] FDE for: _s3eTimerGetLocaltimeOffset
+0x0001C934	0x00000018	[  9] CIE
+0x0001C94C	0x0000003C	[  9] FDE for: _setenv
+0x0001C988	0x00000018	[ 14] CIE
+0x0001C9A0	0x0000003C	[ 14] FDE for: __ZL6getTLSv
+0x0001C9DC	0x0000003C	[ 14] FDE for: _s3eMalloc
+0x0001CA18	0x0000003C	[ 14] FDE for: _s3eRealloc
+0x0001CA54	0x0000003C	[ 14] FDE for: _s3eFree
+0x0001CA90	0x0000003C	[ 14] FDE for: _iw_malloc_init
+0x0001CACC	0x00000014	[ 14] FDE for: __ZL7tlsFreePv
+0x0001CAE0	0x00000018	[ 28] CIE
+0x0001CAF8	0x00000014	[ 28] FDE for: _s3eDebugErrorShow
+0x0001CB0C	0x00000018	[ 12] CIE
+0x0001CB24	0x00000024	[ 12] FDE for: _localtime
+0x0001CB48	0x00000018	[ 46] CIE
+0x0001CB60	0x00000014	[ 46] FDE for: _s3eTimerGetUTC
+0x0001CB74	0x00000018	[ 31] CIE
+0x0001CB8C	0x00000014	[ 31] FDE for: _s3eDebugTraceLine
+0x0001CBA0	0x00000018	[ 25] CIE
+0x0001CBB8	0x00000014	[ 25] FDE for: _s3eConfigGetInt
+0x0001CBCC	0x00000018	[ 29] CIE
+0x0001CBE4	0x00000018	[ 29] FDE for: _s3eDebugIsDebuggerPresent
+0x0001CBFC	0x00000018	[ 20] CIE
+0x0001CC14	0x0000003C	[ 20] FDE for: __init
+0x0001CC50	0x00000014	[ 20] FDE for: __fini
+0x0001CC64	0x00000018	[  4] CIE
+0x0001CC7C	0x00000040	[  4] FDE for: _IwMain
+0x0001CCBC	0x00000018	[ 35] CIE
+0x0001CCD4	0x00000014	[ 35] FDE for: _s3eDeviceSetInt
+0x0001CCE8	0x00000018	[ 18] CIE
+0x0001CD00	0x00000040	[ 18] FDE for: __IwBindAPI
+0x0001CD40	0x00000018	[ 26] CIE
+0x0001CD58	0x00000014	[ 26] FDE for: _s3eConfigGetString
+0x0001CD6C	0x00000018	[  6] CIE
+0x0001CD84	0x00000034	[  6] FDE for: _pthread_mutex_lock
+0x0001CDB8	0x0000003C	[  6] FDE for: _pthread_mutex_init
+0x0001CDF4	0x00000034	[  6] FDE for: _pthread_mutex_unlock
+0x0001CE28	0x00000018	[  7] CIE
+0x0001CE40	0x0000002C	[  7] FDE for: __ZL11getTLSBlockl
+0x0001CE6C	0x00000018	[  7] FDE for: _pthread_getspecific
+0x0001CE84	0x0000003C	[  7] FDE for: _pthread_setspecific
+0x0001CEC0	0x0000003C	[  7] FDE for: _pthread_key_create
+0x0001CEFC	0x00000018	[ 23] CIE
+0x0001CF14	0x00000014	[ 23] FDE for: ___s3eMemorySetUserMemMgr
+0x0001CF28	0x00000018	[ 21] CIE
+0x0001CF40	0x00000014	[ 21] FDE for: ___s3eFreeBase
+0x0001CF54	0x00000018	[ 22] CIE
+0x0001CF6C	0x00000014	[ 22] FDE for: ___s3eMallocBase
+0x0001CF80	0x00000018	[ 24] CIE
+0x0001CF98	0x00000014	[ 24] FDE for: ___s3eReallocBase
+0x0001CFAC	0x00000018	[  8] CIE
+0x0001CFC4	0x00000024	[  8] FDE for: _pthread_self
+0x0001D000	0x00000004	[  0] non-lazy-pointer-to-local: dyld_stub_binder
+0x0001D004	0x00000004	[  0] non-lazy-pointer
+0x0001D008	0x00000004	[ 55] non-lazy-pointer-to: ___hexdig
+0x0001D00C	0x00000004	[ 91] non-lazy-pointer-to: ___mprec_tens
+0x0001D010	0x00000004	[ 91] non-lazy-pointer-to: ___mprec_bigtens
+0x0001D014	0x00000004	[ 99] non-lazy-pointer-to: __strtoul_r
+0x0001D018	0x00000004	[ 99] non-lazy-pointer-to: __strtol_r
+0x0001D01C	0x00000004	[ 81] non-lazy-pointer-to: ___seofread
+0x0001D020	0x00000004	[ 56] non-lazy-pointer-to: _environ
+0x0001D024	0x00000004	[ 67] non-lazy-pointer-to: ___wctomb
+0x0001D028	0x00000004	[ 98] non-lazy-pointer-to: ___action_table
+0x0001D02C	0x00000004	[ 98] non-lazy-pointer-to: ___chclass
+0x0001D030	0x00000004	[ 98] non-lazy-pointer-to: ___state_table
+0x0001D034	0x00000004	[ 98] non-lazy-pointer-to: ___mbtowc
+0x0001D038	0x00000004	[104] non-lazy-pointer-to: __daylight
+0x0001D03C	0x00000004	[104] non-lazy-pointer-to: __timezone
+0x0001D040	0x00000004	[ 76] non-lazy-pointer-to: _errno
+0x0001D044	0x00000004	[  6] non-lazy-pointer-to: _g_PThreadPresent
+0x0001D048	0x00000004	[  6] non-lazy-pointer-to: _g_PThreadChecked
+0x0001D04C	0x00000004	[  6] non-lazy-pointer-to: _g_DelayedCreationLock
+0x0001D050	0x00000004	[ 86] non-lazy-pointer-to: ___stack_chk_guard
+0x0001D054	0x00000004	[ 86] non-lazy-pointer-to: __tzname
+0x0001D058	0x00000004	[ 14] non-lazy-pointer-to: ___s3eReallocBase
+0x0001D05C	0x00000004	[ 14] non-lazy-pointer-to: ___s3eMallocBase
+0x0001D060	0x00000004	[ 14] non-lazy-pointer-to: ___s3eFreeBase
+0x0001D064	0x00000004	[ 62] non-lazy-pointer-to: ___ctype_ptr__
+0x0001D068	0x00000004	[ 77] non-lazy-pointer-to: __impure_ptr
+0x0001D06C	0x00000004	[ 37] non-lazy-pointer-to: _g_S3E_API
+0x0001D070	0x00000004	[112] ___bzero
+0x0001D074	0x00000004	[112] ___divdi3
+0x0001D078	0x00000004	[112] ___error
+0x0001D07C	0x00000004	[112] ___moddi3
+0x0001D080	0x00000004	[112] ___stack_chk_fail
+0x0001D084	0x00000004	[112] ___udivdi3
+0x0001D088	0x00000004	[112] ___umoddi3
+0x0001D08C	0x00000004	[112] _dladdr
+0x0001D090	0x00000004	[ 15] anon
+0x0001D0A0	0x00000020	[  3] _g_GameVersionMajor
+0x0001D0C0	0x00000001	[  3] _g_GameVersionMinor
+0x0001D0C4	0x00000004	[  5] __ZL18g_MaxAlignedAllocs
+0x0001D0E0	0x00000040	[  9] __ZL9g_environ
+0x0001D120	0x00000004	[  9] _environ
+0x0001D140	0x00001FF0	[ 18] _g_S3E_API
+0x0001F130	0x00000004	[ 51] ___ctype_ptr__
+0x0001F134	0x00000004	[ 54] anon
+0x0001F140	0x00000040	[ 58] _tzinfo
+0x0001F180	0x00000020	[ 61] __impure_ptr
+0x0001F1A0	0x00000424	[ 61] _impure_data
+0x0001F5E0	0x00000104	[ 66] _etens
+0x0001F6E4	0x00000014	[ 66] _eone
+0x0001F6F8	0x00000028	[ 66] _nan64
+0x0001F720	0x00000104	[ 66] _emtens
+0x0001F840	0x00000004	[ 67] ___mb_cur_max
+0x0001F860	0x00000038	[ 67] _lconv
+0x0001F898	0x00000028	[ 67] _lc_ctype_charset
+0x0001F8C0	0x00000004	[ 69] ___mbtowc
+0x0001F8C4	0x00000014	[ 91] _fpinan.2974
+0x0001F8D8	0x00000014	[ 91] _fpi.2938
+0x0001F8EC	0x00000008	[105] __tzname
+0x0001F8F4	0x00000004	[105] __daylight
+0x0001F8F8	0x00000004	[105] __timezone
+0x0001F8FC	0x00000004	[111] ___wctomb
+0x0001F900	0x00000050	[ 10] _g_ErrStrings
+0x0001F960	0x000000FC	[101] __C_time_locale
+0x0001FA60	0x00000001	[  1] __ZL8g_GotExt
+0x0001FA61	0x0000001F	[  1] __ZL15g_TriedNoMsgExt
+0x0001FA80	0x00000040	[  1] __ZL5g_Ext
+0x0001FAC0	0x00000001	[  1] __ZL10g_TriedExt
+0x0001FADF	0x00000001	[  3] __ZZ5abortE8aborting.b
+0x0001FAE0	0x00000001	[  3] __ZZ5abortE21_s_IwAssertIgnoreThis.b
+0x0001FB00	0x00000100	[  4] __ZL9g_AppName
+0x0001FC00	0x00000004	[  5] __ZL15g_AlignedAllocs
+0x0001FC04	0x00000001	[  6] __ZZ20pthread_mutex_unlockE21_s_IwAssertIgnoreThis.b
+0x0001FC20	0x00000020	[  7] __ZZL11getTLSBlocklE21_s_IwAssertIgnoreThis.b
+0x0001FC40	0x00000400	[  7] __ZL11g_TLSBlocks
+0x00020040	0x00000014	[  7] __ZL13g_TLSKeysLock
+0x00020054	0x00000004	[  7] __ZL6g_Keys
+0x00020058	0x00000004	[  7] __ZL9g_NumKeys
+0x00020060	0x00000080	[ 10] _g_StrError
+0x000200E0	0x00000001	[ 15] __ZZ23IwDebugTraceLineVPrintfE9g_InTrace.b
+0x00020100	0x00000001	[ 16] __ZL8g_GotExt.b
+0x00020101	0x0000001F	[ 16] __ZL15g_TriedNoMsgExt.b
+0x00020120	0x0000004C	[ 16] __ZL5g_Ext
+0x0002016C	0x00000001	[ 16] __ZL10g_TriedExt.b
+0x00020180	0x00000300	[ 18] __ZL9g_Message
+0x00020480	0x00000FA0	[ 19] __ZL10exit_funcs
+0x00021420	0x00000FA0	[ 19] __ZL9exit_args
+0x000223C0	0x00000014	[ 66] _ezero
+0x000223E0	0x000000FC	[101] __time_locale
+0x000224DC	0x00000004	[101] __time_using_locale
+0x000224E0	0x00000004	[104] _prev_tzenv
+0x000224E4	0x0000000B	[104] ___tzname_std
+0x000224EF	0x0000000B	[104] ___tzname_dst
+0x00022500	0x00000004	[  3] _g_DelayedCreationLock
+0x00022504	0x00000004	[  3] ___s3eStackBase
+0x00022508	0x00000004	[  8] _g_PThreadChecked
+0x0002250C	0x00000004	[  8] _g_PThreadPresent
+0x00022510	0x00000004	[ 14] _g_TLS
+0x00022520	0x00002928	[ 15] _g_DebugGlobals
+0x00024E60	0x00000100	[ 54] ___hexdig
