@@ -35,7 +35,7 @@ S3E_MAIN_DECL int main()
         s3eNextpeerRegisterCallback(S3E_NEXTPEER_CALLBACK_DID_TOURNAMENT_END, &didTournamentEnd, NULL);
         
         // Call Nextpeer's init function
-        s3eNextpeerInitWithProductKey("e59d317f2e26de5dc78ad83539adfe8af2ba319b");
+        s3eNextpeerInitWithProductKey("1988aa1ef3bfded2c2dc8434bb86fca2d7ee6f5d");
 
         // Launch Nextpeer's dashboard
         s3eNextpeerLaunchDashboard();
