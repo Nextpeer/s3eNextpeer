@@ -485,7 +485,7 @@ s3eBool s3eNextpeerIsCurrentlyInTournament()
 
 uint32 s3eNextpeerTimeLeftInTournament()
 {
-    return [Nextpeer timeLeftInTourament];
+    return [Nextpeer timeLeftInTournament];
 }
 
 void s3eNextpeerReportForfeitForCurrentTournament()
