@@ -137,10 +137,10 @@ static void s3eNextpeerHandleInitialNotifications()
 static int32 s3eNextpeerRemoteNotificationCallback(void* systemData, void* userData)
 {
     NSLog(@"[s3eNextpeer] Received remote notification whilst running");    
-    UILocalNotification* notification = (UILocalNotification*)systemData;
+    NSDictionary* notification = (NSDictionary*)systemData;
     
     if (notification) {
-        [Nextpeer handleLocalNotification:notification];
+        [Nextpeer handleRemoteNotification:notification];
     }
     
     return 0;
@@ -149,10 +149,10 @@ static int32 s3eNextpeerRemoteNotificationCallback(void* systemData, void* userD
 static int32 s3eNextpeerLocalNotificationCallback(void* systemData, void* userData)
 {
     NSLog(@"[s3eNextpeer] Received local notification whilst running");    
-    NSDictionary* notification = (NSDictionary*)systemData;
+    UILocalNotification* notification = (UILocalNotification*)systemData;
     
     if (notification) {
-        [Nextpeer handleRemoteNotification:notification];
+        [Nextpeer handleLocalNotification:notification];
     }
     
     return 0;
@@ -164,7 +164,7 @@ static void s3eNextpeerRegisterNotificationCallbacks()
     NSLog(@"[s3eNextpeer] registering notification callbacks");
     s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_DID_RECEIVE_REMOTE_NOTIFICATION, s3eNextpeerRemoteNotificationCallback, NULL, S3E_FALSE);
     
-    s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_DID_RECEIVE_LOCAL_NOTIFICATION, s3eNextpeerRemoteNotificationCallback, NULL, S3E_FALSE);
+    s3eEdkCallbacksRegisterInternal(S3E_EDK_INTERNAL, S3E_EDK_CALLBACK_MAX, S3E_EDK_IPHONE_DID_RECEIVE_LOCAL_NOTIFICATION, s3eNextpeerLocalNotificationCallback, NULL, S3E_FALSE);
 }
 
 
@@ -226,7 +226,7 @@ static NSUInteger g_UnifiedVirtualCurrencyAmount = 0;
 //// Delegates Implementation
 /////////////////
 
-@interface S3ENextpeerDelegate : NSObject<NextpeerDelegate, NPCurrencyDelegate> 
+@interface S3ENextpeerDelegate : NSObject<NextpeerDelegate, NPCurrencyDelegate, NPTournamentDelegate> 
 {
 }
 @end
@@ -328,9 +328,9 @@ static NSUInteger g_UnifiedVirtualCurrencyAmount = 0;
     }
 }
 
--(void)nextpeerDidReceiveCustomMessage:(NPTournamentCustomMessageContainer *)message
+-(void)nextpeerDidReceiveTournamentCustomMessage:(NPTournamentCustomMessageContainer *)message
 {
-    NSLog(@"[s3eNextpeer] - called nextpeerDidReceiveCustomMessage");
+    NSLog(@"[s3eNextpeer] - called nextpeerDidReceiveTournamentCustomMessage");
     
     if (s3eEdkCallbacksIsRegistered(S3E_EXT_NEXTPEER_HASH, S3E_NEXTPEER_CALLBACK_DID_RECEIVE_CUSTOM_MESSAGE)) {   
         s3eNextpeerCustomMessageData messageData;
@@ -431,6 +431,7 @@ void s3eNextpeerInitWithProductKey(const char* productKey)
     // Initialize Nextpeer with the product key and our global delegates container
     NPDelegatesContainer* delegatesContainer = [NPDelegatesContainer containerWithNextpeerDelegate:g_NextpeerDelegate];
     delegatesContainer.currencyDelegate = g_NextpeerDelegate; // add vcurrency delegate
+    delegatesContainer.tournamentDelegate = g_NextpeerDelegate; // add tournament delegate
     
     [Nextpeer initializeWithProductKey:aProductKey andDelegates:delegatesContainer];
     
