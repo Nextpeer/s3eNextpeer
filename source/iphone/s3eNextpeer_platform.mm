@@ -514,7 +514,9 @@ void s3eNextpeerHandleOpenURL(void* url)
     }
     
     NSURL* aURL = (NSURL*)url;
-    [Nextpeer handleOpenURL:aURL];
+    
+    // This method is deprecated, so this function currently does nothing
+    //[Nextpeer handleOpenURL:aURL];
 }
 
 /////////////////
