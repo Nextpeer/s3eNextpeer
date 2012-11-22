@@ -99,6 +99,8 @@ void s3eNextpeerRegisterOpenURLCallback();
 
 void s3eNextpeerSetUnifiedVirtualCurrencySupport(s3eBool unifiedVirtualCurrencySupported);
 
+void s3eNextpeerOpenFeed();
+
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData);
 
 s3eResult s3eNextpeerUnRegisterCallback(s3eNextperCallback cbid, s3eCallback fn);

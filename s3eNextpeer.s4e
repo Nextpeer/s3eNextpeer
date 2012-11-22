@@ -84,6 +84,7 @@ void s3eNextpeerPushNotificationToOtherPlayers(const char * notice) void
 void s3eNextpeerHandleOpenURL(void* url) void
 void s3eNextpeerRegisterOpenURLCallback() void
 void s3eNextpeerSetUnifiedVirtualCurrencySupport(s3eBool unifiedVirtualCurrencySupported) void
+void s3eNextpeerOpenFeed() void
 
 // Generic functions for meta usage
 s3eResult s3eNextpeerRegisterCallback(s3eNextperCallback cbid, s3eCallback fn, void* pData) S3E_RESULT_SUCCESS

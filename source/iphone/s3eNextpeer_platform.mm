@@ -519,6 +519,11 @@ void s3eNextpeerHandleOpenURL(void* url)
     //[Nextpeer handleOpenURL:aURL];
 }
 
+void s3eNextpeerOpenFeed()
+{
+    [Nextpeer openFeedDashboard];
+}
+
 /////////////////
 //// Public Functions (Virtual Currency)
 /////////////////

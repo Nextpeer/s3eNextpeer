@@ -65,7 +65,7 @@ static void s3eNextpeerShutDown_wrap()
 void s3eNextpeerRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[16];
+    void* funcPtrs[17];
     funcPtrs[0] = (void*)s3eNextpeerInitWithProductKey;
     funcPtrs[1] = (void*)s3eNextpeerLaunchDashboard;
     funcPtrs[2] = (void*)s3eNextpeerLaunchDashboardWithCurrencyAmount;
@@ -80,13 +80,14 @@ void s3eNextpeerRegisterExt()
     funcPtrs[11] = (void*)s3eNextpeerHandleOpenURL;
     funcPtrs[12] = (void*)s3eNextpeerRegisterOpenURLCallback;
     funcPtrs[13] = (void*)s3eNextpeerSetUnifiedVirtualCurrencySupport;
-    funcPtrs[14] = (void*)s3eNextpeerRegisterCallback;
-    funcPtrs[15] = (void*)s3eNextpeerUnRegisterCallback;
+    funcPtrs[14] = (void*)s3eNextpeerOpenFeed;
+    funcPtrs[15] = (void*)s3eNextpeerRegisterCallback;
+    funcPtrs[16] = (void*)s3eNextpeerUnRegisterCallback;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[16] = { 0 };
+    int flags[17] = { 0 };
 
     /*
      * Register the extension
