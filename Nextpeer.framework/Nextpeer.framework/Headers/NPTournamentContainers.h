@@ -11,13 +11,7 @@
  that are currently playing. The container that is passed contains the sending user's name and image as well as the message being sent.
  The 
  */
-@interface NPTournamentCustomMessageContainer : NSObject 
-{
-@private
-    NSString* mPlayerName;
-    NSString* mProfileImageUrl;
-    NSData* mMessage;
-}
+@interface NPTournamentCustomMessageContainer : NSObject
 
 // The player name
 @property (nonatomic, readonly) NSString* playerName;
@@ -48,14 +42,6 @@
  The NPTournamentStartDataContainer used to extract some info about the tournament which is about to be played  
  */
 @interface NPTournamentStartDataContainer : NSObject 
-{
-@private
-    NSString* mTournamentUuid;
-    NSString* mTournamentName;
-    NSUInteger mTournamentTimeSeconds;
-    NSUInteger mTournamentRandomSeed;
-    BOOL mTournamentIsGameControlled;
-}
 
 // The tournament UUID is provided so that your game can identify which tournament needs to be loaded.
 // You can find the UUId in the developer dashboard
@@ -90,15 +76,6 @@
  The NPTournamentEndDataContainer used to extract some info about the tournament which just ended
  */
 @interface NPTournamentEndDataContainer : NSObject 
-{
-@private
-    NSString* mTournamentUuid;
-    NSString* mPlayerName;
-    NSUInteger mCurrentCurrencyAmount;
-    NSUInteger mPlayerRankInTournament;
-    NSUInteger mTournamentTotalPlayers;
-    NSUInteger mPlayerScore;
-}
 
 // The tournament UUID is provided so that your game can identify which tournament needs to be loaded.
 // You can find the UUId in the developer dashboard

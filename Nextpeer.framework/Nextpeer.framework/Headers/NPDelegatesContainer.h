@@ -4,12 +4,6 @@
 #import "NPCurrencyDelegate.h"
 
 @interface NPDelegatesContainer : NSObject
-{
-	id<NextpeerDelegate>	nextpeerDelegate;
-	id<NPNotificationDelegate> notificationDelegate;
-    id<NPTournamentDelegate> tournamentDelegate;
-    id<NPCurrencyDelegate> currencyDelegate;
-}
 
 @property (nonatomic, assign) id<NextpeerDelegate> nextpeerDelegate;
 @property (nonatomic, assign) id<NPNotificationDelegate> notificationDelegate;

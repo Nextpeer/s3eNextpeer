@@ -59,26 +59,12 @@ extern NSString* NextpeerSettingNotificationPosition;
 
 ////////////////////////////////////////////////////////////
 ///
-/// UIWindow
+/// NSNumber BOOL
 ///
-/// Default: nil
-///
-/// Behavior: 	You can specify a UIWindow here which will be the window that Nextpeer launches it's dashboard
-///				in and the window that Nextpeer displays it's notification views in. If you *do not* specify a
-///				UIWindow here Nextpeer will choose the UIApplication's keyWindow, and failing that it will
-///				choose the first of the UIApplication's UIWindow objects.
-///
-////////////////////////////////////////////////////////////
-extern NSString* NextpeerSettingPresentationWindow;
-
-////////////////////////////////////////////////////////////
-///
-/// NSNumber
-///
-/// Default: 0
+/// Default: TRUE
 ///
 /// Behavior: 	Specifies if the game supports retina mode (iOS4+). This affects generated images that come
-///				from the NPNotificationContainer. If set to '1', the generated images will be sized according to the
+///				from the NPNotificationContainer. If set to True, the generated images will be sized according to the
 ///				device compatibility (retina devices receiving larger images).
 ///
 ////////////////////////////////////////////////////////////

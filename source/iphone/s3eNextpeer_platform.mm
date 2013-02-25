@@ -462,8 +462,8 @@ void s3eNextpeerDismissDashboard()
 
 void s3eNextpeerShutDown()
 {
-    // Call the Nextpeer shudown function
-    [Nextpeer shutdown];
+    // We no longer need to call shutdown for the Nextpeer object
+    //    [Nextpeer shutdown];
     
     // Delete the current global Nextpeer delegate
     if (g_NextpeerDelegate) {

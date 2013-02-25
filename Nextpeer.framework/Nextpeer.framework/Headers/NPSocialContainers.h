@@ -8,12 +8,6 @@
  The NPGamePlayerContainer can be used to retrieve data on the current player.
  */
 @interface NPGamePlayerContainer : NSObject 
-{
-@private
-    NSString* mPlayerName;
-    NSString* mProfileImageUrl;
-    BOOL mIsSocialAuthenticated;
-}
 
 // The player name
 @property (nonatomic, readonly) NSString* playerName;

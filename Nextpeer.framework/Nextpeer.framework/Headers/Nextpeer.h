@@ -37,46 +37,6 @@ typedef enum NPNotificationPosition
 typedef void(^NPPostLaunchAction)(void);
 
 @interface Nextpeer : NSObject
-{
-@protected
-	UIWindow* mPresentationWindow;
-	
-	NPDelegatesContainer* mDelegatesContainer;
-	id<NextpeerDelegate> mLaunchDelegate;
-	
-    NSString* mProductKey;
-	NSString* mOverrideDisplayName;
-	
-	UIInterfaceOrientation mPreviousOrientation;
-	UIInterfaceOrientation mDashboardOrientation;
-	UIInterfaceOrientation mNotificationOrientation;
-	NPNotificationPosition mNotificationPosition;
-	
-	BOOL mIsDashboardDismissing;
-	BOOL mPreviousStatusBarHidden;
-    BOOL mShouldAutoRegister;
-    BOOL mInGame;
-    BOOL mGameSupportsRetina;
-    BOOL mGameSupportsUnifiedCurrency;
-	
-	UINavigationController *mRootNavigationController;
-	UINavigationController *mFeedNavigationController;
-    
-    NPPostLaunchAction mPostAction;
-    
-	void* mReservedMemory;
-		
-	struct {
-		unsigned int isHidingDashboard:1;
-		unsigned int isDismissingDashboard:1;
-		unsigned int isShowingDashboard:1;
-		unsigned int isDashboardVisible:1;
-		unsigned int shouldReloadDashboardAfterBackground:1;
-		unsigned int shouldReloadDashboard:1;
-		unsigned int shouldStartTournamentAfterHiding:1;
-        unsigned int didDisplayRemoteNotice:1;
-	} _nextPeerFlags;
-}
 
 // Additional public methods
 #include "Nextpeer+Tournament.h"
@@ -115,8 +75,10 @@ typedef void(^NPPostLaunchAction)(void);
 ///
 /// Shuts down Nextpeer
 ///
+/// @deprecated Manual shutdown is deprecated. In future versions, Nextpeer will shutdown itself on app termination.
+///
 ////////////////////////////////////////////////////////////
-+ (void)shutdown;
++ (void)shutdown DEPRECATED_ATTRIBUTE;
 
 ////////////////////////////////////////////////////////////
 ///
@@ -146,7 +108,7 @@ typedef void(^NPPostLaunchAction)(void);
 
 ////////////////////////////////////////////////////////////
 /// Let the platform handle a url request, this will used when the Facebook App redirects to the app during the SSO process.
-/// @parm url - the URL that was passed to the application delegate's handleOpenURL method(s).
+/// @param url - the URL that was passed to the application delegate's handleOpenURL method(s).
 /// @note: The platform may call '[Nextpeer launchDashboard]' under some scenarios.
 /// @return: YES if the url starts with np[app_id] and the sdk handled the request; NO if the attempt to handle the URL failed (not supported by the platform).
 ///
@@ -203,7 +165,6 @@ typedef void(^NPPostLaunchAction)(void);
 ////////////////////////////////////////////////////////////
 /// 
 /// Call this method after the receiving a remote push notification while the app is running.
-/// that may have been received when the app was off.
 ///
 /// @return Returns a boolean value indicating if the notification will be handled by Nextpeer
 ///
@@ -220,8 +181,7 @@ typedef void(^NPPostLaunchAction)(void);
 
 ////////////////////////////////////////////////////////////
 /// 
-/// Call this method after the receiving a remote push notification while the app is running.
-/// that may have been received when the app was off.
+/// Call this method after the receiving a local push notification while the app is running.
 ///
 /// @return Returns a boolean value indicating if the notification will be handled by Nextpeer
 ///
