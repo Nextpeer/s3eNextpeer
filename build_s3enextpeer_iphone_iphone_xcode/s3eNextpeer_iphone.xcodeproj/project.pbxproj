@@ -217,72 +217,71 @@
 		A000000000000000000001ac /* NP_SBJsonBase.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ad;  };
 		A000000000000000000001ae /* NP_SBJsonParser.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001af;  };
 		A000000000000000000001b0 /* NP_SBJsonWriter.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b1;  };
-		A000000000000000000001b2 /* NP_SVProgressHUD+WindowLevel.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b3;  };
-		A000000000000000000001b4 /* NP_SVProgressHUD.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b5;  };
-		A000000000000000000001b6 /* NP_TTTAttributedLabel.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b7;  };
-		A000000000000000000001b8 /* NSArray+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b9;  };
-		A000000000000000000001ba /* NSDictionary+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bb;  };
-		A000000000000000000001bc /* NSHTTPCookie+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bd;  };
-		A000000000000000000001be /* NSInvocation+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bf;  };
-		A000000000000000000001c0 /* NSNotificationCenter+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c1;  };
-		A000000000000000000001c2 /* NSObject+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c3;  };
-		A000000000000000000001c4 /* NSString+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c5;  };
-		A000000000000000000001c6 /* Nextpeer+DailyBonusReminder.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c7;  };
-		A000000000000000000001c8 /* Nextpeer+NSNotification.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c9;  };
-		A000000000000000000001ca /* Nextpeer+Private.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cb;  };
-		A000000000000000000001cc /* Nextpeer+UserOptions.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cd;  };
-		A000000000000000000001ce /* Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cf;  };
-		A000000000000000000001d0 /* NextpeerSettings.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d1;  };
-		A000000000000000000001d2 /* UIDevice+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d3;  };
-		A000000000000000000001d4 /* UIImage+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d5;  };
-		A000000000000000000001d6 /* edk.mkf in edk */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d7;  };
-		A000000000000000000001d8 /* make_extension.py in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d9;  };
-		A000000000000000000001da /* s3e.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001db;  };
-		A000000000000000000001dc /* s3eAccelerometer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001dd;  };
-		A000000000000000000001de /* s3eAudio.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001df;  };
-		A000000000000000000001e0 /* s3eCamera.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e1;  };
-		A000000000000000000001e2 /* s3eClipboard.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e3;  };
-		A000000000000000000001e4 /* s3eCompass.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e5;  };
-		A000000000000000000001e6 /* s3eCompression.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e7;  };
-		A000000000000000000001e8 /* s3eConfig.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e9;  };
-		A000000000000000000001ea /* s3eContacts.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001eb;  };
-		A000000000000000000001ec /* s3eCrypto.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ed;  };
-		A000000000000000000001ee /* s3eDebug.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ef;  };
-		A000000000000000000001f0 /* s3eDevice.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f1;  };
-		A000000000000000000001f2 /* s3eEdk.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f3;  };
-		A000000000000000000001f5 /* s3eEdkError.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f6;  };
-		A000000000000000000001f7 /* s3eEdk_android.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f8;  };
-		A000000000000000000001f9 /* s3eEdk_iphone.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fa;  };
-		A000000000000000000001fb /* s3eEdk_windows.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fc;  };
-		A000000000000000000001fd /* s3eExt.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fe;  };
-		A000000000000000000001ff /* s3eFile.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000200;  };
-		A00000000000000000000201 /* s3eGL.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000202;  };
-		A00000000000000000000203 /* s3eHash.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000204;  };
-		A00000000000000000000205 /* s3eKeyboard.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000206;  };
-		A00000000000000000000207 /* s3eLicense.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000208;  };
-		A00000000000000000000209 /* s3eLocation.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020a;  };
-		A0000000000000000000020b /* s3eMemory.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020c;  };
-		A0000000000000000000020d /* s3eNextpeer.cpp in source */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020e;  };
-		A00000000000000000000210 /* s3eNextpeer.defines.txt in docs */ = {isa = PBXBuildFile; fileRef = B00000000000000000000211;  };
-		A00000000000000000000213 /* s3eNextpeer.s4e in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B00000000000000000000214;  };
-		A00000000000000000000215 /* s3eNextpeer_autodefs.h in h */ = {isa = PBXBuildFile; fileRef = B00000000000000000000216;  };
-		A00000000000000000000218 /* s3eNextpeer_build.mkf in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B00000000000000000000219;  };
-		A0000000000000000000021a /* s3eNextpeer_internal.h in h */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021b;  };
-		A0000000000000000000021c /* s3eNextpeer_iphone.mkb in root */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021d;  };
-		A0000000000000000000021e /* s3eNextpeer_platform.mm in source */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021f;  };
-		A00000000000000000000220 /* s3eNextpeer_register.cpp in source */ = {isa = PBXBuildFile; fileRef = B00000000000000000000221;  };
-		A00000000000000000000222 /* s3ePointer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000223;  };
-		A00000000000000000000224 /* s3eSecureStorage.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000225;  };
-		A00000000000000000000226 /* s3eSocket.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000227;  };
-		A00000000000000000000228 /* s3eSound.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000229;  };
-		A0000000000000000000022a /* s3eSoundRecord.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022b;  };
-		A0000000000000000000022c /* s3eSurface.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022d;  };
-		A0000000000000000000022e /* s3eThread.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022f;  };
-		A00000000000000000000230 /* s3eTimer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000231;  };
-		A00000000000000000000232 /* s3eTypes.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000233;  };
-		A00000000000000000000234 /* s3eVersion.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000235;  };
-		A00000000000000000000236 /* s3eVibra.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000237;  };
-		A00000000000000000000238 /* s3eVideo.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000239;  };
+		A000000000000000000001b2 /* NP_SVProgressHUD.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b3;  };
+		A000000000000000000001b4 /* NP_TTTAttributedLabel.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b5;  };
+		A000000000000000000001b6 /* NSArray+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b7;  };
+		A000000000000000000001b8 /* NSDictionary+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b9;  };
+		A000000000000000000001ba /* NSHTTPCookie+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bb;  };
+		A000000000000000000001bc /* NSInvocation+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bd;  };
+		A000000000000000000001be /* NSNotificationCenter+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bf;  };
+		A000000000000000000001c0 /* NSObject+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c1;  };
+		A000000000000000000001c2 /* NSString+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c3;  };
+		A000000000000000000001c4 /* Nextpeer+DailyBonusReminder.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c5;  };
+		A000000000000000000001c6 /* Nextpeer+NSNotification.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c7;  };
+		A000000000000000000001c8 /* Nextpeer+Private.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c9;  };
+		A000000000000000000001ca /* Nextpeer+UserOptions.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cb;  };
+		A000000000000000000001cc /* Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cd;  };
+		A000000000000000000001ce /* NextpeerSettings.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cf;  };
+		A000000000000000000001d0 /* UIDevice+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d1;  };
+		A000000000000000000001d2 /* UIImage+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d3;  };
+		A000000000000000000001d4 /* edk.mkf in edk */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d5;  };
+		A000000000000000000001d6 /* make_extension.py in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d7;  };
+		A000000000000000000001d8 /* s3e.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d9;  };
+		A000000000000000000001da /* s3eAccelerometer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001db;  };
+		A000000000000000000001dc /* s3eAudio.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001dd;  };
+		A000000000000000000001de /* s3eCamera.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001df;  };
+		A000000000000000000001e0 /* s3eClipboard.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e1;  };
+		A000000000000000000001e2 /* s3eCompass.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e3;  };
+		A000000000000000000001e4 /* s3eCompression.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e5;  };
+		A000000000000000000001e6 /* s3eConfig.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e7;  };
+		A000000000000000000001e8 /* s3eContacts.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e9;  };
+		A000000000000000000001ea /* s3eCrypto.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001eb;  };
+		A000000000000000000001ec /* s3eDebug.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ed;  };
+		A000000000000000000001ee /* s3eDevice.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ef;  };
+		A000000000000000000001f0 /* s3eEdk.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f1;  };
+		A000000000000000000001f3 /* s3eEdkError.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f4;  };
+		A000000000000000000001f5 /* s3eEdk_android.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f6;  };
+		A000000000000000000001f7 /* s3eEdk_iphone.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f8;  };
+		A000000000000000000001f9 /* s3eEdk_windows.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fa;  };
+		A000000000000000000001fb /* s3eExt.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fc;  };
+		A000000000000000000001fd /* s3eFile.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fe;  };
+		A000000000000000000001ff /* s3eGL.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000200;  };
+		A00000000000000000000201 /* s3eHash.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000202;  };
+		A00000000000000000000203 /* s3eKeyboard.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000204;  };
+		A00000000000000000000205 /* s3eLicense.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000206;  };
+		A00000000000000000000207 /* s3eLocation.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000208;  };
+		A00000000000000000000209 /* s3eMemory.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020a;  };
+		A0000000000000000000020b /* s3eNextpeer.cpp in source */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020c;  };
+		A0000000000000000000020e /* s3eNextpeer.defines.txt in docs */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020f;  };
+		A00000000000000000000211 /* s3eNextpeer.s4e in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B00000000000000000000212;  };
+		A00000000000000000000213 /* s3eNextpeer_autodefs.h in h */ = {isa = PBXBuildFile; fileRef = B00000000000000000000214;  };
+		A00000000000000000000216 /* s3eNextpeer_build.mkf in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B00000000000000000000217;  };
+		A00000000000000000000218 /* s3eNextpeer_internal.h in h */ = {isa = PBXBuildFile; fileRef = B00000000000000000000219;  };
+		A0000000000000000000021a /* s3eNextpeer_iphone.mkb in root */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021b;  };
+		A0000000000000000000021c /* s3eNextpeer_platform.mm in source */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021d;  };
+		A0000000000000000000021e /* s3eNextpeer_register.cpp in source */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021f;  };
+		A00000000000000000000220 /* s3ePointer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000221;  };
+		A00000000000000000000222 /* s3eSecureStorage.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000223;  };
+		A00000000000000000000224 /* s3eSocket.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000225;  };
+		A00000000000000000000226 /* s3eSound.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000227;  };
+		A00000000000000000000228 /* s3eSoundRecord.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000229;  };
+		A0000000000000000000022a /* s3eSurface.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022b;  };
+		A0000000000000000000022c /* s3eThread.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022d;  };
+		A0000000000000000000022e /* s3eTimer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022f;  };
+		A00000000000000000000230 /* s3eTypes.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000231;  };
+		A00000000000000000000232 /* s3eVersion.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000233;  };
+		A00000000000000000000234 /* s3eVibra.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000235;  };
+		A00000000000000000000236 /* s3eVideo.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000237;  };
 
 /* End PBXBuildFile section */
 
@@ -498,72 +497,71 @@
 		B000000000000000000001ad /* NP_SBJsonBase.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SBJsonBase.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SBJsonBase.o";  sourceTree = "<absolute>"; };
 		B000000000000000000001af /* NP_SBJsonParser.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SBJsonParser.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SBJsonParser.o";  sourceTree = "<absolute>"; };
 		B000000000000000000001b1 /* NP_SBJsonWriter.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SBJsonWriter.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SBJsonWriter.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001b3 /* NP_SVProgressHUD+WindowLevel.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SVProgressHUD+WindowLevel.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SVProgressHUD+WindowLevel.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001b5 /* NP_SVProgressHUD.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SVProgressHUD.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SVProgressHUD.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001b7 /* NP_TTTAttributedLabel.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_TTTAttributedLabel.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_TTTAttributedLabel.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001b9 /* NSArray+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSArray+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSArray+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001bb /* NSDictionary+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSDictionary+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSDictionary+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001bd /* NSHTTPCookie+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSHTTPCookie+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSHTTPCookie+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001bf /* NSInvocation+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSInvocation+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSInvocation+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001c1 /* NSNotificationCenter+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSNotificationCenter+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSNotificationCenter+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001c3 /* NSObject+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSObject+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSObject+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001c5 /* NSString+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSString+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSString+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001c7 /* Nextpeer+DailyBonusReminder.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+DailyBonusReminder.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+DailyBonusReminder.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001c9 /* Nextpeer+NSNotification.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+NSNotification.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+NSNotification.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001cb /* Nextpeer+Private.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+Private.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+Private.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001cd /* Nextpeer+UserOptions.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+UserOptions.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+UserOptions.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001cf /* Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001d1 /* NextpeerSettings.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NextpeerSettings.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NextpeerSettings.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001d3 /* UIDevice+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UIDevice+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/UIDevice+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001d5 /* UIImage+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UIImage+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/UIImage+Nextpeer.o";  sourceTree = "<absolute>"; };
-		B000000000000000000001d7 /* edk.mkf in edk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "edk.mkf"; path = "/Developer/Marmalade/5.2/s3e/edk/edk.mkf";  sourceTree = "<absolute>"; };
-		B000000000000000000001d9 /* make_extension.py in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = "make_extension.py"; path = "/Developer/Marmalade/5.2/extensions/builder/make_extension.py";  sourceTree = "<absolute>"; };
-		B000000000000000000001db /* s3e.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3e.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3e.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001dd /* s3eAccelerometer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eAccelerometer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eAccelerometer.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001df /* s3eAudio.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eAudio.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eAudio.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001e1 /* s3eCamera.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCamera.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCamera.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001e3 /* s3eClipboard.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eClipboard.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eClipboard.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001e5 /* s3eCompass.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCompass.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCompass.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001e7 /* s3eCompression.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCompression.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCompression.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001e9 /* s3eConfig.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eConfig.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eConfig.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001eb /* s3eContacts.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eContacts.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eContacts.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001ed /* s3eCrypto.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCrypto.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCrypto.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001ef /* s3eDebug.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eDebug.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eDebug.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001f1 /* s3eDevice.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eDevice.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eDevice.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001f3 /* s3eEdk.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001f6 /* s3eEdkError.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdkError.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdkError.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001f8 /* s3eEdk_android.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_android.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_android.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001fa /* s3eEdk_iphone.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_iphone.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_iphone.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001fc /* s3eEdk_windows.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_windows.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_windows.h";  sourceTree = "<absolute>"; };
-		B000000000000000000001fe /* s3eExt.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eExt.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eExt.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000200 /* s3eFile.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eFile.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eFile.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000202 /* s3eGL.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eGL.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eGL.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000204 /* s3eHash.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eHash.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eHash.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000206 /* s3eKeyboard.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eKeyboard.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eKeyboard.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000208 /* s3eLicense.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eLicense.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eLicense.h";  sourceTree = "<absolute>"; };
-		B0000000000000000000020a /* s3eLocation.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eLocation.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eLocation.h";  sourceTree = "<absolute>"; };
-		B0000000000000000000020c /* s3eMemory.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eMemory.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eMemory.h";  sourceTree = "<absolute>"; };
-		B0000000000000000000020e /* s3eNextpeer.cpp in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "s3eNextpeer.cpp"; path = "../source/generic/s3eNextpeer.cpp";  sourceTree = SOURCE_ROOT; };
-		B00000000000000000000211 /* s3eNextpeer.defines.txt in docs */ = {isa = PBXFileReference; lastKnownFileType = text; name = "s3eNextpeer.defines.txt"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/interface/s3eNextpeer.defines.txt";  sourceTree = "<absolute>"; };
-		B00000000000000000000214 /* s3eNextpeer.s4e in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer.s4e"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer.s4e";  sourceTree = "<absolute>"; };
-		B00000000000000000000216 /* s3eNextpeer_autodefs.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eNextpeer_autodefs.h"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/source/h/s3eNextpeer_autodefs.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000219 /* s3eNextpeer_build.mkf in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer_build.mkf"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer_build.mkf";  sourceTree = "<absolute>"; };
-		B0000000000000000000021b /* s3eNextpeer_internal.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eNextpeer_internal.h"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/source/h/s3eNextpeer_internal.h";  sourceTree = "<absolute>"; };
-		B0000000000000000000021d /* s3eNextpeer_iphone.mkb in root */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer_iphone.mkb"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer_iphone.mkb";  sourceTree = "<absolute>"; };
-		B0000000000000000000021f /* s3eNextpeer_platform.mm in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objcpp; name = "s3eNextpeer_platform.mm"; path = "../source/iphone/s3eNextpeer_platform.mm";  sourceTree = SOURCE_ROOT; };
-		B00000000000000000000221 /* s3eNextpeer_register.cpp in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "s3eNextpeer_register.cpp"; path = "../source/generic/s3eNextpeer_register.cpp";  sourceTree = SOURCE_ROOT; };
-		B00000000000000000000223 /* s3ePointer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3ePointer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3ePointer.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000225 /* s3eSecureStorage.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSecureStorage.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSecureStorage.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000227 /* s3eSocket.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSocket.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSocket.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000229 /* s3eSound.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSound.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSound.h";  sourceTree = "<absolute>"; };
-		B0000000000000000000022b /* s3eSoundRecord.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSoundRecord.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSoundRecord.h";  sourceTree = "<absolute>"; };
-		B0000000000000000000022d /* s3eSurface.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSurface.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSurface.h";  sourceTree = "<absolute>"; };
-		B0000000000000000000022f /* s3eThread.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eThread.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eThread.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000231 /* s3eTimer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eTimer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eTimer.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000233 /* s3eTypes.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eTypes.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eTypes.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000235 /* s3eVersion.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVersion.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVersion.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000237 /* s3eVibra.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVibra.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVibra.h";  sourceTree = "<absolute>"; };
-		B00000000000000000000239 /* s3eVideo.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVideo.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVideo.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001b3 /* NP_SVProgressHUD.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SVProgressHUD.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SVProgressHUD.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001b5 /* NP_TTTAttributedLabel.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_TTTAttributedLabel.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_TTTAttributedLabel.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001b7 /* NSArray+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSArray+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSArray+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001b9 /* NSDictionary+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSDictionary+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSDictionary+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001bb /* NSHTTPCookie+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSHTTPCookie+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSHTTPCookie+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001bd /* NSInvocation+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSInvocation+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSInvocation+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001bf /* NSNotificationCenter+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSNotificationCenter+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSNotificationCenter+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c1 /* NSObject+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSObject+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSObject+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c3 /* NSString+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSString+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSString+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c5 /* Nextpeer+DailyBonusReminder.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+DailyBonusReminder.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+DailyBonusReminder.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c7 /* Nextpeer+NSNotification.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+NSNotification.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+NSNotification.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c9 /* Nextpeer+Private.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+Private.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+Private.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001cb /* Nextpeer+UserOptions.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+UserOptions.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+UserOptions.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001cd /* Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001cf /* NextpeerSettings.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NextpeerSettings.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NextpeerSettings.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001d1 /* UIDevice+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UIDevice+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/UIDevice+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001d3 /* UIImage+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UIImage+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/UIImage+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001d5 /* edk.mkf in edk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "edk.mkf"; path = "/Developer/Marmalade/5.2/s3e/edk/edk.mkf";  sourceTree = "<absolute>"; };
+		B000000000000000000001d7 /* make_extension.py in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = "make_extension.py"; path = "/Developer/Marmalade/5.2/extensions/builder/make_extension.py";  sourceTree = "<absolute>"; };
+		B000000000000000000001d9 /* s3e.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3e.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3e.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001db /* s3eAccelerometer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eAccelerometer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eAccelerometer.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001dd /* s3eAudio.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eAudio.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eAudio.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001df /* s3eCamera.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCamera.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCamera.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e1 /* s3eClipboard.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eClipboard.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eClipboard.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e3 /* s3eCompass.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCompass.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCompass.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e5 /* s3eCompression.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCompression.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCompression.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e7 /* s3eConfig.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eConfig.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eConfig.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e9 /* s3eContacts.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eContacts.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eContacts.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001eb /* s3eCrypto.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCrypto.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCrypto.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001ed /* s3eDebug.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eDebug.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eDebug.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001ef /* s3eDevice.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eDevice.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eDevice.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001f1 /* s3eEdk.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001f4 /* s3eEdkError.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdkError.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdkError.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001f6 /* s3eEdk_android.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_android.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_android.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001f8 /* s3eEdk_iphone.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_iphone.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_iphone.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001fa /* s3eEdk_windows.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_windows.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_windows.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001fc /* s3eExt.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eExt.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eExt.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001fe /* s3eFile.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eFile.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eFile.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000200 /* s3eGL.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eGL.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eGL.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000202 /* s3eHash.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eHash.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eHash.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000204 /* s3eKeyboard.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eKeyboard.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eKeyboard.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000206 /* s3eLicense.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eLicense.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eLicense.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000208 /* s3eLocation.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eLocation.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eLocation.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000020a /* s3eMemory.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eMemory.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eMemory.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000020c /* s3eNextpeer.cpp in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "s3eNextpeer.cpp"; path = "../source/generic/s3eNextpeer.cpp";  sourceTree = SOURCE_ROOT; };
+		B0000000000000000000020f /* s3eNextpeer.defines.txt in docs */ = {isa = PBXFileReference; lastKnownFileType = text; name = "s3eNextpeer.defines.txt"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/interface/s3eNextpeer.defines.txt";  sourceTree = "<absolute>"; };
+		B00000000000000000000212 /* s3eNextpeer.s4e in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer.s4e"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer.s4e";  sourceTree = "<absolute>"; };
+		B00000000000000000000214 /* s3eNextpeer_autodefs.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eNextpeer_autodefs.h"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/source/h/s3eNextpeer_autodefs.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000217 /* s3eNextpeer_build.mkf in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer_build.mkf"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer_build.mkf";  sourceTree = "<absolute>"; };
+		B00000000000000000000219 /* s3eNextpeer_internal.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eNextpeer_internal.h"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/source/h/s3eNextpeer_internal.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000021b /* s3eNextpeer_iphone.mkb in root */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer_iphone.mkb"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer_iphone.mkb";  sourceTree = "<absolute>"; };
+		B0000000000000000000021d /* s3eNextpeer_platform.mm in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objcpp; name = "s3eNextpeer_platform.mm"; path = "../source/iphone/s3eNextpeer_platform.mm";  sourceTree = SOURCE_ROOT; };
+		B0000000000000000000021f /* s3eNextpeer_register.cpp in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "s3eNextpeer_register.cpp"; path = "../source/generic/s3eNextpeer_register.cpp";  sourceTree = SOURCE_ROOT; };
+		B00000000000000000000221 /* s3ePointer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3ePointer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3ePointer.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000223 /* s3eSecureStorage.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSecureStorage.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSecureStorage.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000225 /* s3eSocket.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSocket.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSocket.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000227 /* s3eSound.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSound.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSound.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000229 /* s3eSoundRecord.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSoundRecord.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSoundRecord.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000022b /* s3eSurface.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSurface.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSurface.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000022d /* s3eThread.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eThread.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eThread.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000022f /* s3eTimer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eTimer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eTimer.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000231 /* s3eTypes.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eTypes.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eTypes.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000233 /* s3eVersion.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVersion.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVersion.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000235 /* s3eVibra.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVibra.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVibra.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000237 /* s3eVideo.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVideo.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVideo.h";  sourceTree = "<absolute>"; };
 
 /* End PBXFileReference section */
 
@@ -595,7 +593,7 @@
 				B0000000000000000000000a,
 				C0000000000000000000000d,
 				C00000000000000000000011,
-				B0000000000000000000021d,
+				B0000000000000000000021b,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -837,7 +835,6 @@
 				B000000000000000000001cf,
 				B000000000000000000001d1,
 				B000000000000000000001d3,
-				B000000000000000000001d5,
 			);
 			name = "Nextpeer Lib";
 			sourceTree = "<group>";
@@ -848,6 +845,7 @@
 			children = (
 				B0000000000000000000000c,
 				B00000000000000000000015,
+				B000000000000000000001d9,
 				B000000000000000000001db,
 				B000000000000000000001dd,
 				B000000000000000000001df,
@@ -859,7 +857,7 @@
 				B000000000000000000001eb,
 				B000000000000000000001ed,
 				B000000000000000000001ef,
-				B000000000000000000001f1,
+				B000000000000000000001fc,
 				B000000000000000000001fe,
 				B00000000000000000000200,
 				B00000000000000000000202,
@@ -867,7 +865,7 @@
 				B00000000000000000000206,
 				B00000000000000000000208,
 				B0000000000000000000020a,
-				B0000000000000000000020c,
+				B00000000000000000000221,
 				B00000000000000000000223,
 				B00000000000000000000225,
 				B00000000000000000000227,
@@ -879,16 +877,15 @@
 				B00000000000000000000233,
 				B00000000000000000000235,
 				B00000000000000000000237,
-				B00000000000000000000239,
 			);
 			name = "S3E API";
 			sourceTree = "<group>";
 		};
 
-		C00000000000000000000212 /* docs */ =  {
+		C00000000000000000000210 /* docs */ =  {
 			isa = PBXGroup;
 			children = (
-				B00000000000000000000211,
+				B0000000000000000000020f,
 			);
 			name = docs;
 			sourceTree = "<group>";
@@ -898,31 +895,31 @@
 			isa = PBXGroup;
 			children = (
 				C0000000000000000000000e,
-				B000000000000000000001d7,
-				C000000000000000000001f4,
+				B000000000000000000001d5,
+				C000000000000000000001f2,
 			);
 			name = edk;
 			sourceTree = "<group>";
 		};
 
-		C000000000000000000001f4 /* h */ =  {
+		C000000000000000000001f2 /* h */ =  {
 			isa = PBXGroup;
 			children = (
-				B000000000000000000001f3,
+				B000000000000000000001f1,
+				B000000000000000000001f4,
 				B000000000000000000001f6,
 				B000000000000000000001f8,
 				B000000000000000000001fa,
-				B000000000000000000001fc,
 			);
 			name = h;
 			sourceTree = "<group>";
 		};
 
-		C00000000000000000000217 /* h */ =  {
+		C00000000000000000000215 /* h */ =  {
 			isa = PBXGroup;
 			children = (
-				B00000000000000000000216,
-				B0000000000000000000021b,
+				B00000000000000000000214,
+				B00000000000000000000219,
 			);
 			name = h;
 			sourceTree = "<group>";
@@ -932,23 +929,23 @@
 			isa = PBXGroup;
 			children = (
 				C00000000000000000000013,
-				B000000000000000000001d9,
-				C0000000000000000000020f,
-				C00000000000000000000212,
-				B00000000000000000000214,
-				C00000000000000000000217,
-				B00000000000000000000219,
+				B000000000000000000001d7,
+				C0000000000000000000020d,
+				C00000000000000000000210,
+				B00000000000000000000212,
+				C00000000000000000000215,
+				B00000000000000000000217,
 			);
 			name = "s3eNextpeer";
 			sourceTree = "<group>";
 		};
 
-		C0000000000000000000020f /* source */ =  {
+		C0000000000000000000020d /* source */ =  {
 			isa = PBXGroup;
 			children = (
-				B0000000000000000000020e,
+				B0000000000000000000020c,
+				B0000000000000000000021d,
 				B0000000000000000000021f,
-				B00000000000000000000221,
 			);
 			name = source;
 			sourceTree = "<group>";
@@ -1063,9 +1060,9 @@ cp $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH $TARGET
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0000000000000000000020d,
+				A0000000000000000000020b,
+				A0000000000000000000021c,
 				A0000000000000000000021e,
-				A00000000000000000000220,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -143,7 +143,7 @@ extra_objects = SplitN(r'''
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialView.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFacebookUserCredential.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedGameItem.o
-/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPWelcomeBannerNotification.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFacebookService.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInGameNotificationView.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+UserOptions.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+DailyBonusReminder.o
@@ -151,7 +151,6 @@ extra_objects = SplitN(r'''
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPAnalyticsSession.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCoinImageView.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SBJsonBase.o
-/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SVProgressHUD+WindowLevel.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPUserCredential.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+NSNotification.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedService.o
@@ -178,7 +177,7 @@ extra_objects = SplitN(r'''
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPAnalyticsUploaderThread.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingStartPlayingCell.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPDeviceTokenService.o
-/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingPlayerCell.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPWelcomeBannerNotification.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedEmoticonMenu.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCachedFileInfo.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialDisplayService.o
@@ -247,12 +246,11 @@ extra_objects = SplitN(r'''
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFacebookFeedDialog.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIAuthenticationDialog.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTextView.o
-/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIHTTPRequest.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListController.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCreateGameStep.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListMoreGamesCell.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPWebServiceProvider.o
-/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFacebookService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIHTTPRequest.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIDataCompressor.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPOnBoardingService.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMatchReward.o
@@ -266,6 +264,7 @@ extra_objects = SplitN(r'''
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedStoryFooterView.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSInvocation+Nextpeer.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMatchWinnerDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingPlayerCell.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPUserCredentialService.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialDisplayLogic.o
 /Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentChatContainer.o
