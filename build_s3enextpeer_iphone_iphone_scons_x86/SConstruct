@@ -1,0 +1,602 @@
+# coding=utf-8
+# Auto-generated scons script for building 's3eNextpeer_iphone'
+# for the '('IPHONE', 'SCONS', 'X86')' target
+#
+# ***WARNING***: if you edit this file your changes will be lost next time your
+# ***WARNING***: run the mkb.
+
+import os
+import sys
+import socket
+import SCons
+from os.path import join
+
+SetOption("implicit_cache" ,1)
+
+target_name = '/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone/libs3eNextpeer.a'
+target_name_debug = '/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone/libs3eNextpeer_d.a'
+target_name_rvct = '/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone/libs3eNextpeer.a'
+target_name_debug_rvct = '/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone/libs3eNextpeer_d.a'
+sdk_root = '/Developer/Marmalade/5.2'
+
+scons_version = SCons.__version__.split(".")[:2]
+scons_version = [int(x) for x in scons_version]
+strip = 1
+
+scons1_2 = scons_version >= [1,2]
+if not scons1_2:
+    BoolVariable = BoolOption
+    Variables = Options
+
+opts = Variables('build.conf')
+opts.Add('CC', 'The C compiler.')
+opts.Add('CXX', 'The C++ compiler.')
+if not scons1_2:
+    opts.AddVariables = opts.AddOptions
+opts.AddVariables(
+    BoolVariable('dist', 'use distcc compiler.', 0),
+    BoolVariable('debug', 'use debug defines.', 0),
+    BoolVariable('verbose', 'show command output', 0),
+    BoolVariable('profile', 'add profiling support to all generated code', 0),
+)
+
+def SplitN(str):
+    return filter(lambda x: x, str.split("\n"))
+
+includes = SplitN(r'''
+../source/h
+../h
+../../../s3e/edk/h
+../../../s3e/h
+../../../s3e/h/ext
+../../../modules/iwutil/h
+../../../modules/iwcore/h
+../Nextpeer.framework.v0.0.11/Nextpeer.framework/Headers
+''')
+
+libraries = SplitN(r'''
+
+''')
+
+libraries_d = SplitN(r'''
+
+''')
+
+libraries_rvct = SplitN(r'''
+
+''')
+
+libraries_rvct_d = SplitN(r'''
+
+''')
+
+extra_objects = SplitN(r'''
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_ASIDownloadCache.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPDashboardNotificationView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPUserProfile.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPBadgeNotificationView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPLevelUpDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPSettingsController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_NSString+SBJSON.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPUserCredentialLoginHelper.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPSettings.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPImageCache.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPDashboardNotification.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/Nextpeer+Private.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPNextPeerApprovalController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentBuyIn.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_ASIInputStream.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_SBJsonParser.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPNotificationService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPInGameNotification.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPAnalyticsService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/Nextpeer+NSNotification.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPOnBoardingStep.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_FBLoginDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPGuestUserCredential.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NSDictionary+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPEngagementDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NSHTTPCookie+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPNotificationContainer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_DDTTYLogger.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_SBJSON.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_DDASLLogger.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPNotificationContainer+Private.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPInviteFriendsListCell.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPKeyChain.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/TablerMessageFactory.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPMoreGamesDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPNotificationViewFactory.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPStarEmitterLayer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPDelegatesContainer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_DDAbstractDatabaseLogger.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentSelectItem.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_ASIDataDecompressor.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/TablerGlobalData.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPFacebookUserCredential.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPFacebookService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPInGameNotificationView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/TablerHMAC.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/Nextpeer+UserOptions.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPObserverContainer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPUserCredential.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/TablerConnection.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPDeviceIntrospection.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPAnalyticsSession.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPControllerLoader.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPLoadingController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_SBJsonBase.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_iCarousel.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/TablerRemotePlayer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPAnalyticsUploaderThread.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_ASIAuthenticationDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTableController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_FBDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPWebServiceError.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPSettingListCell.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/Nextpeer+RemoteNotifications.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPOnBoardingDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentLoadingDashboardControllerLandscape.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPInGameNotification+Private.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_FBRequest.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPWebViewDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTickerView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentLoadingDashboardController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/UIDevice+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentPlayer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentFinishedDashboardController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_DDFileLogger.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPUserProfileService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPFAQController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_DDLog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPAboutController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/SimplePack.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_NSObject+SBJSON.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_ASIFormDataRequest.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPImageView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPInvocation.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/TablerMessages.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTableCellHelper.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPMainDashboardController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPOnBoardingService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPUserProfileDialog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPAnalyticsDatabase.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPLog.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/TablerController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/UIApplication+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/UIView+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_ASINetworkQueue.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_Reachability.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_SBJsonWriter.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/TablerMessage.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPPopupMessageController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPWebServiceProvider.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_ASIHTTPRequest.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_ASIDataCompressor.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPGameOverNotificationView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPImageLoader.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTableCellBackgroundView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NSInvocation+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPCurrentUserProfile.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPDashboardNotification+Private.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPUserCredentialService.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPDashboardDailyNotificationView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentItem.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPViewController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPBadgedImageView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NSNotificationCenter+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentUserDetails.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPNibCustomView.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_CompressingLogFileManager.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NextpeerSettings.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/UIImage+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NSString+Nextpeer.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPSlider.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPTournamentContainers.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NP_Facebook.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPInviteFriendsController.o
+/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework.v0.0.11/Nextpeer.framework/NPRankTableNotificationView.o
+''')
+
+libpath = SplitN(r'''
+
+''')
+
+Extensions_sources = SplitN(r'''
+../source/generic/s3eNextpeer.cpp
+../source/generic/s3eNextpeer_register.cpp
+../source/iphone/s3eNextpeer_platform.mm
+''')
+
+
+# Map of all libraries that we need to build
+build_libs = {
+}
+
+
+build_libs_debug = {
+}
+
+
+# Map of all sources to build
+modules = {
+    'Extensions' : Extensions_sources,
+
+}
+
+
+source_flags = {
+}
+
+# Environment variables set by the mkb system
+export_map = {
+    'IPHONEOS_DEPLOYMENT_TARGET' : '3.0',
+}
+
+exports = Split("""
+S3E_DIR
+MARMALADE_ROOT
+P4PASSWD
+P4CONFIG
+P4USER
+P4CLIENT
+P4TICKETS
+ARMLMD_LICENSE_FILE
+LM_LICENSE_FILE
+CCACHE_LOGFILE
+CCACHE_TEMPDIR
+CCACHE_DIR
+HOME
+BREWTOOLSDIR
+BTILDIR
+TEMP
+TMP
+LIB
+INCLUDE
+DMUCS_SERVER
+DISTCC_HOSTS
+DISTCC_VERBOSE
+CODESIGN_ALLOCATE
+IPHONEOS_DEPLOYMENT_TARGET
+MAXOSX_DEPLOYMENT_TARGET
+""")
+
+for export in exports:
+    if export not in export_map and export in os.environ:
+        export_map[export] = os.environ[export]
+
+arch = "X86"
+
+gcc_variants = ["gcc", "arm-none-linux-gnueabi-gcc", "arm-linux-gnu-gcc", "arm-none-eabi-gcc", 'nvidia', 'mipsel-linux-uclibc-gcc', 'mips-linux-gnu-gcc']
+
+#
+# Figure out what compiler to use
+#
+compiler = 'llvm-gcc'
+if 'compiler' in ARGUMENTS:
+    compiler = ARGUMENTS['compiler']
+
+if compiler == 'rvct':
+    target_name = target_name_rvct
+    target_name_debug = target_name_debug_rvct
+    includes += "."
+
+if compiler == 'msvc':
+    tools = ['msvc', 'mslink', 'mslib']
+else:
+    tools = ['gcc', 'g++', 'ar', 'link', 'as']
+
+
+env=Environment(
+tools=tools,
+options=opts,
+MSVC_VERSION="6.0",
+CPPPATH=includes,
+LIBPATH=libpath,
+PLFLAGS=[],
+STATIC_AND_SHARED_OBJECTS_ARE_THE_SAME='true',
+_CPPINCFLAGS='$( ${_concat(INCPREFIX, CPPPATH, INCSUFFIX, __env__)} $)',
+)
+
+
+Help(opts.GenerateHelpText(env))
+
+def add_to_path(p, append):
+    env['ENV'].setdefault("PATH", "")
+    if append:
+        p = env['ENV']['PATH'] + os.pathsep + p
+    else:
+        p += os.pathsep + env['ENV']['PATH']
+    env['ENV']['PATH'] = p
+    os.environ['PATH'] = p
+
+if os.name == 'nt':
+    add_to_path("C:\windows\system32", 1)
+
+if env['debug']:
+    build_libs = build_libs_debug
+    temp_defines = 'temp_defines_debug.h'
+    builddir = "debug"
+    target_name = target_name_debug
+    libraries = libraries_d
+    libraries_rvct = libraries_rvct_d
+else:
+    temp_defines = 'temp_defines_release.h'
+    builddir = "release"
+
+if compiler == "rvct":
+    libraries = libraries_rvct
+    builddir += "_rvct"
+
+
+if 1:
+
+    env.Append(LINKFLAGS=['-m32', '-dead-strip', '-Wl,-rpath,/XCode4_2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk', '-dead_strip', '-isysroot', '/XCode4_2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk', '-mmacosx-version-min=10.5'])
+    if env['debug']:
+        env.Append(CCFLAGS=['-g', '-O0', '-include', 'temp_defines_debug.h'])
+        env.Append(LINKFLAGS=['-Wl,-map', '-Wl,/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone/libs3eNextpeer_d.map'])
+        env.Append(PLFLAGS=[])
+    else:
+        env.Append(CCFLAGS=['-O3', '-include', 'temp_defines_release.h'])
+        env.Append(LINKFLAGS=['-Wl,-S', '-Wl,-x', '-Wl,-map', '-Wl,/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone/libs3eNextpeer.map'])
+    env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-Wall', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-pipe', '-m32', '-fasynchronous-unwind-tables', '-fno-strict-overflow', '-mmacosx-version-min=10.5', '-isysroot', '/XCode4_2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk', '-funsigned-char', '-fvisibility=default', '-gdwarf-2', '-mno-thumb'])
+    env.Append(CFLAGS=['-std=gnu99'])
+    env.Append(CXXFLAGS=['-fno-exceptions', '-fvisibility-inlines-hidden'])
+    env['ARFLAGS'] = ['rc']
+    env['ASFLAGS'] = ['-m32', '-c', '-x', 'assembler-with-cpp']
+    env['STRIPFLAGS'] = []
+    env['CXXCOM'] = '$CXX -o $TARGET -c $CCFLAGS $CXXFLAGS $_CCCOMCOM $SOURCES'
+
+
+env.Append(ENV=export_map)
+
+if env['dist'] and compiler != "msvc":
+    if 'DISTCC_HOSTS' not in env['ENV']:
+        print "not using distcc as DISTCC_HOSTS is not set"
+        env['dist'] = 0
+    elif not env.WhereIs("distcc"):
+        print "not using distcc as distcc not found in PATH"
+        env['dist'] = 0
+
+if not env['verbose']:
+    env.Replace(
+    CXXCOMSTR   ='Compiling [$CXX] $SOURCE',
+    ASCOMSTR    ='Assembling [$AS] $SOURCE',
+    CCCOMSTR    ='Compiling [$CC] $SOURCE',
+    SHCXXCOMSTR ='Compiling [$CXX] $SOURCE',
+    SHCCCOMSTR  ='Compiling [$CC] $SOURCE',
+    LINKCOMSTR  ='Linking   [$LINK] $TARGET',
+    ARCOMSTR    ='Librarian [$AR] $TARGET',
+    SHLINKCOMSTR='Linking   [$SHLINK] $TARGET')
+
+paths = [
+    r'/XCode4_2/Platforms/iPhoneSimulator.platform/Developer/usr/bin',
+    r'/usr/bin',
+    r'/XCode4_2/usr/bin',
+    r'/opt/local/bin',
+]
+
+for p in reversed(paths):
+    add_to_path(p, append=0)
+
+if env['debug']:
+    strip = 0
+
+# compiler settings for X86 builds
+
+if 1:
+
+    # Emitter specified tools:
+    env['CC']     = 'llvm-gcc-4.2'
+    env['CXX']    = 'llvm-g++-4.2'
+    env['LINK']   = 'llvm-g++-4.2'
+    env['AR']     = 'ar'
+    env['AS']     = 'gcc'
+    env['STRIP']  = 'strip'
+    env['RANLIB'] = 'ranlib'
+# compiler settings for non-s3e targets
+if compiler in gcc_variants:
+    env['PROGSUFFIX'] = ""
+
+env['SHLINKFLAGS'] = '$LINKFLAGS -dynamiclib'
+
+# setup distcc where available
+if compiler in gcc_variants and env['dist']:
+    # when doing parallel build use 2 * number of hosts as the numbre
+    # if parallel jobs
+    jobs = len(export_map['DISTCC_HOSTS'].split()) * 2
+    print "Performing parallel build with %d jobs" % jobs
+    SetOption('num_jobs', jobs)
+    if compiler in ['nvidia']:
+        env['CC'] = env.WhereIs(env['CC'])
+        env['CXX'] = env.WhereIs(env['CXX'])
+    env['LD']  =  env['CC']
+    env['CC']  = 'distcc %s' % env['CC']
+    env['CXX'] = 'distcc %s' % env['CXX']
+    if 'DMUCS_SERVER' in os.environ:
+        env['CC']  = 'gethost %s' % env['CC']
+        env['CXX'] = 'gethost %s' % env['CXX']
+        SetOption('num_jobs', 6)
+elif compiler == 'rvct':
+    pass
+else:
+    SetOption('num_jobs', 8)
+
+if env.WhereIs("ccache"):
+    env['CC']  = "ccache " + env['CC']
+    env['CXX'] = "ccache " + env['CXX']
+
+
+def remove(env, setting, flag):
+    if flag in env[setting]:
+        new_settings = list(env[setting])
+        while flag in new_settings:
+            new_settings.remove(flag)
+        env[setting] = new_settings
+
+if env['profile']:
+    env.Append(CXXFLAGS="-pg", LINKFLAGS="-pg")
+
+#
+# this is the code the tells scons that we want all object files
+# to go in our build dir.  Otherwise the object files end up in
+# the same place as the source.
+#
+
+if not os.path.dirname(target_name):
+    target_name = join(builddir, target_name)
+
+nowarn_env = env.Clone()
+arm_env = env.Clone()
+thumb_env = env.Clone()
+vfp_env = env.Clone()
+
+if '-Wall' in nowarn_env['CCFLAGS'] or '-Wc,-Wall' in nowarn_env['CCFLAGS']:
+    nowarn_env['CCFLAGS'] = list(nowarn_env['CCFLAGS'])
+    remove(nowarn_env, 'CCFLAGS', '-Wall')
+    remove(nowarn_env, 'CCFLAGS', '-Wc,-Wall')
+    nowarn_env.Append(CCFLAGS='-w')
+
+
+if env['verbose']:
+    print "CCFLAGS   = %s" % env['CCFLAGS']
+    print "CXXFLAGS  = %s" % env['CXXFLAGS']
+    #print "CPPFLAGS = %s" % env['CPPFLAGS']
+    print "LINKFLAGS = %s" % env['LINKFLAGS']
+    print "SHLINKFLAGS = %s" % env['SHLINKFLAGS']
+    print "CC        = %s" % env['CC']
+    print "CXX       = %s" % env['CXX']
+    if 'DISTCC_HOSTS' in env['ENV']:
+        print "DISTCC_HOSTS = %s" % env['ENV']['DISTCC_HOSTS']
+
+
+objectivec_env = env.Clone()
+objectivec_env.Append(CFLAGS=['-std=c99', '-x', 'objective-c'])
+
+objectivecpp_env = env.Clone()
+objectivecpp_env.Append(CXXFLAGS=['-x', 'objective-c++'])
+
+objectivec_env.Append(CFLAGS=["-fobjc-abi-version=2", "-fobjc-legacy-dispatch"])
+objectivecpp_env.Append(CXXFLAGS=["-fobjc-abi-version=2", "-fobjc-legacy-dispatch"])
+
+def get_env(source):
+    if source.endswith(".mm"):
+        return objectivecpp_env
+    if source.endswith(".m"):
+        return objectivec_env
+    flags = source_flags.get(source)
+    if flags:
+        if 'rvct' in flags and 'rvct' not in compiler:
+            return None
+        if 'gcc' in flags:
+            if "ARM" not in arch:
+                return None
+            if 'gcc' not in compiler and 'qcc' not in compiler:
+                return None
+
+        if 'gccnowarn' in flags:
+            return nowarn_env
+        if 'vfp' in flags:
+            return vfp_env
+        if 'arm' in flags:
+            return arm_env
+        if 'thumb' in flags:
+            return thumb_env
+    return env
+
+shared_objects = []
+objects = []
+objnames = []
+for module in modules:
+    for source in modules[module]:
+        basename = os.path.basename(source)
+        objname = os.path.splitext(basename)[0]
+        objname = join(builddir, objname)
+        if objname in objnames:
+            i = 1
+            orig = objname
+            while objname in objnames:
+                objname = orig + ("_%s" % i)
+                i += 1
+        objnames.append(objname)
+        use_env = get_env(source)
+        if use_env:
+            objects.append(use_env.Object(objname, source))
+            shared_objects.append(use_env.SharedObject(objname, source))
+
+lib_build_targets=[]
+libs = []
+for lib in build_libs:
+    objs = []
+    libname = os.path.basename(lib)
+    if libname in libraries:
+        libraries.remove(libname)
+    for source in build_libs[lib]:
+        basename = os.path.basename(source)
+        objname = os.path.splitext(basename)[0]
+        objname = join(builddir, "lib_" + os.path.basename(lib), objname)
+        use_env = get_env(source)
+        obj = use_env.Object(objname, source)
+        objs.append(obj)
+    library = env.Library(lib, objs)
+    env.Default(library)
+    libs.append(library)
+    if os.name == 'nt':
+        library = str(library[0]).replace('\\', '/')
+    lib_build_targets.append(library)
+
+libs = []
+for l in libraries:
+    if compiler == 'rvct':
+        if os.name == 'posix':
+            l = l.replace("(", "\(")
+            l = l.replace(")", "\)")
+    else:
+        # if we not using the arm compiler we strip of any extenation on library names
+        base, ext = os.path.splitext(l)
+        if ext in ['.lib', '.a']:
+            l = base
+    libs.append(l)
+
+libraries = libs
+
+env.Append(LIBS=libraries + lib_build_targets )
+
+#
+# Declare a program target for this project.
+#
+
+program = env.Program(join(builddir, 's3eNextpeer_iphone.prog'), objects + extra_objects)
+env.Depends(program, temp_defines)
+
+#
+# Declare a shared library target for this project.
+#
+
+shared_library = env.SharedLibrary(join(builddir, 's3eNextpeer_iphone'), shared_objects + extra_objects)
+env.Depends(shared_library, temp_defines)
+
+#
+# Declare a static library target for this project.
+#
+
+static_library = env.Library(target_name, objects + extra_objects)
+env.Depends(static_library, temp_defines)
+
+#
+# Declare the *default* target(s) for this build
+#
+
+env['MAXLINELENGTH']=4096
+
+default_target = static_library
+
+if default_target:
+    env.Default(default_target)
+    env.Depends(default_target, temp_defines)
+
+    # Uncoment this if you always want to link the final target
+    #env.AlwaysBuild(default_target)

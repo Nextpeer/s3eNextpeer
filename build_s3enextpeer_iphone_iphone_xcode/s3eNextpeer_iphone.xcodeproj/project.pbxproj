@@ -1,0 +1,1257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+
+		A0000000000000000000000b /* AirplayVersion.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000000c;  };
+		A0000000000000000000000f /* CAEAGLLayer+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000010;  };
+		A00000000000000000000014 /* MarmaladeVersion.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000015;  };
+		A00000000000000000000016 /* NPAboutController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000017;  };
+		A00000000000000000000018 /* NPAnalyticsDatabase.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000019;  };
+		A0000000000000000000001a /* NPAnalyticsService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000001b;  };
+		A0000000000000000000001c /* NPAnalyticsSession.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000001d;  };
+		A0000000000000000000001e /* NPAnalyticsUploaderThread.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000001f;  };
+		A00000000000000000000020 /* NPAppStoreLoader.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000021;  };
+		A00000000000000000000022 /* NPBadgeNotificationView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000023;  };
+		A00000000000000000000024 /* NPBadgeView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000025;  };
+		A00000000000000000000026 /* NPBadgedImageView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000027;  };
+		A00000000000000000000028 /* NPBasePopupDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000029;  };
+		A0000000000000000000002a /* NPBubbleDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002b;  };
+		A0000000000000000000002c /* NPCHReadWriteLock.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002d;  };
+		A0000000000000000000002e /* NPCache.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002f;  };
+		A00000000000000000000030 /* NPCachedFileInfo.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000031;  };
+		A00000000000000000000032 /* NPCoinImageView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000033;  };
+		A00000000000000000000034 /* NPColorButton.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000035;  };
+		A00000000000000000000036 /* NPColorButtonWithIcon.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000037;  };
+		A00000000000000000000038 /* NPControllerLoader.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000039;  };
+		A0000000000000000000003a /* NPCreateGameStep.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003b;  };
+		A0000000000000000000003c /* NPCurrencyDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003d;  };
+		A0000000000000000000003e /* NPCurrencyStoreService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003f;  };
+		A00000000000000000000040 /* NPCurrentUserProfile.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000041;  };
+		A00000000000000000000042 /* NPDailyBonusDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000043;  };
+		A00000000000000000000044 /* NPDailyBonusNotification.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000045;  };
+		A00000000000000000000046 /* NPDelegatesContainer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000047;  };
+		A00000000000000000000048 /* NPDeviceTokenService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000049;  };
+		A0000000000000000000004a /* NPEngagementDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000004b;  };
+		A0000000000000000000004c /* NPFBLoginBroker.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000004d;  };
+		A0000000000000000000004e /* NPFacebookFeedDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000004f;  };
+		A00000000000000000000050 /* NPFacebookService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000051;  };
+		A00000000000000000000052 /* NPFacebookUserCredential.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000053;  };
+		A00000000000000000000054 /* NPFeedController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000055;  };
+		A00000000000000000000056 /* NPFeedDailyBonusStoryView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000057;  };
+		A00000000000000000000058 /* NPFeedEmoticonMenu.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000059;  };
+		A0000000000000000000005a /* NPFeedGameItem.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000005b;  };
+		A0000000000000000000005c /* NPFeedHandleBar.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000005d;  };
+		A0000000000000000000005e /* NPFeedImageStoryView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000005f;  };
+		A00000000000000000000060 /* NPFeedInfoController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000061;  };
+		A00000000000000000000062 /* NPFeedItem.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000063;  };
+		A00000000000000000000064 /* NPFeedNewStoriesAvailableButton.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000065;  };
+		A00000000000000000000066 /* NPFeedPostDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000067;  };
+		A00000000000000000000068 /* NPFeedPostStoryView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000069;  };
+		A0000000000000000000006a /* NPFeedScreenshotWithImageStoryView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000006b;  };
+		A0000000000000000000006c /* NPFeedService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000006d;  };
+		A0000000000000000000006e /* NPFeedStoryFooterView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000006f;  };
+		A00000000000000000000070 /* NPFeedStoryHeaderView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000071;  };
+		A00000000000000000000072 /* NPFeedStoryItemBaseView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000073;  };
+		A00000000000000000000074 /* NPFeedStoryItemViewAnalyzer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000075;  };
+		A00000000000000000000076 /* NPFeedStoryLongHeaderView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000077;  };
+		A00000000000000000000078 /* NPFeedStoryView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000079;  };
+		A0000000000000000000007a /* NPFeedTarget.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000007b;  };
+		A0000000000000000000007c /* NPFeedWebStoryView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000007d;  };
+		A0000000000000000000007e /* NPFileCache.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000007f;  };
+		A00000000000000000000080 /* NPFriendInfo.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000081;  };
+		A00000000000000000000082 /* NPFriendsService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000083;  };
+		A00000000000000000000084 /* NPFriendsTournamentInfoDashboardController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000085;  };
+		A00000000000000000000086 /* NPGuestUserCredential.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000087;  };
+		A00000000000000000000088 /* NPImageCache.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000089;  };
+		A0000000000000000000008a /* NPImageDownloader.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000008b;  };
+		A0000000000000000000008c /* NPImageLoader.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000008d;  };
+		A0000000000000000000008e /* NPImagePrefetcher.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000008f;  };
+		A00000000000000000000090 /* NPImageView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000091;  };
+		A00000000000000000000092 /* NPInGameNotification+Private.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000093;  };
+		A00000000000000000000094 /* NPInGameNotification.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000095;  };
+		A00000000000000000000096 /* NPInGameNotificationView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000097;  };
+		A00000000000000000000098 /* NPIndicatorImageView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000099;  };
+		A0000000000000000000009a /* NPInterstitialAction.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000009b;  };
+		A0000000000000000000009c /* NPInterstitialActionDataBase.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000009d;  };
+		A0000000000000000000009e /* NPInterstitialActionDataOpenStore.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000009f;  };
+		A000000000000000000000a0 /* NPInterstitialDisplayData.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000a1;  };
+		A000000000000000000000a2 /* NPInterstitialDisplayLogic.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000a3;  };
+		A000000000000000000000a4 /* NPInterstitialDisplayService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000a5;  };
+		A000000000000000000000a6 /* NPInterstitialImageView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000a7;  };
+		A000000000000000000000a8 /* NPInterstitialItem.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000a9;  };
+		A000000000000000000000aa /* NPInterstitialItemContentBase.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000ab;  };
+		A000000000000000000000ac /* NPInterstitialItemContentImage.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000ad;  };
+		A000000000000000000000ae /* NPInterstitialKey.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000af;  };
+		A000000000000000000000b0 /* NPInterstitialRootController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000b1;  };
+		A000000000000000000000b2 /* NPInterstitialView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000b3;  };
+		A000000000000000000000b4 /* NPInterstitialViewFactory.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000b5;  };
+		A000000000000000000000b6 /* NPInterstitialsService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000b7;  };
+		A000000000000000000000b8 /* NPInviteFriendCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000b9;  };
+		A000000000000000000000ba /* NPInviteFriendsController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000bb;  };
+		A000000000000000000000bc /* NPInvocation.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000bd;  };
+		A000000000000000000000be /* NPKeyChain.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000bf;  };
+		A000000000000000000000c0 /* NPLevelUpDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000c1;  };
+		A000000000000000000000c2 /* NPLog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000c3;  };
+		A000000000000000000000c4 /* NPLoginBroker.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000c5;  };
+		A000000000000000000000c6 /* NPMainListCloseGameInfoCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000c7;  };
+		A000000000000000000000c8 /* NPMainListController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000c9;  };
+		A000000000000000000000ca /* NPMainListCreateGameCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000cb;  };
+		A000000000000000000000cc /* NPMainListCurrencyStoreCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000cd;  };
+		A000000000000000000000ce /* NPMainListFBConnectCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000cf;  };
+		A000000000000000000000d0 /* NPMainListGameInfoCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000d1;  };
+		A000000000000000000000d2 /* NPMainListGameInfoHeaderCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000d3;  };
+		A000000000000000000000d4 /* NPMainListMoreGamesCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000d5;  };
+		A000000000000000000000d6 /* NPMainListNewGameInfoCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000d7;  };
+		A000000000000000000000d8 /* NPMainListPoweredByCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000d9;  };
+		A000000000000000000000da /* NPMainListProfileCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000db;  };
+		A000000000000000000000dc /* NPMainListProgressGameInfoCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000dd;  };
+		A000000000000000000000de /* NPMatchInfo.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000df;  };
+		A000000000000000000000e0 /* NPMatchReward.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000e1;  };
+		A000000000000000000000e2 /* NPMatchWinnerDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000e3;  };
+		A000000000000000000000e4 /* NPNavigationBar.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000e5;  };
+		A000000000000000000000e6 /* NPNavigationController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000e7;  };
+		A000000000000000000000e8 /* NPNibCustomView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000e9;  };
+		A000000000000000000000ea /* NPNotificationContainer+Private.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000eb;  };
+		A000000000000000000000ec /* NPNotificationContainer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000ed;  };
+		A000000000000000000000ee /* NPNotificationService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000ef;  };
+		A000000000000000000000f0 /* NPNotificationViewFactory.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000f1;  };
+		A000000000000000000000f2 /* NPObserverContainer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000f3;  };
+		A000000000000000000000f4 /* NPOnBoardingService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000f5;  };
+		A000000000000000000000f6 /* NPOnBoardingStep.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000f7;  };
+		A000000000000000000000f8 /* NPPushNotificationService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000f9;  };
+		A000000000000000000000fa /* NPQueryUserInfo.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000fb;  };
+		A000000000000000000000fc /* NPRandomTournamentInfoDashboardController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000fd;  };
+		A000000000000000000000fe /* NPRankTableNotificationView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000000ff;  };
+		A00000000000000000000100 /* NPRefreshTableHeaderView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000101;  };
+		A00000000000000000000102 /* NPRemoteNotificationsService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000103;  };
+		A00000000000000000000104 /* NPRequestBlockAdapter.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000105;  };
+		A00000000000000000000106 /* NPScreenCaptureService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000107;  };
+		A00000000000000000000108 /* NPScreenCapturer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000109;  };
+		A0000000000000000000010a /* NPService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000010b;  };
+		A0000000000000000000010c /* NPSettingListCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000010d;  };
+		A0000000000000000000010e /* NPSettings.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000010f;  };
+		A00000000000000000000110 /* NPSettingsController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000111;  };
+		A00000000000000000000112 /* NPShareToFriendsController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000113;  };
+		A00000000000000000000114 /* NPShareToFriendsListCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000115;  };
+		A00000000000000000000116 /* NPSimplePack.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000117;  };
+		A00000000000000000000118 /* NPSocialContainers.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000119;  };
+		A0000000000000000000011a /* NPStarEmitterLayer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000011b;  };
+		A0000000000000000000011c /* NPTableViewCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000011d;  };
+		A0000000000000000000011e /* NPTablerConnection.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000011f;  };
+		A00000000000000000000120 /* NPTablerController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000121;  };
+		A00000000000000000000122 /* NPTablerGlobalData.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000123;  };
+		A00000000000000000000124 /* NPTablerHMAC.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000125;  };
+		A00000000000000000000126 /* NPTablerMessage.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000127;  };
+		A00000000000000000000128 /* NPTablerMessageFactory.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000129;  };
+		A0000000000000000000012a /* NPTablerMessages.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000012b;  };
+		A0000000000000000000012c /* NPTablerRemotePlayer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000012d;  };
+		A0000000000000000000012e /* NPTextView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000012f;  };
+		A00000000000000000000130 /* NPTournamentChat.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000131;  };
+		A00000000000000000000132 /* NPTournamentChatContainer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000133;  };
+		A00000000000000000000134 /* NPTournamentContainers.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000135;  };
+		A00000000000000000000136 /* NPTournamentGame.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000137;  };
+		A00000000000000000000138 /* NPTournamentHighScorePopup.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000139;  };
+		A0000000000000000000013a /* NPTournamentInfoBaseCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000013b;  };
+		A0000000000000000000013c /* NPTournamentInfoDashboardController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000013d;  };
+		A0000000000000000000013e /* NPTournamentInfoPlayerCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000013f;  };
+		A00000000000000000000140 /* NPTournamentInfoPlayerView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000141;  };
+		A00000000000000000000142 /* NPTournamentItem.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000143;  };
+		A00000000000000000000144 /* NPTournamentLoadingBaseCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000145;  };
+		A00000000000000000000146 /* NPTournamentLoadingDashboardControllerNew.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000147;  };
+		A00000000000000000000148 /* NPTournamentLoadingPlayerCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000149;  };
+		A0000000000000000000014a /* NPTournamentLoadingPlayerInfoView.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000014b;  };
+		A0000000000000000000014c /* NPTournamentLoadingStartPlayingCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000014d;  };
+		A0000000000000000000014e /* NPTournamentLoadingWaitingCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000014f;  };
+		A00000000000000000000150 /* NPTournamentPlayer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000151;  };
+		A00000000000000000000152 /* NPTournamentSelectCell.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000153;  };
+		A00000000000000000000154 /* NPTournamentSelectController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000155;  };
+		A00000000000000000000156 /* NPTournamentService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000157;  };
+		A00000000000000000000158 /* NPTrackingService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000159;  };
+		A0000000000000000000015a /* NPUserCredential.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000015b;  };
+		A0000000000000000000015c /* NPUserCredentialService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000015d;  };
+		A0000000000000000000015e /* NPUserPersonalizePopup.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000015f;  };
+		A00000000000000000000160 /* NPUserProfileDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000161;  };
+		A00000000000000000000162 /* NPUserProfileService.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000163;  };
+		A00000000000000000000164 /* NPViewController+AppStore.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000165;  };
+		A00000000000000000000166 /* NPViewController.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000167;  };
+		A00000000000000000000168 /* NPWebServiceError.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000169;  };
+		A0000000000000000000016a /* NPWebServiceProvider.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000016b;  };
+		A0000000000000000000016c /* NPWebViewDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000016d;  };
+		A0000000000000000000016e /* NPWelcomeBannerNotification.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000016f;  };
+		A00000000000000000000170 /* NPWindow.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000171;  };
+		A00000000000000000000172 /* NP_ASIAuthenticationDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000173;  };
+		A00000000000000000000174 /* NP_ASIDataCompressor.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000175;  };
+		A00000000000000000000176 /* NP_ASIDataDecompressor.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000177;  };
+		A00000000000000000000178 /* NP_ASIDownloadCache.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000179;  };
+		A0000000000000000000017a /* NP_ASIFormDataRequest.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000017b;  };
+		A0000000000000000000017c /* NP_ASIHTTPRequest.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000017d;  };
+		A0000000000000000000017e /* NP_ASIInputStream.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000017f;  };
+		A00000000000000000000180 /* NP_ASINetworkQueue.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000181;  };
+		A00000000000000000000182 /* NP_CompressingLogFileManager.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000183;  };
+		A00000000000000000000184 /* NP_DDASLLogger.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000185;  };
+		A00000000000000000000186 /* NP_DDAbstractDatabaseLogger.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000187;  };
+		A00000000000000000000188 /* NP_DDFileLogger.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000189;  };
+		A0000000000000000000018a /* NP_DDLog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000018b;  };
+		A0000000000000000000018c /* NP_DDTTYLogger.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000018d;  };
+		A0000000000000000000018e /* NP_FBDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000018f;  };
+		A00000000000000000000190 /* NP_FBFrictionlessRequestSettings.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000191;  };
+		A00000000000000000000192 /* NP_FBLoginDialog.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000193;  };
+		A00000000000000000000194 /* NP_FBRequest.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000195;  };
+		A00000000000000000000196 /* NP_Facebook.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000197;  };
+		A00000000000000000000198 /* NP_JRSwizzle.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B00000000000000000000199;  };
+		A0000000000000000000019a /* NP_JSONKit.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000019b;  };
+		A0000000000000000000019c /* NP_NSAttributedString+Attributes.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000019d;  };
+		A0000000000000000000019e /* NP_NSObject+SBJSON.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B0000000000000000000019f;  };
+		A000000000000000000001a0 /* NP_NSString+SBJSON.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001a1;  };
+		A000000000000000000001a2 /* NP_NVUIGradientButton.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001a3;  };
+		A000000000000000000001a4 /* NP_OHASBasicMarkupParser.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001a5;  };
+		A000000000000000000001a6 /* NP_OHASMarkupParserBase.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001a7;  };
+		A000000000000000000001a8 /* NP_Reachability.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001a9;  };
+		A000000000000000000001aa /* NP_SBJSON.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ab;  };
+		A000000000000000000001ac /* NP_SBJsonBase.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ad;  };
+		A000000000000000000001ae /* NP_SBJsonParser.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001af;  };
+		A000000000000000000001b0 /* NP_SBJsonWriter.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b1;  };
+		A000000000000000000001b2 /* NP_SVProgressHUD+WindowLevel.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b3;  };
+		A000000000000000000001b4 /* NP_SVProgressHUD.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b5;  };
+		A000000000000000000001b6 /* NP_TTTAttributedLabel.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b7;  };
+		A000000000000000000001b8 /* NSArray+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001b9;  };
+		A000000000000000000001ba /* NSDictionary+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bb;  };
+		A000000000000000000001bc /* NSHTTPCookie+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bd;  };
+		A000000000000000000001be /* NSInvocation+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001bf;  };
+		A000000000000000000001c0 /* NSNotificationCenter+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c1;  };
+		A000000000000000000001c2 /* NSObject+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c3;  };
+		A000000000000000000001c4 /* NSString+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c5;  };
+		A000000000000000000001c6 /* Nextpeer+DailyBonusReminder.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c7;  };
+		A000000000000000000001c8 /* Nextpeer+NSNotification.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001c9;  };
+		A000000000000000000001ca /* Nextpeer+Private.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cb;  };
+		A000000000000000000001cc /* Nextpeer+UserOptions.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cd;  };
+		A000000000000000000001ce /* Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001cf;  };
+		A000000000000000000001d0 /* NextpeerSettings.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d1;  };
+		A000000000000000000001d2 /* UIDevice+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d3;  };
+		A000000000000000000001d4 /* UIImage+Nextpeer.o in Nextpeer Lib */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d5;  };
+		A000000000000000000001d6 /* edk.mkf in edk */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d7;  };
+		A000000000000000000001d8 /* make_extension.py in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B000000000000000000001d9;  };
+		A000000000000000000001da /* s3e.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001db;  };
+		A000000000000000000001dc /* s3eAccelerometer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001dd;  };
+		A000000000000000000001de /* s3eAudio.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001df;  };
+		A000000000000000000001e0 /* s3eCamera.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e1;  };
+		A000000000000000000001e2 /* s3eClipboard.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e3;  };
+		A000000000000000000001e4 /* s3eCompass.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e5;  };
+		A000000000000000000001e6 /* s3eCompression.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e7;  };
+		A000000000000000000001e8 /* s3eConfig.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001e9;  };
+		A000000000000000000001ea /* s3eContacts.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001eb;  };
+		A000000000000000000001ec /* s3eCrypto.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ed;  };
+		A000000000000000000001ee /* s3eDebug.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001ef;  };
+		A000000000000000000001f0 /* s3eDevice.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f1;  };
+		A000000000000000000001f2 /* s3eEdk.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f3;  };
+		A000000000000000000001f5 /* s3eEdkError.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f6;  };
+		A000000000000000000001f7 /* s3eEdk_android.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001f8;  };
+		A000000000000000000001f9 /* s3eEdk_iphone.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fa;  };
+		A000000000000000000001fb /* s3eEdk_windows.h in h */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fc;  };
+		A000000000000000000001fd /* s3eExt.h in S3E API */ = {isa = PBXBuildFile; fileRef = B000000000000000000001fe;  };
+		A000000000000000000001ff /* s3eFile.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000200;  };
+		A00000000000000000000201 /* s3eGL.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000202;  };
+		A00000000000000000000203 /* s3eHash.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000204;  };
+		A00000000000000000000205 /* s3eKeyboard.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000206;  };
+		A00000000000000000000207 /* s3eLicense.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000208;  };
+		A00000000000000000000209 /* s3eLocation.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020a;  };
+		A0000000000000000000020b /* s3eMemory.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020c;  };
+		A0000000000000000000020d /* s3eNextpeer.cpp in source */ = {isa = PBXBuildFile; fileRef = B0000000000000000000020e;  };
+		A00000000000000000000210 /* s3eNextpeer.defines.txt in docs */ = {isa = PBXBuildFile; fileRef = B00000000000000000000211;  };
+		A00000000000000000000213 /* s3eNextpeer.s4e in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B00000000000000000000214;  };
+		A00000000000000000000215 /* s3eNextpeer_autodefs.h in h */ = {isa = PBXBuildFile; fileRef = B00000000000000000000216;  };
+		A00000000000000000000218 /* s3eNextpeer_build.mkf in s3eNextpeer */ = {isa = PBXBuildFile; fileRef = B00000000000000000000219;  };
+		A0000000000000000000021a /* s3eNextpeer_internal.h in h */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021b;  };
+		A0000000000000000000021c /* s3eNextpeer_iphone.mkb in root */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021d;  };
+		A0000000000000000000021e /* s3eNextpeer_platform.mm in source */ = {isa = PBXBuildFile; fileRef = B0000000000000000000021f;  };
+		A00000000000000000000220 /* s3eNextpeer_register.cpp in source */ = {isa = PBXBuildFile; fileRef = B00000000000000000000221;  };
+		A00000000000000000000222 /* s3ePointer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000223;  };
+		A00000000000000000000224 /* s3eSecureStorage.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000225;  };
+		A00000000000000000000226 /* s3eSocket.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000227;  };
+		A00000000000000000000228 /* s3eSound.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000229;  };
+		A0000000000000000000022a /* s3eSoundRecord.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022b;  };
+		A0000000000000000000022c /* s3eSurface.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022d;  };
+		A0000000000000000000022e /* s3eThread.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000022f;  };
+		A00000000000000000000230 /* s3eTimer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000231;  };
+		A00000000000000000000232 /* s3eTypes.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000233;  };
+		A00000000000000000000234 /* s3eVersion.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000235;  };
+		A00000000000000000000236 /* s3eVibra.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000237;  };
+		A00000000000000000000238 /* s3eVideo.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000239;  };
+
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+
+		ref_s3eNextpeer_iphone_a /* s3eNextpeer_iphone */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = s3eNextpeer_iphone; sourceTree = "<absolute>"; };
+		B0000000000000000000000c /* AirplayVersion.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AirplayVersion.h"; path = "/Developer/Marmalade/5.2/s3e/h/AirplayVersion.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000010 /* CAEAGLLayer+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CAEAGLLayer+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/CAEAGLLayer+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000015 /* MarmaladeVersion.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MarmaladeVersion.h"; path = "/Developer/Marmalade/5.2/s3e/h/MarmaladeVersion.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000017 /* NPAboutController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPAboutController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPAboutController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000019 /* NPAnalyticsDatabase.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPAnalyticsDatabase.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPAnalyticsDatabase.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000001b /* NPAnalyticsService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPAnalyticsService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPAnalyticsService.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000001d /* NPAnalyticsSession.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPAnalyticsSession.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPAnalyticsSession.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000001f /* NPAnalyticsUploaderThread.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPAnalyticsUploaderThread.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPAnalyticsUploaderThread.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000021 /* NPAppStoreLoader.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPAppStoreLoader.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPAppStoreLoader.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000023 /* NPBadgeNotificationView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPBadgeNotificationView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPBadgeNotificationView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000025 /* NPBadgeView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPBadgeView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPBadgeView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000027 /* NPBadgedImageView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPBadgedImageView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPBadgedImageView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000029 /* NPBasePopupDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPBasePopupDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPBasePopupDialog.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000002b /* NPBubbleDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPBubbleDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPBubbleDialog.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000002d /* NPCHReadWriteLock.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPCHReadWriteLock.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCHReadWriteLock.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000002f /* NPCache.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPCache.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCache.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000031 /* NPCachedFileInfo.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPCachedFileInfo.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCachedFileInfo.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000033 /* NPCoinImageView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPCoinImageView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCoinImageView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000035 /* NPColorButton.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPColorButton.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPColorButton.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000037 /* NPColorButtonWithIcon.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPColorButtonWithIcon.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPColorButtonWithIcon.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000039 /* NPControllerLoader.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPControllerLoader.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPControllerLoader.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000003b /* NPCreateGameStep.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPCreateGameStep.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCreateGameStep.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000003d /* NPCurrencyDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPCurrencyDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCurrencyDialog.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000003f /* NPCurrencyStoreService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPCurrencyStoreService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCurrencyStoreService.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000041 /* NPCurrentUserProfile.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPCurrentUserProfile.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPCurrentUserProfile.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000043 /* NPDailyBonusDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPDailyBonusDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPDailyBonusDialog.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000045 /* NPDailyBonusNotification.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPDailyBonusNotification.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPDailyBonusNotification.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000047 /* NPDelegatesContainer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPDelegatesContainer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPDelegatesContainer.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000049 /* NPDeviceTokenService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPDeviceTokenService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPDeviceTokenService.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000004b /* NPEngagementDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPEngagementDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPEngagementDialog.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000004d /* NPFBLoginBroker.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFBLoginBroker.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFBLoginBroker.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000004f /* NPFacebookFeedDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFacebookFeedDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFacebookFeedDialog.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000051 /* NPFacebookService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFacebookService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFacebookService.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000053 /* NPFacebookUserCredential.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFacebookUserCredential.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFacebookUserCredential.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000055 /* NPFeedController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000057 /* NPFeedDailyBonusStoryView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedDailyBonusStoryView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedDailyBonusStoryView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000059 /* NPFeedEmoticonMenu.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedEmoticonMenu.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedEmoticonMenu.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000005b /* NPFeedGameItem.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedGameItem.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedGameItem.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000005d /* NPFeedHandleBar.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedHandleBar.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedHandleBar.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000005f /* NPFeedImageStoryView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedImageStoryView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedImageStoryView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000061 /* NPFeedInfoController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedInfoController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedInfoController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000063 /* NPFeedItem.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedItem.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedItem.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000065 /* NPFeedNewStoriesAvailableButton.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedNewStoriesAvailableButton.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedNewStoriesAvailableButton.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000067 /* NPFeedPostDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedPostDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedPostDialog.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000069 /* NPFeedPostStoryView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedPostStoryView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedPostStoryView.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000006b /* NPFeedScreenshotWithImageStoryView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedScreenshotWithImageStoryView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedScreenshotWithImageStoryView.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000006d /* NPFeedService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedService.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000006f /* NPFeedStoryFooterView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedStoryFooterView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedStoryFooterView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000071 /* NPFeedStoryHeaderView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedStoryHeaderView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedStoryHeaderView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000073 /* NPFeedStoryItemBaseView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedStoryItemBaseView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedStoryItemBaseView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000075 /* NPFeedStoryItemViewAnalyzer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedStoryItemViewAnalyzer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedStoryItemViewAnalyzer.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000077 /* NPFeedStoryLongHeaderView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedStoryLongHeaderView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedStoryLongHeaderView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000079 /* NPFeedStoryView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedStoryView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedStoryView.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000007b /* NPFeedTarget.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedTarget.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedTarget.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000007d /* NPFeedWebStoryView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFeedWebStoryView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFeedWebStoryView.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000007f /* NPFileCache.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFileCache.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFileCache.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000081 /* NPFriendInfo.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFriendInfo.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFriendInfo.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000083 /* NPFriendsService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFriendsService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFriendsService.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000085 /* NPFriendsTournamentInfoDashboardController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPFriendsTournamentInfoDashboardController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPFriendsTournamentInfoDashboardController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000087 /* NPGuestUserCredential.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPGuestUserCredential.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPGuestUserCredential.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000089 /* NPImageCache.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPImageCache.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPImageCache.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000008b /* NPImageDownloader.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPImageDownloader.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPImageDownloader.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000008d /* NPImageLoader.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPImageLoader.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPImageLoader.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000008f /* NPImagePrefetcher.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPImagePrefetcher.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPImagePrefetcher.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000091 /* NPImageView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPImageView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPImageView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000093 /* NPInGameNotification+Private.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInGameNotification+Private.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInGameNotification+Private.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000095 /* NPInGameNotification.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInGameNotification.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInGameNotification.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000097 /* NPInGameNotificationView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInGameNotificationView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInGameNotificationView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000099 /* NPIndicatorImageView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPIndicatorImageView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPIndicatorImageView.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000009b /* NPInterstitialAction.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialAction.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialAction.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000009d /* NPInterstitialActionDataBase.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialActionDataBase.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialActionDataBase.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000009f /* NPInterstitialActionDataOpenStore.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialActionDataOpenStore.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialActionDataOpenStore.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000a1 /* NPInterstitialDisplayData.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialDisplayData.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialDisplayData.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000a3 /* NPInterstitialDisplayLogic.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialDisplayLogic.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialDisplayLogic.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000a5 /* NPInterstitialDisplayService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialDisplayService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialDisplayService.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000a7 /* NPInterstitialImageView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialImageView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialImageView.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000a9 /* NPInterstitialItem.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialItem.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialItem.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000ab /* NPInterstitialItemContentBase.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialItemContentBase.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialItemContentBase.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000ad /* NPInterstitialItemContentImage.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialItemContentImage.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialItemContentImage.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000af /* NPInterstitialKey.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialKey.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialKey.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000b1 /* NPInterstitialRootController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialRootController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialRootController.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000b3 /* NPInterstitialView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialView.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000b5 /* NPInterstitialViewFactory.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialViewFactory.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialViewFactory.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000b7 /* NPInterstitialsService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInterstitialsService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInterstitialsService.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000b9 /* NPInviteFriendCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInviteFriendCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInviteFriendCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000bb /* NPInviteFriendsController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInviteFriendsController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInviteFriendsController.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000bd /* NPInvocation.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPInvocation.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPInvocation.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000bf /* NPKeyChain.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPKeyChain.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPKeyChain.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000c1 /* NPLevelUpDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPLevelUpDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPLevelUpDialog.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000c3 /* NPLog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPLog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPLog.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000c5 /* NPLoginBroker.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPLoginBroker.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPLoginBroker.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000c7 /* NPMainListCloseGameInfoCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListCloseGameInfoCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListCloseGameInfoCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000c9 /* NPMainListController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListController.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000cb /* NPMainListCreateGameCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListCreateGameCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListCreateGameCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000cd /* NPMainListCurrencyStoreCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListCurrencyStoreCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListCurrencyStoreCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000cf /* NPMainListFBConnectCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListFBConnectCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListFBConnectCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000d1 /* NPMainListGameInfoCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListGameInfoCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListGameInfoCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000d3 /* NPMainListGameInfoHeaderCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListGameInfoHeaderCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListGameInfoHeaderCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000d5 /* NPMainListMoreGamesCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListMoreGamesCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListMoreGamesCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000d7 /* NPMainListNewGameInfoCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListNewGameInfoCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListNewGameInfoCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000d9 /* NPMainListPoweredByCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListPoweredByCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListPoweredByCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000db /* NPMainListProfileCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListProfileCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListProfileCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000dd /* NPMainListProgressGameInfoCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMainListProgressGameInfoCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMainListProgressGameInfoCell.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000df /* NPMatchInfo.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMatchInfo.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMatchInfo.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000e1 /* NPMatchReward.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMatchReward.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMatchReward.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000e3 /* NPMatchWinnerDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPMatchWinnerDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPMatchWinnerDialog.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000e5 /* NPNavigationBar.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPNavigationBar.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPNavigationBar.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000e7 /* NPNavigationController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPNavigationController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPNavigationController.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000e9 /* NPNibCustomView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPNibCustomView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPNibCustomView.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000eb /* NPNotificationContainer+Private.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPNotificationContainer+Private.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPNotificationContainer+Private.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000ed /* NPNotificationContainer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPNotificationContainer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPNotificationContainer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000ef /* NPNotificationService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPNotificationService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPNotificationService.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000f1 /* NPNotificationViewFactory.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPNotificationViewFactory.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPNotificationViewFactory.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000f3 /* NPObserverContainer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPObserverContainer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPObserverContainer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000f5 /* NPOnBoardingService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPOnBoardingService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPOnBoardingService.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000f7 /* NPOnBoardingStep.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPOnBoardingStep.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPOnBoardingStep.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000f9 /* NPPushNotificationService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPPushNotificationService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPPushNotificationService.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000fb /* NPQueryUserInfo.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPQueryUserInfo.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPQueryUserInfo.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000fd /* NPRandomTournamentInfoDashboardController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPRandomTournamentInfoDashboardController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPRandomTournamentInfoDashboardController.o";  sourceTree = "<absolute>"; };
+		B000000000000000000000ff /* NPRankTableNotificationView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPRankTableNotificationView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPRankTableNotificationView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000101 /* NPRefreshTableHeaderView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPRefreshTableHeaderView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPRefreshTableHeaderView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000103 /* NPRemoteNotificationsService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPRemoteNotificationsService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPRemoteNotificationsService.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000105 /* NPRequestBlockAdapter.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPRequestBlockAdapter.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPRequestBlockAdapter.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000107 /* NPScreenCaptureService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPScreenCaptureService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPScreenCaptureService.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000109 /* NPScreenCapturer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPScreenCapturer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPScreenCapturer.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000010b /* NPService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPService.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000010d /* NPSettingListCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPSettingListCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPSettingListCell.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000010f /* NPSettings.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPSettings.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPSettings.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000111 /* NPSettingsController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPSettingsController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPSettingsController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000113 /* NPShareToFriendsController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPShareToFriendsController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPShareToFriendsController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000115 /* NPShareToFriendsListCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPShareToFriendsListCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPShareToFriendsListCell.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000117 /* NPSimplePack.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPSimplePack.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPSimplePack.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000119 /* NPSocialContainers.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPSocialContainers.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPSocialContainers.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000011b /* NPStarEmitterLayer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPStarEmitterLayer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPStarEmitterLayer.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000011d /* NPTableViewCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTableViewCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTableViewCell.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000011f /* NPTablerConnection.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTablerConnection.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTablerConnection.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000121 /* NPTablerController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTablerController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTablerController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000123 /* NPTablerGlobalData.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTablerGlobalData.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTablerGlobalData.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000125 /* NPTablerHMAC.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTablerHMAC.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTablerHMAC.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000127 /* NPTablerMessage.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTablerMessage.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTablerMessage.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000129 /* NPTablerMessageFactory.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTablerMessageFactory.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTablerMessageFactory.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000012b /* NPTablerMessages.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTablerMessages.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTablerMessages.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000012d /* NPTablerRemotePlayer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTablerRemotePlayer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTablerRemotePlayer.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000012f /* NPTextView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTextView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTextView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000131 /* NPTournamentChat.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentChat.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentChat.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000133 /* NPTournamentChatContainer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentChatContainer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentChatContainer.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000135 /* NPTournamentContainers.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentContainers.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentContainers.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000137 /* NPTournamentGame.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentGame.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentGame.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000139 /* NPTournamentHighScorePopup.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentHighScorePopup.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentHighScorePopup.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000013b /* NPTournamentInfoBaseCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentInfoBaseCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentInfoBaseCell.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000013d /* NPTournamentInfoDashboardController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentInfoDashboardController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentInfoDashboardController.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000013f /* NPTournamentInfoPlayerCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentInfoPlayerCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentInfoPlayerCell.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000141 /* NPTournamentInfoPlayerView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentInfoPlayerView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentInfoPlayerView.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000143 /* NPTournamentItem.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentItem.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentItem.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000145 /* NPTournamentLoadingBaseCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentLoadingBaseCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingBaseCell.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000147 /* NPTournamentLoadingDashboardControllerNew.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentLoadingDashboardControllerNew.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingDashboardControllerNew.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000149 /* NPTournamentLoadingPlayerCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentLoadingPlayerCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingPlayerCell.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000014b /* NPTournamentLoadingPlayerInfoView.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentLoadingPlayerInfoView.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingPlayerInfoView.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000014d /* NPTournamentLoadingStartPlayingCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentLoadingStartPlayingCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingStartPlayingCell.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000014f /* NPTournamentLoadingWaitingCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentLoadingWaitingCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentLoadingWaitingCell.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000151 /* NPTournamentPlayer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentPlayer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentPlayer.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000153 /* NPTournamentSelectCell.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentSelectCell.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentSelectCell.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000155 /* NPTournamentSelectController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentSelectController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentSelectController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000157 /* NPTournamentService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTournamentService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTournamentService.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000159 /* NPTrackingService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPTrackingService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPTrackingService.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000015b /* NPUserCredential.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPUserCredential.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPUserCredential.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000015d /* NPUserCredentialService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPUserCredentialService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPUserCredentialService.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000015f /* NPUserPersonalizePopup.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPUserPersonalizePopup.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPUserPersonalizePopup.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000161 /* NPUserProfileDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPUserProfileDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPUserProfileDialog.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000163 /* NPUserProfileService.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPUserProfileService.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPUserProfileService.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000165 /* NPViewController+AppStore.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPViewController+AppStore.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPViewController+AppStore.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000167 /* NPViewController.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPViewController.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPViewController.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000169 /* NPWebServiceError.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPWebServiceError.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPWebServiceError.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000016b /* NPWebServiceProvider.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPWebServiceProvider.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPWebServiceProvider.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000016d /* NPWebViewDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPWebViewDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPWebViewDialog.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000016f /* NPWelcomeBannerNotification.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPWelcomeBannerNotification.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPWelcomeBannerNotification.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000171 /* NPWindow.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NPWindow.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NPWindow.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000173 /* NP_ASIAuthenticationDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_ASIAuthenticationDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIAuthenticationDialog.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000175 /* NP_ASIDataCompressor.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_ASIDataCompressor.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIDataCompressor.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000177 /* NP_ASIDataDecompressor.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_ASIDataDecompressor.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIDataDecompressor.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000179 /* NP_ASIDownloadCache.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_ASIDownloadCache.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIDownloadCache.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000017b /* NP_ASIFormDataRequest.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_ASIFormDataRequest.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIFormDataRequest.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000017d /* NP_ASIHTTPRequest.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_ASIHTTPRequest.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIHTTPRequest.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000017f /* NP_ASIInputStream.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_ASIInputStream.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASIInputStream.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000181 /* NP_ASINetworkQueue.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_ASINetworkQueue.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_ASINetworkQueue.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000183 /* NP_CompressingLogFileManager.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_CompressingLogFileManager.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_CompressingLogFileManager.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000185 /* NP_DDASLLogger.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_DDASLLogger.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_DDASLLogger.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000187 /* NP_DDAbstractDatabaseLogger.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_DDAbstractDatabaseLogger.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_DDAbstractDatabaseLogger.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000189 /* NP_DDFileLogger.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_DDFileLogger.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_DDFileLogger.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000018b /* NP_DDLog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_DDLog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_DDLog.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000018d /* NP_DDTTYLogger.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_DDTTYLogger.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_DDTTYLogger.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000018f /* NP_FBDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_FBDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_FBDialog.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000191 /* NP_FBFrictionlessRequestSettings.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_FBFrictionlessRequestSettings.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_FBFrictionlessRequestSettings.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000193 /* NP_FBLoginDialog.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_FBLoginDialog.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_FBLoginDialog.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000195 /* NP_FBRequest.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_FBRequest.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_FBRequest.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000197 /* NP_Facebook.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_Facebook.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_Facebook.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000199 /* NP_JRSwizzle.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_JRSwizzle.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_JRSwizzle.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000019b /* NP_JSONKit.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_JSONKit.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_JSONKit.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000019d /* NP_NSAttributedString+Attributes.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_NSAttributedString+Attributes.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_NSAttributedString+Attributes.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000019f /* NP_NSObject+SBJSON.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_NSObject+SBJSON.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_NSObject+SBJSON.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001a1 /* NP_NSString+SBJSON.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_NSString+SBJSON.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_NSString+SBJSON.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001a3 /* NP_NVUIGradientButton.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_NVUIGradientButton.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_NVUIGradientButton.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001a5 /* NP_OHASBasicMarkupParser.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_OHASBasicMarkupParser.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_OHASBasicMarkupParser.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001a7 /* NP_OHASMarkupParserBase.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_OHASMarkupParserBase.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_OHASMarkupParserBase.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001a9 /* NP_Reachability.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_Reachability.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_Reachability.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001ab /* NP_SBJSON.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SBJSON.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SBJSON.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001ad /* NP_SBJsonBase.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SBJsonBase.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SBJsonBase.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001af /* NP_SBJsonParser.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SBJsonParser.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SBJsonParser.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001b1 /* NP_SBJsonWriter.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SBJsonWriter.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SBJsonWriter.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001b3 /* NP_SVProgressHUD+WindowLevel.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SVProgressHUD+WindowLevel.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SVProgressHUD+WindowLevel.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001b5 /* NP_SVProgressHUD.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_SVProgressHUD.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_SVProgressHUD.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001b7 /* NP_TTTAttributedLabel.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NP_TTTAttributedLabel.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NP_TTTAttributedLabel.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001b9 /* NSArray+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSArray+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSArray+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001bb /* NSDictionary+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSDictionary+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSDictionary+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001bd /* NSHTTPCookie+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSHTTPCookie+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSHTTPCookie+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001bf /* NSInvocation+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSInvocation+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSInvocation+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c1 /* NSNotificationCenter+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSNotificationCenter+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSNotificationCenter+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c3 /* NSObject+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSObject+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSObject+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c5 /* NSString+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NSString+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NSString+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c7 /* Nextpeer+DailyBonusReminder.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+DailyBonusReminder.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+DailyBonusReminder.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001c9 /* Nextpeer+NSNotification.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+NSNotification.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+NSNotification.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001cb /* Nextpeer+Private.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+Private.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+Private.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001cd /* Nextpeer+UserOptions.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer+UserOptions.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer+UserOptions.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001cf /* Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001d1 /* NextpeerSettings.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NextpeerSettings.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/NextpeerSettings.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001d3 /* UIDevice+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UIDevice+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/UIDevice+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001d5 /* UIImage+Nextpeer.o in Nextpeer Lib */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UIImage+Nextpeer.o"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/UIImage+Nextpeer.o";  sourceTree = "<absolute>"; };
+		B000000000000000000001d7 /* edk.mkf in edk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "edk.mkf"; path = "/Developer/Marmalade/5.2/s3e/edk/edk.mkf";  sourceTree = "<absolute>"; };
+		B000000000000000000001d9 /* make_extension.py in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = "make_extension.py"; path = "/Developer/Marmalade/5.2/extensions/builder/make_extension.py";  sourceTree = "<absolute>"; };
+		B000000000000000000001db /* s3e.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3e.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3e.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001dd /* s3eAccelerometer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eAccelerometer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eAccelerometer.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001df /* s3eAudio.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eAudio.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eAudio.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e1 /* s3eCamera.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCamera.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCamera.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e3 /* s3eClipboard.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eClipboard.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eClipboard.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e5 /* s3eCompass.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCompass.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCompass.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e7 /* s3eCompression.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCompression.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCompression.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001e9 /* s3eConfig.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eConfig.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eConfig.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001eb /* s3eContacts.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eContacts.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eContacts.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001ed /* s3eCrypto.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCrypto.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eCrypto.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001ef /* s3eDebug.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eDebug.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eDebug.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001f1 /* s3eDevice.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eDevice.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eDevice.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001f3 /* s3eEdk.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001f6 /* s3eEdkError.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdkError.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdkError.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001f8 /* s3eEdk_android.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_android.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_android.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001fa /* s3eEdk_iphone.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_iphone.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_iphone.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001fc /* s3eEdk_windows.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_windows.h"; path = "/Developer/Marmalade/5.2/s3e/edk/h/s3eEdk_windows.h";  sourceTree = "<absolute>"; };
+		B000000000000000000001fe /* s3eExt.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eExt.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eExt.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000200 /* s3eFile.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eFile.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eFile.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000202 /* s3eGL.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eGL.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eGL.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000204 /* s3eHash.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eHash.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eHash.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000206 /* s3eKeyboard.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eKeyboard.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eKeyboard.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000208 /* s3eLicense.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eLicense.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eLicense.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000020a /* s3eLocation.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eLocation.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eLocation.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000020c /* s3eMemory.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eMemory.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eMemory.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000020e /* s3eNextpeer.cpp in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "s3eNextpeer.cpp"; path = "../source/generic/s3eNextpeer.cpp";  sourceTree = SOURCE_ROOT; };
+		B00000000000000000000211 /* s3eNextpeer.defines.txt in docs */ = {isa = PBXFileReference; lastKnownFileType = text; name = "s3eNextpeer.defines.txt"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/interface/s3eNextpeer.defines.txt";  sourceTree = "<absolute>"; };
+		B00000000000000000000214 /* s3eNextpeer.s4e in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer.s4e"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer.s4e";  sourceTree = "<absolute>"; };
+		B00000000000000000000216 /* s3eNextpeer_autodefs.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eNextpeer_autodefs.h"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/source/h/s3eNextpeer_autodefs.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000219 /* s3eNextpeer_build.mkf in s3eNextpeer */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer_build.mkf"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer_build.mkf";  sourceTree = "<absolute>"; };
+		B0000000000000000000021b /* s3eNextpeer_internal.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eNextpeer_internal.h"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/source/h/s3eNextpeer_internal.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000021d /* s3eNextpeer_iphone.mkb in root */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eNextpeer_iphone.mkb"; path = "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeer_iphone.mkb";  sourceTree = "<absolute>"; };
+		B0000000000000000000021f /* s3eNextpeer_platform.mm in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objcpp; name = "s3eNextpeer_platform.mm"; path = "../source/iphone/s3eNextpeer_platform.mm";  sourceTree = SOURCE_ROOT; };
+		B00000000000000000000221 /* s3eNextpeer_register.cpp in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "s3eNextpeer_register.cpp"; path = "../source/generic/s3eNextpeer_register.cpp";  sourceTree = SOURCE_ROOT; };
+		B00000000000000000000223 /* s3ePointer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3ePointer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3ePointer.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000225 /* s3eSecureStorage.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSecureStorage.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSecureStorage.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000227 /* s3eSocket.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSocket.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSocket.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000229 /* s3eSound.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSound.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSound.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000022b /* s3eSoundRecord.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSoundRecord.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSoundRecord.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000022d /* s3eSurface.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSurface.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eSurface.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000022f /* s3eThread.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eThread.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eThread.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000231 /* s3eTimer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eTimer.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eTimer.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000233 /* s3eTypes.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eTypes.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eTypes.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000235 /* s3eVersion.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVersion.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVersion.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000237 /* s3eVibra.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVibra.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVibra.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000239 /* s3eVideo.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVideo.h"; path = "/Developer/Marmalade/5.2/s3e/h/s3eVideo.h";  sourceTree = "<absolute>"; };
+
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		frameworksobject /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0000000000000000000000a /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ref_s3eNextpeer_iphone_a /* s3eNextpeer_iphone */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000007 /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000008,
+				B00000000000000000000009,
+				B0000000000000000000000a,
+				C0000000000000000000000d,
+				C00000000000000000000011,
+				B0000000000000000000021d,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+
+		C00000000000000000000011 /* Extensions */ =  {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000012,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+
+		C00000000000000000000013 /* Nextpeer Lib */ =  {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000010,
+				B00000000000000000000017,
+				B00000000000000000000019,
+				B0000000000000000000001b,
+				B0000000000000000000001d,
+				B0000000000000000000001f,
+				B00000000000000000000021,
+				B00000000000000000000023,
+				B00000000000000000000025,
+				B00000000000000000000027,
+				B00000000000000000000029,
+				B0000000000000000000002b,
+				B0000000000000000000002d,
+				B0000000000000000000002f,
+				B00000000000000000000031,
+				B00000000000000000000033,
+				B00000000000000000000035,
+				B00000000000000000000037,
+				B00000000000000000000039,
+				B0000000000000000000003b,
+				B0000000000000000000003d,
+				B0000000000000000000003f,
+				B00000000000000000000041,
+				B00000000000000000000043,
+				B00000000000000000000045,
+				B00000000000000000000047,
+				B00000000000000000000049,
+				B0000000000000000000004b,
+				B0000000000000000000004d,
+				B0000000000000000000004f,
+				B00000000000000000000051,
+				B00000000000000000000053,
+				B00000000000000000000055,
+				B00000000000000000000057,
+				B00000000000000000000059,
+				B0000000000000000000005b,
+				B0000000000000000000005d,
+				B0000000000000000000005f,
+				B00000000000000000000061,
+				B00000000000000000000063,
+				B00000000000000000000065,
+				B00000000000000000000067,
+				B00000000000000000000069,
+				B0000000000000000000006b,
+				B0000000000000000000006d,
+				B0000000000000000000006f,
+				B00000000000000000000071,
+				B00000000000000000000073,
+				B00000000000000000000075,
+				B00000000000000000000077,
+				B00000000000000000000079,
+				B0000000000000000000007b,
+				B0000000000000000000007d,
+				B0000000000000000000007f,
+				B00000000000000000000081,
+				B00000000000000000000083,
+				B00000000000000000000085,
+				B00000000000000000000087,
+				B00000000000000000000089,
+				B0000000000000000000008b,
+				B0000000000000000000008d,
+				B0000000000000000000008f,
+				B00000000000000000000091,
+				B00000000000000000000093,
+				B00000000000000000000095,
+				B00000000000000000000097,
+				B00000000000000000000099,
+				B0000000000000000000009b,
+				B0000000000000000000009d,
+				B0000000000000000000009f,
+				B000000000000000000000a1,
+				B000000000000000000000a3,
+				B000000000000000000000a5,
+				B000000000000000000000a7,
+				B000000000000000000000a9,
+				B000000000000000000000ab,
+				B000000000000000000000ad,
+				B000000000000000000000af,
+				B000000000000000000000b1,
+				B000000000000000000000b3,
+				B000000000000000000000b5,
+				B000000000000000000000b7,
+				B000000000000000000000b9,
+				B000000000000000000000bb,
+				B000000000000000000000bd,
+				B000000000000000000000bf,
+				B000000000000000000000c1,
+				B000000000000000000000c3,
+				B000000000000000000000c5,
+				B000000000000000000000c7,
+				B000000000000000000000c9,
+				B000000000000000000000cb,
+				B000000000000000000000cd,
+				B000000000000000000000cf,
+				B000000000000000000000d1,
+				B000000000000000000000d3,
+				B000000000000000000000d5,
+				B000000000000000000000d7,
+				B000000000000000000000d9,
+				B000000000000000000000db,
+				B000000000000000000000dd,
+				B000000000000000000000df,
+				B000000000000000000000e1,
+				B000000000000000000000e3,
+				B000000000000000000000e5,
+				B000000000000000000000e7,
+				B000000000000000000000e9,
+				B000000000000000000000eb,
+				B000000000000000000000ed,
+				B000000000000000000000ef,
+				B000000000000000000000f1,
+				B000000000000000000000f3,
+				B000000000000000000000f5,
+				B000000000000000000000f7,
+				B000000000000000000000f9,
+				B000000000000000000000fb,
+				B000000000000000000000fd,
+				B000000000000000000000ff,
+				B00000000000000000000101,
+				B00000000000000000000103,
+				B00000000000000000000105,
+				B00000000000000000000107,
+				B00000000000000000000109,
+				B0000000000000000000010b,
+				B0000000000000000000010d,
+				B0000000000000000000010f,
+				B00000000000000000000111,
+				B00000000000000000000113,
+				B00000000000000000000115,
+				B00000000000000000000117,
+				B00000000000000000000119,
+				B0000000000000000000011b,
+				B0000000000000000000011d,
+				B0000000000000000000011f,
+				B00000000000000000000121,
+				B00000000000000000000123,
+				B00000000000000000000125,
+				B00000000000000000000127,
+				B00000000000000000000129,
+				B0000000000000000000012b,
+				B0000000000000000000012d,
+				B0000000000000000000012f,
+				B00000000000000000000131,
+				B00000000000000000000133,
+				B00000000000000000000135,
+				B00000000000000000000137,
+				B00000000000000000000139,
+				B0000000000000000000013b,
+				B0000000000000000000013d,
+				B0000000000000000000013f,
+				B00000000000000000000141,
+				B00000000000000000000143,
+				B00000000000000000000145,
+				B00000000000000000000147,
+				B00000000000000000000149,
+				B0000000000000000000014b,
+				B0000000000000000000014d,
+				B0000000000000000000014f,
+				B00000000000000000000151,
+				B00000000000000000000153,
+				B00000000000000000000155,
+				B00000000000000000000157,
+				B00000000000000000000159,
+				B0000000000000000000015b,
+				B0000000000000000000015d,
+				B0000000000000000000015f,
+				B00000000000000000000161,
+				B00000000000000000000163,
+				B00000000000000000000165,
+				B00000000000000000000167,
+				B00000000000000000000169,
+				B0000000000000000000016b,
+				B0000000000000000000016d,
+				B0000000000000000000016f,
+				B00000000000000000000171,
+				B00000000000000000000173,
+				B00000000000000000000175,
+				B00000000000000000000177,
+				B00000000000000000000179,
+				B0000000000000000000017b,
+				B0000000000000000000017d,
+				B0000000000000000000017f,
+				B00000000000000000000181,
+				B00000000000000000000183,
+				B00000000000000000000185,
+				B00000000000000000000187,
+				B00000000000000000000189,
+				B0000000000000000000018b,
+				B0000000000000000000018d,
+				B0000000000000000000018f,
+				B00000000000000000000191,
+				B00000000000000000000193,
+				B00000000000000000000195,
+				B00000000000000000000197,
+				B00000000000000000000199,
+				B0000000000000000000019b,
+				B0000000000000000000019d,
+				B0000000000000000000019f,
+				B000000000000000000001a1,
+				B000000000000000000001a3,
+				B000000000000000000001a5,
+				B000000000000000000001a7,
+				B000000000000000000001a9,
+				B000000000000000000001ab,
+				B000000000000000000001ad,
+				B000000000000000000001af,
+				B000000000000000000001b1,
+				B000000000000000000001b3,
+				B000000000000000000001b5,
+				B000000000000000000001b7,
+				B000000000000000000001b9,
+				B000000000000000000001bb,
+				B000000000000000000001bd,
+				B000000000000000000001bf,
+				B000000000000000000001c1,
+				B000000000000000000001c3,
+				B000000000000000000001c5,
+				B000000000000000000001c7,
+				B000000000000000000001c9,
+				B000000000000000000001cb,
+				B000000000000000000001cd,
+				B000000000000000000001cf,
+				B000000000000000000001d1,
+				B000000000000000000001d3,
+				B000000000000000000001d5,
+			);
+			name = "Nextpeer Lib";
+			sourceTree = "<group>";
+		};
+
+		C0000000000000000000000e /* S3E API */ =  {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000000c,
+				B00000000000000000000015,
+				B000000000000000000001db,
+				B000000000000000000001dd,
+				B000000000000000000001df,
+				B000000000000000000001e1,
+				B000000000000000000001e3,
+				B000000000000000000001e5,
+				B000000000000000000001e7,
+				B000000000000000000001e9,
+				B000000000000000000001eb,
+				B000000000000000000001ed,
+				B000000000000000000001ef,
+				B000000000000000000001f1,
+				B000000000000000000001fe,
+				B00000000000000000000200,
+				B00000000000000000000202,
+				B00000000000000000000204,
+				B00000000000000000000206,
+				B00000000000000000000208,
+				B0000000000000000000020a,
+				B0000000000000000000020c,
+				B00000000000000000000223,
+				B00000000000000000000225,
+				B00000000000000000000227,
+				B00000000000000000000229,
+				B0000000000000000000022b,
+				B0000000000000000000022d,
+				B0000000000000000000022f,
+				B00000000000000000000231,
+				B00000000000000000000233,
+				B00000000000000000000235,
+				B00000000000000000000237,
+				B00000000000000000000239,
+			);
+			name = "S3E API";
+			sourceTree = "<group>";
+		};
+
+		C00000000000000000000212 /* docs */ =  {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000211,
+			);
+			name = docs;
+			sourceTree = "<group>";
+		};
+
+		C0000000000000000000000d /* edk */ =  {
+			isa = PBXGroup;
+			children = (
+				C0000000000000000000000e,
+				B000000000000000000001d7,
+				C000000000000000000001f4,
+			);
+			name = edk;
+			sourceTree = "<group>";
+		};
+
+		C000000000000000000001f4 /* h */ =  {
+			isa = PBXGroup;
+			children = (
+				B000000000000000000001f3,
+				B000000000000000000001f6,
+				B000000000000000000001f8,
+				B000000000000000000001fa,
+				B000000000000000000001fc,
+			);
+			name = h;
+			sourceTree = "<group>";
+		};
+
+		C00000000000000000000217 /* h */ =  {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000216,
+				B0000000000000000000021b,
+			);
+			name = h;
+			sourceTree = "<group>";
+		};
+
+		C00000000000000000000012 /* s3eNextpeer */ =  {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000013,
+				B000000000000000000001d9,
+				C0000000000000000000020f,
+				C00000000000000000000212,
+				B00000000000000000000214,
+				C00000000000000000000217,
+				B00000000000000000000219,
+			);
+			name = "s3eNextpeer";
+			sourceTree = "<group>";
+		};
+
+		C0000000000000000000020f /* source */ =  {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000020e,
+				B0000000000000000000021f,
+				B00000000000000000000221,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+
+/* Begin PBXShellScriptBuildPhase section */
+
+		shell_script_object0 /* Copy Target to Final Destination */ = {
+			isa = PBXShellScriptBuildPhase;
+            name = "Copy Target to Final Destination";
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			showEnvVarsInLog = 0;
+			shellScript = "
+mkdir -p /Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone
+
+set -e
+set -x
+
+if [ $CONFIGURATION = 'Release' ]; then
+    TARGET=/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone/libs3eNextpeer.a
+else
+    TARGET=/Developer/Marmalade/5.2/extensions/s3eNextpeer/lib/iphone/libs3eNextpeer_d.a
+fi
+
+cp $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH $TARGET
+";
+		};
+
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+
+		69000000000000000000000A /* s3eNextpeer_iphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = buildconfiglisttarget /* Build configuration list for PBXNativeTarget "s3eNextpeer_iphone" */;
+			buildPhases = (
+				resourcesobject /* Resources */,
+				sourcesobject /* Sources */,
+				frameworksobject /* Frameworks */,
+				shell_script_object0 /* Copy Target to Final Destination */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = s3eNextpeer_iphone;
+			productName = s3eNextpeer_iphone;
+			productReference = ref_s3eNextpeer_iphone_a /* s3eNextpeer_iphone */;
+			productType = "com.apple.product-type.library.static";
+		};
+
+/* End PBXNativeTarget section */
+
+
+/* Begin PBXProject section */
+		A00000000000000000000006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = buildconfiglistproject /* Build configuration list for PBXProject "s3eNextpeer_iphone" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = A00000000000000000000007 /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+
+			69000000000000000000000A /* s3eNextpeer_iphone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		resourcesobject /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		sourcesobject /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0000000000000000000020d,
+				A0000000000000000000021e,
+				A00000000000000000000220,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+
+		T00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ONLY_ACTIVE_ARCH = YES;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				
+				HEADER_SEARCH_PATHS = (
+					"/Developer/Marmalade/5.2/extensions/s3eNextpeer/source/h/",
+					"/Developer/Marmalade/5.2/extensions/s3eNextpeer/h/",
+					"/Developer/Marmalade/5.2/s3e/edk/h/",
+					"/Developer/Marmalade/5.2/s3e/h/",
+					"/Developer/Marmalade/5.2/s3e/h/ext/",
+					"/Developer/Marmalade/5.2/modules/iwutil/h/",
+					"/Developer/Marmalade/5.2/modules/iwcore/h/",
+					"/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Headers"
+				);
+				LIBRARY_SEARCH_PATHS = (
+					
+					"$(inherited)",
+				);
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = Info.plist;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = ( 
+"-fsigned-char",
+					"-fno-strict-aliasing",
+					"-Wall",
+					"-fomit-frame-pointer",
+					"-Wno-unused",
+					"-Wno-parentheses",
+					"-pipe","-g",
+					"-O0",
+					"-include",
+					"temp_defines_debug.h",					"-include temp_defines_debug.h",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fno-exceptions",
+				);
+				OTHER_LDFLAGS = (
+					
+				);
+				SDKROOT = iphoneos5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		
+
+		T00000000000000000000005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ONLY_ACTIVE_ARCH = YES;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				
+				HEADER_SEARCH_PATHS = (
+					"/Developer/Marmalade/5.2/extensions/s3eNextpeer/source/h/",
+					"/Developer/Marmalade/5.2/extensions/s3eNextpeer/h/",
+					"/Developer/Marmalade/5.2/s3e/edk/h/",
+					"/Developer/Marmalade/5.2/s3e/h/",
+					"/Developer/Marmalade/5.2/s3e/h/ext/",
+					"/Developer/Marmalade/5.2/modules/iwutil/h/",
+					"/Developer/Marmalade/5.2/modules/iwcore/h/",
+					"/Developer/Marmalade/5.2/extensions/s3eNextpeer/Nextpeer.framework/Nextpeer.framework/Headers"
+				);
+				LIBRARY_SEARCH_PATHS = (
+					
+					"$(inherited)",
+				);
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = Info.plist;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = ( 
+"-fsigned-char",
+					"-fno-strict-aliasing",
+					"-Wall",
+					"-fomit-frame-pointer",
+					"-Wno-unused",
+					"-Wno-parentheses",
+					"-pipe","-O3",
+					"-include",
+					"temp_defines_release.h",					"-include temp_defines_release.h",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fno-exceptions",
+				);
+				OTHER_LDFLAGS = (
+					
+				);
+				SDKROOT = iphoneos5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		
+		C00000000000000000000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv6";
+				DEAD_CODE_STRIPPING = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;  
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; 
+				INFOPLIST_FILE = Info.plist;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				PRODUCT_NAME = s3eNextpeer_iphone;
+			};
+			name = Debug;
+		};
+		C00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv6";
+				ONLY_ACTIVE_ARCH = YES;
+                DEAD_CODE_STRIPPING = NO;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO; 
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; 
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = s3eNextpeer_iphone;
+			};
+			name = Release;
+		}; 
+
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+
+		buildconfiglistproject /* Build configuration list for PBXProject "s3eNextpeer_iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				T00000000000000000000003 /* Debug */,
+				T00000000000000000000005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+
+		buildconfiglisttarget /* Build configuration list for PBXNativeTarget "s3eNextpeer_iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000002 /* Debug */,
+				C00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000006 /* Project object */;
+}
