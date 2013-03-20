@@ -1,6 +1,0 @@
-build "ARM GCC Release"
-outdir "/Developer/Marmalade/5.2/extensions/s3eNextpeer/s3eNextpeerTest/build_test1_xcode"
-!task !name "Default:iphone" "Package"
-!config !name "Default"
-!config <os> "win32" "iphone"
-configlist "Default",
